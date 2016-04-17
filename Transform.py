@@ -25,10 +25,18 @@ def transform(epsg_in, epsg_out, x_in, y_in):
     x_out,y_out = pyproj.transform(srcProj, dstProj, x_in, y_in)
     return x_out,y_out
 
+data = dict([])
 for i in range(len(shapes)):
+    temp = dict()
+    lats = list()        
+    longs=list()
     for j in range(len(shapes[i].points)):
         x = shapes[i].points[j][0]
         y = shapes[i].points[j][1]
-        xy = transform(epsg_in=27700,epsg_out=4326,x_in=x,y_in=y)
-        shapes[i].points[j][0]=xy[1]
-        shapes[i].points[j][1]=xy[0]
+        lats.append(transform(epsg_in=27700,epsg_out=4326,x_in=x,y_in=y)[1])
+        longs.append(transform(epsg_in=27700,epsg_out=4326,x_in=x,y_in=y)[0])
+        name = records[i][1]
+    temp['name']=name
+    temp['lats']=lats
+    temp['longs']=longs
+    data[i] = temp
