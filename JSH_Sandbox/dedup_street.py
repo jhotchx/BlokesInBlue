@@ -768,6 +768,14 @@ print("Number of records after aggregating to LSOA level.")
 count = newtestcase.count()
 print(count)
 
+#Save a copy of the file at this point into s3
+#Change to rdd
+anrdd = newtestcase.rdd
+#Make one file
+anotherrdd = anrdd.coalesce(1)
+#Save
+anotherrdd.saveAsTextFile('s3://ukpolice/street_LSOA_level')
+
 
 
 
