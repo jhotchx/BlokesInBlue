@@ -11,8 +11,11 @@ Created on Sat Apr 16 21:34:23 2016
 """
 import pyproj
 import shapefile
-from bokeh.models import HoverTool
-from bokeh.plotting import figure, show, output_file, ColumnDataSource
+from bokeh.models.glyphs import Patches
+from bokeh.models import (
+    GMapPlot, Range1d, ColumnDataSource,HoverTool, PanTool, WheelZoomTool, 
+    BoxSelectTool,ResetTool, PreviewSaveTool,GMapOptions)
+from bokeh.plotting import show, output_file
 import pandas
 
 ## Getting unemployment data into usable format
@@ -74,7 +77,7 @@ lad_longs = [lad["longs"] for lad in data.values()]
 lad_unemployment= unemp2011[unemp2011['LAD'].isin(lad_names)]
 col = colors*1200
 
-columndata = ColumnDataSource(data=dict(
+source = ColumnDataSource(data=dict(
     y=lad_lats,
     x=lad_longs,
     color=col[:len(set(lad_names))],
@@ -83,10 +86,12 @@ columndata = ColumnDataSource(data=dict(
 ))
 
 TOOLS="pan,wheel_zoom,box_zoom,reset,hover,save"
-p = figure(title="LAD", tools=TOOLS)
+p = GMapPlot(title="LAD", plot_width=1200, plot_height=800, x_range = Range1d(), y_range = Range1d(), map_options = GMapOptions(lat=51.5074, lng=0.1278, zoom=10))
+p.map_options.map_type = "terrain"
+patch = Patches(xs="x", ys="y", fill_color="color", fill_alpha=0.7, line_color="black", line_width=0.5)
+patches_glyph = p.add_glyph(source, patch)
 
-p.patches('x', 'y', source=columndata, fill_alpha=0.7, fill_color='color',
-          line_color='black', line_width=0.5)
+p.add_tools(PanTool(), WheelZoomTool(), BoxSelectTool(), HoverTool(), ResetTool(), PreviewSaveTool())
 
 hover = p.select_one(HoverTool)
 hover.point_policy = "follow_mouse"
@@ -96,7 +101,6 @@ hover.tooltips = [
     ("Unemployment Rate 2011","@unemployment")
 ]
 
-output_file("LAD.html", title="Local Authority Districts")
+output_file("LADGMap.html", title="LAD GMap test", mode="cdn")
 show(p)
-
 
