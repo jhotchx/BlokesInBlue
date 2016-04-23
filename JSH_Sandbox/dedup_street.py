@@ -160,7 +160,7 @@ rdd_street_analysis   = df_street_analysis.rdd
 #Make one file
 rdd_street_analysis_1 = rdd_street_analysis.coalesce(1)
 #Save
-rdd_street_analysis_1.saveAsTextFile('s3://ukpolice/street_analysis')
+#rdd_street_analysis_1.saveAsTextFile('s3://ukpolice/street_analysis')
 
 #==========FEATURE GENERATION==========#
 
@@ -813,7 +813,7 @@ rdd_street_agg_LSOA = df_street_agg_LSOA.rdd
 #Make one file
 rdd_street_agg_LSOA_1 = rdd_street_agg_LSOA.coalesce(1)
 #Save
-rdd_street_agg_LSOA_1.saveAsTextFile('s3://ukpolice/street_LSOA_level')
+#rdd_street_agg_LSOA_1.saveAsTextFile('s3://ukpolice/street_LSOA_level')
 
 #==========MERGE CROSSWALK==========#
 
@@ -850,9 +850,12 @@ print("Number of records that don't have a value for MSOA_code:")
 count = df_street_agg_LSOA_merge.filter(df_street_agg_LSOA_merge.MSOA_code!="").count()
 print(count)
 
+#Make a table from the dataframe so that it can be called from a SQL context
+df_street_agg_LSOA_merge.registerTempTable("street_LSOA_merge")
+
 #==========AGGREGATE BY MSOA==========#
 
-df_street_agg_MSOA = sqlCtx.sql('select Month, MSOA_code, MSOA_name, LAD_code, LAD_name \
+df_street_agg_MSOA = sqlCtx.sql('select Month, MSOA_code, MSOA_name, LAD_code, LAD_name, \
                        SUM(AntiSocialBehavior)                                AS AntiSocialBehavior,                                SUM(EMPTYNULLOutcome)                                      AS EMPTYNULLOutcome,                \
                        SUM(BicycleTheft)                                      AS BicycleTheft,                                      SUM(ActionToBeTakenOtherOrg)                               AS ActionToBeTakenOtherOrg,         \
                        SUM(Burglary)                                          AS Burglary,                                          SUM(AwaitingCourtOutcome)                                  AS AwaitingCourtOutcome,            \
@@ -1037,7 +1040,7 @@ df_street_agg_MSOA = sqlCtx.sql('select Month, MSOA_code, MSOA_name, LAD_code, L
                        SUM(VehicleCrimeUnableProsecuteSuspect)                AS VehicleCrimeUnableProsecuteSuspect,                SUM(ViolenceSexualOffencesUnableProsecuteSuspect)          AS ViolenceSexualOffencesUnableProsecuteSuspect,          \
                        SUM(VehicleCrimeUnderInvestigation)                    AS VehicleCrimeUnderInvestigation,                    SUM(ViolenceSexualOffencesUnderInvestigation)              AS ViolenceSexualOffencesUnderInvestigation               \
                        \
-                       from street_LSOA\
+                       from street_LSOA_merge\
                        \
                        group by Month, MSOA_code, MSOA_name, LAD_code, LAD_name')
 
@@ -1054,7 +1057,7 @@ rdd_street_agg_MSOA = df_street_agg_MSOA.rdd
 #Make one file
 rdd_street_agg_MSOA_1 = rdd_street_agg_MSOA.coalesce(1)
 #Save
-rdd_street_agg_MSOA_1.saveAsTextFile('s3://ukpolice/street_MSOA_level')
+#rdd_street_agg_MSOA_1.saveAsTextFile('s3://ukpolice/street_MSOA_level')
 
 #==========AGGREGATE BY LDA==========#
 
@@ -1260,7 +1263,7 @@ rdd_street_agg_LAD = df_street_agg_LAD.rdd
 #Make one file
 rdd_street_agg_LAD_1 = rdd_street_agg_LAD.coalesce(1)
 #Save
-rdd_street_agg_LAD_1.saveAsTextFile('s3://ukpolice/street_LAD_level')
+#rdd_street_agg_LAD_1.saveAsTextFile('s3://ukpolice/street_LAD_level')
 
 
 
