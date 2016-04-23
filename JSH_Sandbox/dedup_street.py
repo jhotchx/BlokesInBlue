@@ -811,9 +811,9 @@ print(count)
 #Change to rdd
 rdd_street_agg_LSOA = df_street_agg_LSOA.rdd
 #Make one file
-anotherrdd = anrdd.coalesce(1)
+rdd_street_agg_LSOA_1 = rdd_street_agg_LSOA.coalesce(1)
 #Save
-anotherrdd.saveAsTextFile('s3://ukpolice/street_LSOA_level')
+rdd_street_agg_LSOA_1.saveAsTextFile('s3://ukpolice/street_LSOA_level')
 
 #==========MERGE CROSSWALK==========#
 
@@ -1048,6 +1048,14 @@ print("Number of records after aggregating to MSOA level.")
 count = df_street_agg_MSOA.count()
 print(count)
 
+#Save a copy of the file at this point into s3
+#Change to rdd
+rdd_street_agg_MSOA = df_street_agg_MSOA.rdd
+#Make one file
+rdd_street_agg_MSOA_1 = rdd_street_agg_MSOA.coalesce(1)
+#Save
+rdd_street_agg_MSOA_1.saveAsTextFile('s3://ukpolice/street_MSOA_level')
+
 #==========AGGREGATE BY LDA==========#
 
 df_street_agg_LAD = sqlCtx.sql('select Month, LAD_code, LAD_name, \
@@ -1245,6 +1253,14 @@ df_street_agg_LAD.registerTempTable("street_LAD")
 print("Number of records after aggregating to LAD level.")
 count = df_street_agg_LAD.count()
 print(count)
+
+#Save a copy of the file at this point into s3
+#Change to rdd
+rdd_street_agg_LAD = df_street_agg_LAD.rdd
+#Make one file
+rdd_street_agg_LAD_1 = rdd_street_agg_LAD.coalesce(1)
+#Save
+rdd_street_agg_LAD_1.saveAsTextFile('s3://ukpolice/street_LAD_level')
 
 
 
