@@ -10,8 +10,8 @@ sc     = SparkContext( appName="Dedup Street" )
 sqlCtx = SQLContext(sc)
 
 #Load street data
-street = sc.textFile('s3://ukpolice/street.csv') 
-#street = sc.textFile('s3://ukpolice/police/2015-12/2015-12-avon-and-somerset-street.csv') 
+#street = sc.textFile('s3://ukpolice/street.csv') 
+street = sc.textFile('s3://ukpolice/police/2015-12/2015-12-avon-and-somerset-street.csv') 
 
 #Breakup data into fields
 streetMap = street.map(lambda line: line.split(',')) 
@@ -160,7 +160,7 @@ rdd_street_analysis   = df_street_analysis.rdd
 #Make one file
 rdd_street_analysis_1 = rdd_street_analysis.coalesce(1)
 #Save
-rdd_street_analysis_1.saveAsTextFile('s3://ukpolice/street_analysis')
+#rdd_street_analysis_1.saveAsTextFile('s3://ukpolice/street_analysis')
 
 #==========FEATURE GENERATION==========#
 
@@ -813,7 +813,7 @@ rdd_street_agg_LSOA = df_street_agg_LSOA.rdd
 #Make one file
 rdd_street_agg_LSOA_1 = rdd_street_agg_LSOA.coalesce(1)
 #Save
-rdd_street_agg_LSOA_1.saveAsTextFile('s3://ukpolice/street_LSOA_level')
+#rdd_street_agg_LSOA_1.saveAsTextFile('s3://ukpolice/street_LSOA_level')
 
 #==========MERGE CROSSWALK==========#
 
@@ -1057,7 +1057,7 @@ rdd_street_agg_MSOA = df_street_agg_MSOA.rdd
 #Make one file
 rdd_street_agg_MSOA_1 = rdd_street_agg_MSOA.coalesce(1)
 #Save
-rdd_street_agg_MSOA_1.saveAsTextFile('s3://ukpolice/street_MSOA_level')
+#rdd_street_agg_MSOA_1.saveAsTextFile('s3://ukpolice/street_MSOA_level')
 
 #==========AGGREGATE BY LDA==========#
 
@@ -1263,7 +1263,7 @@ rdd_street_agg_LAD = df_street_agg_LAD.rdd
 #Make one file
 rdd_street_agg_LAD_1 = rdd_street_agg_LAD.coalesce(1)
 #Save
-rdd_street_agg_LAD_1.saveAsTextFile('s3://ukpolice/street_LAD_level')
+#rdd_street_agg_LAD_1.saveAsTextFile('s3://ukpolice/street_LAD_level')
 
 
 
