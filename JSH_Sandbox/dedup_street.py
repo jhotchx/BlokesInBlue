@@ -10,9 +10,8 @@ sc     = SparkContext( appName="Dedup Street" )
 sqlCtx = SQLContext(sc)
 
 #Load street data
-#fullstreet = sc.textFile('s3://ukpolice/street.csv') 
-#fullstreetMap = fullstreet.map(lambda line: line.split(',')) 
-street = sc.textFile('s3://ukpolice/police/2015-12/2015-12-avon-and-somerset-street.csv') 
+street = sc.textFile('s3://ukpolice/street.csv') 
+#street = sc.textFile('s3://ukpolice/police/2015-12/2015-12-avon-and-somerset-street.csv') 
 
 #Breakup data into fields
 streetMap = street.map(lambda line: line.split(',')) 
@@ -38,6 +37,9 @@ df_street_pruned = sqlCtx.sql('select Crime_ID, Month, Longitude, Latitude, \
 
 #Make a table from the dataframe so that it can be called from a SQL context
 df_street_pruned.registerTempTable('street_pruned')
+print("Number of records before deduping")
+count = df_street_pruned.count()
+print(count)
 
 
 #==========STREET DUPLICATES REMOVAL==========#
@@ -51,6 +53,9 @@ df_street_nodupid = sqlCtx.sql('select * \
                                                                    group by Crime_ID, Month \
                                                                    having count(Crime_ID)=1 or Crime_ID="") as b \
                                                ON (street_pruned.Crime_ID=b.Crime_ID and street_pruned.Month=b.Month)')
+print("Number of records after seperating out duplicate Crime IDs")
+count = df_street_nodupid.count()
+print(count)
 
 #Drop duplicates in the non-duplicate crime ID data as determined by having the same value in all variables.
 #This seems the safest course of action for accuracy.
@@ -59,6 +64,9 @@ df_street_clean = df_street_nodupid.dropDuplicates(['Crime_ID','Month','Longitud
 
 #Make a table from the dataframe so that it can be called from a SQL context
 df_street_clean.registerTempTable('street_clean')
+print("Number of records after 1st dedup without crime ids")
+count = df_street_clean.count()
+print(count)
 
 #Now subset from the original pruned file all of the records that have a non-missing Crime ID that is duplicated.
 #Also create a variable called "filled" that checks to see if there is a value in every field.  
@@ -86,6 +94,9 @@ df_street_dirty = sqlCtx.sql('select *, CASE \
                                                              group by Crime_ID, Month \
                                                              having count(Crime_ID)>=2 and Crime_ID!="") as b \
                                                  ON (street_pruned.Crime_ID=b.Crime_ID and street_pruned.Month=b.Month)')
+print("Number of records with duplicate crime ids")
+count = df_street_dirty.count()
+print(count)
 
 #Make a table from the dataframe so that it can be called from a SQL context
 df_street_dirty.registerTempTable("street_dirty")
@@ -103,9 +114,15 @@ df_street_lessdirty = sqlCtx.sql('select street_dirty.* \
 
 #Drop the "filled" variable from the data frame.
 df_street_nofill = df_street_lessdirty.drop('filled')
+print("Number of records after removing drops with filled.")
+count = df_street_nofill.count()
+print(count)
 
 #Any remaining duplicates, just drop whichever record is unhappily first
 df_street_cleaned = df_street_nofill.dropDuplicates(['Crime_ID', 'Month'])
+print("Number of records after removing remaining drops at random.")
+count = df_street_cleaned.count()
+print(count)
 
 #Make a table from the dataframe so that it can be called from a SQL context
 df_street_cleaned.registerTempTable('street_new_cleaned')
@@ -119,13 +136,33 @@ df_street_analysis = sqlCtx.sql('select * \
                                  \
                                  select * \
                                  from street_new_cleaned')
+print("Number of records after all cleaning.")
+count = df_street_analysis.count()
+print(count)
 
 #Make a table from the dataframe so that it can be called from a SQL context
 df_street_analysis.registerTempTable('street_analysis')
 
+#Save a copy of the file at this point into s3
+#Change to rdd
+rdd_street_analysis   = df_street_analysis.rdd
+#Make one file
+rdd_street_analysis_1 = rdd_street_analysis.coalesce(1)
+#Save
+rdd_street_analysis_1.saveAsTextFile('s3://ukpolice/street_analysis')
+
 #==========FEATURE GENERATION==========#
 
 df_street_analysis.registerTempTable('street_analysis_test')
+
+crime_types = sqlCtx.sql('select distinct Crime_type \
+                          from street_analysis').collect()
+print("crime_types:")
+print(crime_types)
+outcome_types = sqlCtx.sql('select distinct Last_outcome_category \
+                            from street_analysis').collect()
+print("outcomes_types:")
+print(outcome_types)
 
 #Create Crime_type variables
 testcase = sqlCtx.sql(' \
@@ -539,6 +576,13 @@ testcase = sqlCtx.sql('select *, \
              from street_analysis_test')
 testcase.registerTempTable('street_analysis_test')
 
+print("Number of records after adding variables.")
+count = testcase.count()
+print(count)
+
+schemas = df_street_analysis.printSchema()
+print(schemas)
+
 newtestcase = sqlCtx.sql('select Month, LSOA_code, LSOA_name, \
                        SUM(AntiSocialBehavior)                                AS AntiSocialBehavior,                                SUM(ActionToBeTakenOtherOrg)                               AS ActionToBeTakenOtherOrg,         \
                        SUM(BicycleTheft)                                      AS BicycleTheft,                                      SUM(AwaitingCourtOutcome)                                  AS AwaitingCourtOutcome,            \
@@ -719,6 +763,12 @@ newtestcase = sqlCtx.sql('select Month, LSOA_code, LSOA_name, \
                        from street_analysis_test\
                        \
                        group by Month, LSOA_code, LSOA_name')
+
+print("Number of records after aggregating to LSOA level.")
+count = newtestcase.count()
+print(count)
+
+
 
 
 
