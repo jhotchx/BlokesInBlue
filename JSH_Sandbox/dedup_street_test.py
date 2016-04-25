@@ -170,11 +170,11 @@ df_street_analysis.registerTempTable('street_analysis_build')
 crime_types = sqlCtx.sql('select distinct Crime_type \
                           from street_analysis').collect()
 print("crime_types:")
-print(crime_types)
+print(crime_types.sort())
 outcome_types = sqlCtx.sql('select distinct Last_outcome_category \
                             from street_analysis').collect()
 print("outcomes_types:")
-print(outcome_types)
+print(outcome_types.sort())
 
 #Create Crime_type variables
 df_street_add_features = sqlCtx.sql(' \
