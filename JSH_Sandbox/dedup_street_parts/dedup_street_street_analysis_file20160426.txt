@@ -1,0 +1,20 @@
+Number of records before deduping
+30954589
+Number of records after seperating out duplicate Crime IDs
+30717821
+Number of records after 1st dedup without crime ids
+24822928
+Number of records with duplicate crime ids
+236768
+Number of records after removing drops with filled.
+232212
+Number of records after removing remaining drops at random.
+103433
+Number of records after recombining files after some cleaning.
+24926361
+Number of records after all cleaning.
+24668162
+crime_types:
+[Row(Crime_type=u''), Row(Crime_type=u'Anti-social behaviour'), Row(Crime_type=u'Bassetlaw 008B'), Row(Crime_type=u'Bicycle theft'), Row(Crime_type=u'Blaby 013C'), Row(Crime_type=u'Burglary'), Row(Crime_type=u'Charnwood 012C'), Row(Crime_type=u'Charnwood 021E'), Row(Crime_type=u'Charnwood 022D'), Row(Crime_type=u'Criminal damage and arson'), Row(Crime_type=u'Drugs'), Row(Crime_type=u'Hillingdon 009E'), Row(Crime_type=u'Hillingdon 011C'), Row(Crime_type=u'Other crime'), Row(Crime_type=u'Other theft'), Row(Crime_type=u'Possession of weapons'), Row(Crime_type=u'Public disorder and weapons'), Row(Crime_type=u'Public order'), Row(Crime_type=u'Robbery'), Row(Crime_type=u'Shoplifting'), Row(Crime_type=u'Theft from the person'), Row(Crime_type=u'Vehicle crime'), Row(Crime_type=u'Violence and sexual offences'), Row(Crime_type=u'Violent crime'), Row(Crime_type=u'Worthing 010A')]
+outcomes_types:
+[Row(Last_outcome_category=u''), Row(Last_outcome_category=u'Action to be taken by another organisation'), Row(Last_outcome_category=u'Anti-social behaviour'), Row(Last_outcome_category=u'Awaiting court outcome'), Row(Last_outcome_category=u'Bicycle theft'), Row(Last_outcome_category=u'Burglary'), Row(Last_outcome_category=u'Court case unable to proceed'), Row(Last_outcome_category=u'Court result unavailable'), Row(Last_outcome_category=u'Criminal damage and arson'), Row(Last_outcome_category=u'Defendant found not guilty'), Row(Last_outcome_category=u'Defendant sent to Crown Court'), Row(Last_outcome_category=u'Drugs'), Row(Last_outcome_category=u'Formal action is not in the public interest'), Row(Last_outcome_category=u'Investigation complete; no suspect identified'), Row(Last_outcome_category=u'Local resolution'), Row(Last_outcome_category=u'Offender deprived of property'), Row(Last_outcome_category=u'Offender fined'), Row(Last_outcome_category=u'Offender given a caution'), Row(Last_outcome_category=u'Offender given a drugs possession warning'), Row(Last_outcome_category=u'Offender given absolute discharge'), Row(Last_outcome_category=u'Offender given community sentence'), Row(Last_outcome_category=u'Offender given conditional discharge'), Row(Last_outcome_category=u'Offender given penalty notice'), Row(Last_outcome_category=u'Offender given suspended prison sentence'), Row(Last_outcome_category=u'Offender ordered to pay compensation'), Row(Last_outcome_category=u'Offender otherwise dealt with'), Row(Last_outcome_category=u'Offender sent to prison'), Row(Last_outcome_category=u'Other crime'), Row(Last_outcome_category=u'Other theft'), Row(Last_outcome_category=u'Possession of weapons'), Row(Last_outcome_category=u'Public disorder and weapons'), Row(Last_outcome_category=u'Public order'), Row(Last_outcome_category=u'Robbery'), Row(Last_outcome_category=u'Shoplifting'), Row(Last_outcome_category=u'Suspect charged as part of another case'), Row(Last_outcome_category=u'Theft from the person'), Row(Last_outcome_category=u'Unable to prosecute suspect'), Row(Last_outcome_category=u'Under investigation'), Row(Last_outcome_category=u'Vehicle crime'), Row(Last_outcome_category=u'Violence and sexual offences'), Row(Last_outcome_category=u'Violent crime')]
