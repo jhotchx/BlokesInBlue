@@ -161,7 +161,7 @@ rdd_street_analysis   = df_street_analysis.rdd
 #Make one file
 rdd_street_analysis_1 = rdd_street_analysis.coalesce(1)
 #Save
-rdd_street_analysis_1.saveAsTextFile('s3://ukpolice/street_analysis')
+rdd_street_analysis_1.saveAsTextFile('s3://ukpolice/street_analysis_small_files')
 
 #==========FEATURE GENERATION==========#
 
