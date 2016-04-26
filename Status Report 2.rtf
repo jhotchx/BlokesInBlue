@@ -1,0 +1,13 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf460
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 ArialMT;}
+{\colortbl;\red255\green255\blue255;\red29\green38\blue42;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Status Report #2\
+Blokes in Blue: John, Tim, and Josh\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1\fs26 \cf2 \expnd0\expndtw0\kerning0
+This week we really got down and dirty with the data. \'a0Our data wrangling has included deduplication and cleaning using Spark SQL (through python), primarily of the ~15 million UK police records, and formation of our preferred feature set from that data. \'a0This process is almost complete, and is the first step towards aggregation, in which we will bring the individual crime level data to the region level that is consistent with our socioeconomic data. \'a0As the cleaning and formatting stage is always the longest, we imagine we can make significant headway this week on putting out analyses of relationships between the crimes data and socioeconomic factors. \'a0Unfortunately, this step took longer than we expected, as it came as a shock to find that Spark SQL does not support subqueries (queries within queries that one might want to use in the where statement). \'a0We have worked our way around the issue at this point, but it was an unanticipated setback.\
+We made significant progress on the visualization front, although there is still a lot of work to do. We successfully created interactive maps from shapefiles of English MSOAs, using Bokeh. However, the webpage created was >500mb; we are looking into ways of shrinking this down to a manageable size. Our options here are using less-detailed shapefiles or simply mapping at a higher level (probably district-level). Now that we know how to make basic maps, we are looking into making them both fancier and more targeted - adding multiple overlays for different indicators, focussing on particular areas of the country, etc.     }
