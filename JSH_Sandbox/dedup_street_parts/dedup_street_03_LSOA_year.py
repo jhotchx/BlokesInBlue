@@ -498,7 +498,7 @@ df_street_analysis = df_street.toDF("Month",
 
 df_street_analysis.registerTempTable('street_LSOA_month')
 
-df_street_agg_LSOA_year = sqlCtx.sql('select Year, LSOA_code, LSOA_name, MSOA_code, MSOA_name, LAD_code, LAD_name, SUM(TotalObs) as TotalObs, \
+df_street_agg_LSOA_year = sqlCtx.sql('select SUBSTRING(Month,1,4) AS Year, LSOA_code, LSOA_name, MSOA_code, MSOA_name, LAD_code, LAD_name, SUM(TotalObs) as TotalObs, \
                        SUM(EMPTYNULLCrime)                                    AS EMPTYNULLCrime,                                    SUM(EMPTYNULLOutcome)                                      AS EMPTYNULLOutcome,                \
                        SUM(AntiSocialBehavior)                                AS AntiSocialBehavior,                                SUM(ActionToBeTakenOtherOrg)                               AS ActionToBeTakenOtherOrg,         \
                        SUM(BicycleTheft)                                      AS BicycleTheft,                                      SUM(AwaitingCourtOutcome)                                  AS AwaitingCourtOutcome,            \
@@ -787,7 +787,7 @@ df_street_agg_LSOA_year = sqlCtx.sql('select Year, LSOA_code, LSOA_name, MSOA_co
                        \
                        from street_LSOA_month\
                        \
-                       group by Year, LSOA_code, LSOA_name, MSOA_code, MSOA_name, LAD_code, LAD_name')
+                       group by SUBSTRING(Month,1,4), LSOA_code, LSOA_name, MSOA_code, MSOA_name, LAD_code, LAD_name')
 
 print("Number of records after aggregating to LSOA Year level.")
 count = df_street_agg_LSOA_year.count()
