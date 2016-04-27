@@ -590,12 +590,12 @@ df_street_add_features = sqlCtx.sql('select *, \
              from street_analysis_build')
 df_street_add_features.registerTempTable('street_analysis_build')
 
-print("Number of records after adding variables.")
-count = df_street_add_features.count()
-print(count)
+#print("Number of records after adding variables.")
+#count = df_street_add_features.count()
+#print(count)
 
-schemas = df_street_add_features.printSchema()
-print(schemas)
+#schemas = df_street_add_features.printSchema()
+#print(schemas)
 
 #==========AGGREGATE BY LSOA AND MONTH==========#
 
@@ -893,9 +893,9 @@ df_street_agg_LSOA_month = sqlCtx.sql('select Month, LSOA_code, LSOA_name, count
 #Make a table from the dataframe so that it can be called from a SQL context
 df_street_agg_LSOA_month.registerTempTable("street_LSOA_month")
 
-print("Number of records after aggregating to LSOA and month level.")
-count = df_street_agg_LSOA_month.count()
-print(count)
+#print("Number of records after aggregating to LSOA and month level.")
+#count = df_street_agg_LSOA_month.count()
+#print(count)
 
 #==========MERGE CROSSWALK==========#
 
@@ -911,6 +911,9 @@ df_xwalk = sqlCtx.createDataFrame(xwalk)
 #Assign column headers to file
 xwalk_with_header = df_xwalk.toDF("OA11CD","LSOA11CD","LSOA11NM","MSOA11CD",
                                   "MSOA11NM","LAD11CD","LAD11NM","LAD11NMW")
+
+#Make a table from the dataframe so that it can be called from a SQL context
+xwalk_with_header.registerTempTable("xwalk_header")
 
 #Keep only the variables that we want, save them in a new data frame.
 xwalk_simple = sqlCtx.sql('select LSOA11CD, LSOA11NM, MSOA11CD, MSOA11NM, LAD11CD, LAD11NM \
@@ -933,12 +936,12 @@ df_street_agg_LSOA_month_xwalk = sqlCtx.sql('select street_LSOA_month.*, xwalk_d
                                                               ON (street_LSOA_month.LSOA_code=xwalk_dedup.LSOA11CD AND \
                                                                   street_LSOA_month.LSOA_name=xwalk_dedup.LSOA11NM)')
 
-print("Number of records that don't have a value for MSOA_code:")
-count = df_street_agg_LSOA_month_xwalk.filter(df_street_agg_LSOA_month_xwalk.MSOA_code=="").count()
-print(count)
+#print("Number of records that don't have a value for MSOA_code:")
+#count = df_street_agg_LSOA_month_xwalk.filter(df_street_agg_LSOA_month_xwalk.MSOA_code=="").count()
+#print(count)
 
-schemas = df_street_agg_LSOA_month_xwalk.printSchema()
-print(schemas)
+#schemas = df_street_agg_LSOA_month_xwalk.printSchema()
+#print(schemas)
 
 #Save a copy of the file at this point into s3
 #Change to rdd
