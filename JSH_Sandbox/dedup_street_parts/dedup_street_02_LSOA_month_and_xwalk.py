@@ -912,9 +912,6 @@ df_xwalk = sqlCtx.createDataFrame(xwalk)
 xwalk_with_header = df_xwalk.toDF("OA11CD","LSOA11CD","LSOA11NM","MSOA11CD",
                                   "MSOA11NM","LAD11CD","LAD11NM","LAD11NMW")
 
-#Make a table from the dataframe so that it can be called from a SQL context
-xwalk_with_header.registerTempTable("xwalk_header")
-
 #Keep only the variables that we want, save them in a new data frame.
 xwalk_simple = sqlCtx.sql('select LSOA11CD, LSOA11NM, MSOA11CD, MSOA11NM, LAD11CD, LAD11NM \
                            from xwalk_header \
@@ -924,14 +921,17 @@ xwalk_simple = sqlCtx.sql('select LSOA11CD, LSOA11NM, MSOA11CD, MSOA11NM, LAD11C
 xwalk_dedup = xwalk_simple.dropDuplicates(['LSOA11CD','LSOA11NM','MSOA11CD',
                                            'MSOA11NM','LAD11CD','LAD11NM'])
 
+#Make a table from the dataframe so that it can be called from a SQL context
+xwalk_dedup.registerTempTable("xwalk_dedup")
+
 #Perform merge
-df_street_agg_LSOA_month_xwalk = sqlCtx.sql('select street_LSOA_month.*, xwalk_header.MSOA11CD as MSOA_code, \
-                                                    xwalk_header.MSOA11NM as MSOA_name, \
-                                                    xwalk_header.LAD11CD as LAD_code, \
-                                                    xwalk_header.LAD11NM as LAD_name \
-                                             from street_LSOA_month LEFT OUTER JOIN xwalk_header \
-                                                              ON (street_LSOA_month.LSOA_code=xwalk_header.LSOA11CD AND \
-                                                                  street_LSOA_month.LSOA_name=xwalk_header.LSOA11NM)')
+df_street_agg_LSOA_month_xwalk = sqlCtx.sql('select street_LSOA_month.*, xwalk_dedup.MSOA11CD as MSOA_code, \
+                                                    xwalk_dedup.MSOA11NM as MSOA_name, \
+                                                    xwalk_dedup.LAD11CD as LAD_code, \
+                                                    xwalk_dedup.LAD11NM as LAD_name \
+                                             from street_LSOA_month LEFT OUTER JOIN xwalk_dedup \
+                                                              ON (street_LSOA_month.LSOA_code=xwalk_dedup.LSOA11CD AND \
+                                                                  street_LSOA_month.LSOA_name=xwalk_dedup.LSOA11NM)')
 
 print("Number of records that don't have a value for MSOA_code:")
 count = df_street_agg_LSOA_month_xwalk.filter(df_street_agg_LSOA_month_xwalk.MSOA_code=="").count()
