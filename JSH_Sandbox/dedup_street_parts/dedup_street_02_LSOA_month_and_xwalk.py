@@ -600,291 +600,491 @@ df_street_add_features.registerTempTable('street_analysis_build')
 #==========AGGREGATE BY LSOA AND MONTH==========#
 
 df_street_agg_LSOA_month = sqlCtx.sql('select Month, LSOA_code, LSOA_name, count(LSOA_code) as TotalObs, \
-                       SUM(EMPTYNULLCrime)                                    AS EMPTYNULLCrime,                                    SUM(EMPTYNULLOutcome)                                      AS EMPTYNULLOutcome,                \
-                       SUM(AntiSocialBehavior)                                AS AntiSocialBehavior,                                SUM(ActionToBeTakenOtherOrg)                               AS ActionToBeTakenOtherOrg,         \
-                       SUM(BicycleTheft)                                      AS BicycleTheft,                                      SUM(AwaitingCourtOutcome)                                  AS AwaitingCourtOutcome,            \
-                       SUM(Burglary)                                          AS Burglary,                                          SUM(CourtCaseUnableToProceed)                              AS CourtCaseUnableToProceed,        \
-                       SUM(CriminalDamageArson)                               AS CriminalDamageArson,                               SUM(CourtResultUnavailable)                                AS CourtResultUnavailable,          \
-                       SUM(Drugs)                                             AS Drugs,                                             SUM(DefendantNotGuilty)                                    AS DefendantNotGuilty,              \
-                       SUM(OtherCrime)                                        AS OtherCrime,                                        SUM(DefendantSentCrownCourt)                               AS DefendantSentCrownCourt,         \
-                       SUM(OtherTheft)                                        AS OtherTheft,                                        SUM(FormalActionNotPublicInterest)                         AS FormalActionNotPublicInterest,   \
-                       SUM(PossessionWeapons)                                 AS PossessionWeapons,                                 SUM(InvestigationCompleteNoSuspect)                        AS InvestigationCompleteNoSuspect,  \
-                       SUM(PublicDisorderWeapons)                             AS PublicDisorderWeapons,                             SUM(LocalResolution)                                       AS LocalResolution,                 \
-                       SUM(PublicOrder)                                       AS PublicOrder,                                       SUM(OffDeprivedProperty)                                   AS OffDeprivedProperty,             \
-                       SUM(Robbery)                                           AS Robbery,                                           SUM(OffFined)                                              AS OffFined,                        \
-                       SUM(Shoplifting)                                       AS Shoplifting,                                       SUM(OffGivenCaution)                                       AS OffGivenCaution,                 \
-                       SUM(TheftFromPerson)                                   AS TheftFromPerson,                                   SUM(OffGivenDrugsPossessionWarning)                        AS OffGivenDrugsPossessionWarning,  \
-                       SUM(VehicleCrime)                                      AS VehicleCrime,                                      SUM(OffGivenAbsoluteDischarge)                             AS OffGivenAbsoluteDischarge,       \
-                       SUM(ViolenceSexualOffences)                            AS ViolenceSexualOffences,                            SUM(OffGivenCommunitySentence)                             AS OffGivenCommunitySentence,       \
-                       SUM(ViolentCrime)                                      AS ViolentCrime,                                      SUM(OffGivenConditionalDischarge)                          AS OffGivenConditionalDischarge,    \
-                                                                                                                                    SUM(OffGivenPenaltyNotice)                                 AS OffGivenPenaltyNotice,           \
-                                                                                                                                    SUM(OffGivenSuspendedPrisonSentence)                       AS OffGivenSuspendedPrisonSentence, \
-                                                                                                                                    SUM(OffOrderedPayCompensation)                             AS OffOrderedPayCompensation,       \
-                                                                                                                                    SUM(OffOtherwiseDealtWith)                                 AS OffOtherwiseDealtWith,           \
-                                                                                                                                    SUM(OffSentPrison)                                         AS OffSentPrison,                   \
-                                                                                                                                    SUM(SuspectChargedPartOfAnotherCase)                       AS SuspectChargedPartOfAnotherCase, \
-                                                                                                                                    SUM(UnableProsecuteSuspect)                                AS UnableProsecuteSuspect,          \
-                                                                                                                                    SUM(UnderInvestigation)                                    AS UnderInvestigation,              \
+                       SUM(EMPTYNULLCrime)                                        AS EMPTYNULLCrime,         \
+                       SUM(AntiSocialBehavior)                                    AS AntiSocialBehavior,     \
+                       SUM(BicycleTheft)                                          AS BicycleTheft,           \
+                       SUM(Burglary)                                              AS Burglary,               \
+                       SUM(CriminalDamageArson)                                   AS CriminalDamageArson,    \
+                       SUM(Drugs)                                                 AS Drugs,                  \
+                       SUM(OtherCrime)                                            AS OtherCrime,             \
+                       SUM(OtherTheft)                                            AS OtherTheft,             \
+                       SUM(PossessionWeapons)                                     AS PossessionWeapons,      \
+                       SUM(PublicDisorderWeapons)                                 AS PublicDisorderWeapons,  \
+                       SUM(PublicOrder)                                           AS PublicOrder,            \
+                       SUM(Robbery)                                               AS Robbery,                \
+                       SUM(Shoplifting)                                           AS Shoplifting,            \
+                       SUM(TheftFromPerson)                                       AS TheftFromPerson,        \
+                       SUM(VehicleCrime)                                          AS VehicleCrime,           \
+                       SUM(ViolenceSexualOffences)                                AS ViolenceSexualOffences, \
+                       SUM(ViolentCrime)                                          AS ViolentCrime,           \
                        \
-                       SUM(EMPTYNULLCrimeEMPTYNULLOutcome)                       AS EMPTYNULLCrimeEMPTYNULLOutcome,                \
-                       SUM(EMPTYNULLCrimeActionToBeTakenOtherOrg)                AS EMPTYNULLCrimeActionToBeTakenOtherOrg,         \
-                       SUM(EMPTYNULLCrimeAwaitingCourtOutcome)                   AS EMPTYNULLCrimeAwaitingCourtOutcome,            \
-                       SUM(EMPTYNULLCrimeCourtCaseUnableToProceed)               AS EMPTYNULLCrimeCourtCaseUnableToProceed,        \
-                       SUM(EMPTYNULLCrimeCourtResultUnavailable)                 AS EMPTYNULLCrimeCourtResultUnavailable,          \
-                       SUM(EMPTYNULLCrimeDefendantNotGuilty)                     AS EMPTYNULLCrimeDefendantNotGuilty,              \
-                       SUM(EMPTYNULLCrimeDefendantSentCrownCourt)                AS EMPTYNULLCrimeDefendantSentCrownCourt,         \
-                       SUM(EMPTYNULLCrimeFormalActionNotPublicInterest)          AS EMPTYNULLCrimeFormalActionNotPublicInterest,   \
-                       SUM(EMPTYNULLCrimeInvestigationCompleteNoSuspect)         AS EMPTYNULLCrimeInvestigationCompleteNoSuspect,  \
-                       SUM(EMPTYNULLCrimeLocalResolution)                        AS EMPTYNULLCrimeLocalResolution,                 \
-                       SUM(EMPTYNULLCrimeOffDeprivedProperty)                    AS EMPTYNULLCrimeOffDeprivedProperty,             \
-                       SUM(EMPTYNULLCrimeOffFined)                               AS EMPTYNULLCrimeOffFined,                        \
-                       SUM(EMPTYNULLCrimeOffGivenCaution)                        AS EMPTYNULLCrimeOffGivenCaution,                 \
-                       SUM(EMPTYNULLCrimeOffGivenDrugsPossessionWarning)         AS EMPTYNULLCrimeOffGivenDrugsPossessionWarning,  \
-                       SUM(EMPTYNULLCrimeOffGivenAbsoluteDischarge)              AS EMPTYNULLCrimeOffGivenAbsoluteDischarge,       \
-                       SUM(EMPTYNULLCrimeOffGivenCommunitySentence)              AS EMPTYNULLCrimeOffGivenCommunitySentence,       \
-                       SUM(EMPTYNULLCrimeOffGivenConditionalDischarge)           AS EMPTYNULLCrimeOffGivenConditionalDischarge,    \
-                       SUM(EMPTYNULLCrimeOffGivenPenaltyNotice)                  AS EMPTYNULLCrimeOffGivenPenaltyNotice,           \
-                       SUM(EMPTYNULLCrimeOffGivenSuspendedPrisonSentence)        AS EMPTYNULLCrimeOffGivenSuspendedPrisonSentence, \
-                       SUM(EMPTYNULLCrimeOffOrderedPayCompensation)              AS EMPTYNULLCrimeOffOrderedPayCompensation,       \
-                       SUM(EMPTYNULLCrimeOffOtherwiseDealtWith)                  AS EMPTYNULLCrimeOffOtherwiseDealtWith,           \
-                       SUM(EMPTYNULLCrimeOffSentPrison)                          AS EMPTYNULLCrimeOffSentPrison,                   \
-                       SUM(EMPTYNULLCrimeSuspectChargedPartOfAnotherCase)        AS EMPTYNULLCrimeSuspectChargedPartOfAnotherCase, \
-                       SUM(EMPTYNULLCrimeUnableProsecuteSuspect)                 AS EMPTYNULLCrimeUnableProsecuteSuspect,          \
-                       SUM(EMPTYNULLCrimeUnderInvestigation)                     AS EMPTYNULLCrimeUnderInvestigation,              \
+                       SUM(EMPTYNULLOutcome)                                      AS EMPTYNULLOutcome,                \
+                       SUM(ActionToBeTakenOtherOrg)                               AS ActionToBeTakenOtherOrg,         \
+                       SUM(AwaitingCourtOutcome)                                  AS AwaitingCourtOutcome,            \
+                       SUM(CourtCaseUnableToProceed)                              AS CourtCaseUnableToProceed,        \
+                       SUM(CourtResultUnavailable)                                AS CourtResultUnavailable,          \
+                       SUM(DefendantNotGuilty)                                    AS DefendantNotGuilty,              \
+                       SUM(DefendantSentCrownCourt)                               AS DefendantSentCrownCourt,         \
+                       SUM(FormalActionNotPublicInterest)                         AS FormalActionNotPublicInterest,   \
+                       SUM(InvestigationCompleteNoSuspect)                        AS InvestigationCompleteNoSuspect,  \
+                       SUM(LocalResolution)                                       AS LocalResolution,                 \
+                       SUM(OffDeprivedProperty)                                   AS OffDeprivedProperty,             \
+                       SUM(OffFined)                                              AS OffFined,                        \
+                       SUM(OffGivenCaution)                                       AS OffGivenCaution,                 \
+                       SUM(OffGivenDrugsPossessionWarning)                        AS OffGivenDrugsPossessionWarning,  \
+                       SUM(OffGivenAbsoluteDischarge)                             AS OffGivenAbsoluteDischarge,       \
+                       SUM(OffGivenCommunitySentence)                             AS OffGivenCommunitySentence,       \
+                       SUM(OffGivenConditionalDischarge)                          AS OffGivenConditionalDischarge,    \
+                       SUM(OffGivenPenaltyNotice)                                 AS OffGivenPenaltyNotice,           \
+                       SUM(OffGivenSuspendedPrisonSentence)                       AS OffGivenSuspendedPrisonSentence, \
+                       SUM(OffOrderedPayCompensation)                             AS OffOrderedPayCompensation,       \
+                       SUM(OffOtherwiseDealtWith)                                 AS OffOtherwiseDealtWith,           \
+                       SUM(OffSentPrison)                                         AS OffSentPrison,                   \
+                       SUM(SuspectChargedPartOfAnotherCase)                       AS SuspectChargedPartOfAnotherCase, \
+                       SUM(UnableProsecuteSuspect)                                AS UnableProsecuteSuspect,          \
+                       SUM(UnderInvestigation)                                    AS UnderInvestigation,              \
                        \
-                       SUM(AntiSocialBehaviorEMPTYNULLOutcome)                   AS AntiSocialBehaviorEMPTYNULLOutcome,                SUM(BicycleTheftEMPTYNULLOutcome)                          AS BicycleTheftEMPTYNULLOutcome,                \
-                       SUM(AntiSocialBehaviorActionToBeTakenOtherOrg)            AS AntiSocialBehaviorActionToBeTakenOtherOrg,         SUM(BicycleTheftActionToBeTakenOtherOrg)                   AS BicycleTheftActionToBeTakenOtherOrg,         \
-                       SUM(AntiSocialBehaviorAwaitingCourtOutcome)               AS AntiSocialBehaviorAwaitingCourtOutcome,            SUM(BicycleTheftAwaitingCourtOutcome)                      AS BicycleTheftAwaitingCourtOutcome,            \
-                       SUM(AntiSocialBehaviorCourtCaseUnableToProceed)           AS AntiSocialBehaviorCourtCaseUnableToProceed,        SUM(BicycleTheftCourtCaseUnableToProceed)                  AS BicycleTheftCourtCaseUnableToProceed,        \
-                       SUM(AntiSocialBehaviorCourtResultUnavailable)             AS AntiSocialBehaviorCourtResultUnavailable,          SUM(BicycleTheftCourtResultUnavailable)                    AS BicycleTheftCourtResultUnavailable,          \
-                       SUM(AntiSocialBehaviorDefendantNotGuilty)                 AS AntiSocialBehaviorDefendantNotGuilty,              SUM(BicycleTheftDefendantNotGuilty)                        AS BicycleTheftDefendantNotGuilty,              \
-                       SUM(AntiSocialBehaviorDefendantSentCrownCourt)            AS AntiSocialBehaviorDefendantSentCrownCourt,         SUM(BicycleTheftDefendantSentCrownCourt)                   AS BicycleTheftDefendantSentCrownCourt,         \
-                       SUM(AntiSocialBehaviorFormalActionNotPublicInterest)      AS AntiSocialBehaviorFormalActionNotPublicInterest,   SUM(BicycleTheftFormalActionNotPublicInterest)             AS BicycleTheftFormalActionNotPublicInterest,   \
-                       SUM(AntiSocialBehaviorInvestigationCompleteNoSuspect)     AS AntiSocialBehaviorInvestigationCompleteNoSuspect,  SUM(BicycleTheftInvestigationCompleteNoSuspect)            AS BicycleTheftInvestigationCompleteNoSuspect,  \
-                       SUM(AntiSocialBehaviorLocalResolution)                    AS AntiSocialBehaviorLocalResolution,                 SUM(BicycleTheftLocalResolution)                           AS BicycleTheftLocalResolution,                 \
-                       SUM(AntiSocialBehaviorOffDeprivedProperty)                AS AntiSocialBehaviorOffDeprivedProperty,             SUM(BicycleTheftOffDeprivedProperty)                       AS BicycleTheftOffDeprivedProperty,             \
-                       SUM(AntiSocialBehaviorOffFined)                           AS AntiSocialBehaviorOffFined,                        SUM(BicycleTheftOffFined)                                  AS BicycleTheftOffFined,                        \
-                       SUM(AntiSocialBehaviorOffGivenCaution)                    AS AntiSocialBehaviorOffGivenCaution,                 SUM(BicycleTheftOffGivenCaution)                           AS BicycleTheftOffGivenCaution,                 \
-                       SUM(AntiSocialBehaviorOffGivenDrugsPossessionWarning)     AS AntiSocialBehaviorOffGivenDrugsPossessionWarning,  SUM(BicycleTheftOffGivenDrugsPossessionWarning)            AS BicycleTheftOffGivenDrugsPossessionWarning,  \
-                       SUM(AntiSocialBehaviorOffGivenAbsoluteDischarge)          AS AntiSocialBehaviorOffGivenAbsoluteDischarge,       SUM(BicycleTheftOffGivenAbsoluteDischarge)                 AS BicycleTheftOffGivenAbsoluteDischarge,       \
-                       SUM(AntiSocialBehaviorOffGivenCommunitySentence)          AS AntiSocialBehaviorOffGivenCommunitySentence,       SUM(BicycleTheftOffGivenCommunitySentence)                 AS BicycleTheftOffGivenCommunitySentence,       \
-                       SUM(AntiSocialBehaviorOffGivenConditionalDischarge)       AS AntiSocialBehaviorOffGivenConditionalDischarge,    SUM(BicycleTheftOffGivenConditionalDischarge)              AS BicycleTheftOffGivenConditionalDischarge,    \
-                       SUM(AntiSocialBehaviorOffGivenPenaltyNotice)              AS AntiSocialBehaviorOffGivenPenaltyNotice,           SUM(BicycleTheftOffGivenPenaltyNotice)                     AS BicycleTheftOffGivenPenaltyNotice,           \
-                       SUM(AntiSocialBehaviorOffGivenSuspendedPrisonSentence)    AS AntiSocialBehaviorOffGivenSuspendedPrisonSentence, SUM(BicycleTheftOffGivenSuspendedPrisonSentence)           AS BicycleTheftOffGivenSuspendedPrisonSentence, \
-                       SUM(AntiSocialBehaviorOffOrderedPayCompensation)          AS AntiSocialBehaviorOffOrderedPayCompensation,       SUM(BicycleTheftOffOrderedPayCompensation)                 AS BicycleTheftOffOrderedPayCompensation,       \
-                       SUM(AntiSocialBehaviorOffOtherwiseDealtWith)              AS AntiSocialBehaviorOffOtherwiseDealtWith,           SUM(BicycleTheftOffOtherwiseDealtWith)                     AS BicycleTheftOffOtherwiseDealtWith,           \
-                       SUM(AntiSocialBehaviorOffSentPrison)                      AS AntiSocialBehaviorOffSentPrison,                   SUM(BicycleTheftOffSentPrison)                             AS BicycleTheftOffSentPrison,                   \
-                       SUM(AntiSocialBehaviorSuspectChargedPartOfAnotherCase)    AS AntiSocialBehaviorSuspectChargedPartOfAnotherCase, SUM(BicycleTheftSuspectChargedPartOfAnotherCase)           AS BicycleTheftSuspectChargedPartOfAnotherCase, \
-                       SUM(AntiSocialBehaviorUnableProsecuteSuspect)             AS AntiSocialBehaviorUnableProsecuteSuspect,          SUM(BicycleTheftUnableProsecuteSuspect)                    AS BicycleTheftUnableProsecuteSuspect,          \
-                       SUM(AntiSocialBehaviorUnderInvestigation)                 AS AntiSocialBehaviorUnderInvestigation,              SUM(BicycleTheftUnderInvestigation)                        AS BicycleTheftUnderInvestigation,              \
+                       SUM(EMPTYNULLCrimeEMPTYNULLOutcome)                        AS EMPTYNULLCrimeEMPTYNULLOutcome,                \
+                       SUM(EMPTYNULLCrimeActionToBeTakenOtherOrg)                 AS EMPTYNULLCrimeActionToBeTakenOtherOrg,         \
+                       SUM(EMPTYNULLCrimeAwaitingCourtOutcome)                    AS EMPTYNULLCrimeAwaitingCourtOutcome,            \
+                       SUM(EMPTYNULLCrimeCourtCaseUnableToProceed)                AS EMPTYNULLCrimeCourtCaseUnableToProceed,        \
+                       SUM(EMPTYNULLCrimeCourtResultUnavailable)                  AS EMPTYNULLCrimeCourtResultUnavailable,          \
+                       SUM(EMPTYNULLCrimeDefendantNotGuilty)                      AS EMPTYNULLCrimeDefendantNotGuilty,              \
+                       SUM(EMPTYNULLCrimeDefendantSentCrownCourt)                 AS EMPTYNULLCrimeDefendantSentCrownCourt,         \
+                       SUM(EMPTYNULLCrimeFormalActionNotPublicInterest)           AS EMPTYNULLCrimeFormalActionNotPublicInterest,   \
+                       SUM(EMPTYNULLCrimeInvestigationCompleteNoSuspect)          AS EMPTYNULLCrimeInvestigationCompleteNoSuspect,  \
+                       SUM(EMPTYNULLCrimeLocalResolution)                         AS EMPTYNULLCrimeLocalResolution,                 \
+                       SUM(EMPTYNULLCrimeOffDeprivedProperty)                     AS EMPTYNULLCrimeOffDeprivedProperty,             \
+                       SUM(EMPTYNULLCrimeOffFined)                                AS EMPTYNULLCrimeOffFined,                        \
+                       SUM(EMPTYNULLCrimeOffGivenCaution)                         AS EMPTYNULLCrimeOffGivenCaution,                 \
+                       SUM(EMPTYNULLCrimeOffGivenDrugsPossessionWarning)          AS EMPTYNULLCrimeOffGivenDrugsPossessionWarning,  \
+                       SUM(EMPTYNULLCrimeOffGivenAbsoluteDischarge)               AS EMPTYNULLCrimeOffGivenAbsoluteDischarge,       \
+                       SUM(EMPTYNULLCrimeOffGivenCommunitySentence)               AS EMPTYNULLCrimeOffGivenCommunitySentence,       \
+                       SUM(EMPTYNULLCrimeOffGivenConditionalDischarge)            AS EMPTYNULLCrimeOffGivenConditionalDischarge,    \
+                       SUM(EMPTYNULLCrimeOffGivenPenaltyNotice)                   AS EMPTYNULLCrimeOffGivenPenaltyNotice,           \
+                       SUM(EMPTYNULLCrimeOffGivenSuspendedPrisonSentence)         AS EMPTYNULLCrimeOffGivenSuspendedPrisonSentence, \
+                       SUM(EMPTYNULLCrimeOffOrderedPayCompensation)               AS EMPTYNULLCrimeOffOrderedPayCompensation,       \
+                       SUM(EMPTYNULLCrimeOffOtherwiseDealtWith)                   AS EMPTYNULLCrimeOffOtherwiseDealtWith,           \
+                       SUM(EMPTYNULLCrimeOffSentPrison)                           AS EMPTYNULLCrimeOffSentPrison,                   \
+                       SUM(EMPTYNULLCrimeSuspectChargedPartOfAnotherCase)         AS EMPTYNULLCrimeSuspectChargedPartOfAnotherCase, \
+                       SUM(EMPTYNULLCrimeUnableProsecuteSuspect)                  AS EMPTYNULLCrimeUnableProsecuteSuspect,          \
+                       SUM(EMPTYNULLCrimeUnderInvestigation)                      AS EMPTYNULLCrimeUnderInvestigation,              \
                        \
-                       SUM(BurglaryEMPTYNULLOutcome)                             AS BurglaryEMPTYNULLOutcome,                          SUM(CriminalDamageArsonEMPTYNULLOutcome)                   AS CriminalDamageArsonEMPTYNULLOutcome,                \
-                       SUM(BurglaryActionToBeTakenOtherOrg)                      AS BurglaryActionToBeTakenOtherOrg,                   SUM(CriminalDamageArsonActionToBeTakenOtherOrg)            AS CriminalDamageArsonActionToBeTakenOtherOrg,         \
-                       SUM(BurglaryAwaitingCourtOutcome)                         AS BurglaryAwaitingCourtOutcome,                      SUM(CriminalDamageArsonAwaitingCourtOutcome)               AS CriminalDamageArsonAwaitingCourtOutcome,            \
-                       SUM(BurglaryCourtCaseUnableToProceed)                     AS BurglaryCourtCaseUnableToProceed,                  SUM(CriminalDamageArsonCourtCaseUnableToProceed)           AS CriminalDamageArsonCourtCaseUnableToProceed,        \
-                       SUM(BurglaryCourtResultUnavailable)                       AS BurglaryCourtResultUnavailable,                    SUM(CriminalDamageArsonCourtResultUnavailable)             AS CriminalDamageArsonCourtResultUnavailable,          \
-                       SUM(BurglaryDefendantNotGuilty)                           AS BurglaryDefendantNotGuilty,                        SUM(CriminalDamageArsonDefendantNotGuilty)                 AS CriminalDamageArsonDefendantNotGuilty,              \
-                       SUM(BurglaryDefendantSentCrownCourt)                      AS BurglaryDefendantSentCrownCourt,                   SUM(CriminalDamageArsonDefendantSentCrownCourt)            AS CriminalDamageArsonDefendantSentCrownCourt,         \
-                       SUM(BurglaryFormalActionNotPublicInterest)                AS BurglaryFormalActionNotPublicInterest,             SUM(CriminalDamageArsonFormalActionNotPublicInterest)      AS CriminalDamageArsonFormalActionNotPublicInterest,   \
-                       SUM(BurglaryInvestigationCompleteNoSuspect)               AS BurglaryInvestigationCompleteNoSuspect,            SUM(CriminalDamageArsonInvestigationCompleteNoSuspect)     AS CriminalDamageArsonInvestigationCompleteNoSuspect,  \
-                       SUM(BurglaryLocalResolution)                              AS BurglaryLocalResolution,                           SUM(CriminalDamageArsonLocalResolution)                    AS CriminalDamageArsonLocalResolution,                 \
-                       SUM(BurglaryOffDeprivedProperty)                          AS BurglaryOffDeprivedProperty,                       SUM(CriminalDamageArsonOffDeprivedProperty)                AS CriminalDamageArsonOffDeprivedProperty,             \
-                       SUM(BurglaryOffFined)                                     AS BurglaryOffFined,                                  SUM(CriminalDamageArsonOffFined)                           AS CriminalDamageArsonOffFined,                        \
-                       SUM(BurglaryOffGivenCaution)                              AS BurglaryOffGivenCaution,                           SUM(CriminalDamageArsonOffGivenCaution)                    AS CriminalDamageArsonOffGivenCaution,                 \
-                       SUM(BurglaryOffGivenDrugsPossessionWarning)               AS BurglaryOffGivenDrugsPossessionWarning,            SUM(CriminalDamageArsonOffGivenDrugsPossessionWarning)     AS CriminalDamageArsonOffGivenDrugsPossessionWarning,  \
-                       SUM(BurglaryOffGivenAbsoluteDischarge)                    AS BurglaryOffGivenAbsoluteDischarge,                 SUM(CriminalDamageArsonOffGivenAbsoluteDischarge)          AS CriminalDamageArsonOffGivenAbsoluteDischarge,       \
-                       SUM(BurglaryOffGivenCommunitySentence)                    AS BurglaryOffGivenCommunitySentence,                 SUM(CriminalDamageArsonOffGivenCommunitySentence)          AS CriminalDamageArsonOffGivenCommunitySentence,       \
-                       SUM(BurglaryOffGivenConditionalDischarge)                 AS BurglaryOffGivenConditionalDischarge,              SUM(CriminalDamageArsonOffGivenConditionalDischarge)       AS CriminalDamageArsonOffGivenConditionalDischarge,    \
-                       SUM(BurglaryOffGivenPenaltyNotice)                        AS BurglaryOffGivenPenaltyNotice,                     SUM(CriminalDamageArsonOffGivenPenaltyNotice)              AS CriminalDamageArsonOffGivenPenaltyNotice,           \
-                       SUM(BurglaryOffGivenSuspendedPrisonSentence)              AS BurglaryOffGivenSuspendedPrisonSentence,           SUM(CriminalDamageArsonOffGivenSuspendedPrisonSentence)    AS CriminalDamageArsonOffGivenSuspendedPrisonSentence, \
-                       SUM(BurglaryOffOrderedPayCompensation)                    AS BurglaryOffOrderedPayCompensation,                 SUM(CriminalDamageArsonOffOrderedPayCompensation)          AS CriminalDamageArsonOffOrderedPayCompensation,       \
-                       SUM(BurglaryOffOtherwiseDealtWith)                        AS BurglaryOffOtherwiseDealtWith,                     SUM(CriminalDamageArsonOffOtherwiseDealtWith)              AS CriminalDamageArsonOffOtherwiseDealtWith,           \
-                       SUM(BurglaryOffSentPrison)                                AS BurglaryOffSentPrison,                             SUM(CriminalDamageArsonOffSentPrison)                      AS CriminalDamageArsonOffSentPrison,                   \
-                       SUM(BurglarySuspectChargedPartOfAnotherCase)              AS BurglarySuspectChargedPartOfAnotherCase,           SUM(CriminalDamageArsonSuspectChargedPartOfAnotherCase)    AS CriminalDamageArsonSuspectChargedPartOfAnotherCase, \
-                       SUM(BurglaryUnableProsecuteSuspect)                       AS BurglaryUnableProsecuteSuspect,                    SUM(CriminalDamageArsonUnableProsecuteSuspect)             AS CriminalDamageArsonUnableProsecuteSuspect,          \
-                       SUM(BurglaryUnderInvestigation)                           AS BurglaryUnderInvestigation,                        SUM(CriminalDamageArsonUnderInvestigation)                 AS CriminalDamageArsonUnderInvestigation,              \
+                       SUM(AntiSocialBehaviorEMPTYNULLOutcome)                    AS AntiSocialBehaviorEMPTYNULLOutcome,                \
+                       SUM(AntiSocialBehaviorActionToBeTakenOtherOrg)             AS AntiSocialBehaviorActionToBeTakenOtherOrg,         \
+                       SUM(AntiSocialBehaviorAwaitingCourtOutcome)                AS AntiSocialBehaviorAwaitingCourtOutcome,            \
+                       SUM(AntiSocialBehaviorCourtCaseUnableToProceed)            AS AntiSocialBehaviorCourtCaseUnableToProceed,        \
+                       SUM(AntiSocialBehaviorCourtResultUnavailable)              AS AntiSocialBehaviorCourtResultUnavailable,          \
+                       SUM(AntiSocialBehaviorDefendantNotGuilty)                  AS AntiSocialBehaviorDefendantNotGuilty,              \
+                       SUM(AntiSocialBehaviorDefendantSentCrownCourt)             AS AntiSocialBehaviorDefendantSentCrownCourt,         \
+                       SUM(AntiSocialBehaviorFormalActionNotPublicInterest)       AS AntiSocialBehaviorFormalActionNotPublicInterest,   \
+                       SUM(AntiSocialBehaviorInvestigationCompleteNoSuspect)      AS AntiSocialBehaviorInvestigationCompleteNoSuspect,  \
+                       SUM(AntiSocialBehaviorLocalResolution)                     AS AntiSocialBehaviorLocalResolution,                 \
+                       SUM(AntiSocialBehaviorOffDeprivedProperty)                 AS AntiSocialBehaviorOffDeprivedProperty,             \
+                       SUM(AntiSocialBehaviorOffFined)                            AS AntiSocialBehaviorOffFined,                        \
+                       SUM(AntiSocialBehaviorOffGivenCaution)                     AS AntiSocialBehaviorOffGivenCaution,                 \
+                       SUM(AntiSocialBehaviorOffGivenDrugsPossessionWarning)      AS AntiSocialBehaviorOffGivenDrugsPossessionWarning,  \
+                       SUM(AntiSocialBehaviorOffGivenAbsoluteDischarge)           AS AntiSocialBehaviorOffGivenAbsoluteDischarge,       \
+                       SUM(AntiSocialBehaviorOffGivenCommunitySentence)           AS AntiSocialBehaviorOffGivenCommunitySentence,       \
+                       SUM(AntiSocialBehaviorOffGivenConditionalDischarge)        AS AntiSocialBehaviorOffGivenConditionalDischarge,    \
+                       SUM(AntiSocialBehaviorOffGivenPenaltyNotice)               AS AntiSocialBehaviorOffGivenPenaltyNotice,           \
+                       SUM(AntiSocialBehaviorOffGivenSuspendedPrisonSentence)     AS AntiSocialBehaviorOffGivenSuspendedPrisonSentence, \
+                       SUM(AntiSocialBehaviorOffOrderedPayCompensation)           AS AntiSocialBehaviorOffOrderedPayCompensation,       \
+                       SUM(AntiSocialBehaviorOffOtherwiseDealtWith)               AS AntiSocialBehaviorOffOtherwiseDealtWith,           \
+                       SUM(AntiSocialBehaviorOffSentPrison)                       AS AntiSocialBehaviorOffSentPrison,                   \
+                       SUM(AntiSocialBehaviorSuspectChargedPartOfAnotherCase)     AS AntiSocialBehaviorSuspectChargedPartOfAnotherCase, \
+                       SUM(AntiSocialBehaviorUnableProsecuteSuspect)              AS AntiSocialBehaviorUnableProsecuteSuspect,          \
+                       SUM(AntiSocialBehaviorUnderInvestigation)                  AS AntiSocialBehaviorUnderInvestigation,              \
                        \
-                       SUM(DrugsEMPTYNULLOutcome)                                AS DrugsEMPTYNULLOutcome,                             SUM(OtherCrimeEMPTYNULLOutcome)                            AS OtherCrimeEMPTYNULLOutcome,                \
-                       SUM(DrugsActionToBeTakenOtherOrg)                         AS DrugsActionToBeTakenOtherOrg,                      SUM(OtherCrimeActionToBeTakenOtherOrg)                     AS OtherCrimeActionToBeTakenOtherOrg,         \
-                       SUM(DrugsAwaitingCourtOutcome)                            AS DrugsAwaitingCourtOutcome,                         SUM(OtherCrimeAwaitingCourtOutcome)                        AS OtherCrimeAwaitingCourtOutcome,            \
-                       SUM(DrugsCourtCaseUnableToProceed)                        AS DrugsCourtCaseUnableToProceed,                     SUM(OtherCrimeCourtCaseUnableToProceed)                    AS OtherCrimeCourtCaseUnableToProceed,        \
-                       SUM(DrugsCourtResultUnavailable)                          AS DrugsCourtResultUnavailable,                       SUM(OtherCrimeCourtResultUnavailable)                      AS OtherCrimeCourtResultUnavailable,          \
-                       SUM(DrugsDefendantNotGuilty)                              AS DrugsDefendantNotGuilty,                           SUM(OtherCrimeDefendantNotGuilty)                          AS OtherCrimeDefendantNotGuilty,              \
-                       SUM(DrugsDefendantSentCrownCourt)                         AS DrugsDefendantSentCrownCourt,                      SUM(OtherCrimeDefendantSentCrownCourt)                     AS OtherCrimeDefendantSentCrownCourt,         \
-                       SUM(DrugsFormalActionNotPublicInterest)                   AS DrugsFormalActionNotPublicInterest,                SUM(OtherCrimeFormalActionNotPublicInterest)               AS OtherCrimeFormalActionNotPublicInterest,   \
-                       SUM(DrugsInvestigationCompleteNoSuspect)                  AS DrugsInvestigationCompleteNoSuspect,               SUM(OtherCrimeInvestigationCompleteNoSuspect)              AS OtherCrimeInvestigationCompleteNoSuspect,  \
-                       SUM(DrugsLocalResolution)                                 AS DrugsLocalResolution,                              SUM(OtherCrimeLocalResolution)                             AS OtherCrimeLocalResolution,                 \
-                       SUM(DrugsOffDeprivedProperty)                             AS DrugsOffDeprivedProperty,                          SUM(OtherCrimeOffDeprivedProperty)                         AS OtherCrimeOffDeprivedProperty,             \
-                       SUM(DrugsOffFined)                                        AS DrugsOffFined,                                     SUM(OtherCrimeOffFined)                                    AS OtherCrimeOffFined,                        \
-                       SUM(DrugsOffGivenCaution)                                 AS DrugsOffGivenCaution,                              SUM(OtherCrimeOffGivenCaution)                             AS OtherCrimeOffGivenCaution,                 \
-                       SUM(DrugsOffGivenDrugsPossessionWarning)                  AS DrugsOffGivenDrugsPossessionWarning,               SUM(OtherCrimeOffGivenDrugsPossessionWarning)              AS OtherCrimeOffGivenDrugsPossessionWarning,  \
-                       SUM(DrugsOffGivenAbsoluteDischarge)                       AS DrugsOffGivenAbsoluteDischarge,                    SUM(OtherCrimeOffGivenAbsoluteDischarge)                   AS OtherCrimeOffGivenAbsoluteDischarge,       \
-                       SUM(DrugsOffGivenCommunitySentence)                       AS DrugsOffGivenCommunitySentence,                    SUM(OtherCrimeOffGivenCommunitySentence)                   AS OtherCrimeOffGivenCommunitySentence,       \
-                       SUM(DrugsOffGivenConditionalDischarge)                    AS DrugsOffGivenConditionalDischarge,                 SUM(OtherCrimeOffGivenConditionalDischarge)                AS OtherCrimeOffGivenConditionalDischarge,    \
-                       SUM(DrugsOffGivenPenaltyNotice)                           AS DrugsOffGivenPenaltyNotice,                        SUM(OtherCrimeOffGivenPenaltyNotice)                       AS OtherCrimeOffGivenPenaltyNotice,           \
-                       SUM(DrugsOffGivenSuspendedPrisonSentence)                 AS DrugsOffGivenSuspendedPrisonSentence,              SUM(OtherCrimeOffGivenSuspendedPrisonSentence)             AS OtherCrimeOffGivenSuspendedPrisonSentence, \
-                       SUM(DrugsOffOrderedPayCompensation)                       AS DrugsOffOrderedPayCompensation,                    SUM(OtherCrimeOffOrderedPayCompensation)                   AS OtherCrimeOffOrderedPayCompensation,       \
-                       SUM(DrugsOffOtherwiseDealtWith)                           AS DrugsOffOtherwiseDealtWith,                        SUM(OtherCrimeOffOtherwiseDealtWith)                       AS OtherCrimeOffOtherwiseDealtWith,           \
-                       SUM(DrugsOffSentPrison)                                   AS DrugsOffSentPrison,                                SUM(OtherCrimeOffSentPrison)                               AS OtherCrimeOffSentPrison,                   \
-                       SUM(DrugsSuspectChargedPartOfAnotherCase)                 AS DrugsSuspectChargedPartOfAnotherCase,              SUM(OtherCrimeSuspectChargedPartOfAnotherCase)             AS OtherCrimeSuspectChargedPartOfAnotherCase, \
-                       SUM(DrugsUnableProsecuteSuspect)                          AS DrugsUnableProsecuteSuspect,                       SUM(OtherCrimeUnableProsecuteSuspect)                      AS OtherCrimeUnableProsecuteSuspect,          \
-                       SUM(DrugsUnderInvestigation)                              AS DrugsUnderInvestigation,                           SUM(OtherCrimeUnderInvestigation)                          AS OtherCrimeUnderInvestigation,              \
+                       SUM(BicycleTheftEMPTYNULLOutcome)                          AS BicycleTheftEMPTYNULLOutcome,                \
+                       SUM(BicycleTheftActionToBeTakenOtherOrg)                   AS BicycleTheftActionToBeTakenOtherOrg,         \
+                       SUM(BicycleTheftAwaitingCourtOutcome)                      AS BicycleTheftAwaitingCourtOutcome,            \
+                       SUM(BicycleTheftCourtCaseUnableToProceed)                  AS BicycleTheftCourtCaseUnableToProceed,        \
+                       SUM(BicycleTheftCourtResultUnavailable)                    AS BicycleTheftCourtResultUnavailable,          \
+                       SUM(BicycleTheftDefendantNotGuilty)                        AS BicycleTheftDefendantNotGuilty,              \
+                       SUM(BicycleTheftDefendantSentCrownCourt)                   AS BicycleTheftDefendantSentCrownCourt,         \
+                       SUM(BicycleTheftFormalActionNotPublicInterest)             AS BicycleTheftFormalActionNotPublicInterest,   \
+                       SUM(BicycleTheftInvestigationCompleteNoSuspect)            AS BicycleTheftInvestigationCompleteNoSuspect,  \
+                       SUM(BicycleTheftLocalResolution)                           AS BicycleTheftLocalResolution,                 \
+                       SUM(BicycleTheftOffDeprivedProperty)                       AS BicycleTheftOffDeprivedProperty,             \
+                       SUM(BicycleTheftOffFined)                                  AS BicycleTheftOffFined,                        \
+                       SUM(BicycleTheftOffGivenCaution)                           AS BicycleTheftOffGivenCaution,                 \
+                       SUM(BicycleTheftOffGivenDrugsPossessionWarning)            AS BicycleTheftOffGivenDrugsPossessionWarning,  \
+                       SUM(BicycleTheftOffGivenAbsoluteDischarge)                 AS BicycleTheftOffGivenAbsoluteDischarge,       \
+                       SUM(BicycleTheftOffGivenCommunitySentence)                 AS BicycleTheftOffGivenCommunitySentence,       \
+                       SUM(BicycleTheftOffGivenConditionalDischarge)              AS BicycleTheftOffGivenConditionalDischarge,    \
+                       SUM(BicycleTheftOffGivenPenaltyNotice)                     AS BicycleTheftOffGivenPenaltyNotice,           \
+                       SUM(BicycleTheftOffGivenSuspendedPrisonSentence)           AS BicycleTheftOffGivenSuspendedPrisonSentence, \
+                       SUM(BicycleTheftOffOrderedPayCompensation)                 AS BicycleTheftOffOrderedPayCompensation,       \
+                       SUM(BicycleTheftOffOtherwiseDealtWith)                     AS BicycleTheftOffOtherwiseDealtWith,           \
+                       SUM(BicycleTheftOffSentPrison)                             AS BicycleTheftOffSentPrison,                   \
+                       SUM(BicycleTheftSuspectChargedPartOfAnotherCase)           AS BicycleTheftSuspectChargedPartOfAnotherCase, \
+                       SUM(BicycleTheftUnableProsecuteSuspect)                    AS BicycleTheftUnableProsecuteSuspect,          \
+                       SUM(BicycleTheftUnderInvestigation)                        AS BicycleTheftUnderInvestigation,              \
                        \
-                       SUM(OtherTheftEMPTYNULLOutcome)                           AS OtherTheftEMPTYNULLOutcome,                        SUM(PossessionWeaponsEMPTYNULLOutcome)                     AS PossessionWeaponsEMPTYNULLOutcome,                \
-                       SUM(OtherTheftActionToBeTakenOtherOrg)                    AS OtherTheftActionToBeTakenOtherOrg,                 SUM(PossessionWeaponsActionToBeTakenOtherOrg)              AS PossessionWeaponsActionToBeTakenOtherOrg,         \
-                       SUM(OtherTheftAwaitingCourtOutcome)                       AS OtherTheftAwaitingCourtOutcome,                    SUM(PossessionWeaponsAwaitingCourtOutcome)                 AS PossessionWeaponsAwaitingCourtOutcome,            \
-                       SUM(OtherTheftCourtCaseUnableToProceed)                   AS OtherTheftCourtCaseUnableToProceed,                SUM(PossessionWeaponsCourtCaseUnableToProceed)             AS PossessionWeaponsCourtCaseUnableToProceed,        \
-                       SUM(OtherTheftCourtResultUnavailable)                     AS OtherTheftCourtResultUnavailable,                  SUM(PossessionWeaponsCourtResultUnavailable)               AS PossessionWeaponsCourtResultUnavailable,          \
-                       SUM(OtherTheftDefendantNotGuilty)                         AS OtherTheftDefendantNotGuilty,                      SUM(PossessionWeaponsDefendantNotGuilty)                   AS PossessionWeaponsDefendantNotGuilty,              \
-                       SUM(OtherTheftDefendantSentCrownCourt)                    AS OtherTheftDefendantSentCrownCourt,                 SUM(PossessionWeaponsDefendantSentCrownCourt)              AS PossessionWeaponsDefendantSentCrownCourt,         \
-                       SUM(OtherTheftFormalActionNotPublicInterest)              AS OtherTheftFormalActionNotPublicInterest,           SUM(PossessionWeaponsFormalActionNotPublicInterest)        AS PossessionWeaponsFormalActionNotPublicInterest,   \
-                       SUM(OtherTheftInvestigationCompleteNoSuspect)             AS OtherTheftInvestigationCompleteNoSuspect,          SUM(PossessionWeaponsInvestigationCompleteNoSuspect)       AS PossessionWeaponsInvestigationCompleteNoSuspect,  \
-                       SUM(OtherTheftLocalResolution)                            AS OtherTheftLocalResolution,                         SUM(PossessionWeaponsLocalResolution)                      AS PossessionWeaponsLocalResolution,                 \
-                       SUM(OtherTheftOffDeprivedProperty)                        AS OtherTheftOffDeprivedProperty,                     SUM(PossessionWeaponsOffDeprivedProperty)                  AS PossessionWeaponsOffDeprivedProperty,             \
-                       SUM(OtherTheftOffFined)                                   AS OtherTheftOffFined,                                SUM(PossessionWeaponsOffFined)                             AS PossessionWeaponsOffFined,                        \
-                       SUM(OtherTheftOffGivenCaution)                            AS OtherTheftOffGivenCaution,                         SUM(PossessionWeaponsOffGivenCaution)                      AS PossessionWeaponsOffGivenCaution,                 \
-                       SUM(OtherTheftOffGivenDrugsPossessionWarning)             AS OtherTheftOffGivenDrugsPossessionWarning,          SUM(PossessionWeaponsOffGivenDrugsPossessionWarning)       AS PossessionWeaponsOffGivenDrugsPossessionWarning,  \
-                       SUM(OtherTheftOffGivenAbsoluteDischarge)                  AS OtherTheftOffGivenAbsoluteDischarge,               SUM(PossessionWeaponsOffGivenAbsoluteDischarge)            AS PossessionWeaponsOffGivenAbsoluteDischarge,       \
-                       SUM(OtherTheftOffGivenCommunitySentence)                  AS OtherTheftOffGivenCommunitySentence,               SUM(PossessionWeaponsOffGivenCommunitySentence)            AS PossessionWeaponsOffGivenCommunitySentence,       \
-                       SUM(OtherTheftOffGivenConditionalDischarge)               AS OtherTheftOffGivenConditionalDischarge,            SUM(PossessionWeaponsOffGivenConditionalDischarge)         AS PossessionWeaponsOffGivenConditionalDischarge,    \
-                       SUM(OtherTheftOffGivenPenaltyNotice)                      AS OtherTheftOffGivenPenaltyNotice,                   SUM(PossessionWeaponsOffGivenPenaltyNotice)                AS PossessionWeaponsOffGivenPenaltyNotice,           \
-                       SUM(OtherTheftOffGivenSuspendedPrisonSentence)            AS OtherTheftOffGivenSuspendedPrisonSentence,         SUM(PossessionWeaponsOffGivenSuspendedPrisonSentence)      AS PossessionWeaponsOffGivenSuspendedPrisonSentence, \
-                       SUM(OtherTheftOffOrderedPayCompensation)                  AS OtherTheftOffOrderedPayCompensation,               SUM(PossessionWeaponsOffOrderedPayCompensation)            AS PossessionWeaponsOffOrderedPayCompensation,       \
-                       SUM(OtherTheftOffOtherwiseDealtWith)                      AS OtherTheftOffOtherwiseDealtWith,                   SUM(PossessionWeaponsOffOtherwiseDealtWith)                AS PossessionWeaponsOffOtherwiseDealtWith,           \
-                       SUM(OtherTheftOffSentPrison)                              AS OtherTheftOffSentPrison,                           SUM(PossessionWeaponsOffSentPrison)                        AS PossessionWeaponsOffSentPrison,                   \
-                       SUM(OtherTheftSuspectChargedPartOfAnotherCase)            AS OtherTheftSuspectChargedPartOfAnotherCase,         SUM(PossessionWeaponsSuspectChargedPartOfAnotherCase)      AS PossessionWeaponsSuspectChargedPartOfAnotherCase, \
-                       SUM(OtherTheftUnableProsecuteSuspect)                     AS OtherTheftUnableProsecuteSuspect,                  SUM(PossessionWeaponsUnableProsecuteSuspect)               AS PossessionWeaponsUnableProsecuteSuspect,          \
-                       SUM(OtherTheftUnderInvestigation)                         AS OtherTheftUnderInvestigation,                      SUM(PossessionWeaponsUnderInvestigation)                   AS PossessionWeaponsUnderInvestigation,              \
+                       SUM(BurglaryEMPTYNULLOutcome)                              AS BurglaryEMPTYNULLOutcome,                \
+                       SUM(BurglaryActionToBeTakenOtherOrg)                       AS BurglaryActionToBeTakenOtherOrg,         \
+                       SUM(BurglaryAwaitingCourtOutcome)                          AS BurglaryAwaitingCourtOutcome,            \
+                       SUM(BurglaryCourtCaseUnableToProceed)                      AS BurglaryCourtCaseUnableToProceed,        \
+                       SUM(BurglaryCourtResultUnavailable)                        AS BurglaryCourtResultUnavailable,          \
+                       SUM(BurglaryDefendantNotGuilty)                            AS BurglaryDefendantNotGuilty,              \
+                       SUM(BurglaryDefendantSentCrownCourt)                       AS BurglaryDefendantSentCrownCourt,         \
+                       SUM(BurglaryFormalActionNotPublicInterest)                 AS BurglaryFormalActionNotPublicInterest,   \
+                       SUM(BurglaryInvestigationCompleteNoSuspect)                AS BurglaryInvestigationCompleteNoSuspect,  \
+                       SUM(BurglaryLocalResolution)                               AS BurglaryLocalResolution,                 \
+                       SUM(BurglaryOffDeprivedProperty)                           AS BurglaryOffDeprivedProperty,             \
+                       SUM(BurglaryOffFined)                                      AS BurglaryOffFined,                        \
+                       SUM(BurglaryOffGivenCaution)                               AS BurglaryOffGivenCaution,                 \
+                       SUM(BurglaryOffGivenDrugsPossessionWarning)                AS BurglaryOffGivenDrugsPossessionWarning,  \
+                       SUM(BurglaryOffGivenAbsoluteDischarge)                     AS BurglaryOffGivenAbsoluteDischarge,       \
+                       SUM(BurglaryOffGivenCommunitySentence)                     AS BurglaryOffGivenCommunitySentence,       \
+                       SUM(BurglaryOffGivenConditionalDischarge)                  AS BurglaryOffGivenConditionalDischarge,    \
+                       SUM(BurglaryOffGivenPenaltyNotice)                         AS BurglaryOffGivenPenaltyNotice,           \
+                       SUM(BurglaryOffGivenSuspendedPrisonSentence)               AS BurglaryOffGivenSuspendedPrisonSentence, \
+                       SUM(BurglaryOffOrderedPayCompensation)                     AS BurglaryOffOrderedPayCompensation,       \
+                       SUM(BurglaryOffOtherwiseDealtWith)                         AS BurglaryOffOtherwiseDealtWith,           \
+                       SUM(BurglaryOffSentPrison)                                 AS BurglaryOffSentPrison,                   \
+                       SUM(BurglarySuspectChargedPartOfAnotherCase)               AS BurglarySuspectChargedPartOfAnotherCase, \
+                       SUM(BurglaryUnableProsecuteSuspect)                        AS BurglaryUnableProsecuteSuspect,          \
+                       SUM(BurglaryUnderInvestigation)                            AS BurglaryUnderInvestigation,              \
                        \
-                       SUM(PublicDisorderWeaponsEMPTYNULLOutcome)                AS PublicDisorderWeaponsEMPTYNULLOutcome,                \
-                       SUM(PublicDisorderWeaponsActionToBeTakenOtherOrg)         AS PublicDisorderWeaponsActionToBeTakenOtherOrg,         \
-                       SUM(PublicDisorderWeaponsAwaitingCourtOutcome)            AS PublicDisorderWeaponsAwaitingCourtOutcome,            \
-                       SUM(PublicDisorderWeaponsCourtCaseUnableToProceed)        AS PublicDisorderWeaponsCourtCaseUnableToProceed,        \
-                       SUM(PublicDisorderWeaponsCourtResultUnavailable)          AS PublicDisorderWeaponsCourtResultUnavailable,          \
-                       SUM(PublicDisorderWeaponsDefendantNotGuilty)              AS PublicDisorderWeaponsDefendantNotGuilty,              \
-                       SUM(PublicDisorderWeaponsDefendantSentCrownCourt)         AS PublicDisorderWeaponsDefendantSentCrownCourt,         \
-                       SUM(PublicDisorderWeaponsFormalActionNotPublicInterest)   AS PublicDisorderWeaponsFormalActionNotPublicInterest,   \
-                       SUM(PublicDisorderWeaponsInvestigationCompleteNoSuspect)  AS PublicDisorderWeaponsInvestigationCompleteNoSuspect,  \
-                       SUM(PublicDisorderWeaponsLocalResolution)                 AS PublicDisorderWeaponsLocalResolution,                 \
-                       SUM(PublicDisorderWeaponsOffDeprivedProperty)             AS PublicDisorderWeaponsOffDeprivedProperty,             \
-                       SUM(PublicDisorderWeaponsOffFined)                        AS PublicDisorderWeaponsOffFined,                        \
-                       SUM(PublicDisorderWeaponsOffGivenCaution)                 AS PublicDisorderWeaponsOffGivenCaution,                 \
-                       SUM(PublicDisorderWeaponsOffGivenDrugsPossessionWarning)  AS PublicDisorderWeaponsOffGivenDrugsPossessionWarning,  \
-                       SUM(PublicDisorderWeaponsOffGivenAbsoluteDischarge)       AS PublicDisorderWeaponsOffGivenAbsoluteDischarge,       \
-                       SUM(PublicDisorderWeaponsOffGivenCommunitySentence)       AS PublicDisorderWeaponsOffGivenCommunitySentence,       \
-                       SUM(PublicDisorderWeaponsOffGivenConditionalDischarge)    AS PublicDisorderWeaponsOffGivenConditionalDischarge,    \
-                       SUM(PublicDisorderWeaponsOffGivenPenaltyNotice)           AS PublicDisorderWeaponsOffGivenPenaltyNotice,           \
-                       SUM(PublicDisorderWeaponsOffGivenSuspendedPrisonSentence) AS PublicDisorderWeaponsOffGivenSuspendedPrisonSentence, \
-                       SUM(PublicDisorderWeaponsOffOrderedPayCompensation)       AS PublicDisorderWeaponsOffOrderedPayCompensation,       \
-                       SUM(PublicDisorderWeaponsOffOtherwiseDealtWith)           AS PublicDisorderWeaponsOffOtherwiseDealtWith,           \
-                       SUM(PublicDisorderWeaponsOffSentPrison)                   AS PublicDisorderWeaponsOffSentPrison,                   \
-                       SUM(PublicDisorderWeaponsSuspectChargedPartOfAnotherCase) AS PublicDisorderWeaponsSuspectChargedPartOfAnotherCase, \
-                       SUM(PublicDisorderWeaponsUnableProsecuteSuspect)          AS PublicDisorderWeaponsUnableProsecuteSuspect,          \
-                       SUM(PublicDisorderWeaponsUnderInvestigation)              AS PublicDisorderWeaponsUnderInvestigation,              \
+                       SUM(CriminalDamageArsonEMPTYNULLOutcome)                   AS CriminalDamageArsonEMPTYNULLOutcome,                \
+                       SUM(CriminalDamageArsonActionToBeTakenOtherOrg)            AS CriminalDamageArsonActionToBeTakenOtherOrg,         \
+                       SUM(CriminalDamageArsonAwaitingCourtOutcome)               AS CriminalDamageArsonAwaitingCourtOutcome,            \
+                       SUM(CriminalDamageArsonCourtCaseUnableToProceed)           AS CriminalDamageArsonCourtCaseUnableToProceed,        \
+                       SUM(CriminalDamageArsonCourtResultUnavailable)             AS CriminalDamageArsonCourtResultUnavailable,          \
+                       SUM(CriminalDamageArsonDefendantNotGuilty)                 AS CriminalDamageArsonDefendantNotGuilty,              \
+                       SUM(CriminalDamageArsonDefendantSentCrownCourt)            AS CriminalDamageArsonDefendantSentCrownCourt,         \
+                       SUM(CriminalDamageArsonFormalActionNotPublicInterest)      AS CriminalDamageArsonFormalActionNotPublicInterest,   \
+                       SUM(CriminalDamageArsonInvestigationCompleteNoSuspect)     AS CriminalDamageArsonInvestigationCompleteNoSuspect,  \
+                       SUM(CriminalDamageArsonLocalResolution)                    AS CriminalDamageArsonLocalResolution,                 \
+                       SUM(CriminalDamageArsonOffDeprivedProperty)                AS CriminalDamageArsonOffDeprivedProperty,             \
+                       SUM(CriminalDamageArsonOffFined)                           AS CriminalDamageArsonOffFined,                        \
+                       SUM(CriminalDamageArsonOffGivenCaution)                    AS CriminalDamageArsonOffGivenCaution,                 \
+                       SUM(CriminalDamageArsonOffGivenDrugsPossessionWarning)     AS CriminalDamageArsonOffGivenDrugsPossessionWarning,  \
+                       SUM(CriminalDamageArsonOffGivenAbsoluteDischarge)          AS CriminalDamageArsonOffGivenAbsoluteDischarge,       \
+                       SUM(CriminalDamageArsonOffGivenCommunitySentence)          AS CriminalDamageArsonOffGivenCommunitySentence,       \
+                       SUM(CriminalDamageArsonOffGivenConditionalDischarge)       AS CriminalDamageArsonOffGivenConditionalDischarge,    \
+                       SUM(CriminalDamageArsonOffGivenPenaltyNotice)              AS CriminalDamageArsonOffGivenPenaltyNotice,           \
+                       SUM(CriminalDamageArsonOffGivenSuspendedPrisonSentence)    AS CriminalDamageArsonOffGivenSuspendedPrisonSentence, \
+                       SUM(CriminalDamageArsonOffOrderedPayCompensation)          AS CriminalDamageArsonOffOrderedPayCompensation,       \
+                       SUM(CriminalDamageArsonOffOtherwiseDealtWith)              AS CriminalDamageArsonOffOtherwiseDealtWith,           \
+                       SUM(CriminalDamageArsonOffSentPrison)                      AS CriminalDamageArsonOffSentPrison,                   \
+                       SUM(CriminalDamageArsonSuspectChargedPartOfAnotherCase)    AS CriminalDamageArsonSuspectChargedPartOfAnotherCase, \
+                       SUM(CriminalDamageArsonUnableProsecuteSuspect)             AS CriminalDamageArsonUnableProsecuteSuspect,          \
+                       SUM(CriminalDamageArsonUnderInvestigation)                 AS CriminalDamageArsonUnderInvestigation,              \
                        \
-                       SUM(PublicOrderEMPTYNULLOutcome)                          AS PublicOrderEMPTYNULLOutcome,                       SUM(RobberyEMPTYNULLOutcome)                               AS RobberyEMPTYNULLOutcome,                \
-                       SUM(PublicOrderActionToBeTakenOtherOrg)                   AS PublicOrderActionToBeTakenOtherOrg,                SUM(RobberyActionToBeTakenOtherOrg)                        AS RobberyActionToBeTakenOtherOrg,         \
-                       SUM(PublicOrderAwaitingCourtOutcome)                      AS PublicOrderAwaitingCourtOutcome,                   SUM(RobberyAwaitingCourtOutcome)                           AS RobberyAwaitingCourtOutcome,            \
-                       SUM(PublicOrderCourtCaseUnableToProceed)                  AS PublicOrderCourtCaseUnableToProceed,               SUM(RobberyCourtCaseUnableToProceed)                       AS RobberyCourtCaseUnableToProceed,        \
-                       SUM(PublicOrderCourtResultUnavailable)                    AS PublicOrderCourtResultUnavailable,                 SUM(RobberyCourtResultUnavailable)                         AS RobberyCourtResultUnavailable,          \
-                       SUM(PublicOrderDefendantNotGuilty)                        AS PublicOrderDefendantNotGuilty,                     SUM(RobberyDefendantNotGuilty)                             AS RobberyDefendantNotGuilty,              \
-                       SUM(PublicOrderDefendantSentCrownCourt)                   AS PublicOrderDefendantSentCrownCourt,                SUM(RobberyDefendantSentCrownCourt)                        AS RobberyDefendantSentCrownCourt,         \
-                       SUM(PublicOrderFormalActionNotPublicInterest)             AS PublicOrderFormalActionNotPublicInterest,          SUM(RobberyFormalActionNotPublicInterest)                  AS RobberyFormalActionNotPublicInterest,   \
-                       SUM(PublicOrderInvestigationCompleteNoSuspect)            AS PublicOrderInvestigationCompleteNoSuspect,         SUM(RobberyInvestigationCompleteNoSuspect)                 AS RobberyInvestigationCompleteNoSuspect,  \
-                       SUM(PublicOrderLocalResolution)                           AS PublicOrderLocalResolution,                        SUM(RobberyLocalResolution)                                AS RobberyLocalResolution,                 \
-                       SUM(PublicOrderOffDeprivedProperty)                       AS PublicOrderOffDeprivedProperty,                    SUM(RobberyOffDeprivedProperty)                            AS RobberyOffDeprivedProperty,             \
-                       SUM(PublicOrderOffFined)                                  AS PublicOrderOffFined,                               SUM(RobberyOffFined)                                       AS RobberyOffFined,                        \
-                       SUM(PublicOrderOffGivenCaution)                           AS PublicOrderOffGivenCaution,                        SUM(RobberyOffGivenCaution)                                AS RobberyOffGivenCaution,                 \
-                       SUM(PublicOrderOffGivenDrugsPossessionWarning)            AS PublicOrderOffGivenDrugsPossessionWarning,         SUM(RobberyOffGivenDrugsPossessionWarning)                 AS RobberyOffGivenDrugsPossessionWarning,  \
-                       SUM(PublicOrderOffGivenAbsoluteDischarge)                 AS PublicOrderOffGivenAbsoluteDischarge,              SUM(RobberyOffGivenAbsoluteDischarge)                      AS RobberyOffGivenAbsoluteDischarge,       \
-                       SUM(PublicOrderOffGivenCommunitySentence)                 AS PublicOrderOffGivenCommunitySentence,              SUM(RobberyOffGivenCommunitySentence)                      AS RobberyOffGivenCommunitySentence,       \
-                       SUM(PublicOrderOffGivenConditionalDischarge)              AS PublicOrderOffGivenConditionalDischarge,           SUM(RobberyOffGivenConditionalDischarge)                   AS RobberyOffGivenConditionalDischarge,    \
-                       SUM(PublicOrderOffGivenPenaltyNotice)                     AS PublicOrderOffGivenPenaltyNotice,                  SUM(RobberyOffGivenPenaltyNotice)                          AS RobberyOffGivenPenaltyNotice,           \
-                       SUM(PublicOrderOffGivenSuspendedPrisonSentence)           AS PublicOrderOffGivenSuspendedPrisonSentence,        SUM(RobberyOffGivenSuspendedPrisonSentence)                AS RobberyOffGivenSuspendedPrisonSentence, \
-                       SUM(PublicOrderOffOrderedPayCompensation)                 AS PublicOrderOffOrderedPayCompensation,              SUM(RobberyOffOrderedPayCompensation)                      AS RobberyOffOrderedPayCompensation,       \
-                       SUM(PublicOrderOffOtherwiseDealtWith)                     AS PublicOrderOffOtherwiseDealtWith,                  SUM(RobberyOffOtherwiseDealtWith)                          AS RobberyOffOtherwiseDealtWith,           \
-                       SUM(PublicOrderOffSentPrison)                             AS PublicOrderOffSentPrison,                          SUM(RobberyOffSentPrison)                                  AS RobberyOffSentPrison,                   \
-                       SUM(PublicOrderSuspectChargedPartOfAnotherCase)           AS PublicOrderSuspectChargedPartOfAnotherCase,        SUM(RobberySuspectChargedPartOfAnotherCase)                AS RobberySuspectChargedPartOfAnotherCase, \
-                       SUM(PublicOrderUnableProsecuteSuspect)                    AS PublicOrderUnableProsecuteSuspect,                 SUM(RobberyUnableProsecuteSuspect)                         AS RobberyUnableProsecuteSuspect,          \
-                       SUM(PublicOrderUnderInvestigation)                        AS PublicOrderUnderInvestigation,                     SUM(RobberyUnderInvestigation)                             AS RobberyUnderInvestigation,              \
+                       SUM(DrugsEMPTYNULLOutcome)                                 AS DrugsEMPTYNULLOutcome,                \
+                       SUM(DrugsActionToBeTakenOtherOrg)                          AS DrugsActionToBeTakenOtherOrg,         \
+                       SUM(DrugsAwaitingCourtOutcome)                             AS DrugsAwaitingCourtOutcome,            \
+                       SUM(DrugsCourtCaseUnableToProceed)                         AS DrugsCourtCaseUnableToProceed,        \
+                       SUM(DrugsCourtResultUnavailable)                           AS DrugsCourtResultUnavailable,          \
+                       SUM(DrugsDefendantNotGuilty)                               AS DrugsDefendantNotGuilty,              \
+                       SUM(DrugsDefendantSentCrownCourt)                          AS DrugsDefendantSentCrownCourt,         \
+                       SUM(DrugsFormalActionNotPublicInterest)                    AS DrugsFormalActionNotPublicInterest,   \
+                       SUM(DrugsInvestigationCompleteNoSuspect)                   AS DrugsInvestigationCompleteNoSuspect,  \
+                       SUM(DrugsLocalResolution)                                  AS DrugsLocalResolution,                 \
+                       SUM(DrugsOffDeprivedProperty)                              AS DrugsOffDeprivedProperty,             \
+                       SUM(DrugsOffFined)                                         AS DrugsOffFined,                        \
+                       SUM(DrugsOffGivenCaution)                                  AS DrugsOffGivenCaution,                 \
+                       SUM(DrugsOffGivenDrugsPossessionWarning)                   AS DrugsOffGivenDrugsPossessionWarning,  \
+                       SUM(DrugsOffGivenAbsoluteDischarge)                        AS DrugsOffGivenAbsoluteDischarge,       \
+                       SUM(DrugsOffGivenCommunitySentence)                        AS DrugsOffGivenCommunitySentence,       \
+                       SUM(DrugsOffGivenConditionalDischarge)                     AS DrugsOffGivenConditionalDischarge,    \
+                       SUM(DrugsOffGivenPenaltyNotice)                            AS DrugsOffGivenPenaltyNotice,           \
+                       SUM(DrugsOffGivenSuspendedPrisonSentence)                  AS DrugsOffGivenSuspendedPrisonSentence, \
+                       SUM(DrugsOffOrderedPayCompensation)                        AS DrugsOffOrderedPayCompensation,       \
+                       SUM(DrugsOffOtherwiseDealtWith)                            AS DrugsOffOtherwiseDealtWith,           \
+                       SUM(DrugsOffSentPrison)                                    AS DrugsOffSentPrison,                   \
+                       SUM(DrugsSuspectChargedPartOfAnotherCase)                  AS DrugsSuspectChargedPartOfAnotherCase, \
+                       SUM(DrugsUnableProsecuteSuspect)                           AS DrugsUnableProsecuteSuspect,          \
+                       SUM(DrugsUnderInvestigation)                               AS DrugsUnderInvestigation,              \
                        \
-                       SUM(ShopliftingEMPTYNULLOutcome)                          AS ShopliftingEMPTYNULLOutcome,                       SUM(TheftFromPersonEMPTYNULLOutcome)                       AS TheftFromPersonEMPTYNULLOutcome,                \
-                       SUM(ShopliftingActionToBeTakenOtherOrg)                   AS ShopliftingActionToBeTakenOtherOrg,                SUM(TheftFromPersonActionToBeTakenOtherOrg)                AS TheftFromPersonActionToBeTakenOtherOrg,         \
-                       SUM(ShopliftingAwaitingCourtOutcome)                      AS ShopliftingAwaitingCourtOutcome,                   SUM(TheftFromPersonAwaitingCourtOutcome)                   AS TheftFromPersonAwaitingCourtOutcome,            \
-                       SUM(ShopliftingCourtCaseUnableToProceed)                  AS ShopliftingCourtCaseUnableToProceed,               SUM(TheftFromPersonCourtCaseUnableToProceed)               AS TheftFromPersonCourtCaseUnableToProceed,        \
-                       SUM(ShopliftingCourtResultUnavailable)                    AS ShopliftingCourtResultUnavailable,                 SUM(TheftFromPersonCourtResultUnavailable)                 AS TheftFromPersonCourtResultUnavailable,          \
-                       SUM(ShopliftingDefendantNotGuilty)                        AS ShopliftingDefendantNotGuilty,                     SUM(TheftFromPersonDefendantNotGuilty)                     AS TheftFromPersonDefendantNotGuilty,              \
-                       SUM(ShopliftingDefendantSentCrownCourt)                   AS ShopliftingDefendantSentCrownCourt,                SUM(TheftFromPersonDefendantSentCrownCourt)                AS TheftFromPersonDefendantSentCrownCourt,         \
-                       SUM(ShopliftingFormalActionNotPublicInterest)             AS ShopliftingFormalActionNotPublicInterest,          SUM(TheftFromPersonFormalActionNotPublicInterest)          AS TheftFromPersonFormalActionNotPublicInterest,   \
-                       SUM(ShopliftingInvestigationCompleteNoSuspect)            AS ShopliftingInvestigationCompleteNoSuspect,         SUM(TheftFromPersonInvestigationCompleteNoSuspect)         AS TheftFromPersonInvestigationCompleteNoSuspect,  \
-                       SUM(ShopliftingLocalResolution)                           AS ShopliftingLocalResolution,                        SUM(TheftFromPersonLocalResolution)                        AS TheftFromPersonLocalResolution,                 \
-                       SUM(ShopliftingOffDeprivedProperty)                       AS ShopliftingOffDeprivedProperty,                    SUM(TheftFromPersonOffDeprivedProperty)                    AS TheftFromPersonOffDeprivedProperty,             \
-                       SUM(ShopliftingOffFined)                                  AS ShopliftingOffFined,                               SUM(TheftFromPersonOffFined)                               AS TheftFromPersonOffFined,                        \
-                       SUM(ShopliftingOffGivenCaution)                           AS ShopliftingOffGivenCaution,                        SUM(TheftFromPersonOffGivenCaution)                        AS TheftFromPersonOffGivenCaution,                 \
-                       SUM(ShopliftingOffGivenDrugsPossessionWarning)            AS ShopliftingOffGivenDrugsPossessionWarning,         SUM(TheftFromPersonOffGivenDrugsPossessionWarning)         AS TheftFromPersonOffGivenDrugsPossessionWarning,  \
-                       SUM(ShopliftingOffGivenAbsoluteDischarge)                 AS ShopliftingOffGivenAbsoluteDischarge,              SUM(TheftFromPersonOffGivenAbsoluteDischarge)              AS TheftFromPersonOffGivenAbsoluteDischarge,       \
-                       SUM(ShopliftingOffGivenCommunitySentence)                 AS ShopliftingOffGivenCommunitySentence,              SUM(TheftFromPersonOffGivenCommunitySentence)              AS TheftFromPersonOffGivenCommunitySentence,       \
-                       SUM(ShopliftingOffGivenConditionalDischarge)              AS ShopliftingOffGivenConditionalDischarge,           SUM(TheftFromPersonOffGivenConditionalDischarge)           AS TheftFromPersonOffGivenConditionalDischarge,    \
-                       SUM(ShopliftingOffGivenPenaltyNotice)                     AS ShopliftingOffGivenPenaltyNotice,                  SUM(TheftFromPersonOffGivenPenaltyNotice)                  AS TheftFromPersonOffGivenPenaltyNotice,           \
-                       SUM(ShopliftingOffGivenSuspendedPrisonSentence)           AS ShopliftingOffGivenSuspendedPrisonSentence,        SUM(TheftFromPersonOffGivenSuspendedPrisonSentence)        AS TheftFromPersonOffGivenSuspendedPrisonSentence, \
-                       SUM(ShopliftingOffOrderedPayCompensation)                 AS ShopliftingOffOrderedPayCompensation,              SUM(TheftFromPersonOffOrderedPayCompensation)              AS TheftFromPersonOffOrderedPayCompensation,       \
-                       SUM(ShopliftingOffOtherwiseDealtWith)                     AS ShopliftingOffOtherwiseDealtWith,                  SUM(TheftFromPersonOffOtherwiseDealtWith)                  AS TheftFromPersonOffOtherwiseDealtWith,           \
-                       SUM(ShopliftingOffSentPrison)                             AS ShopliftingOffSentPrison,                          SUM(TheftFromPersonOffSentPrison)                          AS TheftFromPersonOffSentPrison,                   \
-                       SUM(ShopliftingSuspectChargedPartOfAnotherCase)           AS ShopliftingSuspectChargedPartOfAnotherCase,        SUM(TheftFromPersonSuspectChargedPartOfAnotherCase)        AS TheftFromPersonSuspectChargedPartOfAnotherCase, \
-                       SUM(ShopliftingUnableProsecuteSuspect)                    AS ShopliftingUnableProsecuteSuspect,                 SUM(TheftFromPersonUnableProsecuteSuspect)                 AS TheftFromPersonUnableProsecuteSuspect,          \
-                       SUM(ShopliftingUnderInvestigation)                        AS ShopliftingUnderInvestigation,                     SUM(TheftFromPersonUnderInvestigation)                     AS TheftFromPersonUnderInvestigation,              \
+                       SUM(OtherCrimeEMPTYNULLOutcome)                            AS OtherCrimeEMPTYNULLOutcome,                \
+                       SUM(OtherCrimeActionToBeTakenOtherOrg)                     AS OtherCrimeActionToBeTakenOtherOrg,         \
+                       SUM(OtherCrimeAwaitingCourtOutcome)                        AS OtherCrimeAwaitingCourtOutcome,            \
+                       SUM(OtherCrimeCourtCaseUnableToProceed)                    AS OtherCrimeCourtCaseUnableToProceed,        \
+                       SUM(OtherCrimeCourtResultUnavailable)                      AS OtherCrimeCourtResultUnavailable,          \
+                       SUM(OtherCrimeDefendantNotGuilty)                          AS OtherCrimeDefendantNotGuilty,              \
+                       SUM(OtherCrimeDefendantSentCrownCourt)                     AS OtherCrimeDefendantSentCrownCourt,         \
+                       SUM(OtherCrimeFormalActionNotPublicInterest)               AS OtherCrimeFormalActionNotPublicInterest,   \
+                       SUM(OtherCrimeInvestigationCompleteNoSuspect)              AS OtherCrimeInvestigationCompleteNoSuspect,  \
+                       SUM(OtherCrimeLocalResolution)                             AS OtherCrimeLocalResolution,                 \
+                       SUM(OtherCrimeOffDeprivedProperty)                         AS OtherCrimeOffDeprivedProperty,             \
+                       SUM(OtherCrimeOffFined)                                    AS OtherCrimeOffFined,                        \
+                       SUM(OtherCrimeOffGivenCaution)                             AS OtherCrimeOffGivenCaution,                 \
+                       SUM(OtherCrimeOffGivenDrugsPossessionWarning)              AS OtherCrimeOffGivenDrugsPossessionWarning,  \
+                       SUM(OtherCrimeOffGivenAbsoluteDischarge)                   AS OtherCrimeOffGivenAbsoluteDischarge,       \
+                       SUM(OtherCrimeOffGivenCommunitySentence)                   AS OtherCrimeOffGivenCommunitySentence,       \
+                       SUM(OtherCrimeOffGivenConditionalDischarge)                AS OtherCrimeOffGivenConditionalDischarge,    \
+                       SUM(OtherCrimeOffGivenPenaltyNotice)                       AS OtherCrimeOffGivenPenaltyNotice,           \
+                       SUM(OtherCrimeOffGivenSuspendedPrisonSentence)             AS OtherCrimeOffGivenSuspendedPrisonSentence, \
+                       SUM(OtherCrimeOffOrderedPayCompensation)                   AS OtherCrimeOffOrderedPayCompensation,       \
+                       SUM(OtherCrimeOffOtherwiseDealtWith)                       AS OtherCrimeOffOtherwiseDealtWith,           \
+                       SUM(OtherCrimeOffSentPrison)                               AS OtherCrimeOffSentPrison,                   \
+                       SUM(OtherCrimeSuspectChargedPartOfAnotherCase)             AS OtherCrimeSuspectChargedPartOfAnotherCase, \
+                       SUM(OtherCrimeUnableProsecuteSuspect)                      AS OtherCrimeUnableProsecuteSuspect,          \
+                       SUM(OtherCrimeUnderInvestigation)                          AS OtherCrimeUnderInvestigation,              \
                        \
-                       SUM(VehicleCrimeEMPTYNULLOutcome)                         AS VehicleCrimeEMPTYNULLOutcome,                      SUM(ViolenceSexualOffencesEMPTYNULLOutcome)                AS ViolenceSexualOffencesEMPTYNULLOutcome,                \
-                       SUM(VehicleCrimeActionToBeTakenOtherOrg)                  AS VehicleCrimeActionToBeTakenOtherOrg,               SUM(ViolenceSexualOffencesActionToBeTakenOtherOrg)         AS ViolenceSexualOffencesActionToBeTakenOtherOrg,         \
-                       SUM(VehicleCrimeAwaitingCourtOutcome)                     AS VehicleCrimeAwaitingCourtOutcome,                  SUM(ViolenceSexualOffencesAwaitingCourtOutcome)            AS ViolenceSexualOffencesAwaitingCourtOutcome,            \
-                       SUM(VehicleCrimeCourtCaseUnableToProceed)                 AS VehicleCrimeCourtCaseUnableToProceed,              SUM(ViolenceSexualOffencesCourtCaseUnableToProceed)        AS ViolenceSexualOffencesCourtCaseUnableToProceed,        \
-                       SUM(VehicleCrimeCourtResultUnavailable)                   AS VehicleCrimeCourtResultUnavailable,                SUM(ViolenceSexualOffencesCourtResultUnavailable)          AS ViolenceSexualOffencesCourtResultUnavailable,          \
-                       SUM(VehicleCrimeDefendantNotGuilty)                       AS VehicleCrimeDefendantNotGuilty,                    SUM(ViolenceSexualOffencesDefendantNotGuilty)              AS ViolenceSexualOffencesDefendantNotGuilty,              \
-                       SUM(VehicleCrimeDefendantSentCrownCourt)                  AS VehicleCrimeDefendantSentCrownCourt,               SUM(ViolenceSexualOffencesDefendantSentCrownCourt)         AS ViolenceSexualOffencesDefendantSentCrownCourt,         \
-                       SUM(VehicleCrimeFormalActionNotPublicInterest)            AS VehicleCrimeFormalActionNotPublicInterest,         SUM(ViolenceSexualOffencesFormalActionNotPublicInterest)   AS ViolenceSexualOffencesFormalActionNotPublicInterest,   \
-                       SUM(VehicleCrimeInvestigationCompleteNoSuspect)           AS VehicleCrimeInvestigationCompleteNoSuspect,        SUM(ViolenceSexualOffencesInvestigationCompleteNoSuspect)  AS ViolenceSexualOffencesInvestigationCompleteNoSuspect,  \
-                       SUM(VehicleCrimeLocalResolution)                          AS VehicleCrimeLocalResolution,                       SUM(ViolenceSexualOffencesLocalResolution)                 AS ViolenceSexualOffencesLocalResolution,                 \
-                       SUM(VehicleCrimeOffDeprivedProperty)                      AS VehicleCrimeOffDeprivedProperty,                   SUM(ViolenceSexualOffencesOffDeprivedProperty)             AS ViolenceSexualOffencesOffDeprivedProperty,             \
-                       SUM(VehicleCrimeOffFined)                                 AS VehicleCrimeOffFined,                              SUM(ViolenceSexualOffencesOffFined)                        AS ViolenceSexualOffencesOffFined,                        \
-                       SUM(VehicleCrimeOffGivenCaution)                          AS VehicleCrimeOffGivenCaution,                       SUM(ViolenceSexualOffencesOffGivenCaution)                 AS ViolenceSexualOffencesOffGivenCaution,                 \
-                       SUM(VehicleCrimeOffGivenDrugsPossessionWarning)           AS VehicleCrimeOffGivenDrugsPossessionWarning,        SUM(ViolenceSexualOffencesOffGivenDrugsPossessionWarning)  AS ViolenceSexualOffencesOffGivenDrugsPossessionWarning,  \
-                       SUM(VehicleCrimeOffGivenAbsoluteDischarge)                AS VehicleCrimeOffGivenAbsoluteDischarge,             SUM(ViolenceSexualOffencesOffGivenAbsoluteDischarge)       AS ViolenceSexualOffencesOffGivenAbsoluteDischarge,       \
-                       SUM(VehicleCrimeOffGivenCommunitySentence)                AS VehicleCrimeOffGivenCommunitySentence,             SUM(ViolenceSexualOffencesOffGivenCommunitySentence)       AS ViolenceSexualOffencesOffGivenCommunitySentence,       \
-                       SUM(VehicleCrimeOffGivenConditionalDischarge)             AS VehicleCrimeOffGivenConditionalDischarge,          SUM(ViolenceSexualOffencesOffGivenConditionalDischarge)    AS ViolenceSexualOffencesOffGivenConditionalDischarge,    \
-                       SUM(VehicleCrimeOffGivenPenaltyNotice)                    AS VehicleCrimeOffGivenPenaltyNotice,                 SUM(ViolenceSexualOffencesOffGivenPenaltyNotice)           AS ViolenceSexualOffencesOffGivenPenaltyNotice,           \
-                       SUM(VehicleCrimeOffGivenSuspendedPrisonSentence)          AS VehicleCrimeOffGivenSuspendedPrisonSentence,       SUM(ViolenceSexualOffencesOffGivenSuspendedPrisonSentence) AS ViolenceSexualOffencesOffGivenSuspendedPrisonSentence, \
-                       SUM(VehicleCrimeOffOrderedPayCompensation)                AS VehicleCrimeOffOrderedPayCompensation,             SUM(ViolenceSexualOffencesOffOrderedPayCompensation)       AS ViolenceSexualOffencesOffOrderedPayCompensation,       \
-                       SUM(VehicleCrimeOffOtherwiseDealtWith)                    AS VehicleCrimeOffOtherwiseDealtWith,                 SUM(ViolenceSexualOffencesOffOtherwiseDealtWith)           AS ViolenceSexualOffencesOffOtherwiseDealtWith,           \
-                       SUM(VehicleCrimeOffSentPrison)                            AS VehicleCrimeOffSentPrison,                         SUM(ViolenceSexualOffencesOffSentPrison)                   AS ViolenceSexualOffencesOffSentPrison,                   \
-                       SUM(VehicleCrimeSuspectChargedPartOfAnotherCase)          AS VehicleCrimeSuspectChargedPartOfAnotherCase,       SUM(ViolenceSexualOffencesSuspectChargedPartOfAnotherCase) AS ViolenceSexualOffencesSuspectChargedPartOfAnotherCase, \
-                       SUM(VehicleCrimeUnableProsecuteSuspect)                   AS VehicleCrimeUnableProsecuteSuspect,                SUM(ViolenceSexualOffencesUnableProsecuteSuspect)          AS ViolenceSexualOffencesUnableProsecuteSuspect,          \
-                       SUM(VehicleCrimeUnderInvestigation)                       AS VehicleCrimeUnderInvestigation,                    SUM(ViolenceSexualOffencesUnderInvestigation)              AS ViolenceSexualOffencesUnderInvestigation,              \
+                       SUM(OtherTheftEMPTYNULLOutcome)                            AS OtherTheftEMPTYNULLOutcome,                \
+                       SUM(OtherTheftActionToBeTakenOtherOrg)                     AS OtherTheftActionToBeTakenOtherOrg,         \
+                       SUM(OtherTheftAwaitingCourtOutcome)                        AS OtherTheftAwaitingCourtOutcome,            \
+                       SUM(OtherTheftCourtCaseUnableToProceed)                    AS OtherTheftCourtCaseUnableToProceed,        \
+                       SUM(OtherTheftCourtResultUnavailable)                      AS OtherTheftCourtResultUnavailable,          \
+                       SUM(OtherTheftDefendantNotGuilty)                          AS OtherTheftDefendantNotGuilty,              \
+                       SUM(OtherTheftDefendantSentCrownCourt)                     AS OtherTheftDefendantSentCrownCourt,         \
+                       SUM(OtherTheftFormalActionNotPublicInterest)               AS OtherTheftFormalActionNotPublicInterest,   \
+                       SUM(OtherTheftInvestigationCompleteNoSuspect)              AS OtherTheftInvestigationCompleteNoSuspect,  \
+                       SUM(OtherTheftLocalResolution)                             AS OtherTheftLocalResolution,                 \
+                       SUM(OtherTheftOffDeprivedProperty)                         AS OtherTheftOffDeprivedProperty,             \
+                       SUM(OtherTheftOffFined)                                    AS OtherTheftOffFined,                        \
+                       SUM(OtherTheftOffGivenCaution)                             AS OtherTheftOffGivenCaution,                 \
+                       SUM(OtherTheftOffGivenDrugsPossessionWarning)              AS OtherTheftOffGivenDrugsPossessionWarning,  \
+                       SUM(OtherTheftOffGivenAbsoluteDischarge)                   AS OtherTheftOffGivenAbsoluteDischarge,       \
+                       SUM(OtherTheftOffGivenCommunitySentence)                   AS OtherTheftOffGivenCommunitySentence,       \
+                       SUM(OtherTheftOffGivenConditionalDischarge)                AS OtherTheftOffGivenConditionalDischarge,    \
+                       SUM(OtherTheftOffGivenPenaltyNotice)                       AS OtherTheftOffGivenPenaltyNotice,           \
+                       SUM(OtherTheftOffGivenSuspendedPrisonSentence)             AS OtherTheftOffGivenSuspendedPrisonSentence, \
+                       SUM(OtherTheftOffOrderedPayCompensation)                   AS OtherTheftOffOrderedPayCompensation,       \
+                       SUM(OtherTheftOffOtherwiseDealtWith)                       AS OtherTheftOffOtherwiseDealtWith,           \
+                       SUM(OtherTheftOffSentPrison)                               AS OtherTheftOffSentPrison,                   \
+                       SUM(OtherTheftSuspectChargedPartOfAnotherCase)             AS OtherTheftSuspectChargedPartOfAnotherCase, \
+                       SUM(OtherTheftUnableProsecuteSuspect)                      AS OtherTheftUnableProsecuteSuspect,          \
+                       SUM(OtherTheftUnderInvestigation)                          AS OtherTheftUnderInvestigation,              \
                        \
-                       SUM(ViolentCrimeEMPTYNULLOutcome)                         AS ViolentCrimeEMPTYNULLOutcome,                \
-                       SUM(ViolentCrimeActionToBeTakenOtherOrg)                  AS ViolentCrimeActionToBeTakenOtherOrg,         \
-                       SUM(ViolentCrimeAwaitingCourtOutcome)                     AS ViolentCrimeAwaitingCourtOutcome,            \
-                       SUM(ViolentCrimeCourtCaseUnableToProceed)                 AS ViolentCrimeCourtCaseUnableToProceed,        \
-                       SUM(ViolentCrimeCourtResultUnavailable)                   AS ViolentCrimeCourtResultUnavailable,          \
-                       SUM(ViolentCrimeDefendantNotGuilty)                       AS ViolentCrimeDefendantNotGuilty,              \
-                       SUM(ViolentCrimeDefendantSentCrownCourt)                  AS ViolentCrimeDefendantSentCrownCourt,         \
-                       SUM(ViolentCrimeFormalActionNotPublicInterest)            AS ViolentCrimeFormalActionNotPublicInterest,   \
-                       SUM(ViolentCrimeInvestigationCompleteNoSuspect)           AS ViolentCrimeInvestigationCompleteNoSuspect,  \
-                       SUM(ViolentCrimeLocalResolution)                          AS ViolentCrimeLocalResolution,                 \
-                       SUM(ViolentCrimeOffDeprivedProperty)                      AS ViolentCrimeOffDeprivedProperty,             \
-                       SUM(ViolentCrimeOffFined)                                 AS ViolentCrimeOffFined,                        \
-                       SUM(ViolentCrimeOffGivenCaution)                          AS ViolentCrimeOffGivenCaution,                 \
-                       SUM(ViolentCrimeOffGivenDrugsPossessionWarning)           AS ViolentCrimeOffGivenDrugsPossessionWarning,  \
-                       SUM(ViolentCrimeOffGivenAbsoluteDischarge)                AS ViolentCrimeOffGivenAbsoluteDischarge,       \
-                       SUM(ViolentCrimeOffGivenCommunitySentence)                AS ViolentCrimeOffGivenCommunitySentence,       \
-                       SUM(ViolentCrimeOffGivenConditionalDischarge)             AS ViolentCrimeOffGivenConditionalDischarge,    \
-                       SUM(ViolentCrimeOffGivenPenaltyNotice)                    AS ViolentCrimeOffGivenPenaltyNotice,           \
-                       SUM(ViolentCrimeOffGivenSuspendedPrisonSentence)          AS ViolentCrimeOffGivenSuspendedPrisonSentence, \
-                       SUM(ViolentCrimeOffOrderedPayCompensation)                AS ViolentCrimeOffOrderedPayCompensation,       \
-                       SUM(ViolentCrimeOffOtherwiseDealtWith)                    AS ViolentCrimeOffOtherwiseDealtWith,           \
-                       SUM(ViolentCrimeOffSentPrison)                            AS ViolentCrimeOffSentPrison,                   \
-                       SUM(ViolentCrimeSuspectChargedPartOfAnotherCase)          AS ViolentCrimeSuspectChargedPartOfAnotherCase, \
-                       SUM(ViolentCrimeUnableProsecuteSuspect)                   AS ViolentCrimeUnableProsecuteSuspect,          \
-                       SUM(ViolentCrimeUnderInvestigation)                       AS ViolentCrimeUnderInvestigation               \
+                       SUM(PossessionWeaponsEMPTYNULLOutcome)                     AS PossessionWeaponsEMPTYNULLOutcome,                \
+                       SUM(PossessionWeaponsActionToBeTakenOtherOrg)              AS PossessionWeaponsActionToBeTakenOtherOrg,         \
+                       SUM(PossessionWeaponsAwaitingCourtOutcome)                 AS PossessionWeaponsAwaitingCourtOutcome,            \
+                       SUM(PossessionWeaponsCourtCaseUnableToProceed)             AS PossessionWeaponsCourtCaseUnableToProceed,        \
+                       SUM(PossessionWeaponsCourtResultUnavailable)               AS PossessionWeaponsCourtResultUnavailable,          \
+                       SUM(PossessionWeaponsDefendantNotGuilty)                   AS PossessionWeaponsDefendantNotGuilty,              \
+                       SUM(PossessionWeaponsDefendantSentCrownCourt)              AS PossessionWeaponsDefendantSentCrownCourt,         \
+                       SUM(PossessionWeaponsFormalActionNotPublicInterest)        AS PossessionWeaponsFormalActionNotPublicInterest,   \
+                       SUM(PossessionWeaponsInvestigationCompleteNoSuspect)       AS PossessionWeaponsInvestigationCompleteNoSuspect,  \
+                       SUM(PossessionWeaponsLocalResolution)                      AS PossessionWeaponsLocalResolution,                 \
+                       SUM(PossessionWeaponsOffDeprivedProperty)                  AS PossessionWeaponsOffDeprivedProperty,             \
+                       SUM(PossessionWeaponsOffFined)                             AS PossessionWeaponsOffFined,                        \
+                       SUM(PossessionWeaponsOffGivenCaution)                      AS PossessionWeaponsOffGivenCaution,                 \
+                       SUM(PossessionWeaponsOffGivenDrugsPossessionWarning)       AS PossessionWeaponsOffGivenDrugsPossessionWarning,  \
+                       SUM(PossessionWeaponsOffGivenAbsoluteDischarge)            AS PossessionWeaponsOffGivenAbsoluteDischarge,       \
+                       SUM(PossessionWeaponsOffGivenCommunitySentence)            AS PossessionWeaponsOffGivenCommunitySentence,       \
+                       SUM(PossessionWeaponsOffGivenConditionalDischarge)         AS PossessionWeaponsOffGivenConditionalDischarge,    \
+                       SUM(PossessionWeaponsOffGivenPenaltyNotice)                AS PossessionWeaponsOffGivenPenaltyNotice,           \
+                       SUM(PossessionWeaponsOffGivenSuspendedPrisonSentence)      AS PossessionWeaponsOffGivenSuspendedPrisonSentence, \
+                       SUM(PossessionWeaponsOffOrderedPayCompensation)            AS PossessionWeaponsOffOrderedPayCompensation,       \
+                       SUM(PossessionWeaponsOffOtherwiseDealtWith)                AS PossessionWeaponsOffOtherwiseDealtWith,           \
+                       SUM(PossessionWeaponsOffSentPrison)                        AS PossessionWeaponsOffSentPrison,                   \
+                       SUM(PossessionWeaponsSuspectChargedPartOfAnotherCase)      AS PossessionWeaponsSuspectChargedPartOfAnotherCase, \
+                       SUM(PossessionWeaponsUnableProsecuteSuspect)               AS PossessionWeaponsUnableProsecuteSuspect,          \
+                       SUM(PossessionWeaponsUnderInvestigation)                   AS PossessionWeaponsUnderInvestigation,              \
+                       \
+                       SUM(PublicDisorderWeaponsEMPTYNULLOutcome)                 AS PublicDisorderWeaponsEMPTYNULLOutcome,                \
+                       SUM(PublicDisorderWeaponsActionToBeTakenOtherOrg)          AS PublicDisorderWeaponsActionToBeTakenOtherOrg,         \
+                       SUM(PublicDisorderWeaponsAwaitingCourtOutcome)             AS PublicDisorderWeaponsAwaitingCourtOutcome,            \
+                       SUM(PublicDisorderWeaponsCourtCaseUnableToProceed)         AS PublicDisorderWeaponsCourtCaseUnableToProceed,        \
+                       SUM(PublicDisorderWeaponsCourtResultUnavailable)           AS PublicDisorderWeaponsCourtResultUnavailable,          \
+                       SUM(PublicDisorderWeaponsDefendantNotGuilty)               AS PublicDisorderWeaponsDefendantNotGuilty,              \
+                       SUM(PublicDisorderWeaponsDefendantSentCrownCourt)          AS PublicDisorderWeaponsDefendantSentCrownCourt,         \
+                       SUM(PublicDisorderWeaponsFormalActionNotPublicInterest)    AS PublicDisorderWeaponsFormalActionNotPublicInterest,   \
+                       SUM(PublicDisorderWeaponsInvestigationCompleteNoSuspect)   AS PublicDisorderWeaponsInvestigationCompleteNoSuspect,  \
+                       SUM(PublicDisorderWeaponsLocalResolution)                  AS PublicDisorderWeaponsLocalResolution,                 \
+                       SUM(PublicDisorderWeaponsOffDeprivedProperty)              AS PublicDisorderWeaponsOffDeprivedProperty,             \
+                       SUM(PublicDisorderWeaponsOffFined)                         AS PublicDisorderWeaponsOffFined,                        \
+                       SUM(PublicDisorderWeaponsOffGivenCaution)                  AS PublicDisorderWeaponsOffGivenCaution,                 \
+                       SUM(PublicDisorderWeaponsOffGivenDrugsPossessionWarning)   AS PublicDisorderWeaponsOffGivenDrugsPossessionWarning,  \
+                       SUM(PublicDisorderWeaponsOffGivenAbsoluteDischarge)        AS PublicDisorderWeaponsOffGivenAbsoluteDischarge,       \
+                       SUM(PublicDisorderWeaponsOffGivenCommunitySentence)        AS PublicDisorderWeaponsOffGivenCommunitySentence,       \
+                       SUM(PublicDisorderWeaponsOffGivenConditionalDischarge)     AS PublicDisorderWeaponsOffGivenConditionalDischarge,    \
+                       SUM(PublicDisorderWeaponsOffGivenPenaltyNotice)            AS PublicDisorderWeaponsOffGivenPenaltyNotice,           \
+                       SUM(PublicDisorderWeaponsOffGivenSuspendedPrisonSentence)  AS PublicDisorderWeaponsOffGivenSuspendedPrisonSentence, \
+                       SUM(PublicDisorderWeaponsOffOrderedPayCompensation)        AS PublicDisorderWeaponsOffOrderedPayCompensation,       \
+                       SUM(PublicDisorderWeaponsOffOtherwiseDealtWith)            AS PublicDisorderWeaponsOffOtherwiseDealtWith,           \
+                       SUM(PublicDisorderWeaponsOffSentPrison)                    AS PublicDisorderWeaponsOffSentPrison,                   \
+                       SUM(PublicDisorderWeaponsSuspectChargedPartOfAnotherCase)  AS PublicDisorderWeaponsSuspectChargedPartOfAnotherCase, \
+                       SUM(PublicDisorderWeaponsUnableProsecuteSuspect)           AS PublicDisorderWeaponsUnableProsecuteSuspect,          \
+                       SUM(PublicDisorderWeaponsUnderInvestigation)               AS PublicDisorderWeaponsUnderInvestigation,              \
+                       \
+                       SUM(PublicOrderEMPTYNULLOutcome)                           AS PublicOrderEMPTYNULLOutcome,                \
+                       SUM(PublicOrderActionToBeTakenOtherOrg)                    AS PublicOrderActionToBeTakenOtherOrg,         \
+                       SUM(PublicOrderAwaitingCourtOutcome)                       AS PublicOrderAwaitingCourtOutcome,            \
+                       SUM(PublicOrderCourtCaseUnableToProceed)                   AS PublicOrderCourtCaseUnableToProceed,        \
+                       SUM(PublicOrderCourtResultUnavailable)                     AS PublicOrderCourtResultUnavailable,          \
+                       SUM(PublicOrderDefendantNotGuilty)                         AS PublicOrderDefendantNotGuilty,              \
+                       SUM(PublicOrderDefendantSentCrownCourt)                    AS PublicOrderDefendantSentCrownCourt,         \
+                       SUM(PublicOrderFormalActionNotPublicInterest)              AS PublicOrderFormalActionNotPublicInterest,   \
+                       SUM(PublicOrderInvestigationCompleteNoSuspect)             AS PublicOrderInvestigationCompleteNoSuspect,  \
+                       SUM(PublicOrderLocalResolution)                            AS PublicOrderLocalResolution,                 \
+                       SUM(PublicOrderOffDeprivedProperty)                        AS PublicOrderOffDeprivedProperty,             \
+                       SUM(PublicOrderOffFined)                                   AS PublicOrderOffFined,                        \
+                       SUM(PublicOrderOffGivenCaution)                            AS PublicOrderOffGivenCaution,                 \
+                       SUM(PublicOrderOffGivenDrugsPossessionWarning)             AS PublicOrderOffGivenDrugsPossessionWarning,  \
+                       SUM(PublicOrderOffGivenAbsoluteDischarge)                  AS PublicOrderOffGivenAbsoluteDischarge,       \
+                       SUM(PublicOrderOffGivenCommunitySentence)                  AS PublicOrderOffGivenCommunitySentence,       \
+                       SUM(PublicOrderOffGivenConditionalDischarge)               AS PublicOrderOffGivenConditionalDischarge,    \
+                       SUM(PublicOrderOffGivenPenaltyNotice)                      AS PublicOrderOffGivenPenaltyNotice,           \
+                       SUM(PublicOrderOffGivenSuspendedPrisonSentence)            AS PublicOrderOffGivenSuspendedPrisonSentence, \
+                       SUM(PublicOrderOffOrderedPayCompensation)                  AS PublicOrderOffOrderedPayCompensation,       \
+                       SUM(PublicOrderOffOtherwiseDealtWith)                      AS PublicOrderOffOtherwiseDealtWith,           \
+                       SUM(PublicOrderOffSentPrison)                              AS PublicOrderOffSentPrison,                   \
+                       SUM(PublicOrderSuspectChargedPartOfAnotherCase)            AS PublicOrderSuspectChargedPartOfAnotherCase, \
+                       SUM(PublicOrderUnableProsecuteSuspect)                     AS PublicOrderUnableProsecuteSuspect,          \
+                       SUM(PublicOrderUnderInvestigation)                         AS PublicOrderUnderInvestigation,              \
+                       \
+                       SUM(RobberyEMPTYNULLOutcome)                               AS RobberyEMPTYNULLOutcome,                \
+                       SUM(RobberyActionToBeTakenOtherOrg)                        AS RobberyActionToBeTakenOtherOrg,         \
+                       SUM(RobberyAwaitingCourtOutcome)                           AS RobberyAwaitingCourtOutcome,            \
+                       SUM(RobberyCourtCaseUnableToProceed)                       AS RobberyCourtCaseUnableToProceed,        \
+                       SUM(RobberyCourtResultUnavailable)                         AS RobberyCourtResultUnavailable,          \
+                       SUM(RobberyDefendantNotGuilty)                             AS RobberyDefendantNotGuilty,              \
+                       SUM(RobberyDefendantSentCrownCourt)                        AS RobberyDefendantSentCrownCourt,         \
+                       SUM(RobberyFormalActionNotPublicInterest)                  AS RobberyFormalActionNotPublicInterest,   \
+                       SUM(RobberyInvestigationCompleteNoSuspect)                 AS RobberyInvestigationCompleteNoSuspect,  \
+                       SUM(RobberyLocalResolution)                                AS RobberyLocalResolution,                 \
+                       SUM(RobberyOffDeprivedProperty)                            AS RobberyOffDeprivedProperty,             \
+                       SUM(RobberyOffFined)                                       AS RobberyOffFined,                        \
+                       SUM(RobberyOffGivenCaution)                                AS RobberyOffGivenCaution,                 \
+                       SUM(RobberyOffGivenDrugsPossessionWarning)                 AS RobberyOffGivenDrugsPossessionWarning,  \
+                       SUM(RobberyOffGivenAbsoluteDischarge)                      AS RobberyOffGivenAbsoluteDischarge,       \
+                       SUM(RobberyOffGivenCommunitySentence)                      AS RobberyOffGivenCommunitySentence,       \
+                       SUM(RobberyOffGivenConditionalDischarge)                   AS RobberyOffGivenConditionalDischarge,    \
+                       SUM(RobberyOffGivenPenaltyNotice)                          AS RobberyOffGivenPenaltyNotice,           \
+                       SUM(RobberyOffGivenSuspendedPrisonSentence)                AS RobberyOffGivenSuspendedPrisonSentence, \
+                       SUM(RobberyOffOrderedPayCompensation)                      AS RobberyOffOrderedPayCompensation,       \
+                       SUM(RobberyOffOtherwiseDealtWith)                          AS RobberyOffOtherwiseDealtWith,           \
+                       SUM(RobberyOffSentPrison)                                  AS RobberyOffSentPrison,                   \
+                       SUM(RobberySuspectChargedPartOfAnotherCase)                AS RobberySuspectChargedPartOfAnotherCase, \
+                       SUM(RobberyUnableProsecuteSuspect)                         AS RobberyUnableProsecuteSuspect,          \
+                       SUM(RobberyUnderInvestigation)                             AS RobberyUnderInvestigation,              \
+                       \
+                       SUM(ShopliftingEMPTYNULLOutcome)                           AS ShopliftingEMPTYNULLOutcome,                \
+                       SUM(ShopliftingActionToBeTakenOtherOrg)                    AS ShopliftingActionToBeTakenOtherOrg,         \
+                       SUM(ShopliftingAwaitingCourtOutcome)                       AS ShopliftingAwaitingCourtOutcome,            \
+                       SUM(ShopliftingCourtCaseUnableToProceed)                   AS ShopliftingCourtCaseUnableToProceed,        \
+                       SUM(ShopliftingCourtResultUnavailable)                     AS ShopliftingCourtResultUnavailable,          \
+                       SUM(ShopliftingDefendantNotGuilty)                         AS ShopliftingDefendantNotGuilty,              \
+                       SUM(ShopliftingDefendantSentCrownCourt)                    AS ShopliftingDefendantSentCrownCourt,         \
+                       SUM(ShopliftingFormalActionNotPublicInterest)              AS ShopliftingFormalActionNotPublicInterest,   \
+                       SUM(ShopliftingInvestigationCompleteNoSuspect)             AS ShopliftingInvestigationCompleteNoSuspect,  \
+                       SUM(ShopliftingLocalResolution)                            AS ShopliftingLocalResolution,                 \
+                       SUM(ShopliftingOffDeprivedProperty)                        AS ShopliftingOffDeprivedProperty,             \
+                       SUM(ShopliftingOffFined)                                   AS ShopliftingOffFined,                        \
+                       SUM(ShopliftingOffGivenCaution)                            AS ShopliftingOffGivenCaution,                 \
+                       SUM(ShopliftingOffGivenDrugsPossessionWarning)             AS ShopliftingOffGivenDrugsPossessionWarning,  \
+                       SUM(ShopliftingOffGivenAbsoluteDischarge)                  AS ShopliftingOffGivenAbsoluteDischarge,       \
+                       SUM(ShopliftingOffGivenCommunitySentence)                  AS ShopliftingOffGivenCommunitySentence,       \
+                       SUM(ShopliftingOffGivenConditionalDischarge)               AS ShopliftingOffGivenConditionalDischarge,    \
+                       SUM(ShopliftingOffGivenPenaltyNotice)                      AS ShopliftingOffGivenPenaltyNotice,           \
+                       SUM(ShopliftingOffGivenSuspendedPrisonSentence)            AS ShopliftingOffGivenSuspendedPrisonSentence, \
+                       SUM(ShopliftingOffOrderedPayCompensation)                  AS ShopliftingOffOrderedPayCompensation,       \
+                       SUM(ShopliftingOffOtherwiseDealtWith)                      AS ShopliftingOffOtherwiseDealtWith,           \
+                       SUM(ShopliftingOffSentPrison)                              AS ShopliftingOffSentPrison,                   \
+                       SUM(ShopliftingSuspectChargedPartOfAnotherCase)            AS ShopliftingSuspectChargedPartOfAnotherCase, \
+                       SUM(ShopliftingUnableProsecuteSuspect)                     AS ShopliftingUnableProsecuteSuspect,          \
+                       SUM(ShopliftingUnderInvestigation)                         AS ShopliftingUnderInvestigation,              \
+                       \
+                       SUM(TheftFromPersonEMPTYNULLOutcome)                       AS TheftFromPersonEMPTYNULLOutcome,                \
+                       SUM(TheftFromPersonActionToBeTakenOtherOrg)                AS TheftFromPersonActionToBeTakenOtherOrg,         \
+                       SUM(TheftFromPersonAwaitingCourtOutcome)                   AS TheftFromPersonAwaitingCourtOutcome,            \
+                       SUM(TheftFromPersonCourtCaseUnableToProceed)               AS TheftFromPersonCourtCaseUnableToProceed,        \
+                       SUM(TheftFromPersonCourtResultUnavailable)                 AS TheftFromPersonCourtResultUnavailable,          \
+                       SUM(TheftFromPersonDefendantNotGuilty)                     AS TheftFromPersonDefendantNotGuilty,              \
+                       SUM(TheftFromPersonDefendantSentCrownCourt)                AS TheftFromPersonDefendantSentCrownCourt,         \
+                       SUM(TheftFromPersonFormalActionNotPublicInterest)          AS TheftFromPersonFormalActionNotPublicInterest,   \
+                       SUM(TheftFromPersonInvestigationCompleteNoSuspect)         AS TheftFromPersonInvestigationCompleteNoSuspect,  \
+                       SUM(TheftFromPersonLocalResolution)                        AS TheftFromPersonLocalResolution,                 \
+                       SUM(TheftFromPersonOffDeprivedProperty)                    AS TheftFromPersonOffDeprivedProperty,             \
+                       SUM(TheftFromPersonOffFined)                               AS TheftFromPersonOffFined,                        \
+                       SUM(TheftFromPersonOffGivenCaution)                        AS TheftFromPersonOffGivenCaution,                 \
+                       SUM(TheftFromPersonOffGivenDrugsPossessionWarning)         AS TheftFromPersonOffGivenDrugsPossessionWarning,  \
+                       SUM(TheftFromPersonOffGivenAbsoluteDischarge)              AS TheftFromPersonOffGivenAbsoluteDischarge,       \
+                       SUM(TheftFromPersonOffGivenCommunitySentence)              AS TheftFromPersonOffGivenCommunitySentence,       \
+                       SUM(TheftFromPersonOffGivenConditionalDischarge)           AS TheftFromPersonOffGivenConditionalDischarge,    \
+                       SUM(TheftFromPersonOffGivenPenaltyNotice)                  AS TheftFromPersonOffGivenPenaltyNotice,           \
+                       SUM(TheftFromPersonOffGivenSuspendedPrisonSentence)        AS TheftFromPersonOffGivenSuspendedPrisonSentence, \
+                       SUM(TheftFromPersonOffOrderedPayCompensation)              AS TheftFromPersonOffOrderedPayCompensation,       \
+                       SUM(TheftFromPersonOffOtherwiseDealtWith)                  AS TheftFromPersonOffOtherwiseDealtWith,           \
+                       SUM(TheftFromPersonOffSentPrison)                          AS TheftFromPersonOffSentPrison,                   \
+                       SUM(TheftFromPersonSuspectChargedPartOfAnotherCase)        AS TheftFromPersonSuspectChargedPartOfAnotherCase, \
+                       SUM(TheftFromPersonUnableProsecuteSuspect)                 AS TheftFromPersonUnableProsecuteSuspect,          \
+                       SUM(TheftFromPersonUnderInvestigation)                     AS TheftFromPersonUnderInvestigation,              \
+                       \
+                       SUM(VehicleCrimeEMPTYNULLOutcome)                          AS VehicleCrimeEMPTYNULLOutcome,                \
+                       SUM(VehicleCrimeActionToBeTakenOtherOrg)                   AS VehicleCrimeActionToBeTakenOtherOrg,         \
+                       SUM(VehicleCrimeAwaitingCourtOutcome)                      AS VehicleCrimeAwaitingCourtOutcome,            \
+                       SUM(VehicleCrimeCourtCaseUnableToProceed)                  AS VehicleCrimeCourtCaseUnableToProceed,        \
+                       SUM(VehicleCrimeCourtResultUnavailable)                    AS VehicleCrimeCourtResultUnavailable,          \
+                       SUM(VehicleCrimeDefendantNotGuilty)                        AS VehicleCrimeDefendantNotGuilty,              \
+                       SUM(VehicleCrimeDefendantSentCrownCourt)                   AS VehicleCrimeDefendantSentCrownCourt,         \
+                       SUM(VehicleCrimeFormalActionNotPublicInterest)             AS VehicleCrimeFormalActionNotPublicInterest,   \
+                       SUM(VehicleCrimeInvestigationCompleteNoSuspect)            AS VehicleCrimeInvestigationCompleteNoSuspect,  \
+                       SUM(VehicleCrimeLocalResolution)                           AS VehicleCrimeLocalResolution,                 \
+                       SUM(VehicleCrimeOffDeprivedProperty)                       AS VehicleCrimeOffDeprivedProperty,             \
+                       SUM(VehicleCrimeOffFined)                                  AS VehicleCrimeOffFined,                        \
+                       SUM(VehicleCrimeOffGivenCaution)                           AS VehicleCrimeOffGivenCaution,                 \
+                       SUM(VehicleCrimeOffGivenDrugsPossessionWarning)            AS VehicleCrimeOffGivenDrugsPossessionWarning,  \
+                       SUM(VehicleCrimeOffGivenAbsoluteDischarge)                 AS VehicleCrimeOffGivenAbsoluteDischarge,       \
+                       SUM(VehicleCrimeOffGivenCommunitySentence)                 AS VehicleCrimeOffGivenCommunitySentence,       \
+                       SUM(VehicleCrimeOffGivenConditionalDischarge)              AS VehicleCrimeOffGivenConditionalDischarge,    \
+                       SUM(VehicleCrimeOffGivenPenaltyNotice)                     AS VehicleCrimeOffGivenPenaltyNotice,           \
+                       SUM(VehicleCrimeOffGivenSuspendedPrisonSentence)           AS VehicleCrimeOffGivenSuspendedPrisonSentence, \
+                       SUM(VehicleCrimeOffOrderedPayCompensation)                 AS VehicleCrimeOffOrderedPayCompensation,       \
+                       SUM(VehicleCrimeOffOtherwiseDealtWith)                     AS VehicleCrimeOffOtherwiseDealtWith,           \
+                       SUM(VehicleCrimeOffSentPrison)                             AS VehicleCrimeOffSentPrison,                   \
+                       SUM(VehicleCrimeSuspectChargedPartOfAnotherCase)           AS VehicleCrimeSuspectChargedPartOfAnotherCase, \
+                       SUM(VehicleCrimeUnableProsecuteSuspect)                    AS VehicleCrimeUnableProsecuteSuspect,          \
+                       SUM(VehicleCrimeUnderInvestigation)                        AS VehicleCrimeUnderInvestigation,              \
+                       \
+                       SUM(ViolenceSexualOffencesEMPTYNULLOutcome)                AS ViolenceSexualOffencesEMPTYNULLOutcome,                \
+                       SUM(ViolenceSexualOffencesActionToBeTakenOtherOrg)         AS ViolenceSexualOffencesActionToBeTakenOtherOrg,         \
+                       SUM(ViolenceSexualOffencesAwaitingCourtOutcome)            AS ViolenceSexualOffencesAwaitingCourtOutcome,            \
+                       SUM(ViolenceSexualOffencesCourtCaseUnableToProceed)        AS ViolenceSexualOffencesCourtCaseUnableToProceed,        \
+                       SUM(ViolenceSexualOffencesCourtResultUnavailable)          AS ViolenceSexualOffencesCourtResultUnavailable,          \
+                       SUM(ViolenceSexualOffencesDefendantNotGuilty)              AS ViolenceSexualOffencesDefendantNotGuilty,              \
+                       SUM(ViolenceSexualOffencesDefendantSentCrownCourt)         AS ViolenceSexualOffencesDefendantSentCrownCourt,         \
+                       SUM(ViolenceSexualOffencesFormalActionNotPublicInterest)   AS ViolenceSexualOffencesFormalActionNotPublicInterest,   \
+                       SUM(ViolenceSexualOffencesInvestigationCompleteNoSuspect)  AS ViolenceSexualOffencesInvestigationCompleteNoSuspect,  \
+                       SUM(ViolenceSexualOffencesLocalResolution)                 AS ViolenceSexualOffencesLocalResolution,                 \
+                       SUM(ViolenceSexualOffencesOffDeprivedProperty)             AS ViolenceSexualOffencesOffDeprivedProperty,             \
+                       SUM(ViolenceSexualOffencesOffFined)                        AS ViolenceSexualOffencesOffFined,                        \
+                       SUM(ViolenceSexualOffencesOffGivenCaution)                 AS ViolenceSexualOffencesOffGivenCaution,                 \
+                       SUM(ViolenceSexualOffencesOffGivenDrugsPossessionWarning)  AS ViolenceSexualOffencesOffGivenDrugsPossessionWarning,  \
+                       SUM(ViolenceSexualOffencesOffGivenAbsoluteDischarge)       AS ViolenceSexualOffencesOffGivenAbsoluteDischarge,       \
+                       SUM(ViolenceSexualOffencesOffGivenCommunitySentence)       AS ViolenceSexualOffencesOffGivenCommunitySentence,       \
+                       SUM(ViolenceSexualOffencesOffGivenConditionalDischarge)    AS ViolenceSexualOffencesOffGivenConditionalDischarge,    \
+                       SUM(ViolenceSexualOffencesOffGivenPenaltyNotice)           AS ViolenceSexualOffencesOffGivenPenaltyNotice,           \
+                       SUM(ViolenceSexualOffencesOffGivenSuspendedPrisonSentence) AS ViolenceSexualOffencesOffGivenSuspendedPrisonSentence, \
+                       SUM(ViolenceSexualOffencesOffOrderedPayCompensation)       AS ViolenceSexualOffencesOffOrderedPayCompensation,       \
+                       SUM(ViolenceSexualOffencesOffOtherwiseDealtWith)           AS ViolenceSexualOffencesOffOtherwiseDealtWith,           \
+                       SUM(ViolenceSexualOffencesOffSentPrison)                   AS ViolenceSexualOffencesOffSentPrison,                   \
+                       SUM(ViolenceSexualOffencesSuspectChargedPartOfAnotherCase) AS ViolenceSexualOffencesSuspectChargedPartOfAnotherCase, \
+                       SUM(ViolenceSexualOffencesUnableProsecuteSuspect)          AS ViolenceSexualOffencesUnableProsecuteSuspect,          \
+                       SUM(ViolenceSexualOffencesUnderInvestigation)              AS ViolenceSexualOffencesUnderInvestigation,              \
+                       \
+                       SUM(ViolentCrimeEMPTYNULLOutcome)                          AS ViolentCrimeEMPTYNULLOutcome,                \
+                       SUM(ViolentCrimeActionToBeTakenOtherOrg)                   AS ViolentCrimeActionToBeTakenOtherOrg,         \
+                       SUM(ViolentCrimeAwaitingCourtOutcome)                      AS ViolentCrimeAwaitingCourtOutcome,            \
+                       SUM(ViolentCrimeCourtCaseUnableToProceed)                  AS ViolentCrimeCourtCaseUnableToProceed,        \
+                       SUM(ViolentCrimeCourtResultUnavailable)                    AS ViolentCrimeCourtResultUnavailable,          \
+                       SUM(ViolentCrimeDefendantNotGuilty)                        AS ViolentCrimeDefendantNotGuilty,              \
+                       SUM(ViolentCrimeDefendantSentCrownCourt)                   AS ViolentCrimeDefendantSentCrownCourt,         \
+                       SUM(ViolentCrimeFormalActionNotPublicInterest)             AS ViolentCrimeFormalActionNotPublicInterest,   \
+                       SUM(ViolentCrimeInvestigationCompleteNoSuspect)            AS ViolentCrimeInvestigationCompleteNoSuspect,  \
+                       SUM(ViolentCrimeLocalResolution)                           AS ViolentCrimeLocalResolution,                 \
+                       SUM(ViolentCrimeOffDeprivedProperty)                       AS ViolentCrimeOffDeprivedProperty,             \
+                       SUM(ViolentCrimeOffFined)                                  AS ViolentCrimeOffFined,                        \
+                       SUM(ViolentCrimeOffGivenCaution)                           AS ViolentCrimeOffGivenCaution,                 \
+                       SUM(ViolentCrimeOffGivenDrugsPossessionWarning)            AS ViolentCrimeOffGivenDrugsPossessionWarning,  \
+                       SUM(ViolentCrimeOffGivenAbsoluteDischarge)                 AS ViolentCrimeOffGivenAbsoluteDischarge,       \
+                       SUM(ViolentCrimeOffGivenCommunitySentence)                 AS ViolentCrimeOffGivenCommunitySentence,       \
+                       SUM(ViolentCrimeOffGivenConditionalDischarge)              AS ViolentCrimeOffGivenConditionalDischarge,    \
+                       SUM(ViolentCrimeOffGivenPenaltyNotice)                     AS ViolentCrimeOffGivenPenaltyNotice,           \
+                       SUM(ViolentCrimeOffGivenSuspendedPrisonSentence)           AS ViolentCrimeOffGivenSuspendedPrisonSentence, \
+                       SUM(ViolentCrimeOffOrderedPayCompensation)                 AS ViolentCrimeOffOrderedPayCompensation,       \
+                       SUM(ViolentCrimeOffOtherwiseDealtWith)                     AS ViolentCrimeOffOtherwiseDealtWith,           \
+                       SUM(ViolentCrimeOffSentPrison)                             AS ViolentCrimeOffSentPrison,                   \
+                       SUM(ViolentCrimeSuspectChargedPartOfAnotherCase)           AS ViolentCrimeSuspectChargedPartOfAnotherCase, \
+                       SUM(ViolentCrimeUnableProsecuteSuspect)                    AS ViolentCrimeUnableProsecuteSuspect,          \
+                       SUM(ViolentCrimeUnderInvestigation)                        AS ViolentCrimeUnderInvestigation               \
                        \
                        from street_analysis_build \
                        \
@@ -947,9 +1147,9 @@ df_street_agg_LSOA_month_xwalk = sqlCtx.sql('select street_LSOA_month.*, xwalk_d
 #Change to rdd
 rdd_street_agg_LSOA_month_xwalk = df_street_agg_LSOA_month_xwalk.rdd
 #Make one file
-rdd_street_agg_LSOA_month_xwalk_1 = rdd_street_agg_LSOA_month_xwalk.coalesce(1)
+#rdd_street_agg_LSOA_month_xwalk_1 = rdd_street_agg_LSOA_month_xwalk.coalesce(1)
 #Save
-rdd_street_agg_LSOA_month_xwalk_1.saveAsTextFile('s3://ukpolice/street_LSOA_month')
+rdd_street_agg_LSOA_month_xwalk.saveAsTextFile('s3://ukpolice/street_LSOA_month')
 
 
 
