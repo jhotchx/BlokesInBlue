@@ -20,11 +20,11 @@ df_street = sqlCtx.createDataFrame(streetMap)
 #Label columns of dataframe
 df_street_analysis = df_street.toDF("Year",
                                     "LSOA_code", 
-                                    "LSOA_name",
+                                    "LSOA_name", 
                                     "MSOA_code",
                                     "MSOA_name",
                                     "LAD_code",
-                                    "LAD_name", 
+                                    "LAD_name",
                                     "TotalObs", 
                                     "EMPTYNULLCrime", 
                                     "AntiSocialBehavior", 
@@ -787,9 +787,9 @@ df_street_agg_LSOA_snapshot = sqlCtx.sql('select LSOA_code, LSOA_name, MSOA_code
                        \
                        from street_LSOA_year\
                        \
-                       group by LSOA_code, LSOA_name,MSOA_code, MSOA_name, LAD_code, LAD_name')
+                       group by LSOA_code, LSOA_name, MSOA_code, MSOA_name, LAD_code, LAD_name')
 
-print("Number of records after aggregating to LSOA Snapshot level.")
+print("Number of records after aggregating to LSOA snapshot level.")
 count = df_street_agg_LSOA_snapshot.count()
 print(count)
 
