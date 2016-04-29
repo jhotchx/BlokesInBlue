@@ -19,6 +19,9 @@ from bokeh.models import (
 from bokeh.plotting import figure, show, output_file
 
 ## Getting unemployment data into usable format
+crime = pandas.read_csv('total_crime_2011_LAD.csv',usecols=('LAD_name','count'))
+cols = ['LAD','crimes']
+crime.columns=cols
 unemployment = pandas.read_csv('UnemploymentLAD.csv', usecols=('local authority: district / unitary (prior to April 2015)','Unemployment rate - aged 16-64','Date'))
 unemployment['Unemployment rate - aged 16-64'] = pandas.to_numeric(unemployment['Unemployment rate - aged 16-64'], errors='coerce')
 
@@ -32,7 +35,7 @@ unemp2011 = unemployment.loc[(unemployment.Date==2011),['LAD','Unemployment','Da
 #unemp2011 = unemp2011[pandas.notnull(unemp2011['Unemployment'])]
 
 ## pulling lat/longs from shapefile
-sf = shapefile.Reader("/Users/Ahn/Desktop/ukcrime/Shapefile/england_lad_2011_gen.shp") 
+sf = shapefile.Reader("lad/england_lad_2011_gen.shp") 
 
 #http://gis.stackexchange.com/questions/168310/how-to-convert-projected-coordinates-to-geographic-coordinates-without-arcgis
 #https://karlhennermann.wordpress.com/2015/02/16/how-to-make-lsoa-and-msoa-boundaries-from-uk-data-service-align-properly-in-arcgis/
@@ -70,11 +73,14 @@ lad_names =[lad["name"] for lad in data.values()]
 lad_lats = [lad["lats"] for lad in data.values()]
 lad_longs = [lad["longs"] for lad in data.values()]
 lad_unemployment = list()
+lad_crime=list()
 for i in range(len(shapes)):
     try:
         lad_unemployment.append(unemp2011.Unemployment[unemp2011.LAD==lad_names[i]].values[0])
+        lad_crime.append(crime.crimes[crime.LAD==lad_names[i]].values[0])
     except IndexError:
         lad_unemployment.append(np.nan)
+        lad_crime.append(np.nan)
 
 #lad_unemployment= unemp2011[unemp2011['LAD'].isin(lad_names)]
 
@@ -101,7 +107,8 @@ source = ColumnDataSource(data=dict(
     x=lad_longs,
     color=LAD_colors,
     name=lad_names,
-    uerate=lad_unemployment
+    uerate=lad_unemployment,
+    total_crime=lad_crime
 ))
 
 #https://github.com/queise/Berlin_Maps/blob/master/Berlin_dens_gmap.py
@@ -117,7 +124,8 @@ hover.tooltips = OrderedDict([
     ("Name", "@name"),
     ("Latitude", "$y{1.11111}"),
     ("Longitude", "$x{1.11111}"),
-    ("Unemployment Rate 2011","@uerate")
+    ("Unemployment Rate 2011","@uerate"),
+    ("Total Crimes 2011","@total_crime")
 ])
 
 output_file("LADGMapUnemploy.html", title="LAD GMap with Unemployment", mode="cdn")
