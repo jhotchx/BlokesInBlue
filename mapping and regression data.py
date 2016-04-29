@@ -171,8 +171,16 @@ df_street_LAD = sqlCtx.sql('select street_analysis_year.*, xwalk_dedup.MSOA11CD 
 
 total_crime_2011_LAD = df_street_LAD.filter(df_street_LAD['Year']==2011).groupBy("LAD_name").count()
 
+total_crime_LAD_year = df_street_LAD.groupBy("LAD_name","Year").count()
+
+tot_LAD_year = total_crime_LAD_year.toPandas()
+
+tot_LAD_year.to_csv('/home/hadoop/total_crime_LAD_year.csv')
 tot_2011_LAD = total_crime_2011_LAD.toPandas()
 
 tot_2011_LAD.to_csv('/home/hadoop/total_crime_2011_LAD.csv')
 
+type_LAD_year = df_street_LAD.groupBy("LAD_name","Year","Crime_type").count()
 
+crimtype_LAD_year = type_LAD_year.toPandas()
+crimtype_LAD_year.to_csv('/home/hadoop/type_LAD_year.csv')
