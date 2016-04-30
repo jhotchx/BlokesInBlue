@@ -34,10 +34,10 @@ reg1.data <- merge(shape, reg1.data, by=c("LAD_name","Year"), all.x=TRUE)
 reg1.data <- reg1.data[!(reg1.data$Unemp16to64 %in% c("!","-")),]
 #Change variable formats as needed
 reg1.data$Year <- as.factor(reg1.data$Year)
-reg1.data$Unemp16to64 <- as.numeric(reg1.data$Unemp16to64)
+reg1.data$Unemp16to64 <- as.numeric(levels(reg1.data$Unemp16to64))[reg1.data$Unemp16to64]
 
 #First regression done
-reg1 <- lm(as.numeric(Unemp16to64) ~ Year + count, data=reg1.data)
+reg1 <- lm(count ~ Year + as.numeric(Unemp16to64), data=reg1.data)
 summary(reg1)
 
 
