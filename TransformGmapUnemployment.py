@@ -20,7 +20,7 @@ from bokeh.models.widgets import Panel, Tabs
 from bokeh.plotting import figure, show, output_file
 
 ## Getting unemployment data into usable format
-crime = pandas.read_csv('total_crime_LAD_year.csv',usecols=('LAD_name','Year','count'))
+crime = pandas.read_csv('crime_unemployment.csv',usecols=('LAD_name','Year','count'))
 cols = ['LAD','Year','crimes']
 crime.columns=cols
 unemployment = pandas.read_csv('UnemploymentLAD.csv', usecols=('local authority: district / unitary (prior to April 2015)','Unemployment rate - aged 16-64','Date'))
@@ -241,11 +241,11 @@ hover.tooltips = OrderedDict([
 ])
 
 tab1 = Panel(child=p1, title="2011")
-tab2 = Panel(child=p2, title="2012")
-tab3 = Panel(child=p3, title="2013")
-tab4 = Panel(child=p4, title="2014")
-tab5 = Panel(child=p5, title="2015")
+#tab2 = Panel(child=p2, title="2012")
+#tab3 = Panel(child=p3, title="2013")
+#tab4 = Panel(child=p4, title="2014")
+#tab5 = Panel(child=p5, title="2015")
 
-tabs = Tabs(tabs=[tab1,tab2,tab3,tab4,tab5 ])
+tabs = Tabs(tabs=[tab1]) #Tabs(tabs=[tab1,tab2,tab3,tab4,tab5 ])
 output_file("LADGMapUnemploy.html", title="LAD GMap with Unemployment", mode="cdn")
 show(tabs)
