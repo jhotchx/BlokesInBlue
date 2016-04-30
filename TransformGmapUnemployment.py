@@ -89,10 +89,12 @@ for year in years:
     for i in range(len(shapes)):
         try:
             lad_unemp_year.append(unemp[year].Unemployment[unemp[year].LAD==lad_names[i]].values[0])
-            lad_crime_year.append(crim[year].crimes[crim[year].LAD==lad_names[i]].values[0])
         except IndexError:
             lad_unemp_year.append(np.nan)
-            lad_crime_year.append(np.nan)
+        try:
+            lad_crime_year.append(crim[year].crimes[crim[year].LAD==lad_names[i]].values[0])
+        except IndexError:
+           lad_crime_year.append(np.nan)
     lad_unemployment[year] = lad_unemp_year
     lad_crime[year]=lad_crime_year
 
