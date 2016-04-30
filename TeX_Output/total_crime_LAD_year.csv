@@ -1,0 +1,2436 @@
+,LAD_name,Year,count
+2079,Adur,2010,271
+2086,Adur,2011,3936
+2096,Adur,2012,4567
+2108,Adur,2013,3962
+2118,Adur,2014,4053
+2127,Adur,2015,4402
+2135,Adur,2016,324
+1184,Allerdale,2010,455
+1199,Allerdale,2011,6766
+1213,Allerdale,2012,7654
+1230,Allerdale,2013,7671
+1244,Allerdale,2014,7451
+1257,Allerdale,2015,6936
+1269,Allerdale,2016,507
+355,Amber Valley,2010,581
+366,Amber Valley,2011,8604
+379,Amber Valley,2012,9245
+391,Amber Valley,2013,8963
+406,Amber Valley,2014,8484
+421,Amber Valley,2015,8682
+436,Amber Valley,2016,645
+199,Arun,2010,731
+208,Arun,2011,10874
+218,Arun,2012,12360
+229,Arun,2013,10847
+245,Arun,2014,10945
+257,Arun,2015,11130
+267,Arun,2016,877
+572,Ashfield,2010,863
+576,Ashfield,2011,11666
+593,Ashfield,2012,9924
+599,Ashfield,2013,9342
+612,Ashfield,2014,9257
+624,Ashfield,2015,9925
+633,Ashfield,2016,809
+1383,Ashford,2010,429
+1401,Ashford,2011,6958
+1413,Ashford,2012,8727
+1426,Ashford,2013,8359
+1436,Ashford,2014,8059
+1451,Ashford,2015,7744
+1471,Ashford,2016,556
+614,Aylesbury Vale,2010,578
+621,Aylesbury Vale,2011,8189
+635,Aylesbury Vale,2012,9135
+642,Aylesbury Vale,2013,9337
+655,Aylesbury Vale,2014,8498
+669,Aylesbury Vale,2015,9920
+694,Aylesbury Vale,2016,898
+1597,Babergh,2010,350
+1608,Babergh,2011,5499
+1619,Babergh,2012,5862
+1633,Babergh,2013,5573
+1647,Babergh,2014,4809
+1668,Babergh,2015,5244
+1683,Babergh,2016,397
+840,Barking and Dagenham,2010,1087
+852,Barking and Dagenham,2011,16713
+867,Barking and Dagenham,2012,20537
+877,Barking and Dagenham,2013,19250
+887,Barking and Dagenham,2014,18115
+904,Barking and Dagenham,2015,18485
+911,Barking and Dagenham,2016,1511
+868,Barnet,2010,1786
+882,Barnet,2011,25640
+894,Barnet,2012,31575
+905,Barnet,2013,28400
+917,Barnet,2014,27420
+927,Barnet,2015,28140
+941,Barnet,2016,2256
+263,Barnsley,2010,1277
+272,Barnsley,2011,20633
+282,Barnsley,2012,23618
+295,Barnsley,2013,22026
+301,Barnsley,2014,22483
+312,Barnsley,2015,22063
+318,Barnsley,2016,1692
+1634,Barrow-in-Furness,2010,406
+1638,Barrow-in-Furness,2011,5753
+1669,Barrow-in-Furness,2012,7116
+1672,Barrow-in-Furness,2013,7304
+1704,Barrow-in-Furness,2014,7123
+1707,Barrow-in-Furness,2015,6293
+1724,Barrow-in-Furness,2016,444
+2019,Basildon,2010,800
+2027,Basildon,2011,12656
+2041,Basildon,2012,16231
+2057,Basildon,2013,16103
+2072,Basildon,2014,16388
+2083,Basildon,2015,17932
+2093,Basildon,2016,1517
+1323,Basingstoke and Deane,2010,737
+1333,Basingstoke and Deane,2011,10682
+1348,Basingstoke and Deane,2012,12066
+1363,Basingstoke and Deane,2013,11066
+1376,Basingstoke and Deane,2014,10931
+1388,Basingstoke and Deane,2015,12703
+1400,Basingstoke and Deane,2016,970
+2100,Bassetlaw,2010,687
+2104,Bassetlaw,2011,10692
+2114,Bassetlaw,2012,9892
+2123,Bassetlaw,2013,9226
+2130,Bassetlaw,2014,9708
+2147,Bassetlaw,2015,9898
+2159,Bassetlaw,2016,779
+698,Bath and North East Somerset,2010,721
+712,Bath and North East Somerset,2011,10309
+729,Bath and North East Somerset,2012,12191
+746,Bath and North East Somerset,2013,11734
+749,Bath and North East Somerset,2014,11132
+764,Bath and North East Somerset,2015,11433
+794,Bath and North East Somerset,2016,809
+27,Bedford,2010,771
+35,Bedford,2011,11886
+50,Bedford,2012,14024
+59,Bedford,2013,12204
+79,Bedford,2014,13788
+86,Bedford,2015,14310
+102,Bedford,2016,1177
+597,Bexley,2010,1004
+609,Bexley,2011,13344
+620,Bexley,2012,16142
+629,Bexley,2013,15153
+641,Bexley,2014,14906
+653,Bexley,2015,14479
+667,Bexley,2016,1297
+1723,Birmingham,2010,5980
+1741,Birmingham,2011,86355
+1756,Birmingham,2012,98352
+1770,Birmingham,2013,97061
+1784,Birmingham,2014,94309
+1798,Birmingham,2015,94918
+1811,Birmingham,2016,8131
+1734,Blaby,2010,391
+1749,Blaby,2011,5421
+1766,Blaby,2012,5885
+1780,Blaby,2013,5704
+1793,Blaby,2014,5539
+1807,Blaby,2015,5219
+1824,Blaby,2016,418
+58,Blackburn with Darwen,2010,972
+77,Blackburn with Darwen,2011,14706
+85,Blackburn with Darwen,2012,17169
+100,Blackburn with Darwen,2013,16863
+111,Blackburn with Darwen,2014,15951
+121,Blackburn with Darwen,2015,15671
+135,Blackburn with Darwen,2016,1243
+2323,Blackpool,2010,1098
+2340,Blackpool,2011,17652
+2351,Blackpool,2012,22252
+2365,Blackpool,2013,22200
+2378,Blackpool,2014,21751
+2389,Blackpool,2015,21445
+2400,Blackpool,2016,1666
+2169,Blaenau Gwent,2010,488
+2178,Blaenau Gwent,2011,6115
+2188,Blaenau Gwent,2012,6058
+2199,Blaenau Gwent,2013,6124
+2213,Blaenau Gwent,2014,7875
+2224,Blaenau Gwent,2015,6796
+2237,Blaenau Gwent,2016,571
+1347,Bolsover,2010,427
+1366,Bolsover,2011,6207
+1378,Bolsover,2012,6454
+1389,Bolsover,2013,6085
+1399,Bolsover,2014,5766
+1412,Bolsover,2015,5922
+1425,Bolsover,2016,435
+1722,Bolton,2010,1483
+1740,Bolton,2011,27416
+1754,Bolton,2012,27974
+1768,Bolton,2013,27416
+1782,Bolton,2014,27211
+1796,Bolton,2015,29957
+1810,Bolton,2016,2383
+109,Boston,2010,355
+119,Boston,2011,5508
+133,Boston,2012,6794
+145,Boston,2013,6369
+154,Boston,2014,6043
+162,Boston,2015,5844
+170,Boston,2016,471
+658,Bournemouth,2010,1207
+672,Bournemouth,2011,15954
+686,Bournemouth,2012,21961
+702,Bournemouth,2013,20436
+716,Bournemouth,2014,19130
+732,Bournemouth,2015,19487
+752,Bournemouth,2016,1642
+1576,Bracknell Forest,2010,414
+1579,Bracknell Forest,2011,5672
+1595,Bracknell Forest,2012,6157
+1600,Bracknell Forest,2013,5734
+1618,Bracknell Forest,2014,5432
+1632,Bracknell Forest,2015,5832
+1637,Bracknell Forest,2016,446
+684,Bradford,2010,3318
+700,Bradford,2011,45969
+714,Bradford,2012,55336
+731,Bradford,2013,55665
+751,Bradford,2014,53455
+766,Bradford,2015,61772
+779,Bradford,2016,5012
+1070,Braintree,2010,577
+1081,Braintree,2011,7734
+1101,Braintree,2012,9034
+1112,Braintree,2013,8594
+1130,Braintree,2014,8576
+1144,Braintree,2015,9427
+1159,Braintree,2016,649
+243,Breckland,2010,568
+255,Breckland,2011,7737
+265,Breckland,2012,8245
+279,Breckland,2013,7598
+289,Breckland,2014,8528
+296,Breckland,2015,8701
+307,Breckland,2016,648
+1859,Brent,2010,1740
+1869,Brent,2011,26082
+1879,Brent,2012,33056
+1887,Brent,2013,28443
+1896,Brent,2014,28623
+1906,Brent,2015,28649
+1913,Brent,2016,2340
+2053,Brentwood,2010,361
+2067,Brentwood,2011,4703
+2077,Brentwood,2012,6066
+2089,Brentwood,2013,5206
+2098,Brentwood,2014,4807
+2110,Brentwood,2015,5381
+2120,Brentwood,2016,440
+884,Bridgend,2010,662
+896,Bridgend,2011,9864
+903,Bridgend,2012,10752
+920,Bridgend,2013,10361
+926,Bridgend,2014,11165
+944,Bridgend,2015,10432
+955,Bridgend,2016,777
+1393,Brighton and Hove,2010,1588
+1406,Brighton and Hove,2011,22245
+1419,Brighton and Hove,2012,32281
+1445,Brighton and Hove,2013,29532
+1460,Brighton and Hove,2014,28755
+1464,Brighton and Hove,2015,29804
+1480,Brighton and Hove,2016,2209
+739,"Bristol, City of",2010,2743
+757,"Bristol, City of",2011,40372
+773,"Bristol, City of",2012,51267
+783,"Bristol, City of",2013,48854
+803,"Bristol, City of",2014,47416
+813,"Bristol, City of",2015,50949
+830,"Bristol, City of",2016,3975
+2232,Broadland,2010,375
+2253,Broadland,2011,5097
+2264,Broadland,2012,4735
+2281,Broadland,2013,4695
+2303,Broadland,2014,4971
+2319,Broadland,2015,5216
+2330,Broadland,2016,373
+1951,Bromley,2010,1637
+1968,Bromley,2011,22091
+1975,Bromley,2012,25582
+1990,Bromley,2013,23635
+2006,Bromley,2014,23300
+2023,Bromley,2015,23887
+2043,Bromley,2016,1922
+1248,Bromsgrove,2010,433
+1260,Bromsgrove,2011,5679
+1272,Bromsgrove,2012,6307
+1280,Bromsgrove,2013,5720
+1287,Bromsgrove,2014,6012
+1298,Bromsgrove,2015,6584
+1308,Bromsgrove,2016,542
+1492,Broxbourne,2010,582
+1507,Broxbourne,2011,6952
+1523,Broxbourne,2012,8139
+1534,Broxbourne,2013,7158
+1541,Broxbourne,2014,7195
+1556,Broxbourne,2015,7981
+1563,Broxbourne,2016,683
+438,Broxtowe,2010,604
+453,Broxtowe,2011,8072
+465,Broxtowe,2012,6704
+480,Broxtowe,2013,6295
+495,Broxtowe,2014,6512
+506,Broxtowe,2015,6322
+521,Broxtowe,2016,460
+206,Burnley,2010,794
+216,Burnley,2011,10843
+227,Burnley,2012,12493
+246,Burnley,2013,11601
+258,Burnley,2014,12070
+264,Burnley,2015,11508
+280,Burnley,2016,954
+1482,Bury,2010,869
+1497,Bury,2011,16200
+1513,Bury,2012,16594
+1527,Bury,2013,16210
+1537,Bury,2014,16830
+1551,Bury,2015,17068
+1559,Bury,2016,1378
+2357,Caerphilly,2010,1099
+2369,Caerphilly,2011,12939
+2381,Caerphilly,2012,12354
+2393,Caerphilly,2013,12339
+2403,Caerphilly,2014,15015
+2414,Caerphilly,2015,14604
+2422,Caerphilly,2016,1028
+1115,Calderdale,2010,1273
+1125,Calderdale,2011,17090
+1139,Calderdale,2012,19411
+1155,Calderdale,2013,19125
+1169,Calderdale,2014,16513
+1182,Calderdale,2015,19907
+1197,Calderdale,2016,1695
+1759,Cambridge,2010,721
+1773,Cambridge,2011,9749
+1787,Cambridge,2012,14451
+1801,Cambridge,2013,13136
+1819,Cambridge,2014,13888
+1836,Cambridge,2015,13704
+1848,Cambridge,2016,1080
+1623,Camden,2010,1547
+1648,Camden,2011,23789
+1655,Camden,2012,37811
+1684,Camden,2013,32958
+1690,Camden,2014,31367
+1719,Camden,2015,32951
+1732,Camden,2016,2615
+1168,Cannock Chase,2010,450
+1181,Cannock Chase,2011,6013
+1196,Cannock Chase,2012,7454
+1211,Cannock Chase,2013,6624
+1225,Cannock Chase,2014,6586
+1240,Cannock Chase,2015,6827
+1255,Cannock Chase,2016,543
+826,Canterbury,2010,684
+848,Canterbury,2011,9529
+854,Canterbury,2012,11238
+874,Canterbury,2013,11198
+879,Canterbury,2014,11934
+890,Canterbury,2015,11965
+910,Canterbury,2016,1020
+1079,Cardiff,2010,2009
+1095,Cardiff,2011,29848
+1110,Cardiff,2012,40110
+1124,Cardiff,2013,37492
+1138,Cardiff,2014,39719
+1154,Cardiff,2015,39150
+1165,Cardiff,2016,3123
+1777,Carlisle,2010,627
+1790,Carlisle,2011,8564
+1805,Carlisle,2012,10503
+1823,Carlisle,2013,10434
+1837,Carlisle,2014,9808
+1849,Carlisle,2015,9968
+1862,Carlisle,2016,770
+1428,Carmarthenshire,2010,764
+1439,Carmarthenshire,2011,10601
+1453,Carmarthenshire,2012,12975
+1473,Carmarthenshire,2013,12560
+1489,Carmarthenshire,2014,11465
+1504,Carmarthenshire,2015,12030
+1520,Carmarthenshire,2016,918
+1354,Castle Point,2010,367
+1362,Castle Point,2011,4738
+1375,Castle Point,2012,4913
+1387,Castle Point,2013,4790
+1405,Castle Point,2014,4935
+1418,Castle Point,2015,5255
+1432,Castle Point,2016,458
+490,Central Bedfordshire,2010,1187
+504,Central Bedfordshire,2011,16252
+515,Central Bedfordshire,2012,16942
+526,Central Bedfordshire,2013,15806
+540,Central Bedfordshire,2014,16951
+554,Central Bedfordshire,2015,18100
+565,Central Bedfordshire,2016,1536
+1555,Ceredigion,2010,268
+1565,Ceredigion,2011,3764
+1575,Ceredigion,2012,4396
+1583,Ceredigion,2013,3725
+1594,Ceredigion,2014,3754
+1607,Ceredigion,2015,3948
+1617,Ceredigion,2016,330
+1,Charnwood,2011,10287
+14,Charnwood,2012,11822
+21,Charnwood,2013,11669
+36,Charnwood,2014,10895
+44,Charnwood,2015,10707
+62,Charnwood,2016,876
+2435,Charnwood,2010,704
+333,Chelmsford,2010,653
+338,Chelmsford,2011,9114
+343,Chelmsford,2012,12123
+352,Chelmsford,2013,11873
+369,Chelmsford,2014,11897
+382,Chelmsford,2015,12547
+392,Chelmsford,2016,1004
+398,Cheltenham,2010,782
+412,Cheltenham,2011,10165
+427,Cheltenham,2012,10072
+441,Cheltenham,2013,10151
+451,Cheltenham,2014,11207
+469,Cheltenham,2015,10744
+477,Cheltenham,2016,810
+1885,Cherwell,2010,512
+1894,Cherwell,2011,7568
+1907,Cherwell,2012,8695
+1911,Cherwell,2013,8483
+1923,Cherwell,2014,7780
+1932,Cherwell,2015,9188
+1938,Cherwell,2016,677
+1919,Cheshire East,2010,1042
+1927,Cheshire East,2011,21722
+1936,Cheshire East,2012,25775
+1946,Cheshire East,2013,24755
+1956,Cheshire East,2014,22494
+1966,Cheshire East,2015,23001
+1981,Cheshire East,2016,1873
+249,Cheshire West and Chester,2010,1007
+261,Cheshire West and Chester,2011,21161
+273,Cheshire West and Chester,2012,25298
+283,Cheshire West and Chester,2013,24471
+293,Cheshire West and Chester,2014,23793
+302,Cheshire West and Chester,2015,23308
+310,Cheshire West and Chester,2016,1846
+1299,Chesterfield,2010,598
+1314,Chesterfield,2011,9002
+1324,Chesterfield,2012,9866
+1330,Chesterfield,2013,9876
+1350,Chesterfield,2014,9559
+1357,Chesterfield,2015,9359
+1371,Chesterfield,2016,735
+548,Chichester,2010,486
+559,Chichester,2011,7066
+569,Chichester,2012,8186
+583,Chichester,2013,6762
+591,Chichester,2014,6741
+605,Chichester,2015,6662
+618,Chichester,2016,483
+1172,Chiltern,2010,386
+1185,Chiltern,2011,4385
+1200,Chiltern,2012,4291
+1214,Chiltern,2013,4251
+1227,Chiltern,2014,3370
+1242,Chiltern,2015,3745
+1258,Chiltern,2016,312
+1758,Chorley,2010,541
+1772,Chorley,2011,7537
+1786,Chorley,2012,8692
+1800,Chorley,2013,8133
+1818,Chorley,2014,7885
+1831,Chorley,2015,7760
+1844,Chorley,2016,658
+149,Christchurch,2010,202
+156,Christchurch,2011,2737
+164,Christchurch,2012,3089
+175,Christchurch,2013,2885
+183,Christchurch,2014,2661
+188,Christchurch,2015,2784
+202,Christchurch,2016,230
+363,City of London,2010,226
+376,City of London,2011,3430
+390,City of London,2012,6958
+404,City of London,2013,6534
+419,City of London,2014,6443
+433,City of London,2015,6254
+446,City of London,2016,450
+687,Colchester,2010,768
+703,Colchester,2011,11178
+717,Colchester,2012,15046
+733,Colchester,2013,14625
+761,Colchester,2014,14773
+776,Colchester,2015,15798
+780,Colchester,2016,1225
+1821,Conwy,2010,607
+1834,Conwy,2011,8023
+1847,Conwy,2012,10046
+1860,Conwy,2013,9523
+1870,Conwy,2014,8682
+1880,Conwy,2015,8643
+1888,Conwy,2016,632
+473,Copeland,2010,348
+484,Copeland,2011,4555
+500,Copeland,2012,5236
+509,Copeland,2013,5524
+524,Copeland,2014,5564
+532,Copeland,2015,4801
+547,Copeland,2016,364
+1031,Corby,2010,382
+1044,Corby,2011,5826
+1056,Corby,2012,7150
+1067,Corby,2013,6261
+1085,Corby,2014,6800
+1097,Corby,2015,6915
+1116,Corby,2016,539
+1902,Cornwall,2010,1972
+1910,Cornwall,2011,29970
+1920,Cornwall,2012,32378
+1928,Cornwall,2013,33365
+1937,Cornwall,2014,31087
+1947,Cornwall,2015,29943
+1957,Cornwall,2016,2124
+1444,Cotswold,2010,278
+1459,Cotswold,2011,4185
+1475,Cotswold,2012,4864
+1491,Cotswold,2013,4941
+1506,Cotswold,2014,4755
+1522,Cotswold,2015,4703
+1533,Cotswold,2016,340
+1193,County Durham,2010,1197
+1208,County Durham,2011,37268
+1228,County Durham,2012,38472
+1243,County Durham,2013,37562
+1251,County Durham,2014,38875
+1264,County Durham,2015,38506
+1276,County Durham,2016,3434
+619,Coventry,2010,1859
+623,Coventry,2011,26072
+639,Coventry,2012,29618
+644,Coventry,2013,27615
+657,Coventry,2014,27247
+671,Coventry,2015,26001
+696,Coventry,2016,2086
+745,Craven,2010,176
+750,Craven,2011,3083
+765,Craven,2012,3228
+791,Craven,2013,3128
+797,Craven,2014,2800
+821,Craven,2015,2981
+835,Craven,2016,285
+902,Crawley,2010,576
+919,Crawley,2011,8849
+925,Crawley,2012,12828
+943,Crawley,2013,11022
+954,Crawley,2014,12089
+967,Crawley,2015,11788
+982,Crawley,2016,947
+1148,Croydon,2010,2067
+1162,Croydon,2011,29442
+1174,Croydon,2012,38351
+1188,Croydon,2013,33684
+1203,Croydon,2014,32300
+1218,Croydon,2015,32315
+1234,Croydon,2016,2534
+2187,Dacorum,2010,677
+2198,Dacorum,2011,9036
+2211,Dacorum,2012,10247
+2217,Dacorum,2013,8794
+2227,Dacorum,2014,9399
+2247,Dacorum,2015,10283
+2259,Dacorum,2016,1004
+1889,Darlington,2010,376
+1897,Darlington,2011,10085
+1901,Darlington,2012,9943
+1914,Darlington,2013,10382
+1918,Darlington,2014,10225
+1926,Darlington,2015,10215
+1941,Darlington,2016,789
+1587,Dartford,2010,464
+1591,Dartford,2011,6898
+1611,Dartford,2012,8898
+1613,Dartford,2013,9368
+1626,Dartford,2014,9945
+1653,Dartford,2015,9935
+1661,Dartford,2016,805
+1535,Daventry,2010,357
+1543,Daventry,2011,5192
+1557,Daventry,2012,5829
+1566,Daventry,2013,5146
+1577,Daventry,2014,5659
+1585,Daventry,2015,6164
+1596,Daventry,2016,527
+1987,Denbighshire,2010,542
+2000,Denbighshire,2011,7477
+2017,Denbighshire,2012,9025
+2032,Denbighshire,2013,7595
+2045,Denbighshire,2014,7799
+2061,Denbighshire,2015,7981
+2075,Denbighshire,2016,600
+1121,Derby,2010,1643
+1136,Derby,2011,24056
+1152,Derby,2012,28808
+1163,Derby,2013,28478
+1177,Derby,2014,29003
+1191,Derby,2015,28894
+1206,Derby,2016,2302
+795,Derbyshire Dales,2010,237
+809,Derbyshire Dales,2011,3663
+824,Derbyshire Dales,2012,3771
+838,Derbyshire Dales,2013,3595
+850,Derbyshire Dales,2014,3378
+864,Derbyshire Dales,2015,3144
+875,Derbyshire Dales,2016,263
+2377,Doncaster,2010,1950
+2388,Doncaster,2011,31318
+2399,Doncaster,2012,33277
+2409,Doncaster,2013,32890
+2418,Doncaster,2014,33423
+2427,Doncaster,2015,33706
+2433,Doncaster,2016,2664
+2136,Dover,2010,548
+2148,Dover,2011,7493
+2160,Dover,2012,8429
+2170,Dover,2013,8525
+2179,Dover,2014,9037
+2190,Dover,2015,8836
+2202,Dover,2016,686
+1463,Dudley,2010,1459
+1479,Dudley,2011,20024
+1496,Dudley,2012,20405
+1512,Dudley,2013,19658
+1526,Dudley,2014,20445
+1538,Dudley,2015,20990
+1548,Dudley,2016,1663
+1060,Ealing,2010,2105
+1074,Ealing,2011,28833
+1090,Ealing,2012,36239
+1105,Ealing,2013,31695
+1120,Ealing,2014,30108
+1134,Ealing,2015,30803
+1149,Ealing,2016,2488
+1151,East Cambridgeshire,2010,287
+1164,East Cambridgeshire,2011,4249
+1178,East Cambridgeshire,2012,4455
+1192,East Cambridgeshire,2013,3988
+1207,East Cambridgeshire,2014,3849
+1223,East Cambridgeshire,2015,3723
+1238,East Cambridgeshire,2016,319
+1929,East Devon,2010,351
+1940,East Devon,2011,5802
+1948,East Devon,2012,6039
+1958,East Devon,2013,6017
+1971,East Devon,2014,5872
+1982,East Devon,2015,5733
+2002,East Devon,2016,407
+1601,East Dorset,2010,306
+1612,East Dorset,2011,3973
+1625,East Dorset,2012,3997
+1639,East Dorset,2013,3841
+1660,East Dorset,2014,3507
+1674,East Dorset,2015,3133
+1696,East Dorset,2016,284
+839,East Hampshire,2010,438
+861,East Hampshire,2011,6645
+866,East Hampshire,2012,6368
+885,East Hampshire,2013,5543
+897,East Hampshire,2014,5539
+901,East Hampshire,2015,5951
+921,East Hampshire,2016,473
+339,East Hertfordshire,2010,546
+349,East Hertfordshire,2011,7535
+360,East Hertfordshire,2012,8200
+370,East Hertfordshire,2013,7106
+383,East Hertfordshire,2014,7667
+401,East Hertfordshire,2015,8289
+416,East Hertfordshire,2016,671
+2212,East Lindsey,2010,612
+2220,East Lindsey,2011,9918
+2231,East Lindsey,2012,11014
+2248,East Lindsey,2013,9802
+2263,East Lindsey,2014,9548
+2280,East Lindsey,2015,9399
+2297,East Lindsey,2016,633
+2013,East Northamptonshire,2010,389
+2029,East Northamptonshire,2011,5501
+2048,East Northamptonshire,2012,6044
+2063,East Northamptonshire,2013,5286
+2073,East Northamptonshire,2014,5611
+2085,East Northamptonshire,2015,5727
+2094,East Northamptonshire,2016,507
+977,East Riding of Yorkshire,2010,1187
+992,East Riding of Yorkshire,2011,18119
+1005,East Riding of Yorkshire,2012,18866
+1017,East Riding of Yorkshire,2013,17466
+1027,East Riding of Yorkshire,2014,16960
+1037,East Riding of Yorkshire,2015,16042
+1048,East Riding of Yorkshire,2016,1210
+1643,East Staffordshire,2010,411
+1665,East Staffordshire,2011,5853
+1679,East Staffordshire,2012,7810
+1701,East Staffordshire,2013,7209
+1716,East Staffordshire,2014,7189
+1730,East Staffordshire,2015,8006
+1746,East Staffordshire,2016,702
+1761,Eastbourne,2010,558
+1774,Eastbourne,2011,7841
+1788,Eastbourne,2012,9446
+1802,Eastbourne,2013,8233
+1820,Eastbourne,2014,8944
+1833,Eastbourne,2015,8929
+1846,Eastbourne,2016,631
+2099,Eastleigh,2010,463
+2106,Eastleigh,2011,7581
+2116,Eastleigh,2012,8091
+2125,Eastleigh,2013,7291
+2133,Eastleigh,2014,6974
+2146,Eastleigh,2015,8055
+2158,Eastleigh,2016,622
+1667,Eden,2010,161
+1673,Eden,2011,2537
+1699,Eden,2012,2910
+1708,Eden,2013,2994
+1725,Eden,2014,2818
+1743,Eden,2015,2666
+1760,Eden,2016,180
+1967,Elmbridge,2010,663
+1986,Elmbridge,2011,8616
+1999,Elmbridge,2012,8969
+2016,Elmbridge,2013,7967
+2031,Elmbridge,2014,7863
+2042,Elmbridge,2015,8966
+2059,Elmbridge,2016,676
+975,Enfield,2010,1612
+989,Enfield,2011,23645
+1002,Enfield,2012,28187
+1015,Enfield,2013,26990
+1025,Enfield,2014,26132
+1035,Enfield,2015,25814
+1047,Enfield,2016,2027
+810,Epping Forest,2010,592
+825,Epping Forest,2011,8262
+842,Epping Forest,2012,10504
+853,Epping Forest,2013,9954
+869,Epping Forest,2014,9337
+878,Epping Forest,2015,10191
+889,Epping Forest,2016,719
+78,Epsom and Ewell,2010,353
+89,Epsom and Ewell,2011,4766
+101,Epsom and Ewell,2012,5497
+113,Epsom and Ewell,2013,5292
+124,Epsom and Ewell,2014,4923
+136,Epsom and Ewell,2015,5701
+146,Epsom and Ewell,2016,411
+1803,Erewash,2010,634
+1822,Erewash,2011,9488
+1839,Erewash,2012,9978
+1851,Erewash,2013,9324
+1861,Erewash,2014,9204
+1872,Erewash,2015,8758
+1881,Erewash,2016,689
+1291,Exeter,2010,586
+1300,Exeter,2011,9584
+1310,Exeter,2012,12037
+1319,Exeter,2013,11267
+1331,Exeter,2014,11249
+1343,Exeter,2015,10531
+1358,Exeter,2016,834
+1301,Fareham,2010,323
+1311,Fareham,2011,5782
+1320,Fareham,2012,6546
+1334,Fareham,2013,5714
+1344,Fareham,2014,5269
+1364,Fareham,2015,6335
+1377,Fareham,2016,442
+5,Fenland,2010,491
+18,Fenland,2011,7630
+24,Fenland,2012,8224
+42,Fenland,2013,7565
+47,Fenland,2014,7753
+67,Fenland,2015,7872
+73,Fenland,2016,648
+1246,Flintshire,2010,693
+1252,Flintshire,2011,9256
+1265,Flintshire,2012,11318
+1278,Flintshire,2013,10926
+1281,Flintshire,2014,10127
+1294,Flintshire,2015,10268
+1304,Flintshire,2016,731
+1051,Forest Heath,2010,337
+1072,Forest Heath,2011,4561
+1078,Forest Heath,2012,5406
+1103,Forest Heath,2013,5090
+1109,Forest Heath,2014,4642
+1132,Forest Heath,2015,4779
+1146,Forest Heath,2016,347
+53,Forest of Dean,2010,284
+68,Forest of Dean,2011,4483
+80,Forest of Dean,2012,5003
+92,Forest of Dean,2013,4850
+103,Forest of Dean,2014,4449
+115,Forest of Dean,2015,4402
+127,Forest of Dean,2016,326
+7,Fylde,2010,304
+19,Fylde,2011,4482
+26,Fylde,2012,4723
+31,Fylde,2013,4702
+48,Fylde,2014,4848
+55,Fylde,2015,4619
+74,Fylde,2016,339
+2132,Gateshead,2010,898
+2140,Gateshead,2011,12949
+2152,Gateshead,2012,14609
+2164,Gateshead,2013,14713
+2174,Gateshead,2014,14915
+2185,Gateshead,2015,16799
+2196,Gateshead,2016,1512
+288,Gedling,2010,583
+297,Gedling,2011,8901
+306,Gedling,2012,6971
+313,Gedling,2013,6280
+319,Gedling,2014,6545
+324,Gedling,2015,6204
+327,Gedling,2016,506
+1141,Gloucester,2010,783
+1157,Gloucester,2011,11495
+1170,Gloucester,2012,14486
+1183,Gloucester,2013,13765
+1198,Gloucester,2014,13529
+1212,Gloucester,2015,13691
+1232,Gloucester,2016,1075
+1705,Gosport,2010,399
+1709,Gosport,2011,6395
+1726,Gosport,2012,7223
+1744,Gosport,2013,7397
+1764,Gosport,2014,6628
+1778,Gosport,2015,7257
+1791,Gosport,2016,533
+461,Gravesham,2010,526
+486,Gravesham,2011,7514
+491,Gravesham,2012,9427
+511,Gravesham,2013,9801
+516,Gravesham,2014,9805
+533,Gravesham,2015,9515
+549,Gravesham,2016,771
+1040,Great Yarmouth,2010,590
+1050,Great Yarmouth,2011,8295
+1064,Great Yarmouth,2012,9248
+1076,Great Yarmouth,2013,8728
+1093,Great Yarmouth,2014,9733
+1107,Great Yarmouth,2015,10124
+1123,Great Yarmouth,2016,718
+2244,Greenwich,2010,1518
+2255,Greenwich,2011,21053
+2271,Greenwich,2012,26007
+2293,Greenwich,2013,23480
+2310,Greenwich,2014,23412
+2320,Greenwich,2015,23891
+2336,Greenwich,2016,2050
+782,Guildford,2010,693
+805,Guildford,2011,10095
+812,Guildford,2012,11968
+828,Guildford,2013,10549
+846,Guildford,2014,10188
+856,Guildford,2015,11117
+871,Guildford,2016,768
+1868,Gwynedd,2010,552
+1883,Gwynedd,2011,7446
+1886,Gwynedd,2012,9336
+1895,Gwynedd,2013,8842
+1908,Gwynedd,2014,8422
+1912,Gwynedd,2015,8586
+1924,Gwynedd,2016,676
+985,Hackney,2010,1386
+997,Hackney,2011,21052
+1010,Hackney,2012,32273
+1021,Hackney,2013,29607
+1032,Hackney,2014,28607
+1043,Hackney,2015,29879
+1057,Hackney,2016,2197
+1046,Halton,2010,490
+1052,Halton,2011,10235
+1068,Halton,2012,12670
+1080,Halton,2013,12237
+1098,Halton,2014,11513
+1111,Halton,2015,11217
+1127,Halton,2016,809
+754,Hambleton,2010,310
+770,Hambleton,2011,4822
+793,Hambleton,2012,4919
+801,Hambleton,2013,4840
+823,Hambleton,2014,4515
+837,Hambleton,2015,4676
+844,Hambleton,2016,347
+502,Hammersmith and Fulham,2010,1187
+514,Hammersmith and Fulham,2011,17856
+525,Hammersmith and Fulham,2012,25438
+539,Hammersmith and Fulham,2013,21905
+553,Hammersmith and Fulham,2014,22020
+563,Hammersmith and Fulham,2015,22513
+575,Hammersmith and Fulham,2016,1792
+402,Harborough,2010,285
+417,Harborough,2011,3608
+430,Harborough,2012,3956
+444,Harborough,2013,3715
+460,Harborough,2014,3584
+471,Harborough,2015,3322
+489,Harborough,2016,308
+536,Haringey,2010,1529
+550,Haringey,2011,22445
+560,Haringey,2012,29139
+564,Haringey,2013,25630
+584,Haringey,2014,26871
+587,Haringey,2015,27966
+606,Haringey,2016,2231
+2058,Harlow,2010,412
+2074,Harlow,2011,6282
+2084,Harlow,2012,9073
+2095,Harlow,2013,8925
+2103,Harlow,2014,8883
+2113,Harlow,2015,9285
+2122,Harlow,2016,763
+2,Harrogate,2015,9551
+12,Harrogate,2016,756
+2401,Harrogate,2010,617
+2413,Harrogate,2011,9998
+2421,Harrogate,2012,9897
+2430,Harrogate,2013,9653
+2436,Harrogate,2014,9616
+1309,Harrow,2010,1015
+1318,Harrow,2011,14563
+1329,Harrow,2012,17060
+1341,Harrow,2013,15282
+1356,Harrow,2014,14809
+1370,Harrow,2015,14985
+1382,Harrow,2016,1254
+8,Hart,2011,4324
+17,Hart,2012,4280
+28,Hart,2013,3892
+40,Hart,2014,3970
+51,Hart,2015,4692
+64,Hart,2016,384
+2439,Hart,2010,312
+1454,Hartlepool,2010,647
+1467,Hartlepool,2011,9546
+1484,Hartlepool,2012,10565
+1499,Hartlepool,2013,10501
+1515,Hartlepool,2014,10950
+1528,Hartlepool,2015,11994
+1539,Hartlepool,2016,927
+1435,Hastings,2010,614
+1450,Hastings,2011,8530
+1477,Hastings,2012,9731
+1494,Hastings,2013,8856
+1509,Hastings,2014,10058
+1524,Hastings,2015,10341
+1536,Hastings,2016,848
+545,Havant,2010,557
+558,Havant,2011,8684
+566,Havant,2012,9986
+581,Havant,2013,9267
+588,Havant,2014,8837
+602,Havant,2015,10156
+615,Havant,2016,859
+328,Havering,2010,1143
+331,Havering,2011,16359
+336,Havering,2012,20089
+347,Havering,2013,18344
+358,Havering,2014,17409
+364,Havering,2015,18202
+377,Havering,2016,1486
+3,"Herefordshire, County of",2016,1052
+2392,"Herefordshire, County of",2010,752
+2402,"Herefordshire, County of",2011,11371
+2411,"Herefordshire, County of",2012,14120
+2419,"Herefordshire, County of",2013,13129
+2428,"Herefordshire, County of",2014,12218
+2437,"Herefordshire, County of",2015,13569
+1685,Hertsmere,2010,482
+1703,Hertsmere,2011,6527
+1720,Hertsmere,2012,7507
+1733,Hertsmere,2013,6203
+1748,Hertsmere,2014,6614
+1763,Hertsmere,2015,7815
+1776,Hertsmere,2016,609
+2230,High Peak,2010,453
+2252,High Peak,2011,6073
+2262,High Peak,2012,6765
+2278,High Peak,2013,6539
+2302,High Peak,2014,5739
+2318,High Peak,2015,5691
+2328,High Peak,2016,466
+1175,Hillingdon,2010,1648
+1189,Hillingdon,2011,23823
+1204,Hillingdon,2012,28950
+1219,Hillingdon,2013,25248
+1235,Hillingdon,2014,27501
+1249,Hillingdon,2015,27026
+1262,Hillingdon,2016,2216
+2307,Hinckley and Bosworth,2010,392
+2334,Hinckley and Bosworth,2011,5696
+2348,Hinckley and Bosworth,2012,6061
+2354,Hinckley and Bosworth,2013,6030
+2375,Hinckley and Bosworth,2014,5774
+2379,Hinckley and Bosworth,2015,5252
+2390,Hinckley and Bosworth,2016,497
+342,Horsham,2010,409
+348,Horsham,2011,6380
+354,Horsham,2012,7109
+374,Horsham,2013,6232
+388,Horsham,2014,6589
+400,Horsham,2015,7077
+415,Horsham,2016,532
+1220,Hounslow,2010,1530
+1236,Hounslow,2011,22502
+1256,Hounslow,2012,28317
+1268,Hounslow,2013,24080
+1274,Hounslow,2014,23521
+1283,Hounslow,2015,24527
+1289,Hounslow,2016,1922
+1224,Huntingdonshire,2010,697
+1239,Huntingdonshire,2011,10161
+1254,Huntingdonshire,2012,11441
+1267,Huntingdonshire,2013,10407
+1275,Huntingdonshire,2014,10617
+1282,Huntingdonshire,2015,10319
+1290,Huntingdonshire,2016,808
+820,Hyndburn,2010,585
+834,Hyndburn,2011,8227
+851,Hyndburn,2012,8961
+862,Hyndburn,2013,9244
+876,Hyndburn,2014,8435
+886,Hyndburn,2015,8918
+898,Hyndburn,2016,740
+673,Ipswich,2010,921
+690,Ipswich,2011,13758
+705,Ipswich,2012,17353
+719,Ipswich,2013,15542
+735,Ipswich,2014,15067
+755,Ipswich,2015,16525
+771,Ipswich,2016,1361
+523,Isle of Anglesey,2010,303
+528,Isle of Anglesey,2011,3890
+542,Isle of Anglesey,2012,4192
+555,Isle of Anglesey,2013,4146
+573,Isle of Anglesey,2014,3909
+578,Isle of Anglesey,2015,4075
+595,Isle of Anglesey,2016,278
+1339,Isle of Wight,2010,634
+1342,Isle of Wight,2011,9160
+1369,Isle of Wight,2012,10096
+1380,Isle of Wight,2013,9504
+1391,Isle of Wight,2014,9053
+1394,Isle of Wight,2015,10480
+1407,Isle of Wight,2016,766
+2204,Isles of Scilly,2011,43
+2216,Isles of Scilly,2012,32
+2226,Isles of Scilly,2013,84
+2238,Isles of Scilly,2014,60
+2254,Isles of Scilly,2015,105
+2270,Isles of Scilly,2016,2
+1739,Islington,2010,1455
+1753,Islington,2011,21155
+1767,Islington,2012,31822
+1781,Islington,2013,28157
+1795,Islington,2014,28558
+1816,Islington,2015,30315
+1827,Islington,2016,2514
+1176,Kensington and Chelsea,2010,1063
+1190,Kensington and Chelsea,2011,15089
+1205,Kensington and Chelsea,2012,23882
+1226,Kensington and Chelsea,2013,20996
+1241,Kensington and Chelsea,2014,20640
+1250,Kensington and Chelsea,2015,21654
+1263,Kensington and Chelsea,2016,1706
+2206,Kettering,2010,511
+2221,Kettering,2011,7324
+2233,Kettering,2012,9286
+2240,Kettering,2013,8698
+2265,Kettering,2014,9001
+2282,Kettering,2015,8878
+2290,Kettering,2016,670
+769,King's Lynn and West Norfolk,2010,636
+792,King's Lynn and West Norfolk,2011,9330
+800,King's Lynn and West Norfolk,2012,9654
+822,King's Lynn and West Norfolk,2013,9169
+836,King's Lynn and West Norfolk,2014,9930
+843,King's Lynn and West Norfolk,2015,9968
+863,King's Lynn and West Norfolk,2016,778
+1979,"Kingston upon Hull, City of",2010,1680
+1994,"Kingston upon Hull, City of",2011,25127
+2010,"Kingston upon Hull, City of",2012,30234
+2025,"Kingston upon Hull, City of",2013,31535
+2040,"Kingston upon Hull, City of",2014,32637
+2056,"Kingston upon Hull, City of",2015,31659
+2069,"Kingston upon Hull, City of",2016,2506
+598,Kingston upon Thames,2010,652
+610,Kingston upon Thames,2011,10072
+626,Kingston upon Thames,2012,13158
+630,Kingston upon Thames,2013,11837
+647,Kingston upon Thames,2014,11538
+660,Kingston upon Thames,2015,11781
+675,Kingston upon Thames,2016,965
+1422,Kirklees,2010,2413
+1433,Kirklees,2011,34914
+1448,Kirklees,2012,37641
+1466,Kirklees,2013,36085
+1483,Kirklees,2014,33517
+1498,Kirklees,2015,38448
+1514,Kirklees,2016,3180
+93,Knowsley,2010,808
+105,Knowsley,2011,10951
+116,Knowsley,2012,12986
+128,Knowsley,2013,12911
+139,Knowsley,2014,12543
+150,Knowsley,2015,12479
+159,Knowsley,2016,903
+271,Lambeth,2010,1804
+281,Lambeth,2011,28759
+291,Lambeth,2012,41108
+300,Lambeth,2013,38186
+309,Lambeth,2014,36922
+316,Lambeth,2015,37776
+322,Lambeth,2016,3054
+929,Lancaster,2010,832
+942,Lancaster,2011,11645
+957,Lancaster,2012,13591
+969,Lancaster,2013,13258
+981,Lancaster,2014,13310
+996,Lancaster,2015,13669
+1008,Lancaster,2016,1059
+1742,Leeds,2010,5197
+1757,Leeds,2011,73131
+1771,Leeds,2012,86830
+1785,Leeds,2013,81701
+1799,Leeds,2014,75927
+1812,Leeds,2015,85435
+1829,Leeds,2016,7168
+2049,Leicester,2010,2020
+2064,Leicester,2011,30795
+2070,Leicester,2012,37868
+2087,Leicester,2013,36229
+2092,Leicester,2014,35699
+2109,Leicester,2015,32424
+2119,Leicester,2016,2780
+1381,Lewes,2010,419
+1392,Lewes,2011,6429
+1397,Lewes,2012,6548
+1410,Lewes,2013,5573
+1423,Lewes,2014,5443
+1446,Lewes,2015,5899
+1461,Lewes,2016,437
+2200,Lewisham,2010,1784
+2214,Lewisham,2011,24765
+2218,Lewisham,2012,30266
+2228,Lewisham,2013,27143
+2249,Lewisham,2014,25310
+2260,Lewisham,2015,26815
+2276,Lewisham,2016,2198
+1544,Lichfield,2010,353
+1549,Lichfield,2011,4569
+1567,Lichfield,2012,5288
+1570,Lichfield,2013,4702
+1586,Lichfield,2014,4864
+1589,Lichfield,2015,5442
+1610,Lichfield,2016,419
+1053,Lincoln,2010,650
+1073,Lincoln,2011,10244
+1082,Lincoln,2012,13818
+1104,Lincoln,2013,12910
+1113,Lincoln,2014,12218
+1133,Lincoln,2015,11865
+1147,Lincoln,2016,908
+2245,Liverpool,2010,3026
+2256,Liverpool,2011,42316
+2272,Liverpool,2012,57081
+2294,Liverpool,2013,56893
+2311,Liverpool,2014,56048
+2321,Liverpool,2015,56054
+2337,Liverpool,2016,4326
+4,Luton,2010,1228
+15,Luton,2011,17471
+23,Luton,2012,21378
+38,Luton,2013,19720
+46,Luton,2014,20871
+61,Luton,2015,20225
+72,Luton,2016,1787
+462,Maidstone,2010,668
+478,Maidstone,2011,9417
+492,Maidstone,2012,11068
+505,Maidstone,2013,11387
+517,Maidstone,2014,11910
+527,Maidstone,2015,11591
+541,Maidstone,2016,927
+174,Maldon,2010,240
+182,Maldon,2011,2960
+189,Maldon,2012,3517
+200,Maldon,2013,3046
+209,Maldon,2014,3166
+222,Maldon,2015,3201
+232,Maldon,2016,285
+829,Malvern Hills,2010,308
+845,Malvern Hills,2011,3975
+857,Malvern Hills,2012,4752
+870,Malvern Hills,2013,4130
+880,Malvern Hills,2014,4155
+892,Malvern Hills,2015,4720
+907,Malvern Hills,2016,351
+654,Manchester,2010,3849
+668,Manchester,2011,69666
+683,Manchester,2012,70125
+699,Manchester,2013,70686
+713,Manchester,2014,73379
+730,Manchester,2015,79201
+747,Manchester,2016,6533
+2005,Mansfield,2010,793
+2022,Mansfield,2011,11100
+2036,Mansfield,2012,9204
+2050,Mansfield,2013,9178
+2065,Mansfield,2014,9939
+2078,Mansfield,2015,10470
+2088,Mansfield,2016,830
+1440,Medway,2010,1336
+1455,Medway,2011,18241
+1468,Medway,2012,22956
+1485,Medway,2013,22608
+1500,Medway,2014,23898
+1516,Medway,2015,25268
+1529,Medway,2016,2054
+345,Melton,2010,152
+356,Melton,2011,2644
+372,Melton,2012,2860
+385,Melton,2013,2880
+394,Melton,2014,2823
+408,Melton,2015,2146
+423,Melton,2016,171
+537,Mendip,2010,478
+551,Mendip,2011,7400
+561,Mendip,2012,8020
+567,Mendip,2013,7794
+585,Mendip,2014,6643
+589,Mendip,2015,6866
+607,Mendip,2016,557
+934,Merthyr Tydfil,2010,403
+948,Merthyr Tydfil,2011,5507
+961,Merthyr Tydfil,2012,5673
+974,Merthyr Tydfil,2013,5307
+988,Merthyr Tydfil,2014,5919
+1001,Merthyr Tydfil,2015,5928
+1014,Merthyr Tydfil,2016,470
+365,Merton,2010,950
+378,Merton,2011,14069
+395,Merton,2012,16780
+409,Merton,2013,14737
+424,Merton,2014,14184
+437,Merton,2015,14533
+449,Merton,2016,1188
+196,Mid Devon,2010,236
+203,Mid Devon,2011,3477
+213,Mid Devon,2012,3576
+224,Mid Devon,2013,3539
+242,Mid Devon,2014,3140
+254,Mid Devon,2015,3320
+262,Mid Devon,2016,202
+30,Mid Suffolk,2010,310
+37,Mid Suffolk,2011,4846
+54,Mid Suffolk,2012,5067
+60,Mid Suffolk,2013,4572
+81,Mid Suffolk,2014,4109
+87,Mid Suffolk,2015,4639
+104,Mid Suffolk,2016,375
+741,Mid Sussex,2010,478
+756,Mid Sussex,2011,7168
+772,Mid Sussex,2012,8115
+786,Mid Sussex,2013,7165
+802,Mid Sussex,2014,6987
+815,Mid Sussex,2015,7264
+832,Mid Sussex,2016,548
+1558,Middlesbrough,2010,1076
+1561,Middlesbrough,2011,16881
+1578,Middlesbrough,2012,20772
+1581,Middlesbrough,2013,20230
+1599,Middlesbrough,2014,20845
+1604,Middlesbrough,2015,22386
+1622,Middlesbrough,2016,1857
+2246,Milton Keynes,2010,1269
+2258,Milton Keynes,2011,17513
+2274,Milton Keynes,2012,22226
+2295,Milton Keynes,2013,20722
+2312,Milton Keynes,2014,19599
+2324,Milton Keynes,2015,20773
+2341,Milton Keynes,2016,1605
+1284,Mole Valley,2010,355
+1293,Mole Valley,2011,4905
+1303,Mole Valley,2012,5407
+1315,Mole Valley,2013,4810
+1326,Mole Valley,2014,4691
+1336,Mole Valley,2015,5208
+1353,Mole Valley,2016,386
+971,Monmouthshire,2010,412
+983,Monmouthshire,2011,4816
+998,Monmouthshire,2012,4759
+1011,Monmouthshire,2013,4636
+1018,Monmouthshire,2014,5823
+1028,Monmouthshire,2015,5602
+1045,Monmouthshire,2016,412
+1137,Neath Port Talbot,2010,672
+1153,Neath Port Talbot,2011,9377
+1173,Neath Port Talbot,2012,9951
+1187,Neath Port Talbot,2013,9672
+1202,Neath Port Talbot,2014,10338
+1216,Neath Port Talbot,2015,10438
+1229,Neath Port Talbot,2016,763
+1574,New Forest,2010,733
+1584,New Forest,2011,10507
+1593,New Forest,2012,11635
+1609,New Forest,2013,10315
+1616,New Forest,2014,9078
+1630,New Forest,2015,10478
+1649,New Forest,2016,731
+304,Newark and Sherwood,2010,621
+315,Newark and Sherwood,2011,8991
+321,Newark and Sherwood,2012,7777
+325,Newark and Sherwood,2013,7072
+326,Newark and Sherwood,2014,8014
+334,Newark and Sherwood,2015,8378
+340,Newark and Sherwood,2016,670
+2239,Newcastle upon Tyne,2010,1668
+2257,Newcastle upon Tyne,2011,23515
+2273,Newcastle upon Tyne,2012,32652
+2287,Newcastle upon Tyne,2013,32256
+2304,Newcastle upon Tyne,2014,32290
+2322,Newcastle upon Tyne,2015,35522
+2338,Newcastle upon Tyne,2016,3004
+778,Newcastle-under-Lyme,2010,508
+781,Newcastle-under-Lyme,2011,7082
+808,Newcastle-under-Lyme,2012,9117
+811,Newcastle-under-Lyme,2013,8982
+827,Newcastle-under-Lyme,2014,8629
+849,Newcastle-under-Lyme,2015,8986
+855,Newcastle-under-Lyme,2016,798
+990,Newham,2010,1903
+1003,Newham,2011,27620
+1019,Newham,2012,37630
+1029,Newham,2013,33915
+1036,Newham,2014,32906
+1054,Newham,2015,33376
+1061,Newham,2016,2720
+649,Newport,2010,1066
+663,Newport,2011,12541
+677,Newport,2012,14495
+693,Newport,2013,13671
+708,Newport,2014,16191
+722,Newport,2015,16478
+738,Newport,2016,1315
+1086,North Devon,2010,322
+1096,North Devon,2011,5642
+1117,North Devon,2012,6386
+1126,North Devon,2013,5856
+1140,North Devon,2014,6056
+1156,North Devon,2015,5742
+1171,North Devon,2016,411
+1629,North Dorset,2010,261
+1642,North Dorset,2011,3084
+1664,North Dorset,2012,3368
+1678,North Dorset,2013,3103
+1700,North Dorset,2014,2656
+1712,North Dorset,2015,2969
+1729,North Dorset,2016,204
+192,North East Derbyshire,2010,419
+198,North East Derbyshire,2011,5599
+211,North East Derbyshire,2012,5622
+220,North East Derbyshire,2013,5206
+234,North East Derbyshire,2014,5053
+244,North East Derbyshire,2015,4875
+256,North East Derbyshire,2016,445
+241,North East Lincolnshire,2010,889
+253,North East Lincolnshire,2011,13415
+260,North East Lincolnshire,2012,17831
+278,North East Lincolnshire,2013,18003
+287,North East Lincolnshire,2014,19299
+292,North East Lincolnshire,2015,19516
+305,North East Lincolnshire,2016,1378
+1039,North Hertfordshire,2010,535
+1049,North Hertfordshire,2011,7170
+1063,North Hertfordshire,2012,7729
+1075,North Hertfordshire,2013,6799
+1092,North Hertfordshire,2014,7173
+1106,North Hertfordshire,2015,7523
+1122,North Hertfordshire,2016,624
+1352,North Kesteven,2010,351
+1359,North Kesteven,2011,4978
+1372,North Kesteven,2012,5097
+1384,North Kesteven,2013,4366
+1404,North Kesteven,2014,4369
+1415,North Kesteven,2015,4203
+1429,North Kesteven,2016,311
+172,North Lincolnshire,2010,817
+181,North Lincolnshire,2011,13292
+186,North Lincolnshire,2012,14512
+197,North Lincolnshire,2013,12817
+205,North Lincolnshire,2014,12699
+215,North Lincolnshire,2015,12419
+226,North Lincolnshire,2016,987
+49,North Norfolk,2010,373
+66,North Norfolk,2011,5147
+75,North Norfolk,2012,4877
+91,North Norfolk,2013,4668
+98,North Norfolk,2014,4851
+114,North Norfolk,2015,4803
+125,North Norfolk,2016,338
+767,North Somerset,2010,787
+784,North Somerset,2011,12508
+798,North Somerset,2012,13828
+814,North Somerset,2013,13049
+831,North Somerset,2014,12989
+841,North Somerset,2015,14148
+858,North Somerset,2016,1068
+2219,North Tyneside,2010,840
+2229,North Tyneside,2011,12498
+2251,North Tyneside,2012,14134
+2261,North Tyneside,2013,13943
+2277,North Tyneside,2014,14314
+2299,North Tyneside,2015,14960
+2315,North Tyneside,2016,1299
+947,North Warwickshire,2010,285
+953,North Warwickshire,2011,4396
+966,North Warwickshire,2012,4824
+987,North Warwickshire,2013,4367
+995,North Warwickshire,2014,4446
+1007,North Warwickshire,2015,4785
+1024,North Warwickshire,2016,397
+405,North West Leicestershire,2010,395
+420,North West Leicestershire,2011,5304
+435,North West Leicestershire,2012,5948
+448,North West Leicestershire,2013,5945
+452,North West Leicestershire,2014,5585
+475,North West Leicestershire,2015,4996
+479,North West Leicestershire,2016,412
+1071,Northampton,2010,1380
+1077,Northampton,2011,20241
+1102,Northampton,2012,27301
+1108,Northampton,2013,24726
+1131,Northampton,2014,25155
+1145,Northampton,2015,26393
+1161,Northampton,2016,2234
+1360,Northumberland,2010,1129
+1373,Northumberland,2011,16743
+1385,Northumberland,2012,18804
+1396,Northumberland,2013,19010
+1409,Northumberland,2014,18753
+1421,Northumberland,2015,20814
+1438,Northumberland,2016,1875
+1627,Norwich,2010,921
+1646,Norwich,2011,13356
+1662,Norwich,2012,17281
+1682,Norwich,2013,16732
+1697,Norwich,2014,17203
+1718,Norwich,2015,17407
+1731,Norwich,2016,1385
+933,Nottingham,2010,3273
+936,Nottingham,2011,45812
+960,Nottingham,2012,40443
+973,Nottingham,2013,39038
+978,Nottingham,2014,41911
+1000,Nottingham,2015,40802
+1013,Nottingham,2016,3122
+2308,Nuneaton and Bedworth,2010,762
+2333,Nuneaton and Bedworth,2011,10605
+2347,Nuneaton and Bedworth,2012,12910
+2355,Nuneaton and Bedworth,2013,12443
+2374,Nuneaton and Bedworth,2014,11432
+2380,Nuneaton and Bedworth,2015,12013
+2391,Nuneaton and Bedworth,2016,969
+1878,Oadby and Wigston,2010,194
+1891,Oadby and Wigston,2011,3109
+1899,Oadby and Wigston,2012,3257
+1905,Oadby and Wigston,2013,3312
+1916,Oadby and Wigston,2014,3159
+1922,Oadby and Wigston,2015,2838
+1931,Oadby and Wigston,2016,263
+1676,Oldham,2010,1114
+1691,Oldham,2011,22115
+1715,Oldham,2012,22031
+1727,Oldham,2013,22839
+1745,Oldham,2014,24268
+1755,Oldham,2015,27991
+1769,Oldham,2016,2251
+662,Oxford,2010,880
+678,Oxford,2011,12443
+689,Oxford,2012,17094
+704,Oxford,2013,16756
+718,Oxford,2014,14504
+734,Oxford,2015,14977
+759,Oxford,2016,1147
+1606,Pembrokeshire,2010,543
+1621,Pembrokeshire,2011,7536
+1636,Pembrokeshire,2012,8568
+1644,Pembrokeshire,2013,8162
+1671,Pembrokeshire,2014,7567
+1680,Pembrokeshire,2015,7619
+1706,Pembrokeshire,2016,519
+1852,Pendle,2010,583
+1857,Pendle,2011,7889
+1873,Pendle,2012,8907
+1876,Pendle,2013,8756
+1890,Pendle,2014,8199
+1898,Pendle,2015,7895
+1903,Pendle,2016,660
+726,Peterborough,2010,1059
+743,Peterborough,2011,16131
+753,Peterborough,2012,22226
+768,Peterborough,2013,20456
+789,Peterborough,2014,21318
+799,Peterborough,2015,21498
+818,Peterborough,2016,1849
+631,Plymouth,2010,1313
+648,Plymouth,2011,21339
+661,Plymouth,2012,23087
+676,Plymouth,2013,24088
+685,Plymouth,2014,23903
+701,Plymouth,2015,23041
+715,Plymouth,2016,1713
+1830,Poole,2010,692
+1843,Poole,2011,9998
+1856,Poole,2012,12129
+1866,Poole,2013,10834
+1875,Poole,2014,10312
+1884,Poole,2015,10019
+1893,Poole,2016,794
+859,Portsmouth,2010,1265
+865,Portsmouth,2011,18418
+883,Portsmouth,2012,24143
+895,Portsmouth,2013,21152
+900,Portsmouth,2014,20880
+918,Portsmouth,2015,24626
+923,Portsmouth,2016,1893
+330,Powys,2010,461
+335,Powys,2011,7058
+341,Powys,2012,7791
+350,Powys,2013,7231
+361,Powys,2014,6764
+373,Powys,2015,6956
+387,Powys,2016,571
+0,Preston,2013,17248
+13,Preston,2014,16066
+20,Preston,2015,16861
+32,Preston,2016,1430
+2424,Preston,2010,982
+2431,Preston,2011,14032
+2434,Preston,2012,17489
+2350,Purbeck,2010,205
+2363,Purbeck,2011,2730
+2376,Purbeck,2012,2428
+2387,Purbeck,2013,2476
+2397,Purbeck,2014,2270
+2407,Purbeck,2015,2193
+2417,Purbeck,2016,144
+1980,Reading,2010,943
+1995,Reading,2011,13115
+2011,Reading,2012,15980
+2026,Reading,2013,14789
+2047,Reading,2014,13330
+2062,Reading,2015,14709
+2071,Reading,2016,1091
+176,Redbridge,2010,1604
+187,Redbridge,2011,22268
+193,Redbridge,2012,27191
+207,Redbridge,2013,24141
+217,Redbridge,2014,23081
+228,Redbridge,2015,21969
+237,Redbridge,2016,1723
+1961,Redcar and Cleveland,2010,832
+1972,Redcar and Cleveland,2011,12863
+1989,Redcar and Cleveland,2012,13869
+2004,Redcar and Cleveland,2013,13689
+2021,Redcar and Cleveland,2014,14579
+2035,Redcar and Cleveland,2015,16175
+2046,Redcar and Cleveland,2016,1336
+2149,Redditch,2010,465
+2161,Redditch,2011,6969
+2171,Redditch,2012,7788
+2180,Redditch,2013,6967
+2189,Redditch,2014,6969
+2201,Redditch,2015,7382
+2215,Redditch,2016,587
+1794,Reigate and Banstead,2010,685
+1808,Reigate and Banstead,2011,9354
+1825,Reigate and Banstead,2012,10730
+1832,Reigate and Banstead,2013,9627
+1845,Reigate and Banstead,2014,9559
+1863,Reigate and Banstead,2015,10663
+1867,Reigate and Banstead,2016,805
+873,Rhondda Cynon Taf,2010,1240
+881,Rhondda Cynon Taf,2011,17815
+893,Rhondda Cynon Taf,2012,18627
+909,Rhondda Cynon Taf,2013,17179
+916,Rhondda Cynon Taf,2014,19232
+931,Rhondda Cynon Taf,2015,18235
+940,Rhondda Cynon Taf,2016,1497
+1469,Ribble Valley,2010,230
+1486,Ribble Valley,2011,2727
+1501,Ribble Valley,2012,2955
+1517,Ribble Valley,2013,3001
+1530,Ribble Valley,2014,2999
+1546,Ribble Valley,2015,2805
+1552,Ribble Valley,2016,287
+2150,Richmond upon Thames,2010,868
+2162,Richmond upon Thames,2011,12607
+2172,Richmond upon Thames,2012,15000
+2181,Richmond upon Thames,2013,13423
+2192,Richmond upon Thames,2014,12985
+2205,Richmond upon Thames,2015,12841
+2225,Richmond upon Thames,2016,984
+2207,Richmondshire,2010,174
+2222,Richmondshire,2011,2533
+2234,Richmondshire,2012,2809
+2241,Richmondshire,2013,2679
+2266,Richmondshire,2014,2602
+2283,Richmondshire,2015,2511
+2291,Richmondshire,2016,177
+725,Rochdale,2010,1437
+742,Rochdale,2011,23281
+748,Rochdale,2012,23349
+763,Rochdale,2013,23311
+788,Rochdale,2014,23526
+796,Rochdale,2015,26331
+817,Rochdale,2016,2213
+431,Rochford,2010,199
+445,Rochford,2011,3178
+456,Rochford,2012,3990
+472,Rochford,2013,4102
+485,Rochford,2014,3940
+499,Rochford,2015,4336
+510,Rochford,2016,346
+1217,Rossendale,2010,373
+1231,Rossendale,2011,5223
+1245,Rossendale,2012,5719
+1261,Rossendale,2013,5353
+1273,Rossendale,2014,5272
+1277,Rossendale,2015,5475
+1288,Rossendale,2016,475
+914,Rother,2010,401
+924,Rother,2011,5516
+938,Rother,2012,5466
+952,Rother,2013,4982
+965,Rother,2014,5242
+980,Rother,2015,5189
+994,Rother,2016,408
+888,Rotherham,2010,1531
+899,Rotherham,2011,23917
+912,Rotherham,2012,26774
+922,Rotherham,2013,26377
+935,Rotherham,2014,25880
+950,Rotherham,2015,26005
+963,Rotherham,2016,2031
+1416,Rugby,2010,479
+1430,Rugby,2011,6714
+1447,Rugby,2012,7596
+1462,Rugby,2013,7306
+1476,Rugby,2014,7183
+1493,Rugby,2015,8333
+1508,Rugby,2016,679
+538,Runnymede,2010,434
+552,Runnymede,2011,6191
+562,Runnymede,2012,6473
+568,Runnymede,2013,5846
+586,Runnymede,2014,5448
+590,Runnymede,2015,6686
+608,Runnymede,2016,496
+1809,Rushcliffe,2010,429
+1826,Rushcliffe,2011,5993
+1838,Rushcliffe,2012,5030
+1850,Rushcliffe,2013,4400
+1864,Rushcliffe,2014,4637
+1871,Rushcliffe,2015,4730
+1882,Rushcliffe,2016,349
+1974,Rushmoor,2010,461
+1983,Rushmoor,2011,6686
+1996,Rushmoor,2012,7559
+2012,Rushmoor,2013,7111
+2028,Rushmoor,2014,6844
+2052,Rushmoor,2015,8027
+2066,Rushmoor,2016,614
+22,Rutland,2010,95
+41,Rutland,2011,1440
+45,Rutland,2012,1532
+65,Rutland,2013,1364
+71,Rutland,2014,1362
+90,Rutland,2015,1133
+96,Rutland,2016,82
+1285,Ryedale,2010,183
+1297,Ryedale,2011,2502
+1307,Ryedale,2012,2517
+1316,Ryedale,2013,2409
+1327,Ryedale,2014,2508
+1340,Ryedale,2015,2437
+1355,Ryedale,2016,205
+351,Salford,2010,1560
+362,Salford,2011,25717
+367,Salford,2012,23773
+380,Salford,2013,22508
+403,Salford,2014,21995
+418,Salford,2015,23881
+432,Salford,2016,1913
+1900,Sandwell,2010,1777
+1909,Sandwell,2011,24247
+1917,Sandwell,2012,23277
+1925,Sandwell,2013,23515
+1934,Sandwell,2014,23758
+1944,Sandwell,2015,24292
+1954,Sandwell,2016,2014
+1009,Scarborough,2010,569
+1023,Scarborough,2011,9427
+1033,Scarborough,2012,10605
+1041,Scarborough,2013,10465
+1058,Scarborough,2014,11034
+1065,Scarborough,2015,11393
+1088,Scarborough,2016,864
+1332,Sedgemoor,2010,516
+1349,Sedgemoor,2011,7844
+1361,Sedgemoor,2012,8833
+1374,Sedgemoor,2013,7969
+1386,Sedgemoor,2014,7987
+1402,Sedgemoor,2015,8302
+1414,Sedgemoor,2016,632
+2001,Sefton,2010,1314
+2018,Sefton,2011,18255
+2033,Sefton,2012,21776
+2037,Sefton,2013,21022
+2054,Sefton,2014,20788
+2076,Sefton,2015,21440
+2081,Sefton,2016,1563
+1292,Selby,2010,316
+1302,Selby,2011,5308
+1313,Selby,2012,5637
+1322,Selby,2013,5276
+1335,Selby,2014,5190
+1346,Selby,2015,5310
+1365,Selby,2016,434
+108,Sevenoaks,2010,440
+118,Sevenoaks,2011,5935
+138,Sevenoaks,2012,6889
+148,Sevenoaks,2013,7371
+153,Sevenoaks,2014,7361
+161,Sevenoaks,2015,7321
+173,Sevenoaks,2016,639
+1180,Sheffield,2010,3392
+1195,Sheffield,2011,53993
+1210,Sheffield,2012,62350
+1222,Sheffield,2013,58478
+1237,Sheffield,2014,57599
+1253,Sheffield,2015,57481
+1266,Sheffield,2016,4569
+191,Shepway,2010,483
+201,Shepway,2011,6800
+210,Shepway,2012,8302
+221,Shepway,2013,8636
+233,Shepway,2014,8371
+247,Shepway,2015,8433
+259,Shepway,2016,630
+577,Shropshire,2010,1238
+594,Shropshire,2011,18129
+600,Shropshire,2012,20577
+613,Shropshire,2013,18486
+625,Shropshire,2014,18493
+634,Shropshire,2015,19710
+645,Shropshire,2016,1563
+727,Slough,2010,971
+744,Slough,2011,12219
+758,Slough,2012,14916
+774,Slough,2013,13882
+790,Slough,2014,12099
+804,Slough,2015,13493
+819,Slough,2016,1182
+1935,Solihull,2010,1004
+1945,Solihull,2011,13833
+1955,Solihull,2012,15100
+1965,Solihull,2013,15427
+1978,Solihull,2014,14575
+1993,Solihull,2015,14366
+2009,Solihull,2016,1307
+1442,South Bucks,2010,367
+1457,South Bucks,2011,4486
+1474,South Bucks,2012,4670
+1490,South Bucks,2013,4599
+1505,South Bucks,2014,3959
+1521,South Bucks,2015,4240
+1532,South Bucks,2016,358
+1904,South Cambridgeshire,2010,457
+1915,South Cambridgeshire,2011,6467
+1921,South Cambridgeshire,2012,6803
+1930,South Cambridgeshire,2013,6629
+1942,South Cambridgeshire,2014,6736
+1950,South Cambridgeshire,2015,6568
+1960,South Cambridgeshire,2016,556
+2279,South Derbyshire,2010,398
+2289,South Derbyshire,2011,5557
+2306,South Derbyshire,2012,6065
+2329,South Derbyshire,2013,5383
+2345,South Derbyshire,2014,5316
+2353,South Derbyshire,2015,5294
+2371,South Derbyshire,2016,420
+129,South Gloucestershire,2010,1040
+140,South Gloucestershire,2011,15508
+151,South Gloucestershire,2012,17166
+160,South Gloucestershire,2013,15488
+167,South Gloucestershire,2014,15325
+177,South Gloucestershire,2015,15806
+184,South Gloucestershire,2016,1395
+1069,South Hams,2010,221
+1087,South Hams,2011,3553
+1100,South Hams,2012,3827
+1118,South Hams,2013,3776
+1129,South Hams,2014,3574
+1143,South Hams,2015,3296
+1160,South Hams,2016,252
+1650,South Holland,2010,353
+1657,South Holland,2011,5999
+1686,South Holland,2012,6512
+1693,South Holland,2013,5484
+1713,South Holland,2014,4984
+1735,South Holland,2015,5010
+1750,South Holland,2016,433
+266,South Kesteven,2010,545
+274,South Kesteven,2011,8269
+284,South Kesteven,2012,9658
+298,South Kesteven,2013,8370
+303,South Kesteven,2014,7969
+314,South Kesteven,2015,8124
+320,South Kesteven,2016,591
+332,South Lakeland,2010,343
+337,South Lakeland,2011,5648
+346,South Lakeland,2012,6113
+357,South Lakeland,2013,5928
+368,South Lakeland,2014,5481
+381,South Lakeland,2015,5525
+396,South Lakeland,2016,410
+219,South Norfolk,2010,379
+231,South Norfolk,2011,5782
+239,South Norfolk,2012,6043
+251,South Norfolk,2013,5810
+269,South Norfolk,2014,5996
+275,South Norfolk,2015,6044
+285,South Norfolk,2016,427
+1631,South Northamptonshire,2010,290
+1651,South Northamptonshire,2011,4287
+1666,South Northamptonshire,2012,4341
+1687,South Northamptonshire,2013,3702
+1702,South Northamptonshire,2014,4009
+1714,South Northamptonshire,2015,3968
+1736,South Northamptonshire,2016,336
+1762,South Oxfordshire,2010,465
+1775,South Oxfordshire,2011,5901
+1789,South Oxfordshire,2012,6161
+1804,South Oxfordshire,2013,6328
+1814,South Oxfordshire,2014,5114
+1840,South Oxfordshire,2015,6127
+1853,South Oxfordshire,2016,428
+9,South Ribble,2011,7916
+11,South Ribble,2012,8161
+29,South Ribble,2013,7240
+34,South Ribble,2014,7053
+52,South Ribble,2015,6874
+57,South Ribble,2016,537
+2440,South Ribble,2010,603
+2183,South Somerset,2010,639
+2194,South Somerset,2011,9530
+2208,South Somerset,2012,11198
+2223,South Somerset,2013,10187
+2236,South Somerset,2014,8599
+2242,South Somerset,2015,9614
+2268,South Somerset,2016,691
+1417,South Staffordshire,2010,407
+1431,South Staffordshire,2011,4965
+1441,South Staffordshire,2012,5512
+1456,South Staffordshire,2013,5345
+1478,South Staffordshire,2014,5093
+1495,South Staffordshire,2015,5274
+1510,South Staffordshire,2016,391
+2339,South Tyneside,2010,709
+2359,South Tyneside,2011,10134
+2364,South Tyneside,2012,11598
+2382,South Tyneside,2013,11996
+2394,South Tyneside,2014,11788
+2404,South Tyneside,2015,12907
+2410,South Tyneside,2016,1164
+2275,Southampton,2010,1667
+2288,Southampton,2011,23645
+2305,Southampton,2012,29440
+2325,Southampton,2013,26364
+2342,Southampton,2014,26715
+2352,Southampton,2015,30211
+2366,Southampton,2016,2410
+386,Southend-on-Sea,2010,844
+397,Southend-on-Sea,2011,12953
+411,Southend-on-Sea,2012,17732
+426,Southend-on-Sea,2013,18047
+440,Southend-on-Sea,2014,17578
+457,Southend-on-Sea,2015,18272
+468,Southend-on-Sea,2016,1548
+1933,Southwark,2010,2006
+1943,Southwark,2011,28807
+1952,Southwark,2012,37474
+1963,Southwark,2013,36387
+1976,Southwark,2014,33446
+1991,Southwark,2015,34132
+2007,Southwark,2016,2716
+126,Spelthorne,2010,557
+137,Spelthorne,2011,8117
+147,Spelthorne,2012,8713
+158,Spelthorne,2013,7681
+166,Spelthorne,2014,7433
+171,Spelthorne,2015,8219
+180,Spelthorne,2016,651
+141,St Albans,2010,604
+157,St Albans,2011,7711
+165,St Albans,2012,8337
+168,St Albans,2013,7424
+178,St Albans,2014,7925
+190,St Albans,2015,8494
+194,St Albans,2016,774
+679,St Edmundsbury,2010,490
+691,St Edmundsbury,2011,7484
+706,St Edmundsbury,2012,8794
+720,St Edmundsbury,2013,8278
+736,St Edmundsbury,2014,7857
+760,St Edmundsbury,2015,8642
+775,St Edmundsbury,2016,588
+1020,St. Helens,2010,846
+1030,St. Helens,2011,12316
+1038,St. Helens,2012,14366
+1055,St. Helens,2013,14215
+1062,St. Helens,2014,16289
+1084,St. Helens,2015,16179
+1091,St. Helens,2016,1156
+63,Stafford,2010,449
+76,Stafford,2011,6340
+88,Stafford,2012,8098
+99,Stafford,2013,7364
+112,Stafford,2014,7176
+123,Stafford,2015,8089
+134,Stafford,2016,628
+459,Staffordshire Moorlands,2010,301
+463,Staffordshire Moorlands,2011,4172
+488,Staffordshire Moorlands,2012,4926
+493,Staffordshire Moorlands,2013,4910
+513,Staffordshire Moorlands,2014,4780
+518,Staffordshire Moorlands,2015,4838
+535,Staffordshire Moorlands,2016,433
+1186,Stevenage,2010,412
+1201,Stevenage,2011,5944
+1215,Stevenage,2012,8014
+1233,Stevenage,2013,7211
+1247,Stevenage,2014,7669
+1259,Stevenage,2015,8187
+1270,Stevenage,2016,668
+2080,Stockport,2010,1525
+2090,Stockport,2011,24480
+2101,Stockport,2012,24084
+2111,Stockport,2013,24651
+2121,Stockport,2014,23373
+2128,Stockport,2015,25506
+2139,Stockport,2016,2082
+434,Stockton-on-Tees,2010,972
+447,Stockton-on-Tees,2011,15851
+450,Stockton-on-Tees,2012,18723
+474,Stockton-on-Tees,2013,18911
+476,Stockton-on-Tees,2014,18276
+501,Stockton-on-Tees,2015,20390
+503,Stockton-on-Tees,2016,1646
+574,Stoke-on-Trent,2010,1518
+582,Stoke-on-Trent,2011,21659
+596,Stoke-on-Trent,2012,27804
+604,Stoke-on-Trent,2013,28056
+617,Stoke-on-Trent,2014,27055
+627,Stoke-on-Trent,2015,28997
+638,Stoke-on-Trent,2016,2497
+1815,Stratford-on-Avon,2010,416
+1841,Stratford-on-Avon,2011,6668
+1854,Stratford-on-Avon,2012,7630
+1858,Stratford-on-Avon,2013,7222
+1874,Stratford-on-Avon,2014,6607
+1877,Stratford-on-Avon,2015,6815
+1892,Stratford-on-Avon,2016,544
+530,Stroud,2010,456
+544,Stroud,2011,6748
+557,Stroud,2012,7627
+571,Stroud,2013,6960
+580,Stroud,2014,6295
+592,Stroud,2015,6537
+601,Stroud,2016,479
+2358,Suffolk Coastal,2010,539
+2372,Suffolk Coastal,2011,7734
+2383,Suffolk Coastal,2012,7892
+2395,Suffolk Coastal,2013,7015
+2405,Suffolk Coastal,2014,6560
+2416,Suffolk Coastal,2015,6377
+2425,Suffolk Coastal,2016,514
+1953,Sunderland,2010,1519
+1964,Sunderland,2011,21880
+1977,Sunderland,2012,24993
+1992,Sunderland,2013,23389
+2008,Sunderland,2014,24020
+2024,Sunderland,2015,25708
+2038,Sunderland,2016,2313
+2137,Surrey Heath,2010,401
+2143,Surrey Heath,2011,5300
+2155,Surrey Heath,2012,5613
+2167,Surrey Heath,2013,5334
+2177,Surrey Heath,2014,4874
+2191,Surrey Heath,2015,5428
+2203,Surrey Heath,2016,401
+1614,Sutton,2010,927
+1628,Sutton,2011,12133
+1645,Sutton,2012,14286
+1663,Sutton,2013,12605
+1681,Sutton,2014,12628
+1698,Sutton,2015,12338
+1717,Sutton,2016,1017
+1395,Swale,2010,762
+1408,Swale,2011,10105
+1420,Swale,2012,10983
+1437,Swale,2013,11721
+1452,Swale,2014,12972
+1465,Swale,2015,12631
+1481,Swale,2016,998
+787,Swansea,2010,1238
+806,Swansea,2011,17215
+816,Swansea,2012,21329
+833,Swansea,2013,20006
+847,Swansea,2014,21332
+860,Swansea,2015,20668
+872,Swansea,2016,1543
+946,Swindon,2010,1017
+951,Swindon,2011,14969
+964,Swindon,2012,19711
+986,Swindon,2013,18712
+993,Swindon,2014,18391
+1006,Swindon,2015,20418
+1022,Swindon,2016,1668
+1511,Tameside,2010,1512
+1525,Tameside,2011,23512
+1545,Tameside,2012,22531
+1547,Tameside,2013,22118
+1568,Tameside,2014,24092
+1569,Tameside,2015,25080
+1588,Tameside,2016,1945
+1427,Tamworth,2010,331
+1443,Tamworth,2011,4776
+1458,Tamworth,2012,6268
+1472,Tamworth,2013,5722
+1488,Tamworth,2014,5624
+1503,Tamworth,2015,6041
+1519,Tamworth,2016,536
+1939,Tandridge,2010,419
+1949,Tandridge,2011,5903
+1959,Tandridge,2012,6322
+1970,Tandridge,2013,6142
+1984,Tandridge,2014,5642
+1997,Tandridge,2015,6963
+2014,Tandridge,2016,493
+290,Taunton Deane,2010,520
+294,Taunton Deane,2011,7689
+308,Taunton Deane,2012,9083
+311,Taunton Deane,2013,8200
+317,Taunton Deane,2014,7822
+323,Taunton Deane,2015,7816
+329,Taunton Deane,2016,609
+1325,Teignbridge,2010,400
+1337,Teignbridge,2011,6000
+1351,Teignbridge,2012,6744
+1367,Teignbridge,2013,6887
+1379,Teignbridge,2014,6376
+1390,Teignbridge,2015,5925
+1403,Teignbridge,2016,449
+906,Telford and Wrekin,2010,931
+913,Telford and Wrekin,2011,13502
+928,Telford and Wrekin,2012,16078
+937,Telford and Wrekin,2013,15108
+956,Telford and Wrekin,2014,15450
+968,Telford and Wrekin,2015,17126
+979,Telford and Wrekin,2016,1374
+1502,Tendring,2010,643
+1518,Tendring,2011,10163
+1531,Tendring,2012,12185
+1540,Tendring,2013,12523
+1554,Tendring,2014,12537
+1562,Tendring,2015,12642
+1573,Tendring,2016,1070
+932,Test Valley,2010,467
+945,Test Valley,2011,6473
+959,Test Valley,2012,7468
+972,Test Valley,2013,6850
+984,Test Valley,2014,6825
+999,Test Valley,2015,7440
+1012,Test Valley,2016,509
+1969,Tewkesbury,2010,319
+1988,Tewkesbury,2011,4432
+2003,Tewkesbury,2012,4858
+2020,Tewkesbury,2013,4951
+2034,Tewkesbury,2014,4486
+2044,Tewkesbury,2015,4673
+2060,Tewkesbury,2016,392
+611,Thanet,2010,866
+622,Thanet,2011,11648
+632,Thanet,2012,13582
+643,Thanet,2013,14560
+656,Thanet,2014,15804
+670,Thanet,2015,15071
+688,Thanet,2016,1139
+637,The Vale of Glamorgan,2010,539
+650,The Vale of Glamorgan,2011,7607
+664,The Vale of Glamorgan,2012,8443
+680,The Vale of Glamorgan,2013,8415
+695,The Vale of Glamorgan,2014,8833
+710,The Vale of Glamorgan,2015,8278
+724,The Vale of Glamorgan,2016,610
+1747,Three Rivers,2010,310
+1765,Three Rivers,2011,4075
+1779,Three Rivers,2012,4225
+1792,Three Rivers,2013,3781
+1806,Three Rivers,2014,4271
+1813,Three Rivers,2015,4460
+1835,Three Rivers,2016,361
+2129,Thurrock,2010,808
+2142,Thurrock,2011,11713
+2154,Thurrock,2012,15584
+2166,Thurrock,2013,15384
+2176,Thurrock,2014,14957
+2182,Thurrock,2015,15691
+2193,Thurrock,2016,1438
+1598,Tonbridge and Malling,2010,464
+1602,Tonbridge and Malling,2011,6451
+1620,Tonbridge and Malling,2012,7575
+1635,Tonbridge and Malling,2013,7374
+1640,Tonbridge and Malling,2014,7387
+1670,Tonbridge and Malling,2015,7739
+1675,Tonbridge and Malling,2016,624
+508,Torbay,2010,618
+519,Torbay,2011,10567
+529,Torbay,2012,12490
+543,Torbay,2013,12305
+556,Torbay,2014,12118
+570,Torbay,2015,11566
+579,Torbay,2016,900
+230,Torfaen,2010,599
+240,Torfaen,2011,6823
+252,Torfaen,2012,7061
+268,Torfaen,2013,7529
+276,Torfaen,2014,8408
+286,Torfaen,2015,8452
+299,Torfaen,2016,679
+359,Torridge,2010,196
+375,Torridge,2011,2760
+389,Torridge,2012,3063
+399,Torridge,2013,3147
+414,Torridge,2014,3030
+429,Torridge,2015,2939
+443,Torridge,2016,221
+1553,Tower Hamlets,2010,1461
+1560,Tower Hamlets,2011,23726
+1572,Tower Hamlets,2012,34679
+1580,Tower Hamlets,2013,32893
+1592,Tower Hamlets,2014,31853
+1603,Tower Hamlets,2015,32974
+1615,Tower Hamlets,2016,2709
+70,Trafford,2010,1035
+84,Trafford,2011,17300
+95,Trafford,2012,15206
+110,Trafford,2013,15568
+120,Trafford,2014,16639
+130,Trafford,2015,17757
+142,Trafford,2016,1296
+6,Tunbridge Wells,2013,6727
+16,Tunbridge Wells,2014,6639
+25,Tunbridge Wells,2015,6675
+39,Tunbridge Wells,2016,568
+2426,Tunbridge Wells,2010,432
+2432,Tunbridge Wells,2011,5657
+2438,Tunbridge Wells,2012,6648
+2250,Uttlesford,2010,218
+2269,Uttlesford,2011,3331
+2286,Uttlesford,2012,4781
+2301,Uttlesford,2013,4977
+2317,Uttlesford,2014,4796
+2335,Uttlesford,2015,4646
+2349,Uttlesford,2016,369
+1083,Vale of White Horse,2010,342
+1099,Vale of White Horse,2011,4773
+1114,Vale of White Horse,2012,4792
+1128,Vale of White Horse,2013,5068
+1142,Vale of White Horse,2014,4817
+1158,Vale of White Horse,2015,5329
+1167,Vale of White Horse,2016,403
+1398,Wakefield,2010,1964
+1411,Wakefield,2011,29908
+1424,Wakefield,2012,32763
+1434,Wakefield,2013,30913
+1449,Wakefield,2014,29959
+1470,Wakefield,2015,33254
+1487,Wakefield,2016,2985
+1624,Walsall,2010,1378
+1641,Walsall,2011,20309
+1659,Walsall,2012,21090
+1677,Walsall,2013,20037
+1695,Walsall,2014,21462
+1710,Walsall,2015,22511
+1728,Walsall,2016,1856
+1135,Waltham Forest,2010,1642
+1150,Waltham Forest,2011,23238
+1166,Waltham Forest,2012,28606
+1179,Waltham Forest,2013,25713
+1194,Waltham Forest,2014,24183
+1209,Waltham Forest,2015,24322
+1221,Waltham Forest,2016,1946
+2138,Wandsworth,2010,1414
+2151,Wandsworth,2011,20947
+2163,Wandsworth,2012,30539
+2173,Wandsworth,2013,27042
+2184,Wandsworth,2014,25093
+2195,Wandsworth,2015,25569
+2209,Wandsworth,2016,1993
+2141,Warrington,2010,639
+2153,Warrington,2011,13306
+2165,Warrington,2012,17209
+2175,Warrington,2013,15801
+2186,Warrington,2014,14810
+2197,Warrington,2015,15112
+2210,Warrington,2016,1162
+1962,Warwick,2010,653
+1973,Warwick,2011,9395
+1985,Warwick,2012,10739
+1998,Warwick,2013,9546
+2015,Warwick,2014,8874
+2030,Warwick,2015,9390
+2051,Warwick,2016,809
+709,Watford,2010,461
+723,Watford,2011,6765
+740,Watford,2012,9544
+762,Watford,2013,8297
+777,Watford,2014,8514
+785,Watford,2015,9105
+807,Watford,2016,786
+646,Waveney,2010,671
+659,Waveney,2011,9986
+674,Waveney,2012,10963
+692,Waveney,2013,9876
+707,Waveney,2014,9037
+721,Waveney,2015,9600
+737,Waveney,2016,735
+2105,Waverley,2010,505
+2115,Waverley,2011,6683
+2124,Waverley,2012,6608
+2131,Waverley,2013,6312
+2144,Waverley,2014,6345
+2156,Waverley,2015,6700
+2168,Waverley,2016,503
+2285,Wealden,2010,473
+2296,Wealden,2011,7005
+2313,Wealden,2012,7289
+2332,Wealden,2013,6114
+2346,Wealden,2014,6523
+2356,Wealden,2015,6451
+2373,Wealden,2016,577
+1271,Wellingborough,2010,388
+1279,Wellingborough,2011,6003
+1286,Wellingborough,2012,7834
+1296,Wellingborough,2013,7130
+1306,Wellingborough,2014,7275
+1317,Wellingborough,2015,7734
+1328,Wellingborough,2016,659
+344,Welwyn Hatfield,2010,537
+353,Welwyn Hatfield,2011,7667
+371,Welwyn Hatfield,2012,8522
+384,Welwyn Hatfield,2013,7276
+393,Welwyn Hatfield,2014,8609
+407,Welwyn Hatfield,2015,9334
+422,Welwyn Hatfield,2016,837
+122,West Berkshire,2010,727
+131,West Berkshire,2011,8986
+143,West Berkshire,2012,9765
+155,West Berkshire,2013,9603
+163,West Berkshire,2014,8681
+169,West Berkshire,2015,8610
+179,West Berkshire,2016,665
+1652,West Devon,2010,130
+1656,West Devon,2011,1988
+1688,West Devon,2012,2284
+1692,West Devon,2013,2375
+1711,West Devon,2014,2148
+1737,West Devon,2015,2037
+1751,West Devon,2016,154
+640,West Dorset,2010,382
+652,West Dorset,2011,5400
+666,West Dorset,2012,5554
+682,West Dorset,2013,5233
+697,West Dorset,2014,5076
+711,West Dorset,2015,5149
+728,West Dorset,2016,466
+458,West Lancashire,2010,515
+464,West Lancashire,2011,7283
+487,West Lancashire,2012,7944
+494,West Lancashire,2013,7837
+512,West Lancashire,2014,7433
+520,West Lancashire,2015,6838
+534,West Lancashire,2016,491
+1654,West Lindsey,2010,394
+1658,West Lindsey,2011,6111
+1689,West Lindsey,2012,5925
+1694,West Lindsey,2013,5679
+1721,West Lindsey,2014,5183
+1738,West Lindsey,2015,5239
+1752,West Lindsey,2016,416
+2097,West Oxfordshire,2010,302
+2107,West Oxfordshire,2011,4382
+2117,West Oxfordshire,2012,4498
+2126,West Oxfordshire,2013,4393
+2134,West Oxfordshire,2014,3946
+2145,West Oxfordshire,2015,4043
+2157,West Oxfordshire,2016,295
+603,West Somerset,2010,150
+616,West Somerset,2011,2017
+628,West Somerset,2012,2272
+636,West Somerset,2013,1962
+651,West Somerset,2014,1994
+665,West Somerset,2015,1663
+681,West Somerset,2016,95
+1295,Westminster,2010,2114
+1305,Westminster,2011,33300
+1312,Westminster,2012,68876
+1321,Westminster,2013,61145
+1338,Westminster,2014,54445
+1345,Westminster,2015,54079
+1368,Westminster,2016,4540
+2300,Weymouth and Portland,2010,421
+2316,Weymouth and Portland,2011,6003
+2326,Weymouth and Portland,2012,6790
+2343,Weymouth and Portland,2013,5911
+2361,Weymouth and Portland,2014,5705
+2367,Weymouth and Portland,2015,5614
+2385,Weymouth and Portland,2016,441
+1783,Wigan,2010,1580
+1797,Wigan,2011,26404
+1817,Wigan,2012,25455
+1828,Wigan,2013,26319
+1842,Wigan,2014,27470
+1855,Wigan,2015,30246
+1865,Wigan,2016,2327
+2235,Wiltshire,2010,1709
+2243,Wiltshire,2011,25367
+2267,Wiltshire,2012,30600
+2284,Wiltshire,2013,28799
+2292,Wiltshire,2014,26955
+2309,Wiltshire,2015,28815
+2331,Wiltshire,2016,2326
+10,Winchester,2016,555
+2398,Winchester,2010,451
+2408,Winchester,2011,6690
+2412,Winchester,2012,7515
+2420,Winchester,2013,7071
+2429,Winchester,2014,6754
+2441,Winchester,2015,7445
+2362,Windsor and Maidenhead,2010,751
+2370,Windsor and Maidenhead,2011,9970
+2386,Windsor and Maidenhead,2012,10876
+2396,Windsor and Maidenhead,2013,9556
+2406,Windsor and Maidenhead,2014,8894
+2415,Windsor and Maidenhead,2015,8921
+2423,Windsor and Maidenhead,2016,722
+949,Wirral,2010,1418
+962,Wirral,2011,20193
+976,Wirral,2012,23116
+991,Wirral,2013,23950
+1004,Wirral,2014,26137
+1016,Wirral,2015,26710
+1026,Wirral,2016,2064
+2298,Woking,2010,538
+2314,Woking,2011,6588
+2327,Woking,2012,7632
+2344,Woking,2013,6773
+2360,Woking,2014,6266
+2368,Woking,2015,7337
+2384,Woking,2016,577
+83,Wokingham,2010,446
+97,Wokingham,2011,6227
+107,Wokingham,2012,6103
+117,Wokingham,2013,5912
+132,Wokingham,2014,5535
+144,Wokingham,2015,5893
+152,Wokingham,2016,461
+2039,Wolverhampton,2010,1269
+2055,Wolverhampton,2011,18755
+2068,Wolverhampton,2012,20744
+2082,Wolverhampton,2013,21245
+2091,Wolverhampton,2014,20844
+2102,Wolverhampton,2015,20442
+2112,Wolverhampton,2016,1659
+410,Worcester,2010,623
+425,Worcester,2011,9131
+439,Worcester,2012,11566
+454,Worcester,2013,10034
+466,Worcester,2014,10362
+481,Worcester,2015,11242
+496,Worcester,2016,887
+891,Worthing,2010,574
+908,Worthing,2011,7741
+915,Worthing,2012,9856
+930,Worthing,2013,8946
+939,Worthing,2014,8267
+958,Worthing,2015,8583
+970,Worthing,2016,652
+467,Wrexham,2010,725
+482,Wrexham,2011,11110
+497,Wrexham,2012,14275
+507,Wrexham,2013,13591
+522,Wrexham,2014,13642
+531,Wrexham,2015,13087
+546,Wrexham,2016,1095
+1034,Wychavon,2010,469
+1042,Wychavon,2011,6933
+1059,Wychavon,2012,7826
+1066,Wychavon,2013,7315
+1089,Wychavon,2014,7868
+1094,Wychavon,2015,8393
+1119,Wychavon,2016,623
+413,Wycombe,2010,772
+428,Wycombe,2011,9767
+442,Wycombe,2012,10092
+455,Wycombe,2013,8842
+470,Wycombe,2014,7639
+483,Wycombe,2015,9163
+498,Wycombe,2016,646
+185,Wyre,2010,524
+195,Wyre,2011,7629
+204,Wyre,2012,8151
+214,Wyre,2013,8310
+225,Wyre,2014,8125
+238,Wyre,2015,7342
+250,Wyre,2016,609
+1542,Wyre Forest,2010,634
+1550,Wyre Forest,2011,8652
+1564,Wyre Forest,2012,9411
+1571,Wyre Forest,2013,8413
+1582,Wyre Forest,2014,8960
+1590,Wyre Forest,2015,9390
+1605,Wyre Forest,2016,686
+33,York,2010,984
+43,York,2011,17565
+56,York,2012,18639
+69,York,2013,17134
+82,York,2014,16734
+94,York,2015,17215
+106,York,2016,1339
