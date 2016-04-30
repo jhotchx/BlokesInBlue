@@ -9,7 +9,7 @@ import shapefile
 from bokeh.models import HoverTool
 from bokeh.plotting import figure, show, output_file, ColumnDataSource
 
-sf = shapefile.Reader("/Users/joshuakaplan/msoa/england_msoa_2011_sgen_clipped.shp") 
+sf = shapefile.Reader("lad/england_lad_2011_gen.shp") 
 
 #http://gis.stackexchange.com/questions/168310/how-to-convert-projected-coordinates-to-geographic-coordinates-without-arcgis
 #https://karlhennermann.wordpress.com/2015/02/16/how-to-make-lsoa-and-msoa-boundaries-from-uk-data-service-align-properly-in-arcgis/
