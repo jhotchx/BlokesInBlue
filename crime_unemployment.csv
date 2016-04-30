@@ -1,0 +1,1631 @@
+LAD_name,Year,Code,UERate,count
+Adur,2011,Adur2011,6,10.6
+Allerdale,2011,Allerdale2011,10.1,11.4
+Amber Valley,2011,Amber Valley2011,9,11
+Arun,2011,Arun2011,8,12.6
+Ashfield,2011,Ashfield2011,11.3,15.7
+Ashford,2011,Ashford2011,5.2,9.7
+Aylesbury Vale,2011,Aylesbury Vale2011,8.3,7.5
+Babergh,2011,Babergh2011,5.8,10.5
+Barking and Dagenham,2011,Barking and Dagenham2011,13.2,14
+Barnet,2011,Barnet2011,8,10.9
+Barnsley,2011,Barnsley2011,10.4,14
+Barrow-in-Furness,2011,Barrow-in-Furness2011,9.1,13
+Basildon,2011,Basildon2011,5.4,11.4
+Basingstoke and Deane,2011,Basingstoke and Deane2011,5.6,9.6
+Bassetlaw,2011,Bassetlaw2011,7.4,15.3
+Bath and North East Somerset,2011,Bath and North East Somerset2011,4.7,9.3
+Bedford,2011,Bedford2011,7,11.8
+Bexley,2011,Bexley2011,7.7,9.1
+Birmingham,2011,Birmingham2011,13.6,12.5
+Blaby,2011,Blaby2011,5.6,8.8
+Blackburn with Darwen,2011,Blackburn with Darwen2011,8.8,15.7
+Blackpool,2011,Blackpool2011,9,20.4
+Bolsover,2011,Bolsover2011,12.4,13.2
+Bolton,2011,Bolton2011,9.1,15.4
+Boston,2011,Boston2011,10.3,13.3
+Bournemouth,2011,Bournemouth2011,7.3,13.2
+Bracknell Forest,2011,Bracknell Forest2011,4.8,7.6
+Bradford,2011,Bradford2011,12.5,13.9
+Braintree,2011,Braintree2011,5.3,8.3
+Breckland,2011,Breckland2011,3.4,9.7
+Brent,2011,Brent2011,12.4,11.9
+Brentwood,2011,Brentwood2011,4.4,9.9
+Brighton and Hove,2011,Brighton and Hove2011,7.4,11.7
+"Bristol, City of",2011,"Bristol, City of2011",8.6,13.7
+Broadland,2011,Broadland2011,2.3,6.7
+Bromley,2011,Bromley2011,5.7,11.1
+Bromsgrove,2011,Bromsgrove2011,8,10
+Broxbourne,2011,Broxbourne2011,8,11.8
+Broxtowe,2011,Broxtowe2011,6.1,11.4
+Burnley,2011,Burnley2011,3.8,20.2
+Bury,2011,Bury2011,8,13.8
+Calderdale,2011,Calderdale2011,7.7,13.1
+Cambridge,2011,Cambridge2011,5.8,10.8
+Camden,2011,Camden2011,8.4,15.1
+Cannock Chase,2011,Cannock Chase2011,11.5,9.6
+Canterbury,2011,Canterbury2011,9.1,10.1
+Carlisle,2011,Carlisle2011,5.1,12.4
+Castle Point,2011,Castle Point2011,6.1,8.9
+Central Bedfordshire,2011,Central Bedfordshire2011,5.2,9.9
+Charnwood,2011,Charnwood2011,5.6,9.5
+Chelmsford,2011,Chelmsford2011,5.9,8.4
+Cheltenham,2011,Cheltenham2011,5.9,13.7
+Cherwell,2011,Cherwell2011,3,8.5
+Cheshire East,2011,Cheshire East2011,6.7,9.4
+Cheshire West and Chester,2011,Cheshire West and Chester2011,5.8,10.1
+Chesterfield,2011,Chesterfield2011,10.7,13.6
+Chichester,2011,Chichester2011,3.7,10.6
+Chiltern,2011,Chiltern2011,4.2,7.8
+Chorley,2011,Chorley2011,5,11.2
+Christchurch,2011,Christchurch2011,4.8,10.5
+City of London,2011,City of London2011,NA,163.3
+Colchester,2011,Colchester2011,5.6,9.9
+Copeland,2011,Copeland2011,8,10.1
+Corby,2011,Corby2011,4.7,14.6
+Cornwall,2011,Cornwall2011,5.2,9.2
+Cotswold,2011,Cotswold2011,5.1,8.4
+County Durham,2011,County Durham2011,8.3,11.3
+Coventry,2011,Coventry2011,9.6,12.6
+Craven,2011,Craven2011,9.4,9.5
+Crawley,2011,Crawley2011,6,12.7
+Croydon,2011,Croydon2011,12.5,12.3
+Dacorum,2011,Dacorum2011,4.8,9.8
+Darlington,2011,Darlington2011,8.9,15.1
+Dartford,2011,Dartford2011,12.9,10.6
+Daventry,2011,Daventry2011,8.4,10.8
+Derby,2011,Derby2011,9.3,15.2
+Derbyshire Dales,2011,Derbyshire Dales2011,7.8,8.9
+Doncaster,2011,Doncaster2011,12.7,16.5
+Dover,2011,Dover2011,5.6,10.7
+Dudley,2011,Dudley2011,9.2,10.4
+Ealing,2011,Ealing2011,10.3,12.6
+East Cambridgeshire,2011,East Cambridgeshire2011,7.1,8
+East Devon,2011,East Devon2011,7.7,7.8
+East Dorset,2011,East Dorset2011,5.7,8
+East Hampshire,2011,East Hampshire2011,6.8,9.4
+East Hertfordshire,2011,East Hertfordshire2011,4,8.5
+East Lindsey,2011,East Lindsey2011,3.8,12.9
+East Northamptonshire,2011,East Northamptonshire2011,NA,10.2
+East Riding of Yorkshire,2011,East Riding of Yorkshire2011,5.4,8.9
+East Staffordshire,2011,East Staffordshire2011,1.8,8.2
+Eastbourne,2011,Eastbourne2011,6.5,13
+Eastleigh,2011,Eastleigh2011,7,9.5
+Eden,2011,Eden2011,4.9,7.9
+Elmbridge,2011,Elmbridge2011,4.3,10.5
+Enfield,2011,Enfield2011,12.2,11.6
+Epping Forest,2011,Epping Forest2011,10.5,10.4
+Epsom and Ewell,2011,Epsom and Ewell2011,5.7,10.6
+Erewash,2011,Erewash2011,12.8,12.8
+Exeter,2011,Exeter2011,3.4,12.2
+Fareham,2011,Fareham2011,4.2,8.1
+Fenland,2011,Fenland2011,9.7,12.8
+Forest Heath,2011,Forest Heath2011,NA,12.4
+Forest of Dean,2011,Forest of Dean2011,2.4,9.1
+Fylde,2011,Fylde2011,3.3,9.8
+Gateshead,2011,Gateshead2011,12,10
+Gedling,2011,Gedling2011,7.1,12.3
+Gloucester,2011,Gloucester2011,8.4,14.7
+Gosport,2011,Gosport2011,NA,12.2
+Gravesham,2011,Gravesham2011,15.8,11.7
+Great Yarmouth,2011,Great Yarmouth2011,11.5,14
+Greenwich,2011,Greenwich2011,11,12.3
+Guildford,2011,Guildford2011,2.6,11.3
+Hackney,2011,Hackney2011,8,11.8
+Halton,2011,Halton2011,8.7,12.5
+Hambleton,2011,Hambleton2011,8.8,9
+Hammersmith and Fulham,2011,Hammersmith and Fulham2011,7.4,13.2
+Harborough,2011,Harborough2011,7.3,6.9
+Haringey,2011,Haringey2011,10.9,12.4
+Harlow,2011,Harlow2011,9,12.1
+Harrogate,2011,Harrogate2011,9,10.2
+Harrow,2011,Harrow2011,6.6,9.3
+Hart,2011,Hart2011,3.7,7.6
+Hartlepool,2011,Hartlepool2011,16.4,16.3
+Hastings,2011,Hastings2011,5.5,14.9
+Havant,2011,Havant2011,8.5,11.8
+Havering,2011,Havering2011,7.9,10.8
+"Herefordshire, County of",2011,"Herefordshire, County of2011",5.4,10.4
+Hertsmere,2011,Hertsmere2011,3.2,10
+High Peak,2011,High Peak2011,7.7,10.3
+Hillingdon,2011,Hillingdon2011,8.7,13
+Hinckley and Bosworth,2011,Hinckley and Bosworth2011,11.8,8.5
+Horsham,2011,Horsham2011,4.4,8
+Hounslow,2011,Hounslow2011,7.2,12.9
+Huntingdonshire,2011,Huntingdonshire2011,5.9,9.5
+Hyndburn,2011,Hyndburn2011,NA,16.5
+Ipswich,2011,Ipswich2011,8,15.9
+Isle of Wight,2011,Isle of Wight2011,10,11.7
+Isles of Scilly,2011,Isles of Scilly2011,NA,NA
+Islington,2011,Islington2011,10,13.7
+Kensington and Chelsea,2011,Kensington and Chelsea2011,6.7,13.3
+Kettering,2011,Kettering2011,7.9,11.9
+King's Lynn and West Norfolk,2011,King's Lynn and West Norfolk2011,10.6,10.6
+"Kingston upon Hull, City of",2011,"Kingston upon Hull, City of2011",14.1,14.6
+Kingston upon Thames,2011,Kingston upon Thames2011,8.4,9.2
+Kirklees,2011,Kirklees2011,8.8,12.8
+Knowsley,2011,Knowsley2011,12.5,11.7
+Lambeth,2011,Lambeth2011,11.5,12.8
+Lancaster,2011,Lancaster2011,4.5,13.3
+Leeds,2011,Leeds2011,8.8,14.7
+Leicester,2011,Leicester2011,14.1,13.9
+Lewes,2011,Lewes2011,4.5,11
+Lewisham,2011,Lewisham2011,8.6,12.7
+Lichfield,2011,Lichfield2011,7.7,7.4
+Lincoln,2011,Lincoln2011,10.6,16.4
+Liverpool,2011,Liverpool2011,11.2,13.3
+Luton,2011,Luton2011,8.5,13.3
+Maidstone,2011,Maidstone2011,4,9.9
+Maldon,2011,Maldon2011,10.7,7.7
+Malvern Hills,2011,Malvern Hills2011,7,9.1
+Manchester,2011,Manchester2011,11.6,19.6
+Mansfield,2011,Mansfield2011,12.3,16.5
+Medway,2011,Medway2011,9.5,10.6
+Melton,2011,Melton2011,NA,8.1
+Mendip,2011,Mendip2011,4.2,11.2
+Merton,2011,Merton2011,8.5,10.3
+Mid Devon,2011,Mid Devon2011,8,7.5
+Mid Suffolk,2011,Mid Suffolk2011,4.2,8.3
+Mid Sussex,2011,Mid Sussex2011,3.4,8.2
+Middlesbrough,2011,Middlesbrough2011,16,18.9
+Milton Keynes,2011,Milton Keynes2011,6.4,10.6
+Mole Valley,2011,Mole Valley2011,NA,9.7
+New Forest,2011,New Forest2011,5.2,10.2
+Newark and Sherwood,2011,Newark and Sherwood2011,7.3,12.6
+Newcastle upon Tyne,2011,Newcastle upon Tyne2011,10.9,12.4
+Newcastle-under-Lyme,2011,Newcastle-under-Lyme2011,12.9,9
+Newham,2011,Newham2011,15.6,12.6
+North Devon,2011,North Devon2011,4.2,10.4
+North Dorset,2011,North Dorset2011,6.5,7.5
+North East Derbyshire,2011,North East Derbyshire2011,9,9
+North East Lincolnshire,2011,North East Lincolnshire2011,12.1,13.4
+North Hertfordshire,2011,North Hertfordshire2011,7.8,9
+North Kesteven,2011,North Kesteven2011,5.6,7.5
+North Lincolnshire,2011,North Lincolnshire2011,6.2,12.7
+North Norfolk,2011,North Norfolk2011,8.2,9.2
+North Somerset,2011,North Somerset2011,6.8,10.2
+North Tyneside,2011,North Tyneside2011,10.7,9.7
+North Warwickshire,2011,North Warwickshire2011,5.9,11
+North West Leicestershire,2011,North West Leicestershire2011,6.8,9.2
+Northampton,2011,Northampton2011,7.7,14.6
+Northumberland,2011,Northumberland2011,6.1,8.6
+Norwich,2011,Norwich2011,9.6,15
+Nottingham,2011,Nottingham2011,13.2,21.8
+Nuneaton and Bedworth,2011,Nuneaton and Bedworth2011,9.5,13.5
+Oadby and Wigston,2011,Oadby and Wigston2011,4.4,8.7
+Oldham,2011,Oldham2011,10.7,15.6
+Oxford,2011,Oxford2011,4.8,11.7
+Pendle,2011,Pendle2011,9.3,14
+Peterborough,2011,Peterborough2011,9.3,13.6
+Plymouth,2011,Plymouth2011,6.9,12.7
+Poole,2011,Poole2011,5.2,11
+Portsmouth,2011,Portsmouth2011,8.5,13.4
+Preston,2011,Preston2011,10.2,15.1
+Purbeck,2011,Purbeck2011,5.8,10.3
+Reading,2011,Reading2011,5.9,12.3
+Redbridge,2011,Redbridge2011,10.3,12.2
+Redcar and Cleveland,2011,Redcar and Cleveland2011,13.1,15.2
+Redditch,2011,Redditch2011,8,12.7
+Reigate and Banstead,2011,Reigate and Banstead2011,3.8,11
+Ribble Valley,2011,Ribble Valley2011,3.8,7.9
+Richmond upon Thames,2011,Richmond upon Thames2011,3.9,10.1
+Richmondshire,2011,Richmondshire2011,7.1,8.3
+Rochdale,2011,Rochdale2011,11.9,17
+Rochford,2011,Rochford2011,3.6,6.3
+Rossendale,2011,Rossendale2011,9.4,11.8
+Rother,2011,Rother2011,8.1,11.3
+Rotherham,2011,Rotherham2011,12,14.7
+Rugby,2011,Rugby2011,14.2,10.8
+Runnymede,2011,Runnymede2011,8.3,11.8
+Rushcliffe,2011,Rushcliffe2011,3,8.5
+Rushmoor,2011,Rushmoor2011,8.6,10.7
+Rutland,2011,Rutland2011,5,7.1
+Ryedale,2011,Ryedale2011,NA,8
+Salford,2011,Salford2011,12.4,16.8
+Sandwell,2011,Sandwell2011,11.4,12.5
+Scarborough,2011,Scarborough2011,7.5,14.5
+Sedgemoor,2011,Sedgemoor2011,7.3,11.1
+Sefton,2011,Sefton2011,9.8,10.8
+Selby,2011,Selby2011,6.2,9.7
+Sevenoaks,2011,Sevenoaks2011,3.4,8.3
+Sheffield,2011,Sheffield2011,10.1,14.9
+Shepway,2011,Shepway2011,8.1,10.5
+Shropshire,2011,Shropshire2011,7.3,9.8
+Slough,2011,Slough2011,10.3,13
+Solihull,2011,Solihull2011,8.6,10.9
+South Bucks,2011,South Bucks2011,8.9,11.2
+South Cambridgeshire,2011,South Cambridgeshire2011,4.5,6.9
+South Derbyshire,2011,South Derbyshire2011,5.6,9.2
+South Gloucestershire,2011,South Gloucestershire2011,6.1,9.3
+South Hams,2011,South Hams2011,NA,7.1
+South Holland,2011,South Holland2011,5.7,11.3
+South Kesteven,2011,South Kesteven2011,6.2,9.8
+South Lakeland,2011,South Lakeland2011,2.5,9.5
+South Norfolk,2011,South Norfolk2011,8.6,7.8
+South Northamptonshire,2011,South Northamptonshire2011,6.2,8
+South Oxfordshire,2011,South Oxfordshire2011,3.1,7.2
+South Ribble,2011,South Ribble2011,8.1,11.2
+South Somerset,2011,South Somerset2011,4,9.8
+South Staffordshire,2011,South Staffordshire2011,6.2,7.5
+South Tyneside,2011,South Tyneside2011,12,10.7
+Southampton,2011,Southampton2011,6.3,14.6
+Southend-on-Sea,2011,Southend-on-Sea2011,7.8,11.9
+Southwark,2011,Southwark2011,12.1,13.6
+Spelthorne,2011,Spelthorne2011,4.3,12.7
+St Albans,2011,St Albans2011,5.6,8.7
+St Edmundsbury,2011,St Edmundsbury2011,5.9,10.9
+St. Helens,2011,St. Helens2011,9.1,11.1
+Stafford,2011,Stafford2011,6,7.6
+Staffordshire Moorlands,2011,Staffordshire Moorlands2011,8.5,6.8
+Stevenage,2011,Stevenage2011,7,11.2
+Stockport,2011,Stockport2011,7.6,13.9
+Stockton-on-Tees,2011,Stockton-on-Tees2011,9.9,13
+Stoke-on-Trent,2011,Stoke-on-Trent2011,10.5,13.5
+Stratford-on-Avon,2011,Stratford-on-Avon2011,7.9,9.2
+Stroud,2011,Stroud2011,3.7,9.3
+Suffolk Coastal,2011,Suffolk Coastal2011,3,10.5
+Sunderland,2011,Sunderland2011,13,12.1
+Surrey Heath,2011,Surrey Heath2011,3,9.5
+Sutton,2011,Sutton2011,8.1,9.8
+Swale,2011,Swale2011,9.3,12.2
+Swindon,2011,Swindon2011,7.2,10.8
+Tameside,2011,Tameside2011,9.8,16.7
+Tamworth,2011,Tamworth2011,13.2,9.5
+Tandridge,2011,Tandridge2011,5.7,11.8
+Taunton Deane,2011,Taunton Deane2011,5.4,11.6
+Teignbridge,2011,Teignbridge2011,7.7,8.1
+Telford and Wrekin,2011,Telford and Wrekin2011,9.9,12.5
+Tendring,2011,Tendring2011,11.5,12.9
+Test Valley,2011,Test Valley2011,4.1,9.1
+Tewkesbury,2011,Tewkesbury2011,5.5,8.8
+Thanet,2011,Thanet2011,22.3,14.5
+Three Rivers,2011,Three Rivers2011,8.5,7.4
+Thurrock,2011,Thurrock2011,11.1,11.4
+Tonbridge and Malling,2011,Tonbridge and Malling2011,5.3,8.4
+Torbay,2011,Torbay2011,8.9,13.8
+Torridge,2011,Torridge2011,11.6,7.2
+Tower Hamlets,2011,Tower Hamlets2011,13.5,12.6
+Trafford,2011,Trafford2011,7.2,12
+Tunbridge Wells,2011,Tunbridge Wells2011,3.8,7.8
+Uttlesford,2011,Uttlesford2011,3.7,6.9
+Vale of White Horse,2011,Vale of White Horse2011,1.8,6.3
+Wakefield,2011,Wakefield2011,10.2,14.3
+Walsall,2011,Walsall2011,9.9,12.3
+Waltham Forest,2011,Waltham Forest2011,11.1,13
+Wandsworth,2011,Wandsworth2011,7.1,9.3
+Warrington,2011,Warrington2011,6.4,10.3
+Warwick,2011,Warwick2011,3.7,10.3
+Watford,2011,Watford2011,8.6,11.1
+Waveney,2011,Waveney2011,8.1,14.9
+Waverley,2011,Waverley2011,4.1,9.4
+Wealden,2011,Wealden2011,2.5,7.9
+Wellingborough,2011,Wellingborough2011,4.9,12.5
+Welwyn Hatfield,2011,Welwyn Hatfield2011,9.9,10.5
+West Berkshire,2011,West Berkshire2011,4.1,9.1
+West Devon,2011,West Devon2011,4.3,6.4
+West Dorset,2011,West Dorset2011,5.2,9.6
+West Lancashire,2011,West Lancashire2011,6.3,10.4
+West Lindsey,2011,West Lindsey2011,8.8,11.3
+West Oxfordshire,2011,West Oxfordshire2011,4,6.5
+West Somerset,2011,West Somerset2011,NA,11
+Westminster,2011,Westminster2011,7.5,20.5
+Weymouth and Portland,2011,Weymouth and Portland2011,5.1,15.6
+Wigan,2011,Wigan2011,7.7,12.8
+Wiltshire,2011,Wiltshire2011,5.9,8.8
+Winchester,2011,Winchester2011,5.7,9.4
+Windsor and Maidenhead,2011,Windsor and Maidenhead2011,4.1,11.1
+Wirral,2011,Wirral2011,8.8,10.2
+Woking,2011,Woking2011,4.7,10
+Wokingham,2011,Wokingham2011,4.7,6.3
+Wolverhampton,2011,Wolverhampton2011,14.1,11.9
+Worcester,2011,Worcester2011,4.1,13.9
+Worthing,2011,Worthing2011,5.1,12.1
+Wychavon,2011,Wychavon2011,2,9.6
+Wycombe,2011,Wycombe2011,4.4,8.9
+Wyre,2011,Wyre2011,9.1,12.3
+Wyre Forest,2011,Wyre Forest2011,4.2,13.2
+York,2011,York2011,6,13.6
+Adur,2012,Adur2012,NA,12.4
+Allerdale,2012,Allerdale2012,8.5,13.2
+Amber Valley,2012,Amber Valley2012,8.9,12.1
+Arun,2012,Arun2012,2.8,14.7
+Ashfield,2012,Ashfield2012,13.9,12.9
+Ashford,2012,Ashford2012,5.4,11.8
+Aylesbury Vale,2012,Aylesbury Vale2012,7.4,8.1
+Babergh,2012,Babergh2012,3.9,11.3
+Barking and Dagenham,2012,Barking and Dagenham2012,14.4,17.1
+Barnet,2012,Barnet2012,10.3,13.2
+Barnsley,2012,Barnsley2012,11.3,16
+Barrow-in-Furness,2012,Barrow-in-Furness2012,7.6,16.5
+Basildon,2012,Basildon2012,9.3,14.5
+Basingstoke and Deane,2012,Basingstoke and Deane2012,5.3,11
+Bassetlaw,2012,Bassetlaw2012,10.7,14.1
+Bath and North East Somerset,2012,Bath and North East Somerset2012,6.1,10.9
+Bedford,2012,Bedford2012,6.4,13.9
+Bexley,2012,Bexley2012,6.6,11
+Birmingham,2012,Birmingham2012,14.5,14.3
+Blaby,2012,Blaby2012,2.3,10.2
+Blackburn with Darwen,2012,Blackburn with Darwen2012,9.7,18.4
+Blackpool,2012,Blackpool2012,8.8,26.1
+Bolsover,2012,Bolsover2012,NA,13.2
+Bolton,2012,Bolton2012,8.8,15.9
+Boston,2012,Boston2012,5.7,16.9
+Bournemouth,2012,Bournemouth2012,5.9,17.9
+Bracknell Forest,2012,Bracknell Forest2012,5.8,8.3
+Bradford,2012,Bradford2012,10.5,16.7
+Braintree,2012,Braintree2012,8,9.8
+Breckland,2012,Breckland2012,7.5,10.4
+Brent,2012,Brent2012,11,15.4
+Brentwood,2012,Brentwood2012,5.7,13.3
+Brighton and Hove,2012,Brighton and Hove2012,9.1,16.8
+"Bristol, City of",2012,"Bristol, City of2012",7.2,17.4
+Broadland,2012,Broadland2012,3.5,6.1
+Bromley,2012,Bromley2012,5.7,12.9
+Bromsgrove,2012,Bromsgrove2012,5.5,11.4
+Broxbourne,2012,Broxbourne2012,5.3,13.7
+Broxtowe,2012,Broxtowe2012,5.1,9.6
+Burnley,2012,Burnley2012,7.7,22.5
+Bury,2012,Bury2012,9.6,14.2
+Calderdale,2012,Calderdale2012,7.6,14.9
+Cambridge,2012,Cambridge2012,4.7,16
+Camden,2012,Camden2012,8.1,23.8
+Cannock Chase,2012,Cannock Chase2012,7.6,11.6
+Canterbury,2012,Canterbury2012,7.2,11.5
+Carlisle,2012,Carlisle2012,6.3,15.1
+Castle Point,2012,Castle Point2012,9.1,9.4
+Central Bedfordshire,2012,Central Bedfordshire2012,6.3,10.2
+Charnwood,2012,Charnwood2012,5.8,10.8
+Chelmsford,2012,Chelmsford2012,7.9,11.2
+Cheltenham,2012,Cheltenham2012,6.2,13.7
+Cherwell,2012,Cherwell2012,7.1,9.7
+Cheshire East,2012,Cheshire East2012,5.8,11.2
+Cheshire West and Chester,2012,Cheshire West and Chester2012,7.1,12.4
+Chesterfield,2012,Chesterfield2012,8.7,15
+Chichester,2012,Chichester2012,7,12.4
+Chiltern,2012,Chiltern2012,2.9,7.9
+Chorley,2012,Chorley2012,3.9,13
+Christchurch,2012,Christchurch2012,5.7,12.1
+City of London,2012,City of London2012,NA,316.3
+Colchester,2012,Colchester2012,7.2,13.3
+Copeland,2012,Copeland2012,5.1,12.3
+Corby,2012,Corby2012,4.6,17.7
+Cornwall,2012,Cornwall2012,5.6,9.9
+Cotswold,2012,Cotswold2012,5,9.8
+County Durham,2012,County Durham2012,11.2,11.8
+Coventry,2012,Coventry2012,8.6,14
+Craven,2012,Craven2012,NA,9.8
+Crawley,2012,Crawley2012,7.1,17.9
+Croydon,2012,Croydon2012,10.8,16.1
+Dacorum,2012,Dacorum2012,6,11
+Darlington,2012,Darlington2012,11,15.1
+Dartford,2012,Dartford2012,9.4,13.8
+Daventry,2012,Daventry2012,4.3,12.6
+Derby,2012,Derby2012,10.1,18.2
+Derbyshire Dales,2012,Derbyshire Dales2012,NA,8.7
+Doncaster,2012,Doncaster2012,12.1,17.5
+Dover,2012,Dover2012,7.7,12.2
+Dudley,2012,Dudley2012,7.6,10.6
+Ealing,2012,Ealing2012,12.6,15.7
+East Cambridgeshire,2012,East Cambridgeshire2012,8.6,8.4
+East Devon,2012,East Devon2012,NA,8.3
+East Dorset,2012,East Dorset2012,5.9,7.9
+East Hampshire,2012,East Hampshire2012,3.9,9.4
+East Hertfordshire,2012,East Hertfordshire2012,3.9,9.4
+East Lindsey,2012,East Lindsey2012,10.6,14.5
+East Northamptonshire,2012,East Northamptonshire2012,8.8,11
+East Riding of Yorkshire,2012,East Riding of Yorkshire2012,7.2,9.3
+East Staffordshire,2012,East Staffordshire2012,2.6,11.1
+Eastbourne,2012,Eastbourne2012,6.8,16.3
+Eastleigh,2012,Eastleigh2012,2.6,10.3
+Eden,2012,Eden2012,NA,9
+Elmbridge,2012,Elmbridge2012,4.2,11.2
+Enfield,2012,Enfield2012,10.6,13.8
+Epping Forest,2012,Epping Forest2012,4.4,12.8
+Epsom and Ewell,2012,Epsom and Ewell2012,NA,11.8
+Erewash,2012,Erewash2012,NA,13.9
+Exeter,2012,Exeter2012,2.8,14.9
+Fareham,2012,Fareham2012,6.6,9.7
+Fenland,2012,Fenland2012,16.5,14.2
+Forest Heath,2012,Forest Heath2012,7.2,14.9
+Forest of Dean,2012,Forest of Dean2012,7.6,10.3
+Fylde,2012,Fylde2012,5.6,10.8
+Gateshead,2012,Gateshead2012,13,11.5
+Gedling,2012,Gedling2012,7.2,9.9
+Gloucester,2012,Gloucester2012,5.8,18.3
+Gosport,2012,Gosport2012,7.1,13.8
+Gravesham,2012,Gravesham2012,9.4,14.8
+Great Yarmouth,2012,Great Yarmouth2012,5.6,16.1
+Greenwich,2012,Greenwich2012,10.7,14.9
+Guildford,2012,Guildford2012,5.6,13.3
+Hackney,2012,Hackney2012,9.4,17.7
+Halton,2012,Halton2012,10.7,15.6
+Hambleton,2012,Hambleton2012,4.7,9
+Hammersmith and Fulham,2012,Hammersmith and Fulham2012,9.4,19.3
+Harborough,2012,Harborough2012,4.9,7.4
+Haringey,2012,Haringey2012,8.3,16
+Harlow,2012,Harlow2012,11.6,17.4
+Harrogate,2012,Harrogate2012,3.1,10.3
+Harrow,2012,Harrow2012,8.5,10.9
+Hart,2012,Hart2012,5.3,7.5
+Hartlepool,2012,Hartlepool2012,14.2,18
+Hastings,2012,Hastings2012,8.5,17.1
+Havant,2012,Havant2012,6.5,13.1
+Havering,2012,Havering2012,9.3,13.2
+"Herefordshire, County of",2012,"Herefordshire, County of2012",4.5,12.9
+Hertsmere,2012,Hertsmere2012,7,11.7
+High Peak,2012,High Peak2012,9.9,11.5
+Hillingdon,2012,Hillingdon2012,9.8,15.6
+Hinckley and Bosworth,2012,Hinckley and Bosworth2012,4.3,9.2
+Horsham,2012,Horsham2012,3,9.3
+Hounslow,2012,Hounslow2012,7.3,16.1
+Huntingdonshire,2012,Huntingdonshire2012,5.2,10.5
+Hyndburn,2012,Hyndburn2012,5.3,18
+Ipswich,2012,Ipswich2012,9.9,20.3
+Isle of Wight,2012,Isle of Wight2012,8.2,12.8
+Isles of Scilly,2012,Isles of Scilly2012,NA,NA
+Islington,2012,Islington2012,9,20.1
+Kensington and Chelsea,2012,Kensington and Chelsea2012,5.4,21.7
+Kettering,2012,Kettering2012,6.3,15.2
+King's Lynn and West Norfolk,2012,King's Lynn and West Norfolk2012,6.5,11.4
+"Kingston upon Hull, City of",2012,"Kingston upon Hull, City of2012",16,17.7
+Kingston upon Thames,2012,Kingston upon Thames2012,7.1,11.9
+Kirklees,2012,Kirklees2012,8,14
+Knowsley,2012,Knowsley2012,14.3,13.9
+Lambeth,2012,Lambeth2012,10.6,18
+Lancaster,2012,Lancaster2012,8.6,15.6
+Leeds,2012,Leeds2012,9.8,17.3
+Leicester,2012,Leicester2012,14,17.1
+Lewes,2012,Lewes2012,4,11.4
+Lewisham,2012,Lewisham2012,10.1,15.4
+Lichfield,2012,Lichfield2012,4.2,8.8
+Lincoln,2012,Lincoln2012,10.7,21.3
+Liverpool,2012,Liverpool2012,11.8,17.8
+Luton,2012,Luton2012,10.7,16.1
+Maidstone,2012,Maidstone2012,8.3,11.4
+Maldon,2012,Maldon2012,NA,9.4
+Malvern Hills,2012,Malvern Hills2012,3.5,11.1
+Manchester,2012,Manchester2012,13.2,19.6
+Mansfield,2012,Mansfield2012,9.8,14
+Medway,2012,Medway2012,8.2,13.3
+Melton,2012,Melton2012,8.3,9
+Mendip,2012,Mendip2012,3.9,12.3
+Merton,2012,Merton2012,7.3,12.3
+Mid Devon,2012,Mid Devon2012,7.5,7.8
+Mid Suffolk,2012,Mid Suffolk2012,3.9,8.6
+Mid Sussex,2012,Mid Sussex2012,3.3,9.3
+Middlesbrough,2012,Middlesbrough2012,16.5,23.3
+Milton Keynes,2012,Milton Keynes2012,8.9,13.4
+Mole Valley,2012,Mole Valley2012,5.2,10.5
+New Forest,2012,New Forest2012,3.9,11.6
+Newark and Sherwood,2012,Newark and Sherwood2012,10,10.8
+Newcastle upon Tyne,2012,Newcastle upon Tyne2012,10.2,17
+Newcastle-under-Lyme,2012,Newcastle-under-Lyme2012,7.2,11.7
+Newham,2012,Newham2012,14.7,17.1
+North Devon,2012,North Devon2012,NA,11.6
+North Dorset,2012,North Dorset2012,2.2,8.7
+North East Derbyshire,2012,North East Derbyshire2012,7.5,9.3
+North East Lincolnshire,2012,North East Lincolnshire2012,12.1,18
+North Hertfordshire,2012,North Hertfordshire2012,8.9,9.7
+North Kesteven,2012,North Kesteven2012,2.1,7.7
+North Lincolnshire,2012,North Lincolnshire2012,7.9,13.9
+North Norfolk,2012,North Norfolk2012,NA,8.9
+North Somerset,2012,North Somerset2012,7.2,11.4
+North Tyneside,2012,North Tyneside2012,10.4,11
+North Warwickshire,2012,North Warwickshire2012,8,11.9
+North West Leicestershire,2012,North West Leicestershire2012,4.6,9.9
+Northampton,2012,Northampton2012,5.7,19.4
+Northumberland,2012,Northumberland2012,5.7,9.8
+Norwich,2012,Norwich2012,9.3,19
+Nottingham,2012,Nottingham2012,13.9,19.1
+Nuneaton and Bedworth,2012,Nuneaton and Bedworth2012,10.7,16.6
+Oadby and Wigston,2012,Oadby and Wigston2012,7,9.4
+Oldham,2012,Oldham2012,9.9,15.5
+Oxford,2012,Oxford2012,6.4,15.7
+Pendle,2012,Pendle2012,11.1,15.8
+Peterborough,2012,Peterborough2012,8.5,18.8
+Plymouth,2012,Plymouth2012,10.8,13.9
+Poole,2012,Poole2012,5.2,13.3
+Portsmouth,2012,Portsmouth2012,7.6,17.4
+Preston,2012,Preston2012,12.5,18.5
+Purbeck,2012,Purbeck2012,8.4,9.3
+Reading,2012,Reading2012,4.5,14.9
+Redbridge,2012,Redbridge2012,8.2,14.7
+Redcar and Cleveland,2012,Redcar and Cleveland2012,13.1,16.6
+Redditch,2012,Redditch2012,2.8,14.3
+Reigate and Banstead,2012,Reigate and Banstead2012,5.9,12.5
+Ribble Valley,2012,Ribble Valley2012,5.5,8.2
+Richmond upon Thames,2012,Richmond upon Thames2012,5.2,11.9
+Richmondshire,2012,Richmondshire2012,7.5,9.1
+Rochdale,2012,Rochdale2012,10.5,17.4
+Rochford,2012,Rochford2012,5.3,7.8
+Rossendale,2012,Rossendale2012,8,13.6
+Rother,2012,Rother2012,10.4,10.9
+Rotherham,2012,Rotherham2012,8.9,16.7
+Rugby,2012,Rugby2012,2.2,12.2
+Runnymede,2012,Runnymede2012,4.9,12.2
+Rushcliffe,2012,Rushcliffe2012,5.2,7.3
+Rushmoor,2012,Rushmoor2012,8.3,12
+Rutland,2012,Rutland2012,4.8,7.7
+Ryedale,2012,Ryedale2012,6.1,7.9
+Salford,2012,Salford2012,9.9,15.4
+Sandwell,2012,Sandwell2012,12.7,11.9
+Scarborough,2012,Scarborough2012,12.5,17
+Sedgemoor,2012,Sedgemoor2012,5.6,12.4
+Sefton,2012,Sefton2012,8.5,13
+Selby,2012,Selby2012,3.7,10.7
+Sevenoaks,2012,Sevenoaks2012,NA,10
+Sheffield,2012,Sheffield2012,11.3,17.1
+Shepway,2012,Shepway2012,3.5,13.1
+Shropshire,2012,Shropshire2012,7.2,11.1
+Slough,2012,Slough2012,9.3,15.8
+Solihull,2012,Solihull2012,7.1,11.9
+South Bucks,2012,South Bucks2012,NA,11.8
+South Cambridgeshire,2012,South Cambridgeshire2012,5.5,7.3
+South Derbyshire,2012,South Derbyshire2012,7.4,10.1
+South Gloucestershire,2012,South Gloucestershire2012,7.2,10.2
+South Hams,2012,South Hams2012,5.6,8
+South Holland,2012,South Holland2012,13.4,12.6
+South Kesteven,2012,South Kesteven2012,7.9,11.5
+South Lakeland,2012,South Lakeland2012,3.6,10.3
+South Norfolk,2012,South Norfolk2012,3.2,8.2
+South Northamptonshire,2012,South Northamptonshire2012,3.1,8
+South Oxfordshire,2012,South Oxfordshire2012,5.7,7.5
+South Ribble,2012,South Ribble2012,7,11.4
+South Somerset,2012,South Somerset2012,4.7,11.8
+South Staffordshire,2012,South Staffordshire2012,5.1,8.2
+South Tyneside,2012,South Tyneside2012,13.4,12.4
+Southampton,2012,Southampton2012,7.3,17.8
+Southend-on-Sea,2012,Southend-on-Sea2012,6.4,16.4
+Southwark,2012,Southwark2012,9.9,17.5
+Spelthorne,2012,Spelthorne2012,4.4,14.1
+St Albans,2012,St Albans2012,6,9.5
+St Edmundsbury,2012,St Edmundsbury2012,3.6,13.2
+St. Helens,2012,St. Helens2012,7.6,13.1
+Stafford,2012,Stafford2012,2.9,10
+Staffordshire Moorlands,2012,Staffordshire Moorlands2012,10.9,8.1
+Stevenage,2012,Stevenage2012,NA,14.9
+Stockport,2012,Stockport2012,5.6,13.6
+Stockton-on-Tees,2012,Stockton-on-Tees2012,11.4,15.4
+Stoke-on-Trent,2012,Stoke-on-Trent2012,7.3,17.4
+Stratford-on-Avon,2012,Stratford-on-Avon2012,5.2,10.5
+Stroud,2012,Stroud2012,3.9,10.8
+Suffolk Coastal,2012,Suffolk Coastal2012,4.4,11.1
+Sunderland,2012,Sunderland2012,8.5,14
+Surrey Heath,2012,Surrey Heath2012,3,10.6
+Sutton,2012,Sutton2012,6.9,11.4
+Swale,2012,Swale2012,7.6,13.3
+Swindon,2012,Swindon2012,8.1,14.2
+Tameside,2012,Tameside2012,9.8,15.9
+Tamworth,2012,Tamworth2012,12.4,12.6
+Tandridge,2012,Tandridge2012,6.8,12.5
+Taunton Deane,2012,Taunton Deane2012,NA,13.8
+Teignbridge,2012,Teignbridge2012,5.4,9.2
+Telford and Wrekin,2012,Telford and Wrekin2012,8.9,15
+Tendring,2012,Tendring2012,10.5,16
+Test Valley,2012,Test Valley2012,3,10.4
+Tewkesbury,2012,Tewkesbury2012,5.7,9.5
+Thanet,2012,Thanet2012,13.2,17
+Three Rivers,2012,Three Rivers2012,13.5,7.5
+Thurrock,2012,Thurrock2012,8.6,15.1
+Tonbridge and Malling,2012,Tonbridge and Malling2012,9.6,10
+Torbay,2012,Torbay2012,7.6,16.5
+Torridge,2012,Torridge2012,6.7,8
+Tower Hamlets,2012,Tower Hamlets2012,12,18
+Trafford,2012,Trafford2012,6.7,10.5
+Tunbridge Wells,2012,Tunbridge Wells2012,3.1,9.5
+Uttlesford,2012,Uttlesford2012,NA,9.9
+Vale of White Horse,2012,Vale of White Horse2012,5.8,6.4
+Wakefield,2012,Wakefield2012,10.7,15.8
+Walsall,2012,Walsall2012,12,12.7
+Waltham Forest,2012,Waltham Forest2012,9.4,16.1
+Wandsworth,2012,Wandsworth2012,6.7,13.5
+Warrington,2012,Warrington2012,5.1,13.2
+Warwick,2012,Warwick2012,5.1,12
+Watford,2012,Watford2012,NA,15.6
+Waveney,2012,Waveney2012,11,16.1
+Waverley,2012,Waverley2012,5.1,9.1
+Wealden,2012,Wealden2012,7.8,8.3
+Wellingborough,2012,Wellingborough2012,6.7,16.5
+Welwyn Hatfield,2012,Welwyn Hatfield2012,7.8,11.7
+West Berkshire,2012,West Berkshire2012,4.9,10
+West Devon,2012,West Devon2012,6.5,7.4
+West Dorset,2012,West Dorset2012,2.8,10.1
+West Lancashire,2012,West Lancashire2012,9.2,11.7
+West Lindsey,2012,West Lindsey2012,7.2,10.9
+West Oxfordshire,2012,West Oxfordshire2012,5.7,6.9
+West Somerset,2012,West Somerset2012,NA,12.8
+Westminster,2012,Westminster2012,8.5,41.9
+Weymouth and Portland,2012,Weymouth and Portland2012,6.8,18.3
+Wigan,2012,Wigan2012,9.2,12.5
+Wiltshire,2012,Wiltshire2012,6.3,10.7
+Winchester,2012,Winchester2012,4.6,10.3
+Windsor and Maidenhead,2012,Windsor and Maidenhead2012,3.8,12.3
+Wirral,2012,Wirral2012,7.7,11.8
+Woking,2012,Woking2012,3.5,11.8
+Wokingham,2012,Wokingham2012,3.7,6.2
+Wolverhampton,2012,Wolverhampton2012,13.2,13
+Worcester,2012,Worcester2012,7.2,17.6
+Worthing,2012,Worthing2012,6.4,14.9
+Wychavon,2012,Wychavon2012,5.9,10.8
+Wycombe,2012,Wycombe2012,6.2,9.3
+Wyre,2012,Wyre2012,7.6,13.5
+Wyre Forest,2012,Wyre Forest2012,7.7,14.8
+York,2012,York2012,5.4,14.2
+Adur,2013,Adur2013,5.1,10.7
+Allerdale,2013,Allerdale2013,7.6,13.5
+Amber Valley,2013,Amber Valley2013,4,11.4
+Arun,2013,Arun2013,2.1,13
+Ashfield,2013,Ashfield2013,7.8,12.1
+Ashford,2013,Ashford2013,6.4,11.5
+Aylesbury Vale,2013,Aylesbury Vale2013,4.1,8.3
+Babergh,2013,Babergh2013,7.2,10.4
+Barking and Dagenham,2013,Barking and Dagenham2013,14.2,15.9
+Barnet,2013,Barnet2013,5.8,11.8
+Barnsley,2013,Barnsley2013,10.6,14.9
+Barrow-in-Furness,2013,Barrow-in-Furness2013,3.5,17
+Basildon,2013,Basildon2013,7.9,14.2
+Basingstoke and Deane,2013,Basingstoke and Deane2013,4.6,10.2
+Bassetlaw,2013,Bassetlaw2013,4.7,13.5
+Bath and North East Somerset,2013,Bath and North East Somerset2013,4.3,10.5
+Bedford,2013,Bedford2013,8.8,12.1
+Bexley,2013,Bexley2013,8.4,10.4
+Birmingham,2013,Birmingham2013,15.6,14
+Blaby,2013,Blaby2013,5.9,9.8
+Blackburn with Darwen,2013,Blackburn with Darwen2013,8.3,18.2
+Blackpool,2013,Blackpool2013,8.4,26.1
+Bolsover,2013,Bolsover2013,NA,12.5
+Bolton,2013,Bolton2013,10.7,15.6
+Boston,2013,Boston2013,3.7,16.1
+Bournemouth,2013,Bournemouth2013,6.1,16.4
+Bracknell Forest,2013,Bracknell Forest2013,3.2,7.7
+Bradford,2013,Bradford2013,11.1,17
+Braintree,2013,Braintree2013,6.8,9.5
+Breckland,2013,Breckland2013,9.3,9.9
+Brent,2013,Brent2013,10.9,13.1
+Brentwood,2013,Brentwood2013,NA,11.6
+Brighton and Hove,2013,Brighton and Hove2013,7.5,15.3
+"Bristol, City of",2013,"Bristol, City of2013",7.9,16.5
+Broadland,2013,Broadland2013,4.4,6.2
+Bromley,2013,Bromley2013,5.7,11.8
+Bromsgrove,2013,Bromsgrove2013,3.9,10.4
+Broxbourne,2013,Broxbourne2013,3.8,12
+Broxtowe,2013,Broxtowe2013,8.4,8.9
+Burnley,2013,Burnley2013,12.5,21.1
+Bury,2013,Bury2013,6.8,14
+Calderdale,2013,Calderdale2013,9,14.8
+Cambridge,2013,Cambridge2013,7.3,14.2
+Camden,2013,Camden2013,7.3,20.3
+Cannock Chase,2013,Cannock Chase2013,4.7,10.5
+Canterbury,2013,Canterbury2013,14.7,11.6
+Carlisle,2013,Carlisle2013,9.3,15.1
+Castle Point,2013,Castle Point2013,5.4,9.1
+Central Bedfordshire,2013,Central Bedfordshire2013,5,9.5
+Charnwood,2013,Charnwood2013,8.2,10.4
+Chelmsford,2013,Chelmsford2013,4.9,11.1
+Cheltenham,2013,Cheltenham2013,4.1,13.6
+Cherwell,2013,Cherwell2013,3.6,9.4
+Cheshire East,2013,Cheshire East2013,6.9,10.7
+Cheshire West and Chester,2013,Cheshire West and Chester2013,6.2,11.9
+Chesterfield,2013,Chesterfield2013,4.5,15.1
+Chichester,2013,Chichester2013,7,10.1
+Chiltern,2013,Chiltern2013,2,7.8
+Chorley,2013,Chorley2013,4.3,12.1
+Christchurch,2013,Christchurch2013,4.5,11.6
+City of London,2013,City of London2013,NA,NA
+Colchester,2013,Colchester2013,6.1,13
+Copeland,2013,Copeland2013,4.6,12.8
+Corby,2013,Corby2013,8.8,15.2
+Cornwall,2013,Cornwall2013,5.6,10.2
+Cotswold,2013,Cotswold2013,3.2,9.8
+County Durham,2013,County Durham2013,10.1,11.5
+Coventry,2013,Coventry2013,7.8,12.9
+Craven,2013,Craven2013,5.8,9.5
+Crawley,2013,Crawley2013,13.1,15.4
+Croydon,2013,Croydon2013,8.8,13.9
+Dacorum,2013,Dacorum2013,2.1,9.3
+Darlington,2013,Darlington2013,8,15.9
+Dartford,2013,Dartford2013,7.7,14.8
+Daventry,2013,Daventry2013,3.3,10.8
+Derby,2013,Derby2013,9.1,17.9
+Derbyshire Dales,2013,Derbyshire Dales2013,3.9,8.5
+Doncaster,2013,Doncaster2013,10.3,17.3
+Dover,2013,Dover2013,5.7,12.5
+Dudley,2013,Dudley2013,9.8,10.2
+Ealing,2013,Ealing2013,12.3,13.7
+East Cambridgeshire,2013,East Cambridgeshire2013,2.4,7.6
+East Devon,2013,East Devon2013,2.7,8.2
+East Dorset,2013,East Dorset2013,4.1,7.9
+East Hampshire,2013,East Hampshire2013,5,8.2
+East Hertfordshire,2013,East Hertfordshire2013,4,8.1
+East Lindsey,2013,East Lindsey2013,9.7,12.9
+East Northamptonshire,2013,East Northamptonshire2013,12,10.1
+East Riding of Yorkshire,2013,East Riding of Yorkshire2013,7.9,8.7
+East Staffordshire,2013,East Staffordshire2013,2.7,10.2
+Eastbourne,2013,Eastbourne2013,5.7,14.1
+Eastleigh,2013,Eastleigh2013,6,9.2
+Eden,2013,Eden2013,3,9.4
+Elmbridge,2013,Elmbridge2013,2.8,10.1
+Enfield,2013,Enfield2013,8.4,13.1
+Epping Forest,2013,Epping Forest2013,7.2,12.5
+Epsom and Ewell,2013,Epsom and Ewell2013,5.9,11
+Erewash,2013,Erewash2013,8.2,13.4
+Exeter,2013,Exeter2013,4.1,14
+Fareham,2013,Fareham2013,5.6,8.5
+Fenland,2013,Fenland2013,7.7,12.8
+Forest Heath,2013,Forest Heath2013,4.2,13.5
+Forest of Dean,2013,Forest of Dean2013,11.7,9.9
+Fylde,2013,Fylde2013,4.9,10.9
+Gateshead,2013,Gateshead2013,8.4,11.5
+Gedling,2013,Gedling2013,6.7,9
+Gloucester,2013,Gloucester2013,5.6,17.1
+Gosport,2013,Gosport2013,9.3,13.9
+Gravesham,2013,Gravesham2013,8,15.4
+Great Yarmouth,2013,Great Yarmouth2013,6.7,15.2
+Greenwich,2013,Greenwich2013,11,13.2
+Guildford,2013,Guildford2013,8.4,11.5
+Hackney,2013,Hackney2013,11,16
+Halton,2013,Halton2013,10.4,15.3
+Hambleton,2013,Hambleton2013,5.6,9
+Hammersmith and Fulham,2013,Hammersmith and Fulham2013,6,16.6
+Harborough,2013,Harborough2013,7.1,7
+Haringey,2013,Haringey2013,8.7,13.9
+Harlow,2013,Harlow2013,10.3,16.8
+Harrogate,2013,Harrogate2013,2,10.2
+Harrow,2013,Harrow2013,9.8,9.7
+Hart,2013,Hart2013,3.2,6.8
+Hartlepool,2013,Hartlepool2013,15.4,18
+Hastings,2013,Hastings2013,10.4,15.5
+Havant,2013,Havant2013,7.1,12.5
+Havering,2013,Havering2013,8.4,12.1
+"Herefordshire, County of",2013,"Herefordshire, County of2013",6,11.9
+Hertsmere,2013,Hertsmere2013,2.6,9.9
+High Peak,2013,High Peak2013,5.8,11.2
+Hillingdon,2013,Hillingdon2013,8.6,13.4
+Hinckley and Bosworth,2013,Hinckley and Bosworth2013,5.1,9.1
+Horsham,2013,Horsham2013,2.8,8.1
+Hounslow,2013,Hounslow2013,7.8,13.4
+Huntingdonshire,2013,Huntingdonshire2013,4,9.8
+Hyndburn,2013,Hyndburn2013,5.6,18.9
+Ipswich,2013,Ipswich2013,9.5,17.9
+Isle of Wight,2013,Isle of Wight2013,7.7,12.2
+Isles of Scilly,2013,Isles of Scilly2013,NA,NA
+Islington,2013,Islington2013,9.2,17.6
+Kensington and Chelsea,2013,Kensington and Chelsea2013,7.2,19.5
+Kettering,2013,Kettering2013,4,14.5
+King's Lynn and West Norfolk,2013,King's Lynn and West Norfolk2013,5.7,10.6
+"Kingston upon Hull, City of",2013,"Kingston upon Hull, City of2013",14.2,18.7
+Kingston upon Thames,2013,Kingston upon Thames2013,6.2,10.6
+Kirklees,2013,Kirklees2013,7.3,13.2
+Knowsley,2013,Knowsley2013,9.7,13.9
+Lambeth,2013,Lambeth2013,8,16.3
+Lancaster,2013,Lancaster2013,3.8,14.9
+Leeds,2013,Leeds2013,9.5,16.2
+Leicester,2013,Leicester2013,15.2,16.3
+Lewes,2013,Lewes2013,NA,9.8
+Lewisham,2013,Lewisham2013,11,13.7
+Lichfield,2013,Lichfield2013,6.4,7.8
+Lincoln,2013,Lincoln2013,8.5,20.3
+Liverpool,2013,Liverpool2013,12.2,17.7
+Luton,2013,Luton2013,9.1,14.7
+Maidstone,2013,Maidstone2013,7.1,11.7
+Maldon,2013,Maldon2013,8.5,8
+Malvern Hills,2013,Malvern Hills2013,4.7,9.5
+Manchester,2013,Manchester2013,10.3,19.5
+Mansfield,2013,Mansfield2013,16,13.7
+Medway,2013,Medway2013,10.4,13
+Melton,2013,Melton2013,4.8,9
+Mendip,2013,Mendip2013,5.2,12.1
+Merton,2013,Merton2013,4.9,10.6
+Mid Devon,2013,Mid Devon2013,3.2,7.8
+Mid Suffolk,2013,Mid Suffolk2013,NA,7.9
+Mid Sussex,2013,Mid Sussex2013,3.2,8.3
+Middlesbrough,2013,Middlesbrough2013,13.1,22.6
+Milton Keynes,2013,Milton Keynes2013,7.5,12.5
+Mole Valley,2013,Mole Valley2013,4.5,9.3
+New Forest,2013,New Forest2013,4.6,10.3
+Newark and Sherwood,2013,Newark and Sherwood2013,1.9,10.1
+Newcastle upon Tyne,2013,Newcastle upon Tyne2013,11.2,16.7
+Newcastle-under-Lyme,2013,Newcastle-under-Lyme2013,6.1,11.4
+Newham,2013,Newham2013,12.2,15.1
+North Devon,2013,North Devon2013,7.2,10.5
+North Dorset,2013,North Dorset2013,2.2,7.9
+North East Derbyshire,2013,North East Derbyshire2013,3.4,8.7
+North East Lincolnshire,2013,North East Lincolnshire2013,11,18
+North Hertfordshire,2013,North Hertfordshire2013,8.3,8.5
+North Kesteven,2013,North Kesteven2013,7.5,6.6
+North Lincolnshire,2013,North Lincolnshire2013,6.1,12.2
+North Norfolk,2013,North Norfolk2013,3,8.4
+North Somerset,2013,North Somerset2013,4.8,10.7
+North Tyneside,2013,North Tyneside2013,8,10.8
+North Warwickshire,2013,North Warwickshire2013,8.9,11.2
+North West Leicestershire,2013,North West Leicestershire2013,7.1,10.1
+Northampton,2013,Northampton2013,9,17.7
+Northumberland,2013,Northumberland2013,5.7,9.9
+Norwich,2013,Norwich2013,8.8,18
+Nottingham,2013,Nottingham2013,12.3,18.1
+Nuneaton and Bedworth,2013,Nuneaton and Bedworth2013,6.9,16
+Oadby and Wigston,2013,Oadby and Wigston2013,4,9.5
+Oldham,2013,Oldham2013,9.1,16
+Oxford,2013,Oxford2013,5.5,15.6
+Pendle,2013,Pendle2013,10.3,15.9
+Peterborough,2013,Peterborough2013,7.7,17.1
+Plymouth,2013,Plymouth2013,10.7,14.5
+Poole,2013,Poole2013,2.3,11.9
+Portsmouth,2013,Portsmouth2013,6,15.1
+Preston,2013,Preston2013,4.7,18.6
+Purbeck,2013,Purbeck2013,7.6,9.4
+Reading,2013,Reading2013,5.2,13.8
+Redbridge,2013,Redbridge2013,10.8,12.8
+Redcar and Cleveland,2013,Redcar and Cleveland2013,11.3,16.6
+Redditch,2013,Redditch2013,3.6,12.4
+Reigate and Banstead,2013,Reigate and Banstead2013,2.4,10.8
+Ribble Valley,2013,Ribble Valley2013,6.8,8.7
+Richmond upon Thames,2013,Richmond upon Thames2013,3.9,10.8
+Richmondshire,2013,Richmondshire2013,NA,8.9
+Rochdale,2013,Rochdale2013,8.9,17.3
+Rochford,2013,Rochford2013,8.5,8
+Rossendale,2013,Rossendale2013,9.6,12.6
+Rother,2013,Rother2013,5.3,9.9
+Rotherham,2013,Rotherham2013,12.5,16.4
+Rugby,2013,Rugby2013,3.8,12
+Runnymede,2013,Runnymede2013,NA,11
+Rushcliffe,2013,Rushcliffe2013,3.6,6.5
+Rushmoor,2013,Rushmoor2013,3.6,11.1
+Rutland,2013,Rutland2013,1.7,6.8
+Ryedale,2013,Ryedale2013,NA,7.8
+Salford,2013,Salford2013,12.8,14.5
+Sandwell,2013,Sandwell2013,11.9,12
+Scarborough,2013,Scarborough2013,10.5,16.7
+Sedgemoor,2013,Sedgemoor2013,7.8,11.2
+Sefton,2013,Sefton2013,9.5,12.7
+Selby,2013,Selby2013,4.1,10
+Sevenoaks,2013,Sevenoaks2013,5.8,10.5
+Sheffield,2013,Sheffield2013,10.3,16
+Shepway,2013,Shepway2013,5.3,13.6
+Shropshire,2013,Shropshire2013,6.2,10
+Slough,2013,Slough2013,8.3,14.6
+Solihull,2013,Solihull2013,6.9,12.2
+South Bucks,2013,South Bucks2013,9.1,11.2
+South Cambridgeshire,2013,South Cambridgeshire2013,4.5,7.1
+South Derbyshire,2013,South Derbyshire2013,NA,8.9
+South Gloucestershire,2013,South Gloucestershire2013,5.8,9.1
+South Hams,2013,South Hams2013,5.2,7.9
+South Holland,2013,South Holland2013,6.8,10.6
+South Kesteven,2013,South Kesteven2013,6.6,9.9
+South Lakeland,2013,South Lakeland2013,1.9,10.1
+South Norfolk,2013,South Norfolk2013,7.3,7.9
+South Northamptonshire,2013,South Northamptonshire2013,2,6.8
+South Oxfordshire,2013,South Oxfordshire2013,1.7,7.7
+South Ribble,2013,South Ribble2013,5.3,10.4
+South Somerset,2013,South Somerset2013,2.8,10.6
+South Staffordshire,2013,South Staffordshire2013,6,8.1
+South Tyneside,2013,South Tyneside2013,11.6,12.7
+Southampton,2013,Southampton2013,7.8,15.9
+Southend-on-Sea,2013,Southend-on-Sea2013,6.3,16.5
+Southwark,2013,Southwark2013,11.3,16.9
+Spelthorne,2013,Spelthorne2013,4.2,12.6
+St Albans,2013,St Albans2013,7,8.4
+St Edmundsbury,2013,St Edmundsbury2013,3.2,12.3
+St. Helens,2013,St. Helens2013,7.3,12.9
+Stafford,2013,Stafford2013,4.1,9
+Staffordshire Moorlands,2013,Staffordshire Moorlands2013,4.8,8.1
+Stevenage,2013,Stevenage2013,7.8,13
+Stockport,2013,Stockport2013,4.6,13.9
+Stockton-on-Tees,2013,Stockton-on-Tees2013,8.7,15.7
+Stoke-on-Trent,2013,Stoke-on-Trent2013,9.2,17.6
+Stratford-on-Avon,2013,Stratford-on-Avon2013,2.8,10.2
+Stroud,2013,Stroud2013,4.6,10.2
+Suffolk Coastal,2013,Suffolk Coastal2013,4.6,10.1
+Sunderland,2013,Sunderland2013,13.8,13.3
+Surrey Heath,2013,Surrey Heath2013,9.8,10.2
+Sutton,2013,Sutton2013,6.4,10.1
+Swale,2013,Swale2013,9.1,14
+Swindon,2013,Swindon2013,6.3,13.5
+Tameside,2013,Tameside2013,9.7,15.7
+Tamworth,2013,Tamworth2013,NA,11.8
+Tandridge,2013,Tandridge2013,2.9,12.1
+Taunton Deane,2013,Taunton Deane2013,2.5,12.7
+Teignbridge,2013,Teignbridge2013,5.7,9.9
+Telford and Wrekin,2013,Telford and Wrekin2013,8.8,14.2
+Tendring,2013,Tendring2013,9.1,16.6
+Test Valley,2013,Test Valley2013,3.2,9.3
+Tewkesbury,2013,Tewkesbury2013,3.5,10
+Thanet,2013,Thanet2013,10.7,17.4
+Three Rivers,2013,Three Rivers2013,9,6.8
+Thurrock,2013,Thurrock2013,6.5,14.8
+Tonbridge and Malling,2013,Tonbridge and Malling2013,5,9.9
+Torbay,2013,Torbay2013,6.1,16.2
+Torridge,2013,Torridge2013,7.5,8.3
+Tower Hamlets,2013,Tower Hamlets2013,13.8,16.6
+Trafford,2013,Trafford2013,6.5,10.8
+Tunbridge Wells,2013,Tunbridge Wells2013,3.4,9.4
+Uttlesford,2013,Uttlesford2013,NA,10.1
+Vale of White Horse,2013,Vale of White Horse2013,5.1,6.9
+Wakefield,2013,Wakefield2013,9.9,15
+Walsall,2013,Walsall2013,11.8,11.9
+Waltham Forest,2013,Waltham Forest2013,7.7,14.3
+Wandsworth,2013,Wandsworth2013,9.5,12
+Warrington,2013,Warrington2013,6,12.4
+Warwick,2013,Warwick2013,4.8,10.6
+Watford,2013,Watford2013,5.9,13.6
+Waveney,2013,Waveney2013,12.9,15.2
+Waverley,2013,Waverley2013,5.6,8.9
+Wealden,2013,Wealden2013,5,7
+Wellingborough,2013,Wellingborough2013,11.5,15.2
+Welwyn Hatfield,2013,Welwyn Hatfield2013,3.6,10.1
+West Berkshire,2013,West Berkshire2013,4,9.9
+West Devon,2013,West Devon2013,NA,7.4
+West Dorset,2013,West Dorset2013,4.4,9.5
+West Lancashire,2013,West Lancashire2013,3.3,11.5
+West Lindsey,2013,West Lindsey2013,7.4,10.3
+West Oxfordshire,2013,West Oxfordshire2013,5.8,6.6
+West Somerset,2013,West Somerset2013,NA,10.9
+Westminster,2013,Westminster2013,6.2,37.1
+Weymouth and Portland,2013,Weymouth and Portland2013,12.4,15.6
+Wigan,2013,Wigan2013,9.4,13
+Wiltshire,2013,Wiltshire2013,7.4,10
+Winchester,2013,Winchester2013,5,9.8
+Windsor and Maidenhead,2013,Windsor and Maidenhead2013,3.1,10.7
+Wirral,2013,Wirral2013,8.1,12.3
+Woking,2013,Woking2013,4.3,10.8
+Wokingham,2013,Wokingham2013,3.5,6
+Wolverhampton,2013,Wolverhampton2013,12.4,13.4
+Worcester,2013,Worcester2013,6.7,15.1
+Worthing,2013,Worthing2013,7.4,13.7
+Wychavon,2013,Wychavon2013,3.3,10
+Wycombe,2013,Wycombe2013,5.1,8.1
+Wyre,2013,Wyre2013,7.4,14.1
+Wyre Forest,2013,Wyre Forest2013,7.1,13
+York,2013,York2013,4.7,12.9
+Adur,2014,Adur2014,8.3,11
+Allerdale,2014,Allerdale2014,6.2,13
+Amber Valley,2014,Amber Valley2014,3.6,10.8
+Arun,2014,Arun2014,4.1,12.8
+Ashfield,2014,Ashfield2014,4.9,12
+Ashford,2014,Ashford2014,4,11.1
+Aylesbury Vale,2014,Aylesbury Vale2014,3.5,7.5
+Babergh,2014,Babergh2014,6.2,9.4
+Barking and Dagenham,2014,Barking and Dagenham2014,11.6,14.6
+Barnet,2014,Barnet2014,4.8,11.3
+Barnsley,2014,Barnsley2014,8.5,15.2
+Barrow-in-Furness,2014,Barrow-in-Furness2014,9.3,16.9
+Basildon,2014,Basildon2014,7.4,14.7
+Basingstoke and Deane,2014,Basingstoke and Deane2014,4,9.8
+Bassetlaw,2014,Bassetlaw2014,8.6,14.1
+Bath and North East Somerset,2014,Bath and North East Somerset2014,5.6,9.9
+Bedford,2014,Bedford2014,4.1,13.7
+Bexley,2014,Bexley2014,5.6,10.1
+Birmingham,2014,Birmingham2014,11.6,13.5
+Blaby,2014,Blaby2014,4.5,9.7
+Blackburn with Darwen,2014,Blackburn with Darwen2014,8,17.4
+Blackpool,2014,Blackpool2014,7.5,25.9
+Bolsover,2014,Bolsover2014,5.4,11.9
+Bolton,2014,Bolton2014,6.1,15.4
+Boston,2014,Boston2014,6.2,15.1
+Bournemouth,2014,Bournemouth2014,5.9,15.1
+Bracknell Forest,2014,Bracknell Forest2014,4,7.1
+Bradford,2014,Bradford2014,8.6,16.2
+Braintree,2014,Braintree2014,4.2,9.3
+Breckland,2014,Breckland2014,4.7,11
+Brent,2014,Brent2014,7.2,13.1
+Brentwood,2014,Brentwood2014,5.2,10.4
+Brighton and Hove,2014,Brighton and Hove2014,6.7,14.8
+"Bristol, City of",2014,"Bristol, City of2014",8.3,15.9
+Broadland,2014,Broadland2014,4.4,6.7
+Bromley,2014,Bromley2014,5.5,11.6
+Bromsgrove,2014,Bromsgrove2014,4.7,10.8
+Broxbourne,2014,Broxbourne2014,2.6,12.2
+Broxtowe,2014,Broxtowe2014,7.2,9.3
+Burnley,2014,Burnley2014,14.2,22.3
+Bury,2014,Bury2014,7.4,14.5
+Calderdale,2014,Calderdale2014,5.5,12.8
+Cambridge,2014,Cambridge2014,4.3,15
+Camden,2014,Camden2014,7.4,19
+Cannock Chase,2014,Cannock Chase2014,5.3,10.6
+Canterbury,2014,Canterbury2014,5.5,12.5
+Carlisle,2014,Carlisle2014,4.8,14.4
+Castle Point,2014,Castle Point2014,6.2,9.4
+Central Bedfordshire,2014,Central Bedfordshire2014,3.6,10.1
+Charnwood,2014,Charnwood2014,2.9,9.6
+Chelmsford,2014,Chelmsford2014,3.4,10.9
+Cheltenham,2014,Cheltenham2014,8.3,14.8
+Cherwell,2014,Cherwell2014,3.2,8.7
+Cheshire East,2014,Cheshire East2014,3.4,9.7
+Cheshire West and Chester,2014,Cheshire West and Chester2014,3.5,11.7
+Chesterfield,2014,Chesterfield2014,5.5,15.3
+Chichester,2014,Chichester2014,2,10.3
+Chiltern,2014,Chiltern2014,4.7,6.3
+Chorley,2014,Chorley2014,3.4,11.2
+Christchurch,2014,Christchurch2014,3.8,10.4
+City of London,2014,City of London2014,NA,222.2
+Colchester,2014,Colchester2014,7.9,13
+Copeland,2014,Copeland2014,4.1,12.8
+Corby,2014,Corby2014,11.9,16.3
+Cornwall,2014,Cornwall2014,5.1,9.5
+Cotswold,2014,Cotswold2014,3.3,9.5
+County Durham,2014,County Durham2014,8.2,12
+Coventry,2014,Coventry2014,6.6,12.7
+Craven,2014,Craven2014,NA,8.6
+Crawley,2014,Crawley2014,6.8,16.6
+Croydon,2014,Croydon2014,7.8,13.2
+Dacorum,2014,Dacorum2014,3,10
+Darlington,2014,Darlington2014,7.9,15.7
+Dartford,2014,Dartford2014,3.8,15.4
+Daventry,2014,Daventry2014,4.5,11.6
+Derby,2014,Derby2014,7.9,18.2
+Derbyshire Dales,2014,Derbyshire Dales2014,NA,8
+Doncaster,2014,Doncaster2014,9.6,17.9
+Dover,2014,Dover2014,14.6,13.3
+Dudley,2014,Dudley2014,7.3,10.7
+Ealing,2014,Ealing2014,8.1,12.9
+East Cambridgeshire,2014,East Cambridgeshire2014,4.3,7.1
+East Devon,2014,East Devon2014,4,7.9
+East Dorset,2014,East Dorset2014,2.5,7.2
+East Hampshire,2014,East Hampshire2014,2.9,7.9
+East Hertfordshire,2014,East Hertfordshire2014,3.6,8.4
+East Lindsey,2014,East Lindsey2014,6.4,12.8
+East Northamptonshire,2014,East Northamptonshire2014,NA,10.2
+East Riding of Yorkshire,2014,East Riding of Yorkshire2014,4.1,8.4
+East Staffordshire,2014,East Staffordshire2014,2.8,9.9
+Eastbourne,2014,Eastbourne2014,8.3,15.3
+Eastleigh,2014,Eastleigh2014,NA,8.8
+Eden,2014,Eden2014,NA,8.9
+Elmbridge,2014,Elmbridge2014,4.2,10
+Enfield,2014,Enfield2014,7.2,12.6
+Epping Forest,2014,Epping Forest2014,6.5,11.9
+Epsom and Ewell,2014,Epsom and Ewell2014,2.7,10.2
+Erewash,2014,Erewash2014,8.5,13
+Exeter,2014,Exeter2014,3.5,14
+Fareham,2014,Fareham2014,NA,7.5
+Fenland,2014,Fenland2014,6.8,13
+Forest Heath,2014,Forest Heath2014,3.9,12.2
+Forest of Dean,2014,Forest of Dean2014,4.8,9
+Fylde,2014,Fylde2014,NA,11.5
+Gateshead,2014,Gateshead2014,8.2,11.7
+Gedling,2014,Gedling2014,5.7,9.1
+Gloucester,2014,Gloucester2014,11.1,17
+Gosport,2014,Gosport2014,4.4,12.8
+Gravesham,2014,Gravesham2014,4.1,15.4
+Great Yarmouth,2014,Great Yarmouth2014,4.7,17.1
+Greenwich,2014,Greenwich2014,10.8,13.1
+Guildford,2014,Guildford2014,3.1,11.1
+Hackney,2014,Hackney2014,8.5,15.2
+Halton,2014,Halton2014,6.3,14.6
+Hambleton,2014,Hambleton2014,4.3,8.6
+Hammersmith and Fulham,2014,Hammersmith and Fulham2014,5.4,17
+Harborough,2014,Harborough2014,NA,6.9
+Haringey,2014,Haringey2014,8.4,14.5
+Harlow,2014,Harlow2014,6.3,17
+Harrogate,2014,Harrogate2014,4.1,10.1
+Harrow,2014,Harrow2014,5.2,9.3
+Hart,2014,Hart2014,2.5,6.9
+Hartlepool,2014,Hartlepool2014,12.1,18.8
+Hastings,2014,Hastings2014,8.4,17.5
+Havant,2014,Havant2014,4.8,12.3
+Havering,2014,Havering2014,7,11.4
+"Herefordshire, County of",2014,"Herefordshire, County of2014",3.5,10.9
+Hertsmere,2014,Hertsmere2014,6.6,10.7
+High Peak,2014,High Peak2014,7.6,10
+Hillingdon,2014,Hillingdon2014,6.7,14.4
+Hinckley and Bosworth,2014,Hinckley and Bosworth2014,6.9,8.6
+Horsham,2014,Horsham2014,6.5,8.5
+Hounslow,2014,Hounslow2014,7.3,12.8
+Huntingdonshire,2014,Huntingdonshire2014,4.7,9.9
+Hyndburn,2014,Hyndburn2014,9.6,16.9
+Ipswich,2014,Ipswich2014,6.7,17.1
+Isle of Wight,2014,Isle of Wight2014,8.1,11.6
+Isles of Scilly,2014,Isles of Scilly2014,NA,NA
+Islington,2014,Islington2014,7.2,17.6
+Kensington and Chelsea,2014,Kensington and Chelsea2014,7,19.5
+Kettering,2014,Kettering2014,4.6,15.2
+King's Lynn and West Norfolk,2014,King's Lynn and West Norfolk2014,6.1,11.4
+"Kingston upon Hull, City of",2014,"Kingston upon Hull, City of2014",12,19.4
+Kingston upon Thames,2014,Kingston upon Thames2014,5.2,10.3
+Kirklees,2014,Kirklees2014,7.4,12.4
+Knowsley,2014,Knowsley2014,8.8,13.6
+Lambeth,2014,Lambeth2014,6.1,15.5
+Lancaster,2014,Lancaster2014,3.8,14.7
+Leeds,2014,Leeds2014,8.7,15.1
+Leicester,2014,Leicester2014,8.9,15.9
+Lewes,2014,Lewes2014,4,9.5
+Lewisham,2014,Lewisham2014,5.4,12.7
+Lichfield,2014,Lichfield2014,5.9,8.2
+Lincoln,2014,Lincoln2014,5.2,19
+Liverpool,2014,Liverpool2014,12.4,17.5
+Luton,2014,Luton2014,7.6,15.3
+Maidstone,2014,Maidstone2014,4.9,12
+Maldon,2014,Maldon2014,9.6,8.1
+Malvern Hills,2014,Malvern Hills2014,NA,9.8
+Manchester,2014,Manchester2014,9.3,20.1
+Mansfield,2014,Mansfield2014,5.3,15.3
+Medway,2014,Medway2014,8.4,13.8
+Melton,2014,Melton2014,5.1,9
+Mendip,2014,Mendip2014,4.1,10.4
+Merton,2014,Merton2014,7.1,10.2
+Mid Devon,2014,Mid Devon2014,4.4,6.6
+Mid Suffolk,2014,Mid Suffolk2014,2.7,7.1
+Mid Sussex,2014,Mid Sussex2014,4.7,8
+Middlesbrough,2014,Middlesbrough2014,13.8,23.4
+Milton Keynes,2014,Milton Keynes2014,7.5,11.7
+Mole Valley,2014,Mole Valley2014,NA,9.2
+New Forest,2014,New Forest2014,3.3,9
+Newark and Sherwood,2014,Newark and Sherwood2014,9.5,11.2
+Newcastle upon Tyne,2014,Newcastle upon Tyne2014,10.3,16.6
+Newcastle-under-Lyme,2014,Newcastle-under-Lyme2014,6.2,11.2
+Newham,2014,Newham2014,10.2,14.3
+North Devon,2014,North Devon2014,3.9,11.4
+North Dorset,2014,North Dorset2014,2.7,6.7
+North East Derbyshire,2014,North East Derbyshire2014,2.5,8.2
+North East Lincolnshire,2014,North East Lincolnshire2014,8.8,19.6
+North Hertfordshire,2014,North Hertfordshire2014,9.1,9
+North Kesteven,2014,North Kesteven2014,3.7,6.6
+North Lincolnshire,2014,North Lincolnshire2014,5.3,12.1
+North Norfolk,2014,North Norfolk2014,4,8.7
+North Somerset,2014,North Somerset2014,4.4,10.9
+North Tyneside,2014,North Tyneside2014,6,11.2
+North Warwickshire,2014,North Warwickshire2014,NA,11.3
+North West Leicestershire,2014,North West Leicestershire2014,3.4,9.5
+Northampton,2014,Northampton2014,5.3,17.8
+Northumberland,2014,Northumberland2014,6.6,9.8
+Norwich,2014,Norwich2014,5.2,18.6
+Nottingham,2014,Nottingham2014,11.2,19.4
+Nuneaton and Bedworth,2014,Nuneaton and Bedworth2014,6.3,14.4
+Oadby and Wigston,2014,Oadby and Wigston2014,NA,9.5
+Oldham,2014,Oldham2014,10.1,17.1
+Oxford,2014,Oxford2014,4,13.5
+Pendle,2014,Pendle2014,11.5,14.8
+Peterborough,2014,Peterborough2014,6.4,17.7
+Plymouth,2014,Plymouth2014,5.8,14.4
+Poole,2014,Poole2014,5.1,11.3
+Portsmouth,2014,Portsmouth2014,6.8,15
+Preston,2014,Preston2014,7,17.6
+Purbeck,2014,Purbeck2014,NA,8.5
+Reading,2014,Reading2014,4.8,12.4
+Redbridge,2014,Redbridge2014,6.9,12.2
+Redcar and Cleveland,2014,Redcar and Cleveland2014,9.3,17.7
+Redditch,2014,Redditch2014,3.4,12.5
+Reigate and Banstead,2014,Reigate and Banstead2014,5,10.9
+Ribble Valley,2014,Ribble Valley2014,NA,9.1
+Richmond upon Thames,2014,Richmond upon Thames2014,5.1,10.5
+Richmondshire,2014,Richmondshire2014,5.8,8.5
+Rochdale,2014,Rochdale2014,9.5,17.6
+Rochford,2014,Rochford2014,7.6,7.9
+Rossendale,2014,Rossendale2014,7.6,11.9
+Rother,2014,Rother2014,NA,10.4
+Rotherham,2014,Rotherham2014,8.9,16.3
+Rugby,2014,Rugby2014,3.2,11.9
+Runnymede,2014,Runnymede2014,3.5,9.9
+Rushcliffe,2014,Rushcliffe2014,4.7,6.9
+Rushmoor,2014,Rushmoor2014,5.7,11.1
+Rutland,2014,Rutland2014,3.6,6.9
+Ryedale,2014,Ryedale2014,NA,8.6
+Salford,2014,Salford2014,8.7,14
+Sandwell,2014,Sandwell2014,10.8,12.2
+Scarborough,2014,Scarborough2014,8.1,17.5
+Sedgemoor,2014,Sedgemoor2014,7.8,11.6
+Sefton,2014,Sefton2014,6.3,12.7
+Selby,2014,Selby2014,6.1,9.5
+Sevenoaks,2014,Sevenoaks2014,3.2,10.4
+Sheffield,2014,Sheffield2014,9.5,15.6
+Shepway,2014,Shepway2014,6.6,13
+Shropshire,2014,Shropshire2014,4.2,10
+Slough,2014,Slough2014,7.9,12.6
+Solihull,2014,Solihull2014,4.4,11.7
+South Bucks,2014,South Bucks2014,3.6,9.9
+South Cambridgeshire,2014,South Cambridgeshire2014,2.8,7.2
+South Derbyshire,2014,South Derbyshire2014,NA,8.8
+South Gloucestershire,2014,South Gloucestershire2014,3.8,9
+South Hams,2014,South Hams2014,8.5,7.3
+South Holland,2014,South Holland2014,2.4,9.5
+South Kesteven,2014,South Kesteven2014,2.8,9.4
+South Lakeland,2014,South Lakeland2014,6.4,9.4
+South Norfolk,2014,South Norfolk2014,4.8,8
+South Northamptonshire,2014,South Northamptonshire2014,NA,7.5
+South Oxfordshire,2014,South Oxfordshire2014,3.3,6
+South Ribble,2014,South Ribble2014,5.8,10.3
+South Somerset,2014,South Somerset2014,4.8,8.8
+South Staffordshire,2014,South Staffordshire2014,3.1,7.5
+South Tyneside,2014,South Tyneside2014,9.4,12.5
+Southampton,2014,Southampton2014,6.7,16
+Southend-on-Sea,2014,Southend-on-Sea2014,8.5,16.1
+Southwark,2014,Southwark2014,9.1,15.3
+Spelthorne,2014,Spelthorne2014,6.7,12.3
+St Albans,2014,St Albans2014,2.9,9.2
+St Edmundsbury,2014,St Edmundsbury2014,3.7,11.7
+St. Helens,2014,St. Helens2014,11.1,14.7
+Stafford,2014,Stafford2014,2.1,8.7
+Staffordshire Moorlands,2014,Staffordshire Moorlands2014,NA,8.3
+Stevenage,2014,Stevenage2014,5.1,13.6
+Stockport,2014,Stockport2014,5.7,13.3
+Stockton-on-Tees,2014,Stockton-on-Tees2014,8.4,15.2
+Stoke-on-Trent,2014,Stoke-on-Trent2014,8,17.1
+Stratford-on-Avon,2014,Stratford-on-Avon2014,2,9.4
+Stroud,2014,Stroud2014,NA,9.2
+Suffolk Coastal,2014,Suffolk Coastal2014,4.1,9.4
+Sunderland,2014,Sunderland2014,8.5,13.8
+Surrey Heath,2014,Surrey Heath2014,3.3,9.2
+Sutton,2014,Sutton2014,4.8,9.9
+Swale,2014,Swale2014,3.9,15.3
+Swindon,2014,Swindon2014,5.1,13
+Tameside,2014,Tameside2014,7,17.1
+Tamworth,2014,Tamworth2014,12.9,11.2
+Tandridge,2014,Tandridge2014,9.3,11.3
+Taunton Deane,2014,Taunton Deane2014,4.8,11.4
+Teignbridge,2014,Teignbridge2014,2.9,8.9
+Telford and Wrekin,2014,Telford and Wrekin2014,5.6,14.5
+Tendring,2014,Tendring2014,10.3,16.9
+Test Valley,2014,Test Valley2014,5.4,9.6
+Tewkesbury,2014,Tewkesbury2014,4.2,8.9
+Thanet,2014,Thanet2014,8.5,19
+Three Rivers,2014,Three Rivers2014,3,7.5
+Thurrock,2014,Thurrock2014,6.1,14.4
+Tonbridge and Malling,2014,Tonbridge and Malling2014,2.3,9.7
+Torbay,2014,Torbay2014,6.9,16.3
+Torridge,2014,Torridge2014,6.8,8.1
+Tower Hamlets,2014,Tower Hamlets2014,10.4,15.7
+Trafford,2014,Trafford2014,7,11.5
+Tunbridge Wells,2014,Tunbridge Wells2014,4.5,9.3
+Uttlesford,2014,Uttlesford2014,NA,9.6
+Vale of White Horse,2014,Vale of White Horse2014,2.8,6.6
+Wakefield,2014,Wakefield2014,6.5,14.6
+Walsall,2014,Walsall2014,7.9,12.8
+Waltham Forest,2014,Waltham Forest2014,9.2,13.4
+Wandsworth,2014,Wandsworth2014,4.1,11.1
+Warrington,2014,Warrington2014,3.8,11.6
+Warwick,2014,Warwick2014,2.9,9.9
+Watford,2014,Watford2014,5.8,13.7
+Waveney,2014,Waveney2014,8.8,13.8
+Waverley,2014,Waverley2014,6.8,8.9
+Wealden,2014,Wealden2014,3.3,7.5
+Wellingborough,2014,Wellingborough2014,6.3,15.8
+Welwyn Hatfield,2014,Welwyn Hatfield2014,3.5,11.7
+West Berkshire,2014,West Berkshire2014,2.9,9.1
+West Devon,2014,West Devon2014,NA,6.8
+West Dorset,2014,West Dorset2014,5,9.5
+West Lancashire,2014,West Lancashire2014,6.9,11
+West Lindsey,2014,West Lindsey2014,5.2,9.6
+West Oxfordshire,2014,West Oxfordshire2014,4,5.9
+West Somerset,2014,West Somerset2014,NA,11.1
+Westminster,2014,Westminster2014,6,32.8
+Weymouth and Portland,2014,Weymouth and Portland2014,7.8,15
+Wigan,2014,Wigan2014,7.4,13.6
+Wiltshire,2014,Wiltshire2014,3.9,9.4
+Winchester,2014,Winchester2014,NA,9.3
+Windsor and Maidenhead,2014,Windsor and Maidenhead2014,3.7,9.9
+Wirral,2014,Wirral2014,8.8,13.4
+Woking,2014,Woking2014,7.4,9.7
+Wokingham,2014,Wokingham2014,3.6,5.6
+Wolverhampton,2014,Wolverhampton2014,12.6,13.2
+Worcester,2014,Worcester2014,4.5,15.8
+Worthing,2014,Worthing2014,NA,12.7
+Wychavon,2014,Wychavon2014,5.1,11.2
+Wycombe,2014,Wycombe2014,4.8,6.9
+Wyre,2014,Wyre2014,NA,13.8
+Wyre Forest,2014,Wyre Forest2014,4.5,14.1
+York,2014,York2014,4.1,12.6
+Adur,2015,Adur2015,7.3,11.6
+Allerdale,2015,Allerdale2015,3,11.8
+Amber Valley,2015,Amber Valley2015,NA,11
+Arun,2015,Arun2015,3.4,13
+Ashfield,2015,Ashfield2015,4.1,13
+Ashford,2015,Ashford2015,5.4,10.6
+Aylesbury Vale,2015,Aylesbury Vale2015,2.4,8.7
+Babergh,2015,Babergh2015,5.6,10.3
+Barking and Dagenham,2015,Barking and Dagenham2015,10.8,14.9
+Barnet,2015,Barnet2015,8.8,11.7
+Barnsley,2015,Barnsley2015,6.3,14.6
+Barrow-in-Furness,2015,Barrow-in-Furness2015,7.5,14.6
+Basildon,2015,Basildon2015,6.3,16.1
+Basingstoke and Deane,2015,Basingstoke and Deane2015,4.2,11.7
+Bassetlaw,2015,Bassetlaw2015,3.4,14.2
+Bath and North East Somerset,2015,Bath and North East Somerset2015,4.2,10.1
+Bedford,2015,Bedford2015,5.8,14.6
+Bexley,2015,Bexley2015,7.5,9.7
+Birmingham,2015,Birmingham2015,9.2,13.5
+Blaby,2015,Blaby2015,3.3,8.8
+Blackburn with Darwen,2015,Blackburn with Darwen2015,7.6,16.9
+Blackpool,2015,Blackpool2015,6.8,25.1
+Bolsover,2015,Bolsover2015,5.4,12.4
+Bolton,2015,Bolton2015,7,17
+Boston,2015,Boston2015,NA,14.6
+Bournemouth,2015,Bournemouth2015,3.2,15.4
+Bracknell Forest,2015,Bracknell Forest2015,2.3,7.7
+Bradford,2015,Bradford2015,10,18.7
+Braintree,2015,Braintree2015,3,10.1
+Breckland,2015,Breckland2015,4.2,11.3
+Brent,2015,Brent2015,7.5,12.9
+Brentwood,2015,Brentwood2015,5.1,11.7
+Brighton and Hove,2015,Brighton and Hove2015,6.4,15.2
+"Bristol, City of",2015,"Bristol, City of2015",5.2,17.5
+Broadland,2015,Broadland2015,2.2,7.1
+Bromley,2015,Bromley2015,5.6,12.1
+Bromsgrove,2015,Bromsgrove2015,3.1,11.8
+Broxbourne,2015,Broxbourne2015,3.2,13.4
+Broxtowe,2015,Broxtowe2015,3.4,9
+Burnley,2015,Burnley2015,5.7,20.6
+Bury,2015,Bury2015,5.8,14.4
+Calderdale,2015,Calderdale2015,4.7,15.2
+Cambridge,2015,Cambridge2015,2.9,14.9
+Camden,2015,Camden2015,4,19.8
+Cannock Chase,2015,Cannock Chase2015,4.8,10.9
+Canterbury,2015,Canterbury2015,10.7,12.2
+Carlisle,2015,Carlisle2015,NA,14.5
+Castle Point,2015,Castle Point2015,NA,9.6
+Central Bedfordshire,2015,Central Bedfordshire2015,2.3,10.7
+Charnwood,2015,Charnwood2015,1.8,9.4
+Chelmsford,2015,Chelmsford2015,3.6,11.9
+Cheltenham,2015,Cheltenham2015,2,14.5
+Cherwell,2015,Cherwell2015,2.2,10.4
+Cheshire East,2015,Cheshire East2015,3.4,9.9
+Cheshire West and Chester,2015,Cheshire West and Chester2015,4.1,11.4
+Chesterfield,2015,Chesterfield2015,5.4,14.6
+Chichester,2015,Chichester2015,NA,10.2
+Chiltern,2015,Chiltern2015,NA,6.9
+Chorley,2015,Chorley2015,NA,11.1
+Christchurch,2015,Christchurch2015,NA,11.4
+City of London,2015,City of London2015,NA,111.7
+Colchester,2015,Colchester2015,2,14.1
+Copeland,2015,Copeland2015,9,11.2
+Corby,2015,Corby2015,9.1,16.9
+Cornwall,2015,Cornwall2015,5.4,9.3
+Cotswold,2015,Cotswold2015,NA,9.2
+County Durham,2015,County Durham2015,7.9,11.8
+Coventry,2015,Coventry2015,4.7,12.2
+Craven,2015,Craven2015,NA,9.1
+Crawley,2015,Crawley2015,3.6,16.3
+Croydon,2015,Croydon2015,4.2,13.1
+Dacorum,2015,Dacorum2015,2.1,11
+Darlington,2015,Darlington2015,6.6,15.7
+Dartford,2015,Dartford2015,4.8,15.1
+Daventry,2015,Daventry2015,NA,13.1
+Derby,2015,Derby2015,7.7,18.1
+Derbyshire Dales,2015,Derbyshire Dales2015,NA,7.4
+Doncaster,2015,Doncaster2015,7.9,17.9
+Dover,2015,Dover2015,5.6,13.1
+Dudley,2015,Dudley2015,7.9,10.9
+Ealing,2015,Ealing2015,5.9,13.3
+East Cambridgeshire,2015,East Cambridgeshire2015,3.2,7
+East Devon,2015,East Devon2015,NA,7.8
+East Dorset,2015,East Dorset2015,NA,6.5
+East Hampshire,2015,East Hampshire2015,7.8,8.2
+East Hertfordshire,2015,East Hertfordshire2015,NA,9.1
+East Lindsey,2015,East Lindsey2015,10.1,12.7
+East Northamptonshire,2015,East Northamptonshire2015,5.3,10.5
+East Riding of Yorkshire,2015,East Riding of Yorkshire2015,4.5,7.9
+East Staffordshire,2015,East Staffordshire2015,2.4,11.1
+Eastbourne,2015,Eastbourne2015,4.9,15.4
+Eastleigh,2015,Eastleigh2015,2,9.9
+Eden,2015,Eden2015,NA,8.4
+Elmbridge,2015,Elmbridge2015,5.8,11.4
+Enfield,2015,Enfield2015,3.5,12.4
+Epping Forest,2015,Epping Forest2015,4.2,13.1
+Epsom and Ewell,2015,Epsom and Ewell2015,NA,12.2
+Erewash,2015,Erewash2015,2.9,12.4
+Exeter,2015,Exeter2015,4.7,13
+Fareham,2015,Fareham2015,6.2,9.1
+Fenland,2015,Fenland2015,6.9,13.2
+Forest Heath,2015,Forest Heath2015,NA,12
+Forest of Dean,2015,Forest of Dean2015,3.8,8.9
+Fylde,2015,Fylde2015,3.3,10.7
+Gateshead,2015,Gateshead2015,6.6,13.2
+Gedling,2015,Gedling2015,7.5,8.6
+Gloucester,2015,Gloucester2015,6.7,17.4
+Gosport,2015,Gosport2015,5.8,13.9
+Gravesham,2015,Gravesham2015,9.7,14.8
+Great Yarmouth,2015,Great Yarmouth2015,4.3,16.9
+Greenwich,2015,Greenwich2015,8.1,13.2
+Guildford,2015,Guildford2015,4.9,11.8
+Hackney,2015,Hackney2015,5.8,15.9
+Halton,2015,Halton2015,4.9,14.1
+Hambleton,2015,Hambleton2015,NA,8.7
+Hammersmith and Fulham,2015,Hammersmith and Fulham2015,4.9,17.3
+Harborough,2015,Harborough2015,2.7,6.1
+Haringey,2015,Haringey2015,5.8,15.1
+Harlow,2015,Harlow2015,7.2,17.5
+Harrogate,2015,Harrogate2015,2.4,10.1
+Harrow,2015,Harrow2015,4.7,9.4
+Hart,2015,Hart2015,NA,8.3
+Hartlepool,2015,Hartlepool2015,10.1,20.6
+Hastings,2015,Hastings2015,5.2,18
+Havant,2015,Havant2015,4.2,14
+Havering,2015,Havering2015,5.2,12
+"Herefordshire, County of",2015,"Herefordshire, County of2015",4,12.3
+Hertsmere,2015,Hertsmere2015,6.1,12.4
+High Peak,2015,High Peak2015,4.1,9.9
+Hillingdon,2015,Hillingdon2015,5.8,14.1
+Hinckley and Bosworth,2015,Hinckley and Bosworth2015,3.2,8
+Horsham,2015,Horsham2015,1.6,9
+Hounslow,2015,Hounslow2015,4.4,13.5
+Huntingdonshire,2015,Huntingdonshire2015,2.7,9.5
+Hyndburn,2015,Hyndburn2015,5.1,17.8
+Ipswich,2015,Ipswich2015,6.4,18.8
+Isle of Wight,2015,Isle of Wight2015,5,13.5
+Isles of Scilly,2015,Isles of Scilly2015,NA,NA
+Islington,2015,Islington2015,4.6,18.8
+Kensington and Chelsea,2015,Kensington and Chelsea2015,4.5,20.1
+Kettering,2015,Kettering2015,6.3,15.4
+King's Lynn and West Norfolk,2015,King's Lynn and West Norfolk2015,8.3,11.6
+"Kingston upon Hull, City of",2015,"Kingston upon Hull, City of2015",8.5,18.7
+Kingston upon Thames,2015,Kingston upon Thames2015,4.6,10.6
+Kirklees,2015,Kirklees2015,4.7,14.2
+Knowsley,2015,Knowsley2015,6.7,13.6
+Lambeth,2015,Lambeth2015,6,16
+Lancaster,2015,Lancaster2015,3.2,15.3
+Leeds,2015,Leeds2015,5.8,16.9
+Leicester,2015,Leicester2015,9.4,14.3
+Lewes,2015,Lewes2015,5.3,10.4
+Lewisham,2015,Lewisham2015,5.9,13.4
+Lichfield,2015,Lichfield2015,3.7,8.7
+Lincoln,2015,Lincoln2015,4.9,18
+Liverpool,2015,Liverpool2015,7.8,17.4
+Luton,2015,Luton2015,6.1,14.7
+Maidstone,2015,Maidstone2015,4.4,11.6
+Maldon,2015,Maldon2015,NA,8.3
+Malvern Hills,2015,Malvern Hills2015,NA,11.4
+Manchester,2015,Manchester2015,8.2,21.5
+Mansfield,2015,Mansfield2015,NA,16
+Medway,2015,Medway2015,9.2,14.4
+Melton,2015,Melton2015,4.9,6.8
+Mendip,2015,Mendip2015,3.5,10.4
+Merton,2015,Merton2015,4.5,10.5
+Mid Devon,2015,Mid Devon2015,NA,6.9
+Mid Suffolk,2015,Mid Suffolk2015,NA,7.9
+Mid Sussex,2015,Mid Sussex2015,1.8,8.3
+Middlesbrough,2015,Middlesbrough2015,12.1,25.1
+Milton Keynes,2015,Milton Keynes2015,5,12.5
+Mole Valley,2015,Mole Valley2015,5.1,10.3
+New Forest,2015,New Forest2015,4.3,10.4
+Newark and Sherwood,2015,Newark and Sherwood2015,NA,11.6
+Newcastle upon Tyne,2015,Newcastle upon Tyne2015,9.2,18.2
+Newcastle-under-Lyme,2015,Newcastle-under-Lyme2015,2.4,11.5
+Newham,2015,Newham2015,9.2,14.6
+North Devon,2015,North Devon2015,2.9,10.1
+North Dorset,2015,North Dorset2015,4.2,7.6
+North East Derbyshire,2015,North East Derbyshire2015,3.8,7.9
+North East Lincolnshire,2015,North East Lincolnshire2015,8,19.5
+North Hertfordshire,2015,North Hertfordshire2015,4.6,9.4
+North Kesteven,2015,North Kesteven2015,4.7,6.3
+North Lincolnshire,2015,North Lincolnshire2015,4.1,11.8
+North Norfolk,2015,North Norfolk2015,NA,8.6
+North Somerset,2015,North Somerset2015,3.6,11.7
+North Tyneside,2015,North Tyneside2015,5.8,11.7
+North Warwickshire,2015,North Warwickshire2015,NA,12.1
+North West Leicestershire,2015,North West Leicestershire2015,3.5,8.5
+Northampton,2015,Northampton2015,1.7,18.7
+Northumberland,2015,Northumberland2015,5.7,10.8
+Norwich,2015,Norwich2015,3.4,18.9
+Nottingham,2015,Nottingham2015,9.1,19
+Nuneaton and Bedworth,2015,Nuneaton and Bedworth2015,2.7,15.3
+Oadby and Wigston,2015,Oadby and Wigston2015,5.5,8.3
+Oldham,2015,Oldham2015,8.3,19.8
+Oxford,2015,Oxford2015,6.2,13.5
+Pendle,2015,Pendle2015,4.8,14.7
+Peterborough,2015,Peterborough2015,5.4,17.7
+Plymouth,2015,Plymouth2015,6.3,13.8
+Poole,2015,Poole2015,3.5,11.1
+Portsmouth,2015,Portsmouth2015,5.7,17.7
+Preston,2015,Preston2015,5.2,18.1
+Purbeck,2015,Purbeck2015,NA,7.7
+Reading,2015,Reading2015,5.2,13.6
+Redbridge,2015,Redbridge2015,8.2,11.6
+Redcar and Cleveland,2015,Redcar and Cleveland2015,8.3,19.6
+Redditch,2015,Redditch2015,5.7,13.2
+Reigate and Banstead,2015,Reigate and Banstead2015,2.7,12
+Ribble Valley,2015,Ribble Valley2015,NA,8.1
+Richmond upon Thames,2015,Richmond upon Thames2015,3.9,10.4
+Richmondshire,2015,Richmondshire2015,NA,8.5
+Rochdale,2015,Rochdale2015,7.6,19.6
+Rochford,2015,Rochford2015,NA,8.4
+Rossendale,2015,Rossendale2015,NA,12.3
+Rother,2015,Rother2015,1.9,10.4
+Rotherham,2015,Rotherham2015,6.1,16.2
+Rugby,2015,Rugby2015,2.6,13.5
+Runnymede,2015,Runnymede2015,4.8,12.1
+Rushcliffe,2015,Rushcliffe2015,3.5,6.9
+Rushmoor,2015,Rushmoor2015,3.7,12.9
+Rutland,2015,Rutland2015,4.2,5.7
+Ryedale,2015,Ryedale2015,NA,8.2
+Salford,2015,Salford2015,8.6,15.1
+Sandwell,2015,Sandwell2015,7.8,12.4
+Scarborough,2015,Scarborough2015,NA,17.3
+Sedgemoor,2015,Sedgemoor2015,2.7,12
+Sefton,2015,Sefton2015,3.6,13
+Selby,2015,Selby2015,2.9,9.9
+Sevenoaks,2015,Sevenoaks2015,4.2,10.3
+Sheffield,2015,Sheffield2015,8.2,15.7
+Shepway,2015,Shepway2015,3,13
+Shropshire,2015,Shropshire2015,4.3,10.6
+Slough,2015,Slough2015,4.4,13.9
+Solihull,2015,Solihull2015,4.5,11.4
+South Bucks,2015,South Bucks2015,2.1,10.6
+South Cambridgeshire,2015,South Cambridgeshire2015,3.4,7
+South Derbyshire,2015,South Derbyshire2015,5.3,8.6
+South Gloucestershire,2015,South Gloucestershire2015,3.1,9.4
+South Hams,2015,South Hams2015,NA,6.7
+South Holland,2015,South Holland2015,3.2,9.7
+South Kesteven,2015,South Kesteven2015,7.3,9.9
+South Lakeland,2015,South Lakeland2015,3,9.6
+South Norfolk,2015,South Norfolk2015,3.5,7.9
+South Northamptonshire,2015,South Northamptonshire2015,2.2,7.4
+South Oxfordshire,2015,South Oxfordshire2015,3.4,7.4
+South Ribble,2015,South Ribble2015,3.9,10.2
+South Somerset,2015,South Somerset2015,3.7,10
+South Staffordshire,2015,South Staffordshire2015,8.4,8.1
+South Tyneside,2015,South Tyneside2015,8.8,13.7
+Southampton,2015,Southampton2015,5.8,18.1
+Southend-on-Sea,2015,Southend-on-Sea2015,5.9,16.7
+Southwark,2015,Southwark2015,7.9,15.6
+Spelthorne,2015,Spelthorne2015,2.8,13.6
+St Albans,2015,St Albans2015,1.9,9.8
+St Edmundsbury,2015,St Edmundsbury2015,2.8,12.9
+St. Helens,2015,St. Helens2015,7.1,14.5
+Stafford,2015,Stafford2015,3.1,9.8
+Staffordshire Moorlands,2015,Staffordshire Moorlands2015,4.2,8.4
+Stevenage,2015,Stevenage2015,3,14.5
+Stockport,2015,Stockport2015,5.8,14.5
+Stockton-on-Tees,2015,Stockton-on-Tees2015,6.8,16.8
+Stoke-on-Trent,2015,Stoke-on-Trent2015,7.7,18.1
+Stratford-on-Avon,2015,Stratford-on-Avon2015,1.6,9.5
+Stroud,2015,Stroud2015,3,9.4
+Suffolk Coastal,2015,Suffolk Coastal2015,3.8,9.2
+Sunderland,2015,Sunderland2015,8.7,14.6
+Surrey Heath,2015,Surrey Heath2015,3.7,10.1
+Sutton,2015,Sutton2015,5.5,9.6
+Swale,2015,Swale2015,4.8,14.9
+Swindon,2015,Swindon2015,4.2,14.5
+Tameside,2015,Tameside2015,5.2,17.7
+Tamworth,2015,Tamworth2015,6.4,12.1
+Tandridge,2015,Tandridge2015,NA,14
+Taunton Deane,2015,Taunton Deane2015,4.7,11.5
+Teignbridge,2015,Teignbridge2015,NA,8.1
+Telford and Wrekin,2015,Telford and Wrekin2015,5.6,16
+Tendring,2015,Tendring2015,6.8,16.7
+Test Valley,2015,Test Valley2015,2.3,10.4
+Tewkesbury,2015,Tewkesbury2015,4.7,9.1
+Thanet,2015,Thanet2015,4.6,19.2
+Three Rivers,2015,Three Rivers2015,NA,8
+Thurrock,2015,Thurrock2015,6.9,15
+Tonbridge and Malling,2015,Tonbridge and Malling2015,3.3,10.4
+Torbay,2015,Torbay2015,5.3,15.6
+Torridge,2015,Torridge2015,8.5,7.5
+Tower Hamlets,2015,Tower Hamlets2015,9.2,16.3
+Trafford,2015,Trafford2015,4.6,12.2
+Tunbridge Wells,2015,Tunbridge Wells2015,3.8,9.4
+Uttlesford,2015,Uttlesford2015,5,9.2
+Vale of White Horse,2015,Vale of White Horse2015,3.4,7.1
+Wakefield,2015,Wakefield2015,7.5,16.1
+Walsall,2015,Walsall2015,9,13.5
+Waltham Forest,2015,Waltham Forest2015,5.4,13.2
+Wandsworth,2015,Wandsworth2015,5.5,11.2
+Warrington,2015,Warrington2015,4.3,11.7
+Warwick,2015,Warwick2015,2.2,10.5
+Watford,2015,Watford2015,3.3,14.5
+Waveney,2015,Waveney2015,6.5,14.5
+Waverley,2015,Waverley2015,1.9,9.4
+Wealden,2015,Wealden2015,4.1,7.3
+Wellingborough,2015,Wellingborough2015,NA,16.6
+Welwyn Hatfield,2015,Welwyn Hatfield2015,4.4,12.8
+West Berkshire,2015,West Berkshire2015,3.5,8.9
+West Devon,2015,West Devon2015,4.9,6.7
+West Dorset,2015,West Dorset2015,7.5,9.3
+West Lancashire,2015,West Lancashire2015,4.4,10
+West Lindsey,2015,West Lindsey2015,4,9.5
+West Oxfordshire,2015,West Oxfordshire2015,NA,6.1
+West Somerset,2015,West Somerset2015,NA,9.6
+Westminster,2015,Westminster2015,9.1,33
+Weymouth and Portland,2015,Weymouth and Portland2015,4.6,14.8
+Wigan,2015,Wigan2015,5.2,15
+Wiltshire,2015,Wiltshire2015,3.5,10
+Winchester,2015,Winchester2015,NA,10.1
+Windsor and Maidenhead,2015,Windsor and Maidenhead2015,4,9.9
+Wirral,2015,Wirral2015,3.9,13.6
+Woking,2015,Woking2015,NA,11.5
+Wokingham,2015,Wokingham2015,2.8,6
+Wolverhampton,2015,Wolverhampton2015,11.1,12.9
+Worcester,2015,Worcester2015,3.5,17.1
+Worthing,2015,Worthing2015,2.6,13.4
+Wychavon,2015,Wychavon2015,1.8,11.5
+Wycombe,2015,Wycombe2015,7.4,8.3
+Wyre,2015,Wyre2015,NA,12.3
+Wyre Forest,2015,Wyre Forest2015,6.4,15
+York,2015,York2015,4.3,12.9

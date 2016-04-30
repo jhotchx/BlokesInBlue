@@ -20,7 +20,7 @@ from bokeh.models.widgets import Panel, Tabs
 from bokeh.plotting import figure, show, output_file
 
 ## Getting unemployment data into usable format
-crime = pandas.read_csv('total_crime_LAD_year.csv',usecols=('LAD_name','Year','count'))
+crime = pandas.read_csv('crime_unemployment.csv',usecols=('LAD_name','Year','count'))
 cols = ['LAD','Year','crimes']
 crime.columns=cols
 unemployment = pandas.read_csv('UnemploymentLAD.csv', usecols=('local authority: district / unitary (prior to April 2015)','Unemployment rate - aged 16-64','Date'))
@@ -181,7 +181,7 @@ hover.point_policy = "follow_mouse"
 hover.tooltips = OrderedDict([
     ("Name", "@name"),
     ("Unemployment Rate","@uerate"),
-    ("Total Crimes","@total_crime")
+    ("Crime Rate","@total_crime")
 ])
 
 p2 = GMapPlot(title="LAD", plot_width=1200, plot_height=800, x_range = Range1d(), y_range = Range1d(), map_options = GMapOptions(lat=52.6816, lng=-1.0000, zoom=7))
@@ -195,7 +195,7 @@ hover.point_policy = "follow_mouse"
 hover.tooltips = OrderedDict([
     ("Name", "@name"),
     ("Unemployment Rate","@uerate"),
-    ("Total Crimes","@total_crime")
+    ("Crime Rate","@total_crime")
 ])
 
 p3 = GMapPlot(title="MSOA", plot_width=1200, plot_height=800, x_range = Range1d(), y_range = Range1d(), map_options = GMapOptions(lat=52.6816, lng=-1.0000, zoom=7))
@@ -209,7 +209,7 @@ hover.point_policy = "follow_mouse"
 hover.tooltips = OrderedDict([
     ("Name", "@name"),
     ("Unemployment Rate","@uerate"),
-    ("Total Crimes","@total_crime")
+    ("Crime Rate","@total_crime")
 ])
 
 p4 = GMapPlot(title="MSOA", plot_width=1200, plot_height=800, x_range = Range1d(), y_range = Range1d(), map_options = GMapOptions(lat=52.6816, lng=-1.0000, zoom=7))
@@ -223,7 +223,7 @@ hover.point_policy = "follow_mouse"
 hover.tooltips = OrderedDict([
     ("Name", "@name"),
     ("Unemployment Rate","@uerate"),
-    ("Total Crimes","@total_crime")
+    ("Crime Rate","@total_crime")
 ])
 
 p5 = GMapPlot(title="MSOA", plot_width=1200, plot_height=800, x_range = Range1d(), y_range = Range1d(), map_options = GMapOptions(lat=52.6816, lng=-1.0000, zoom=7))
@@ -237,15 +237,15 @@ hover.point_policy = "follow_mouse"
 hover.tooltips = OrderedDict([
     ("Name", "@name"),
     ("Unemployment Rate","@uerate"),
-    ("Total Crimes","@total_crime")
+    ("Crime Rate","@total_crime")
 ])
 
 tab1 = Panel(child=p1, title="2011")
-tab2 = Panel(child=p2, title="2012")
-tab3 = Panel(child=p3, title="2013")
-tab4 = Panel(child=p4, title="2014")
-tab5 = Panel(child=p5, title="2015")
+#tab2 = Panel(child=p2, title="2012")
+#tab3 = Panel(child=p3, title="2013")
+#tab4 = Panel(child=p4, title="2014")
+#tab5 = Panel(child=p5, title="2015")
 
-tabs = Tabs(tabs=[tab1,tab2,tab3,tab4,tab5 ])
+tabs = Tabs(tabs=[tab1]) #Tabs(tabs=[tab1,tab2,tab3,tab4,tab5 ])
 output_file("LADGMapUnemploy.html", title="LAD GMap with Unemployment", mode="cdn")
 show(tabs)
