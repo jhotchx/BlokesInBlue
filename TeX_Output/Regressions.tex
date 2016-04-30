@@ -1,0 +1,202 @@
+\documentclass{article}\usepackage[]{graphicx}\usepackage[]{color}
+%% maxwidth is the original width if it is less than linewidth
+%% otherwise use linewidth (to make sure the graphics do not exceed the margin)
+\makeatletter
+\def\maxwidth{ %
+  \ifdim\Gin@nat@width>\linewidth
+    \linewidth
+  \else
+    \Gin@nat@width
+  \fi
+}
+\makeatother
+
+\definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}
+\newcommand{\hlnum}[1]{\textcolor[rgb]{0.686,0.059,0.569}{#1}}%
+\newcommand{\hlstr}[1]{\textcolor[rgb]{0.192,0.494,0.8}{#1}}%
+\newcommand{\hlcom}[1]{\textcolor[rgb]{0.678,0.584,0.686}{\textit{#1}}}%
+\newcommand{\hlopt}[1]{\textcolor[rgb]{0,0,0}{#1}}%
+\newcommand{\hlstd}[1]{\textcolor[rgb]{0.345,0.345,0.345}{#1}}%
+\newcommand{\hlkwa}[1]{\textcolor[rgb]{0.161,0.373,0.58}{\textbf{#1}}}%
+\newcommand{\hlkwb}[1]{\textcolor[rgb]{0.69,0.353,0.396}{#1}}%
+\newcommand{\hlkwc}[1]{\textcolor[rgb]{0.333,0.667,0.333}{#1}}%
+\newcommand{\hlkwd}[1]{\textcolor[rgb]{0.737,0.353,0.396}{\textbf{#1}}}%
+
+\usepackage{framed}
+\makeatletter
+\newenvironment{kframe}{%
+ \def\at@end@of@kframe{}%
+ \ifinner\ifhmode%
+  \def\at@end@of@kframe{\end{minipage}}%
+  \begin{minipage}{\columnwidth}%
+ \fi\fi%
+ \def\FrameCommand##1{\hskip\@totalleftmargin \hskip-\fboxsep
+ \colorbox{shadecolor}{##1}\hskip-\fboxsep
+     % There is no \\@totalrightmargin, so:
+     \hskip-\linewidth \hskip-\@totalleftmargin \hskip\columnwidth}%
+ \MakeFramed {\advance\hsize-\width
+   \@totalleftmargin\z@ \linewidth\hsize
+   \@setminipage}}%
+ {\par\unskip\endMakeFramed%
+ \at@end@of@kframe}
+\makeatother
+
+\definecolor{shadecolor}{rgb}{.97, .97, .97}
+\definecolor{messagecolor}{rgb}{0, 0, 0}
+\definecolor{warningcolor}{rgb}{1, 0, 1}
+\definecolor{errorcolor}{rgb}{1, 0, 0}
+\newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
+
+\usepackage{alltt}
+\usepackage{amscd, amssymb, amsmath, verbatim, setspace}
+\usepackage[left=1.0in, right=1.0in, top=1.0in, bottom=1.0in]{geometry}
+\usepackage{indentfirst}
+\usepackage{rotating}
+\usepackage{mathrsfs}
+\usepackage{listings}
+\usepackage{graphicx}
+
+
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\begin{document}
+
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.97, 0.97, 0.97}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlcom{#Read in the total_crime dataset which contains the LAD values, year, and count}
+\hlstd{totCrime} \hlkwb{<-} \hlkwd{read.csv}\hlstd{(}\hlstr{"total_crime_LAD_year.csv"}\hlstd{)}
+\hlstd{totCrime} \hlkwb{<-} \hlstd{totCrime[,}\hlopt{-}\hlnum{1}\hlstd{]} \hlcom{#Drop first column, contains an index}
+
+\hlcom{#Read in the counts of type}
+\hlstd{totType} \hlkwb{<-} \hlkwd{read.csv}\hlstd{(}\hlstr{"type_LAD_year.csv"}\hlstd{)}
+\hlstd{totType} \hlkwb{<-} \hlstd{totType[,}\hlopt{-}\hlnum{1}\hlstd{]} \hlcom{#Drop first column, contains an index}
+
+\hlcom{#Get LAD/Year for data used in maps}
+\hlstd{shape} \hlkwb{<-} \hlkwd{read.csv}\hlstd{(}\hlstr{"shape.csv"}\hlstd{)}
+\hlcom{#Rename column to match other files}
+\hlkwd{names}\hlstd{(shape)[}\hlkwd{names}\hlstd{(shape)}\hlopt{==}\hlstr{"District"}\hlstd{]} \hlkwb{<-} \hlstr{"LAD_name"}
+
+\hlcom{#Load unemployment data}
+\hlstd{unemp} \hlkwb{<-} \hlkwd{read.csv}\hlstd{(}\hlstr{"UnemploymentLAD.csv"}\hlstd{)}
+\hlcom{#Rename columns we are going to use to start}
+\hlkwd{names}\hlstd{(unemp)[}\hlkwd{names}\hlstd{(unemp)}\hlopt{==}\hlstr{"local.authority..district...unitary..prior.to.April.2015."}\hlstd{]} \hlkwb{<-} \hlstr{"LAD_name"}
+\hlkwd{names}\hlstd{(unemp)[}\hlkwd{names}\hlstd{(unemp)}\hlopt{==}\hlstr{"Date"}\hlstd{]} \hlkwb{<-} \hlstr{"Year"}
+\hlkwd{names}\hlstd{(unemp)[}\hlkwd{names}\hlstd{(unemp)}\hlopt{==}\hlstr{"Unemployment.rate...aged.16.64"}\hlstd{]} \hlkwb{<-} \hlstr{"Unemp16to64"}
+\hlkwd{names}\hlstd{(unemp)[}\hlkwd{names}\hlstd{(unemp)}\hlopt{==}\hlstr{"Denominator"}\hlstd{]} \hlkwb{<-} \hlstr{"Pop"}
+
+\hlcom{#Get rid of some of the extra columns}
+\hlstd{unemp} \hlkwb{<-} \hlstd{unemp[,}\hlopt{-}\hlkwd{grep}\hlstd{(}\hlstr{"(Conf|Numerator|Denominator)"}\hlstd{,}\hlkwd{names}\hlstd{(unemp))]}
+
+\hlcom{#Try the first regression}
+\hlcom{#Limit Unemployment data file to just the variables that we need}
+\hlstd{reg1.unemp} \hlkwb{<-} \hlstd{unemp[,}\hlkwd{names}\hlstd{(unemp)} \hlopt{%in%} \hlkwd{c}\hlstd{(}\hlstr{"LAD_name"}\hlstd{,}\hlstr{"Year"}\hlstd{,}\hlstr{"Unemp16to64"}\hlstd{,}\hlstr{"Pop"}\hlstd{)]}
+\hlcom{#Perform merge of unemployment data and crime data}
+\hlstd{reg1.data} \hlkwb{<-} \hlkwd{merge}\hlstd{(totCrime, reg1.unemp,} \hlkwc{by}\hlstd{=}\hlkwd{c}\hlstd{(}\hlstr{"LAD_name"}\hlstd{,}\hlstr{"Year"}\hlstd{),} \hlkwc{all}\hlstd{=}\hlnum{TRUE}\hlstd{)}
+\hlcom{#Perform merge of merged unemp/crime and the shape file for maps}
+\hlstd{reg1.data} \hlkwb{<-} \hlkwd{merge}\hlstd{(shape, reg1.data,} \hlkwc{by}\hlstd{=}\hlkwd{c}\hlstd{(}\hlstr{"LAD_name"}\hlstd{,}\hlstr{"Year"}\hlstd{),} \hlkwc{all.x}\hlstd{=}\hlnum{TRUE}\hlstd{)}
+\hlcom{#Remove observations with weird characters frm Unemp16to64}
+\hlstd{reg1.data} \hlkwb{<-} \hlstd{reg1.data[}\hlopt{!}\hlstd{(reg1.data}\hlopt{$}\hlstd{Unemp16to64} \hlopt{%in%} \hlkwd{c}\hlstd{(}\hlstr{"!"}\hlstd{,}\hlstr{"-"}\hlstd{)),]}
+\hlcom{#Change variable formats as needed}
+\hlstd{reg1.data}\hlopt{$}\hlstd{Year} \hlkwb{<-} \hlkwd{as.factor}\hlstd{(reg1.data}\hlopt{$}\hlstd{Year)}
+\hlstd{reg1.data}\hlopt{$}\hlstd{Unemp16to64} \hlkwb{<-} \hlkwd{as.numeric}\hlstd{(}\hlkwd{levels}\hlstd{(reg1.data}\hlopt{$}\hlstd{Unemp16to64))[reg1.data}\hlopt{$}\hlstd{Unemp16to64]}
+\end{alltt}
+
+
+{\ttfamily\noindent\color{warningcolor}{\#\# Warning: NAs introduced by coercion}}\begin{alltt}
+\hlstd{reg1.data}\hlopt{$}\hlstd{Pop} \hlkwb{<-} \hlkwd{as.numeric}\hlstd{(}\hlkwd{levels}\hlstd{(reg1.data}\hlopt{$}\hlstd{Pop))[reg1.data}\hlopt{$}\hlstd{Pop]}
+\end{alltt}
+
+
+{\ttfamily\noindent\color{warningcolor}{\#\# Warning: NAs introduced by coercion}}\begin{alltt}
+\hlcom{#First regression done}
+\hlstd{reg1} \hlkwb{<-} \hlkwd{lm}\hlstd{(count} \hlopt{~} \hlstd{Year} \hlopt{+} \hlstd{Unemp16to64} \hlopt{+} \hlstd{Pop,} \hlkwc{data}\hlstd{=reg1.data)}
+\hlkwd{summary}\hlstd{(reg1)}
+\end{alltt}
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = count ~ Year + Unemp16to64 + Pop, data = reg1.data)
+## 
+## Residuals:
+##    Min     1Q Median     3Q    Max 
+## -15415  -1920   -228   1604  45249 
+## 
+## Coefficients:
+##               Estimate Std. Error t value Pr(>|t|)    
+## (Intercept) -6.935e+03  3.656e+02 -18.966  < 2e-16 ***
+## Year2012     2.313e+03  3.217e+02   7.190 1.02e-12 ***
+## Year2013     1.802e+03  3.213e+02   5.609 2.42e-08 ***
+## Year2014     2.103e+03  3.300e+02   6.374 2.44e-10 ***
+## Year2015     3.193e+03  3.453e+02   9.248  < 2e-16 ***
+## Unemp16to64  5.614e+02  3.965e+01  14.157  < 2e-16 ***
+## Pop          1.427e-01  1.466e-03  97.367  < 2e-16 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 4007 on 1503 degrees of freedom
+## Multiple R-squared:  0.891,	Adjusted R-squared:  0.8906 
+## F-statistic:  2047 on 6 and 1503 DF,  p-value: < 2.2e-16
+\end{verbatim}
+\begin{alltt}
+\hlcom{#Get asterisks from regression}
+\hlstd{reg1sum} \hlkwb{<-} \hlkwd{summary}\hlstd{(reg1)}
+\hlstd{pvals} \hlkwb{<-} \hlkwd{coef}\hlstd{(reg1sum)[,}\hlkwd{colnames}\hlstd{(}\hlkwd{coef}\hlstd{(reg1sum))}\hlopt{==}\hlstr{"Pr(>|t|)"}\hlstd{]}
+\hlkwd{names}\hlstd{(pvals)} \hlkwb{<-} \hlkwd{rownames}\hlstd{(}\hlkwd{coef}\hlstd{(reg1sum))}
+\hlstd{sig.pvals} \hlkwb{<-} \hlkwd{rep}\hlstd{(}\hlnum{NA}\hlstd{,}\hlkwd{length}\hlstd{(pvals))}
+\hlstd{sig.pvals[pvals}\hlopt{<}\hlnum{0.01}\hlstd{]} \hlkwb{<-} \hlstr{"***"}
+\hlstd{f.p} \hlkwb{<-} \hlkwd{pf}\hlstd{(reg1sum}\hlopt{$}\hlstd{fstatistic[}\hlnum{1}\hlstd{],reg1sum}\hlopt{$}\hlstd{fstatistic[}\hlnum{2}\hlstd{],reg1sum}\hlopt{$}\hlstd{fstatistic[}\hlnum{3}\hlstd{],}\hlkwc{lower.tail}\hlstd{=}\hlnum{FALSE}\hlstd{)}
+\hlstd{f.sig} \hlkwb{<-} \hlkwd{rep}\hlstd{(}\hlnum{NA}\hlstd{,}\hlnum{1}\hlstd{)}
+\hlstd{f.sig[f.p}\hlopt{<}\hlnum{0.01}\hlstd{]} \hlkwb{<-} \hlstr{"***"}
+\hlstd{sig.pvals} \hlkwb{<-} \hlkwd{c}\hlstd{(sig.pvals,f.sig)}
+\hlkwd{names}\hlstd{(sig.pvals)} \hlkwb{<-} \hlkwd{c}\hlstd{(}\hlkwd{names}\hlstd{(pvals),}\hlstr{"fstat"}\hlstd{)}
+\end{alltt}
+\end{kframe}
+\end{knitrout}
+
+\begin{table}[htbp]
+\makeatletter
+\setlength{\belowcaptionskip}{-2cm}   % 0.5cm as an example
+\long\def\@makecaption#1#2{%
+  \vskip\abovecaptionskip
+  \sbox\@tempboxa{#1: #2}%
+  \ifdim \wd\@tempboxa >\hsize
+    #1: #2\par
+  \else
+    \global \@minipagefalse
+    \hb@xt@\hsize{\hspace{1.20in}\box\@tempboxa\hfil}%
+  \fi  
+  \vskip\belowcaptionskip}
+\makeatother
+\caption{Regression Results}
+\vspace{1.8cm}
+\begin{center}
+\begin{tabular}{l c}
+	\hline\hline\\[-1.5ex]
+	Variables 						& OLS \\[0.5ex]
+	\hline\\[-1.5ex]
+	Unemployment					& 561.398***	\\[0ex]
+  Ages 16-64						& (14.16) \\[1.5ex]
+	Population Size 			& 0.143***	                \\[0ex]
+												& (97.37)         \\[1.5ex]
+	Year 2012     				& 2312.862***	      \\[0ex]
+												& (7.19)    \\[1.5ex]
+	Year 2013   					& 1801.764***	      \\[0ex]
+		                  	& (5.61)    \\[1.5ex]
+	Year 2014							&	2103.244***	      \\[0ex]
+	                      & (6.37)    \\[1.5ex]
+	Year 2015             & 3193.214***	      \\[0ex]
+												& (9.25)    \\[1.5ex]
+	Adjusted $R^2$				&	0.891				                                                                    \\[1.5ex]
+	$F$										&	2047.428***				                        \\[1.5ex]
+	$N$										&	1510						                                                                                \\[0.5ex]
+	\hline\\[-1.5ex]
+	\multicolumn{2}{l}{\footnotesize{Notes: t/z-values of coefficients in parentheses,}}\\
+	\multicolumn{2}{l}{\footnotesize{with level of significance shown as *** = (99\%), ** = (95\%), and * = (90\%).}}\\
+	\multicolumn{2}{l}{\footnotesize{Data is at the Local Authority District level and covers England.}}\\
+\end{tabular}
+\end{center}
+\label{RegressionResults}
+\end{table}
+
+\end{document}
+

@@ -1,0 +1,119 @@
+\documentclass{article}
+\usepackage{amscd, amssymb, amsmath, verbatim, setspace}
+\usepackage[left=1.0in, right=1.0in, top=1.0in, bottom=1.0in]{geometry}
+\usepackage{indentfirst}
+\usepackage{rotating}
+\usepackage{mathrsfs}
+\usepackage{listings}
+\usepackage{graphicx}
+<<include=FALSE>>=
+library(knitr)
+opts_knit$set(concordance=TRUE)
+opts_chunk$set(background=c(.97, .97, .97), highlight=TRUE, fig.keep="high", 
+               out.width="0.6\\linewidth", fig.align="center")
+@
+\begin{document}
+
+<<>>=
+#Read in the total_crime dataset which contains the LAD values, year, and count
+totCrime <- read.csv("total_crime_LAD_year.csv")
+totCrime <- totCrime[,-1] #Drop first column, contains an index
+
+#Read in the counts of type
+totType <- read.csv("type_LAD_year.csv")
+totType <- totType[,-1] #Drop first column, contains an index
+
+#Get LAD/Year for data used in maps
+shape <- read.csv("shape.csv")
+#Rename column to match other files
+names(shape)[names(shape)=="District"] <- "LAD_name"
+
+#Load unemployment data
+unemp <- read.csv("UnemploymentLAD.csv")
+#Rename columns we are going to use to start
+names(unemp)[names(unemp)=="local.authority..district...unitary..prior.to.April.2015."] <- "LAD_name"
+names(unemp)[names(unemp)=="Date"] <- "Year"
+names(unemp)[names(unemp)=="Unemployment.rate...aged.16.64"] <- "Unemp16to64"
+names(unemp)[names(unemp)=="Denominator"] <- "Pop"
+
+#Get rid of some of the extra columns
+unemp <- unemp[,-grep("(Conf|Numerator|Denominator)",names(unemp))]
+
+#Try the first regression
+#Limit Unemployment data file to just the variables that we need
+reg1.unemp <- unemp[,names(unemp) %in% c("LAD_name","Year","Unemp16to64","Pop")]
+#Perform merge of unemployment data and crime data
+reg1.data <- merge(totCrime, reg1.unemp, by=c("LAD_name","Year"), all=TRUE)
+#Perform merge of merged unemp/crime and the shape file for maps
+reg1.data <- merge(shape, reg1.data, by=c("LAD_name","Year"), all.x=TRUE)
+#Remove observations with weird characters frm Unemp16to64
+reg1.data <- reg1.data[!(reg1.data$Unemp16to64 %in% c("!","-")),]
+#Change variable formats as needed
+reg1.data$Year <- as.factor(reg1.data$Year)
+reg1.data$Unemp16to64 <- as.numeric(levels(reg1.data$Unemp16to64))[reg1.data$Unemp16to64]
+reg1.data$Pop <- as.numeric(levels(reg1.data$Pop))[reg1.data$Pop]
+
+#First regression done
+reg1 <- lm(count ~ Year + Unemp16to64 + Pop, data=reg1.data)
+summary(reg1)
+
+#Get asterisks from regression
+reg1sum <- summary(reg1)
+pvals <- coef(reg1sum)[,colnames(coef(reg1sum))=="Pr(>|t|)"]
+names(pvals) <- rownames(coef(reg1sum))
+sig.pvals <- rep(NA,length(pvals))
+sig.pvals[pvals<0.01] <- "***"
+f.p <- pf(reg1sum$fstatistic[1],reg1sum$fstatistic[2],reg1sum$fstatistic[3],lower.tail=FALSE)
+f.sig <- rep(NA,1)
+f.sig[f.p<0.01] <- "***"
+sig.pvals <- c(sig.pvals,f.sig)
+names(sig.pvals) <- c(names(pvals),"fstat")
+@
+
+\begin{table}[htbp]
+\makeatletter
+\setlength{\belowcaptionskip}{-2cm}   % 0.5cm as an example
+\long\def\@makecaption#1#2{%
+  \vskip\abovecaptionskip
+  \sbox\@tempboxa{#1: #2}%
+  \ifdim \wd\@tempboxa >\hsize
+    #1: #2\par
+  \else
+    \global \@minipagefalse
+    \hb@xt@\hsize{\hspace{1.20in}\box\@tempboxa\hfil}%
+  \fi  
+  \vskip\belowcaptionskip}
+\makeatother
+\caption{Regression Results}
+\vspace{1.8cm}
+\begin{center}
+\begin{tabular}{l c}
+	\hline\hline\\[-1.5ex]
+	Variables 						& OLS \\[0.5ex]
+	\hline\\[-1.5ex]
+	Unemployment					& \Sexpr{round(coef(reg1)[names(coef(reg1))=="Unemp16to64"],3)}\Sexpr{sig.pvals[names(coef(reg1))=="Unemp16to64"]}	\\[0ex]
+  Ages 16-64						& (\Sexpr{round(coef(summary(reg1))[names(coef(reg1))=="Unemp16to64",colnames(coef(summary(reg1)))=="t value"],2)}) \\[1.5ex]
+	Population Size 			& \Sexpr{round(coef(reg1)[names(coef(reg1))=="Pop"],3)}\Sexpr{sig.pvals[names(coef(reg1))=="Pop"]}	                \\[0ex]
+												& (\Sexpr{round(coef(summary(reg1))[names(coef(reg1))=="Pop",colnames(coef(summary(reg1)))=="t value"],2)})         \\[1.5ex]
+	Year 2012     				& \Sexpr{round(coef(reg1)[names(coef(reg1))=="Year2012"],3)}\Sexpr{sig.pvals[names(coef(reg1))=="Year2012"]}	      \\[0ex]
+												& (\Sexpr{round(coef(summary(reg1))[names(coef(reg1))=="Year2012",colnames(coef(summary(reg1)))=="t value"],2)})    \\[1.5ex]
+	Year 2013   					& \Sexpr{round(coef(reg1)[names(coef(reg1))=="Year2013"],3)}\Sexpr{sig.pvals[names(coef(reg1))=="Year2013"]}	      \\[0ex]
+		                  	& (\Sexpr{round(coef(summary(reg1))[names(coef(reg1))=="Year2013",colnames(coef(summary(reg1)))=="t value"],2)})    \\[1.5ex]
+	Year 2014							&	\Sexpr{round(coef(reg1)[names(coef(reg1))=="Year2014"],3)}\Sexpr{sig.pvals[names(coef(reg1))=="Year2014"]}	      \\[0ex]
+	                      & (\Sexpr{round(coef(summary(reg1))[names(coef(reg1))=="Year2014",colnames(coef(summary(reg1)))=="t value"],2)})    \\[1.5ex]
+	Year 2015             & \Sexpr{round(coef(reg1)[names(coef(reg1))=="Year2015"],3)}\Sexpr{sig.pvals[names(coef(reg1))=="Year2015"]}	      \\[0ex]
+												& (\Sexpr{round(coef(summary(reg1))[names(coef(reg1))=="Year2015",colnames(coef(summary(reg1)))=="t value"],2)})    \\[1.5ex]
+	Adjusted $R^2$				&	\Sexpr{round(reg1sum$adj.r.squared,3)}				                                                                    \\[1.5ex]
+	$F$										&	\Sexpr{round(reg1sum$fstatistic[1],3)}\Sexpr{sig.pvals[names(sig.pvals)=="fstat"]}				                        \\[1.5ex]
+	$N$										&	\Sexpr{nrow(reg1.data)}						                                                                                \\[0.5ex]
+	\hline\\[-1.5ex]
+	\multicolumn{2}{l}{\footnotesize{Notes: t/z-values of coefficients in parentheses,}}\\
+	\multicolumn{2}{l}{\footnotesize{with level of significance shown as *** = (99\%), ** = (95\%), and * = (90\%).}}\\
+	\multicolumn{2}{l}{\footnotesize{Data is at the Local Authority District level and covers England.}}\\
+\end{tabular}
+\end{center}
+\label{RegressionResults}
+\end{table}
+
+\end{document}
+
