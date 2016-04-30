@@ -181,7 +181,7 @@ hover.point_policy = "follow_mouse"
 hover.tooltips = OrderedDict([
     ("Name", "@name"),
     ("Unemployment Rate","@uerate"),
-    ("Total Crimes","@total_crime")
+    ("Crime Rate","@total_crime")
 ])
 
 p2 = GMapPlot(title="LAD", plot_width=1200, plot_height=800, x_range = Range1d(), y_range = Range1d(), map_options = GMapOptions(lat=52.6816, lng=-1.0000, zoom=7))
@@ -195,7 +195,7 @@ hover.point_policy = "follow_mouse"
 hover.tooltips = OrderedDict([
     ("Name", "@name"),
     ("Unemployment Rate","@uerate"),
-    ("Total Crimes","@total_crime")
+    ("Crime Rate","@total_crime")
 ])
 
 p3 = GMapPlot(title="MSOA", plot_width=1200, plot_height=800, x_range = Range1d(), y_range = Range1d(), map_options = GMapOptions(lat=52.6816, lng=-1.0000, zoom=7))
@@ -209,7 +209,7 @@ hover.point_policy = "follow_mouse"
 hover.tooltips = OrderedDict([
     ("Name", "@name"),
     ("Unemployment Rate","@uerate"),
-    ("Total Crimes","@total_crime")
+    ("Crime Rate","@total_crime")
 ])
 
 p4 = GMapPlot(title="MSOA", plot_width=1200, plot_height=800, x_range = Range1d(), y_range = Range1d(), map_options = GMapOptions(lat=52.6816, lng=-1.0000, zoom=7))
@@ -223,7 +223,7 @@ hover.point_policy = "follow_mouse"
 hover.tooltips = OrderedDict([
     ("Name", "@name"),
     ("Unemployment Rate","@uerate"),
-    ("Total Crimes","@total_crime")
+    ("Crime Rate","@total_crime")
 ])
 
 p5 = GMapPlot(title="MSOA", plot_width=1200, plot_height=800, x_range = Range1d(), y_range = Range1d(), map_options = GMapOptions(lat=52.6816, lng=-1.0000, zoom=7))
@@ -237,7 +237,7 @@ hover.point_policy = "follow_mouse"
 hover.tooltips = OrderedDict([
     ("Name", "@name"),
     ("Unemployment Rate","@uerate"),
-    ("Total Crimes","@total_crime")
+    ("Crime Rate","@total_crime")
 ])
 
 tab1 = Panel(child=p1, title="2011")
