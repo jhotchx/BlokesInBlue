@@ -198,5 +198,132 @@
 \label{RegressionResults}
 \end{table}
 
+{\setlength{\parindent}{0pt}
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.97, 0.97, 0.97}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlkwd{set.seed}\hlstd{(}\hlnum{120587}\hlstd{)}
+
+\hlcom{#Model validation}
+\hlcom{#Use cross-validation}
+\hlstd{k} \hlkwb{<-} \hlnum{10} \hlcom{#Number of cv folds}
+
+\hlcom{#Create index to identify folds}
+\hlstd{folds} \hlkwb{<-} \hlkwd{sample}\hlstd{(}\hlnum{1}\hlopt{:}\hlstd{k,} \hlkwd{nrow}\hlstd{(reg1.data),} \hlkwc{replace}\hlstd{=}\hlnum{TRUE}\hlstd{)}
+
+\hlcom{#Create matrix to store error values from each regression}
+\hlstd{cv.errors} \hlkwb{<-} \hlkwd{rep}\hlstd{(}\hlnum{NA}\hlstd{,k)}
+\hlstd{r.squared} \hlkwb{<-} \hlkwd{rep}\hlstd{(}\hlnum{NA}\hlstd{,k)}
+\hlstd{coeffs}    \hlkwb{<-} \hlkwd{matrix}\hlstd{(}\hlnum{NA}\hlstd{,k,}\hlnum{7}\hlstd{)}
+
+\hlcom{#Run cross-validation for best subset selection}
+\hlkwa{for} \hlstd{(j} \hlkwa{in} \hlnum{1}\hlopt{:}\hlstd{k) \{}
+  \hlcom{#Get best subset for the fold}
+  \hlstd{lm.fit} \hlkwb{<-} \hlkwd{lm}\hlstd{(count} \hlopt{~} \hlstd{Year} \hlopt{+} \hlstd{Unemp16to64} \hlopt{+} \hlstd{Pop,} \hlkwc{data}\hlstd{=reg1.data[folds}\hlopt{!=}\hlstd{j,])}
+  \hlcom{#Get prediction for this fold and i predictors}
+  \hlstd{pred} \hlkwb{<-} \hlkwd{predict}\hlstd{(lm.fit, reg1.data[folds}\hlopt{==}\hlstd{j,])}
+  \hlcom{#Save mse}
+  \hlstd{cv.errors[j]} \hlkwb{<-} \hlkwd{mean}\hlstd{((reg1.data}\hlopt{$}\hlstd{count[folds}\hlopt{==}\hlstd{j]}\hlopt{-}\hlstd{pred)}\hlopt{^}\hlnum{2}\hlstd{)}
+  \hlstd{r.squared[j]} \hlkwb{<-} \hlkwd{summary}\hlstd{(lm.fit)}\hlopt{$}\hlstd{adj.r.squared}
+  \hlstd{coeffs[j,]}   \hlkwb{<-} \hlkwd{coefficients}\hlstd{(lm.fit)}
+\hlstd{\}}
+
+\hlkwd{colnames}\hlstd{(coeffs)} \hlkwb{<-} \hlkwd{names}\hlstd{(}\hlkwd{coefficients}\hlstd{(lm.fit))}
+
+\hlcom{#Take average of vector to get test mse}
+\hlstd{mean.cv.errors} \hlkwb{<-} \hlkwd{mean}\hlstd{(cv.errors)}
+
+\hlcom{#CV Error}
+\hlkwd{plot}\hlstd{(cv.errors,} \hlkwc{type}\hlstd{=}\hlstr{"b"}\hlstd{,}\hlkwc{main}\hlstd{=}\hlstr{"Cross-Validation MSE by Fold"}\hlstd{,}
+     \hlkwc{xlab}\hlstd{=}\hlstr{"Fold"}\hlstd{,}
+     \hlkwc{ylab}\hlstd{=}\hlstr{"Mean-Squared Error"}\hlstd{)}
+\hlkwd{abline}\hlstd{(}\hlkwc{h}\hlstd{=mean.cv.errors,}\hlkwc{col}\hlstd{=}\hlstr{"red"}\hlstd{,}\hlkwc{lty}\hlstd{=}\hlnum{2}\hlstd{)} \hlcom{#Plot average fold}
+
+\hlkwd{legend}\hlstd{(}\hlstr{"topright"}\hlstd{,}
+       \hlkwc{legend}\hlstd{=}\hlkwd{c}\hlstd{(}\hlstr{"Value"}\hlstd{,}\hlstr{"Cross-fold Mean"}\hlstd{),}
+       \hlkwc{col}\hlstd{=}\hlkwd{c}\hlstd{(}\hlstr{"black"}\hlstd{,}\hlstr{"red"}\hlstd{),}
+       \hlkwc{lwd}\hlstd{=}\hlnum{1}\hlstd{,} \hlkwc{lty}\hlstd{=}\hlkwd{c}\hlstd{(}\hlnum{1}\hlstd{,}\hlnum{2}\hlstd{),} \hlkwc{cex}\hlstd{=}\hlnum{0.7}\hlstd{)}
+
+\hlcom{#R^2}
+\hlkwd{plot}\hlstd{(r.squared,} \hlkwc{type}\hlstd{=}\hlstr{"b"}\hlstd{,}\hlkwc{main}\hlstd{=}\hlkwd{bquote}\hlstd{(R}\hlopt{^}\hlnum{2}\hlopt{*}\hlstr{" by Fold"}\hlstd{),}
+     \hlkwc{xlab}\hlstd{=}\hlstr{"Fold"}\hlstd{,}
+     \hlkwc{ylab}\hlstd{=}\hlkwd{bquote}\hlstd{(R}\hlopt{^}\hlnum{2}\hlstd{))}
+\hlkwd{abline}\hlstd{(}\hlkwc{h}\hlstd{=}\hlkwd{mean}\hlstd{(r.squared),}\hlkwc{col}\hlstd{=}\hlstr{"red"}\hlstd{,}\hlkwc{lty}\hlstd{=}\hlnum{2}\hlstd{)} \hlcom{#Plot average fold}
+
+\hlkwd{legend}\hlstd{(}\hlstr{"topright"}\hlstd{,}
+       \hlkwc{legend}\hlstd{=}\hlkwd{c}\hlstd{(}\hlstr{"Value"}\hlstd{,}\hlstr{"Cross-fold Mean"}\hlstd{),}
+       \hlkwc{col}\hlstd{=}\hlkwd{c}\hlstd{(}\hlstr{"black"}\hlstd{,}\hlstr{"red"}\hlstd{),}
+       \hlkwc{lwd}\hlstd{=}\hlnum{1}\hlstd{,} \hlkwc{lty}\hlstd{=}\hlkwd{c}\hlstd{(}\hlnum{1}\hlstd{,}\hlnum{2}\hlstd{),} \hlkwc{cex}\hlstd{=}\hlnum{0.7}\hlstd{)}
+
+\hlcom{#Unemployment}
+\hlkwd{plot}\hlstd{(coeffs[,}\hlkwd{colnames}\hlstd{(coeffs)}\hlopt{==}\hlstr{"Unemp16to64"}\hlstd{],} \hlkwc{type}\hlstd{=}\hlstr{"b"}\hlstd{,}
+     \hlkwc{main}\hlstd{=}\hlstr{"Unemployment (16-64) Coefficient by Fold"}\hlstd{,}
+     \hlkwc{xlab}\hlstd{=}\hlstr{"Fold"}\hlstd{,}
+     \hlkwc{ylab}\hlstd{=}\hlstr{"Coefficient"}\hlstd{)}
+\hlkwd{abline}\hlstd{(}\hlkwc{h}\hlstd{=}\hlkwd{mean}\hlstd{(coeffs[,}\hlkwd{colnames}\hlstd{(coeffs)}\hlopt{==}\hlstr{"Unemp16to64"}\hlstd{]),}
+       \hlkwc{col}\hlstd{=}\hlstr{"red"}\hlstd{,}\hlkwc{lty}\hlstd{=}\hlnum{2}\hlstd{)} \hlcom{#Plot average fold}
+
+\hlkwd{legend}\hlstd{(}\hlstr{"topright"}\hlstd{,}
+       \hlkwc{legend}\hlstd{=}\hlkwd{c}\hlstd{(}\hlstr{"Value"}\hlstd{,}\hlstr{"Cross-fold Mean"}\hlstd{),}
+       \hlkwc{col}\hlstd{=}\hlkwd{c}\hlstd{(}\hlstr{"black"}\hlstd{,}\hlstr{"red"}\hlstd{),}
+       \hlkwc{lwd}\hlstd{=}\hlnum{1}\hlstd{,} \hlkwc{lty}\hlstd{=}\hlkwd{c}\hlstd{(}\hlnum{1}\hlstd{,}\hlnum{2}\hlstd{),} \hlkwc{cex}\hlstd{=}\hlnum{0.7}\hlstd{)}
+
+\hlcom{#Unemployment}
+\hlkwd{plot}\hlstd{(coeffs[,}\hlkwd{colnames}\hlstd{(coeffs)}\hlopt{==}\hlstr{"Pop"}\hlstd{],} \hlkwc{type}\hlstd{=}\hlstr{"b"}\hlstd{,}
+     \hlkwc{main}\hlstd{=}\hlstr{"Population Coefficient by Fold"}\hlstd{,}
+     \hlkwc{xlab}\hlstd{=}\hlstr{"Fold"}\hlstd{,}
+     \hlkwc{ylab}\hlstd{=}\hlstr{"Coefficient"}\hlstd{)}
+\hlkwd{abline}\hlstd{(}\hlkwc{h}\hlstd{=}\hlkwd{mean}\hlstd{(coeffs[,}\hlkwd{colnames}\hlstd{(coeffs)}\hlopt{==}\hlstr{"Pop"}\hlstd{]),}
+       \hlkwc{col}\hlstd{=}\hlstr{"red"}\hlstd{,}\hlkwc{lty}\hlstd{=}\hlnum{2}\hlstd{)} \hlcom{#Plot average fold}
+
+\hlkwd{legend}\hlstd{(}\hlstr{"topright"}\hlstd{,}
+       \hlkwc{legend}\hlstd{=}\hlkwd{c}\hlstd{(}\hlstr{"Value"}\hlstd{,}\hlstr{"Cross-fold Mean"}\hlstd{),}
+       \hlkwc{col}\hlstd{=}\hlkwd{c}\hlstd{(}\hlstr{"black"}\hlstd{,}\hlstr{"red"}\hlstd{),}
+       \hlkwc{lwd}\hlstd{=}\hlnum{1}\hlstd{,} \hlkwc{lty}\hlstd{=}\hlkwd{c}\hlstd{(}\hlnum{1}\hlstd{,}\hlnum{2}\hlstd{),} \hlkwc{cex}\hlstd{=}\hlnum{0.7}\hlstd{)}
+
+\hlstd{ybounds} \hlkwb{<-} \hlkwd{c}\hlstd{(}\hlkwd{min}\hlstd{(coeffs[,}\hlkwd{colnames}\hlstd{(coeffs)}\hlopt{==}\hlstr{"Year2012"}\hlstd{],}
+                 \hlstd{coeffs[,}\hlkwd{colnames}\hlstd{(coeffs)}\hlopt{==}\hlstr{"Year2013"}\hlstd{],}
+                 \hlstd{coeffs[,}\hlkwd{colnames}\hlstd{(coeffs)}\hlopt{==}\hlstr{"Year2014"}\hlstd{],}
+                 \hlstd{coeffs[,}\hlkwd{colnames}\hlstd{(coeffs)}\hlopt{==}\hlstr{"Year2015"}\hlstd{]),}
+             \hlkwd{max}\hlstd{(coeffs[,}\hlkwd{colnames}\hlstd{(coeffs)}\hlopt{==}\hlstr{"Year2012"}\hlstd{],}
+                 \hlstd{coeffs[,}\hlkwd{colnames}\hlstd{(coeffs)}\hlopt{==}\hlstr{"Year2013"}\hlstd{],}
+                 \hlstd{coeffs[,}\hlkwd{colnames}\hlstd{(coeffs)}\hlopt{==}\hlstr{"Year2014"}\hlstd{],}
+                 \hlstd{coeffs[,}\hlkwd{colnames}\hlstd{(coeffs)}\hlopt{==}\hlstr{"Year2015"}\hlstd{]))}
+
+\hlkwd{plot}\hlstd{(coeffs[,}\hlkwd{colnames}\hlstd{(coeffs)}\hlopt{==}\hlstr{"Year2012"}\hlstd{],} \hlkwc{type}\hlstd{=}\hlstr{"b"}\hlstd{,}\hlkwc{main}\hlstd{=}\hlstr{"Year Coefficients by Fold"}\hlstd{,}
+     \hlkwc{xlab}\hlstd{=}\hlstr{"Fold"}\hlstd{,}
+     \hlkwc{ylab}\hlstd{=}\hlstr{"Year Coefficient"}\hlstd{,}
+     \hlkwc{ylim}\hlstd{=ybounds,}
+     \hlkwc{col}\hlstd{=}\hlstr{"red"}\hlstd{)}
+\hlkwd{abline}\hlstd{(}\hlkwc{h}\hlstd{=}\hlkwd{mean}\hlstd{(coeffs[,}\hlkwd{colnames}\hlstd{(coeffs)}\hlopt{==}\hlstr{"Year2012"}\hlstd{]),}\hlkwc{col}\hlstd{=}\hlstr{"red"}\hlstd{,}\hlkwc{lty}\hlstd{=}\hlnum{2}\hlstd{)} \hlcom{#Plot average fold}
+\hlkwd{lines}\hlstd{(coeffs[,}\hlkwd{colnames}\hlstd{(coeffs)}\hlopt{==}\hlstr{"Year2013"}\hlstd{],} \hlkwc{type}\hlstd{=}\hlstr{"b"}\hlstd{,}\hlkwc{col}\hlstd{=}\hlstr{"blue"}\hlstd{)}
+\hlkwd{abline}\hlstd{(}\hlkwc{h}\hlstd{=}\hlkwd{mean}\hlstd{(coeffs[,}\hlkwd{colnames}\hlstd{(coeffs)}\hlopt{==}\hlstr{"Year2013"}\hlstd{]),}\hlkwc{col}\hlstd{=}\hlstr{"blue"}\hlstd{,}\hlkwc{lty}\hlstd{=}\hlnum{2}\hlstd{)} \hlcom{#Plot average fold}
+\hlkwd{lines}\hlstd{(coeffs[,}\hlkwd{colnames}\hlstd{(coeffs)}\hlopt{==}\hlstr{"Year2014"}\hlstd{],} \hlkwc{type}\hlstd{=}\hlstr{"b"}\hlstd{,}\hlkwc{col}\hlstd{=}\hlstr{"green"}\hlstd{)}
+\hlkwd{abline}\hlstd{(}\hlkwc{h}\hlstd{=}\hlkwd{mean}\hlstd{(coeffs[,}\hlkwd{colnames}\hlstd{(coeffs)}\hlopt{==}\hlstr{"Year2014"}\hlstd{]),}\hlkwc{col}\hlstd{=}\hlstr{"green"}\hlstd{,}\hlkwc{lty}\hlstd{=}\hlnum{2}\hlstd{)} \hlcom{#Plot average fold}
+\hlkwd{lines}\hlstd{(coeffs[,}\hlkwd{colnames}\hlstd{(coeffs)}\hlopt{==}\hlstr{"Year2015"}\hlstd{],} \hlkwc{type}\hlstd{=}\hlstr{"b"}\hlstd{,}\hlkwc{col}\hlstd{=}\hlstr{"purple"}\hlstd{)}
+\hlkwd{abline}\hlstd{(}\hlkwc{h}\hlstd{=}\hlkwd{mean}\hlstd{(coeffs[,}\hlkwd{colnames}\hlstd{(coeffs)}\hlopt{==}\hlstr{"Year2015"}\hlstd{]),}\hlkwc{col}\hlstd{=}\hlstr{"purple"}\hlstd{,}\hlkwc{lty}\hlstd{=}\hlnum{2}\hlstd{)} \hlcom{#Plot average fold}
+
+\hlkwd{legend}\hlstd{(}\hlkwc{x}\hlstd{=}\hlnum{7.5}\hlstd{,}\hlkwc{y}\hlstd{=}\hlnum{3000}\hlstd{,}
+       \hlkwc{legend}\hlstd{=}\hlkwd{c}\hlstd{(}\hlstr{"2012 Value"}\hlstd{,}\hlstr{"2012 Cross-fold Mean"}\hlstd{,}
+                \hlstr{"2013 Value"}\hlstd{,}\hlstr{"2013 Cross-fold Mean"}\hlstd{,}
+                \hlstr{"2014 Value"}\hlstd{,}\hlstr{"2014 Cross-fold Mean"}\hlstd{,}
+                \hlstr{"2015 Value"}\hlstd{,}\hlstr{"2015 Cross-fold Mean"}\hlstd{),}
+       \hlkwc{col}\hlstd{=}\hlkwd{c}\hlstd{(}\hlstr{"red"}\hlstd{,}\hlstr{"red"}\hlstd{,}\hlstr{"blue"}\hlstd{,}\hlstr{"blue"}\hlstd{,}\hlstr{"green"}\hlstd{,}\hlstr{"green"}\hlstd{,}\hlstr{"purple"}\hlstd{,}\hlstr{"purple"}\hlstd{),}
+       \hlkwc{lwd}\hlstd{=}\hlnum{1}\hlstd{,} \hlkwc{lty}\hlstd{=}\hlkwd{c}\hlstd{(}\hlnum{1}\hlstd{,}\hlnum{2}\hlstd{,}\hlnum{1}\hlstd{,}\hlnum{2}\hlstd{,}\hlnum{1}\hlstd{,}\hlnum{2}\hlstd{,}\hlnum{1}\hlstd{,}\hlnum{2}\hlstd{),} \hlkwc{cex}\hlstd{=}\hlnum{0.7}\hlstd{)}
+\end{alltt}
+\end{kframe}
+
+\includegraphics[width=0.5\linewidth]{figure/unnamed-chunk-3-1} 
+\includegraphics[width=0.5\linewidth]{figure/unnamed-chunk-3-2} 
+\includegraphics[width=0.5\linewidth]{figure/unnamed-chunk-3-3} 
+\includegraphics[width=0.5\linewidth]{figure/unnamed-chunk-3-4} 
+\includegraphics[width=0.5\linewidth]{figure/unnamed-chunk-3-5} \hfill{}
+
+
+
+\end{knitrout}
+}
+
+
 \end{document}
 

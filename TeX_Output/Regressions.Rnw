@@ -115,5 +115,119 @@ names(sig.pvals) <- c(names(pvals),"fstat")
 \label{RegressionResults}
 \end{table}
 
+{\setlength{\parindent}{0pt}
+<<out.width="0.5\\linewidth",fig.align="left",fig.show="hold">>=
+set.seed(120587)
+
+#Model validation
+#Use cross-validation
+k <- 10 #Number of cv folds
+
+#Create index to identify folds
+folds <- sample(1:k, nrow(reg1.data), replace=TRUE) 
+
+#Create matrix to store error values from each regression
+cv.errors <- rep(NA,k)
+r.squared <- rep(NA,k)
+coeffs    <- matrix(NA,k,7)
+
+#Run cross-validation for best subset selection
+for (j in 1:k) {
+  #Get best subset for the fold
+  lm.fit <- lm(count ~ Year + Unemp16to64 + Pop, data=reg1.data[folds!=j,])
+  #Get prediction for this fold and i predictors
+  pred <- predict(lm.fit, reg1.data[folds==j,])
+  #Save mse
+  cv.errors[j] <- mean((reg1.data$count[folds==j]-pred)^2)
+  r.squared[j] <- summary(lm.fit)$adj.r.squared
+  coeffs[j,]   <- coefficients(lm.fit)
+}
+
+colnames(coeffs) <- names(coefficients(lm.fit))
+
+#Take average of vector to get test mse
+mean.cv.errors <- mean(cv.errors)
+
+#CV Error
+plot(cv.errors, type="b",main="Cross-Validation MSE by Fold",
+     xlab="Fold",
+     ylab="Mean-Squared Error")
+abline(h=mean.cv.errors,col="red",lty=2) #Plot average fold
+
+legend("topright",
+       legend=c("Value","Cross-fold Mean"), 
+       col=c("black","red"), 
+       lwd=1, lty=c(1,2), cex=0.7)
+
+#R^2
+plot(r.squared, type="b",main=bquote(R^2*" by Fold"),
+     xlab="Fold",
+     ylab=bquote(R^2))
+abline(h=mean(r.squared),col="red",lty=2) #Plot average fold
+
+legend("topright",
+       legend=c("Value","Cross-fold Mean"), 
+       col=c("black","red"), 
+       lwd=1, lty=c(1,2), cex=0.7)
+
+#Unemployment
+plot(coeffs[,colnames(coeffs)=="Unemp16to64"], type="b",
+     main="Unemployment (16-64) Coefficient by Fold",
+     xlab="Fold",
+     ylab="Coefficient")
+abline(h=mean(coeffs[,colnames(coeffs)=="Unemp16to64"]),
+       col="red",lty=2) #Plot average fold
+
+legend("topright",
+       legend=c("Value","Cross-fold Mean"), 
+       col=c("black","red"), 
+       lwd=1, lty=c(1,2), cex=0.7)
+
+#Unemployment
+plot(coeffs[,colnames(coeffs)=="Pop"], type="b",
+     main="Population Coefficient by Fold",
+     xlab="Fold",
+     ylab="Coefficient")
+abline(h=mean(coeffs[,colnames(coeffs)=="Pop"]),
+       col="red",lty=2) #Plot average fold
+
+legend("topright",
+       legend=c("Value","Cross-fold Mean"), 
+       col=c("black","red"), 
+       lwd=1, lty=c(1,2), cex=0.7)
+
+ybounds <- c(min(coeffs[,colnames(coeffs)=="Year2012"],
+                 coeffs[,colnames(coeffs)=="Year2013"],
+                 coeffs[,colnames(coeffs)=="Year2014"],
+                 coeffs[,colnames(coeffs)=="Year2015"]),
+             max(coeffs[,colnames(coeffs)=="Year2012"],
+                 coeffs[,colnames(coeffs)=="Year2013"],
+                 coeffs[,colnames(coeffs)=="Year2014"],
+                 coeffs[,colnames(coeffs)=="Year2015"]))
+
+plot(coeffs[,colnames(coeffs)=="Year2012"], type="b",main="Year Coefficients by Fold",
+     xlab="Fold",
+     ylab="Year Coefficient",
+     ylim=ybounds,
+     col="red")
+abline(h=mean(coeffs[,colnames(coeffs)=="Year2012"]),col="red",lty=2) #Plot average fold
+lines(coeffs[,colnames(coeffs)=="Year2013"], type="b",col="blue")
+abline(h=mean(coeffs[,colnames(coeffs)=="Year2013"]),col="blue",lty=2) #Plot average fold
+lines(coeffs[,colnames(coeffs)=="Year2014"], type="b",col="green")
+abline(h=mean(coeffs[,colnames(coeffs)=="Year2014"]),col="green",lty=2) #Plot average fold
+lines(coeffs[,colnames(coeffs)=="Year2015"], type="b",col="purple")
+abline(h=mean(coeffs[,colnames(coeffs)=="Year2015"]),col="purple",lty=2) #Plot average fold
+
+legend(x=7.5,y=3000, 
+       legend=c("2012 Value","2012 Cross-fold Mean",
+                "2013 Value","2013 Cross-fold Mean",
+                "2014 Value","2014 Cross-fold Mean",
+                "2015 Value","2015 Cross-fold Mean"), 
+       col=c("red","red","blue","blue","green","green","purple","purple"), 
+       lwd=1, lty=c(1,2,1,2,1,2,1,2), cex=0.7)
+@
+}
+
+
 \end{document}
 
