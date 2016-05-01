@@ -182,5 +182,16 @@ tot_2011_LAD.to_csv('/home/hadoop/total_crime_2011_LAD.csv')
 
 type_LAD_year = df_street_LAD.groupBy("LAD_name","Year","Crime_type").count()
 
+#getting summary stats
+total_crime_year = df_street_LAD.groupBy("Year").count()
+total_crime = total_crime_year.toPandas()
+
 crimtype_LAD_year = type_LAD_year.toPandas()
 crimtype_LAD_year.to_csv('/home/hadoop/type_LAD_year.csv')
+
+crime_type_year = df_street_LAD.groupBy("Year","Crime_type").count()
+crime_type = crime_type_year.toPandas()
+crime_type.to_csv('/home/hadoop/crime_type_year.csv')
+
+crime_type_total = df_street_LAD.groupBy("Crime_type").count()
+total_crime = crime_type_total.toPandas()
