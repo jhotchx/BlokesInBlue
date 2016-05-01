@@ -48,7 +48,7 @@ reg1.data <- merge(totCrime, reg1.unemp, by=c("LAD_name","Year"), all=TRUE)
 reg1.data <- merge(shape, reg1.data, by=c("LAD_name","Year"), all.x=TRUE)
 #Remove observations with weird characters frm Unemp16to64
 reg1.data <- reg1.data[!(reg1.data$Unemp16to64 %in% c("!","-")),]
-#Remove column total rows
+#Remove column total rows - shouldn't be there
 reg1.data <- reg1.data[reg1.data$LAD_name!="Column Total",]
 #Change variable formats as needed
 reg1.data$Year <- as.factor(reg1.data$Year)
