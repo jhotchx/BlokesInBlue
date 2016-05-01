@@ -52,7 +52,14 @@ reg1.data <- reg1.data[!(reg1.data$Unemp16to64 %in% c("!","-")),]
 reg1.data$Year <- as.factor(reg1.data$Year)
 reg1.data$Unemp16to64 <- as.numeric(levels(reg1.data$Unemp16to64))[reg1.data$Unemp16to64]
 reg1.data$Pop <- as.numeric(levels(reg1.data$Pop))[reg1.data$Pop]
+@
 
+<<>>=
+#Check pairs plot
+pairs(reg1.data[,colnames(reg1.data) %in% c("Year","count","Pop","Unemp16to64")])
+@
+
+<<>>=
 #First regression done
 reg1 <- lm(count ~ Year + Unemp16to64 + Pop, data=reg1.data)
 summary(reg1)
