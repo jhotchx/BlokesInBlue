@@ -96,6 +96,8 @@
 \hlstd{reg1.data} \hlkwb{<-} \hlkwd{merge}\hlstd{(shape, reg1.data,} \hlkwc{by}\hlstd{=}\hlkwd{c}\hlstd{(}\hlstr{"LAD_name"}\hlstd{,}\hlstr{"Year"}\hlstd{),} \hlkwc{all.x}\hlstd{=}\hlnum{TRUE}\hlstd{)}
 \hlcom{#Remove observations with weird characters frm Unemp16to64}
 \hlstd{reg1.data} \hlkwb{<-} \hlstd{reg1.data[}\hlopt{!}\hlstd{(reg1.data}\hlopt{$}\hlstd{Unemp16to64} \hlopt{%in%} \hlkwd{c}\hlstd{(}\hlstr{"!"}\hlstd{,}\hlstr{"-"}\hlstd{)),]}
+\hlcom{#Remove column total rows}
+\hlstd{reg1.data} \hlkwb{<-} \hlstd{reg1.data[reg1.data}\hlopt{$}\hlstd{LAD_name}\hlopt{!=}\hlstr{"Column Total"}\hlstd{,]}
 \hlcom{#Change variable formats as needed}
 \hlstd{reg1.data}\hlopt{$}\hlstd{Year} \hlkwb{<-} \hlkwd{as.factor}\hlstd{(reg1.data}\hlopt{$}\hlstd{Year)}
 \hlstd{reg1.data}\hlopt{$}\hlstd{Unemp16to64} \hlkwb{<-} \hlkwd{as.numeric}\hlstd{(}\hlkwd{levels}\hlstd{(reg1.data}\hlopt{$}\hlstd{Unemp16to64))[reg1.data}\hlopt{$}\hlstd{Unemp16to64]}
@@ -107,7 +109,28 @@
 \end{alltt}
 
 
-{\ttfamily\noindent\color{warningcolor}{\#\# Warning: NAs introduced by coercion}}\begin{alltt}
+{\ttfamily\noindent\color{warningcolor}{\#\# Warning: NAs introduced by coercion}}\end{kframe}
+\end{knitrout}
+
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.97, 0.97, 0.97}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlcom{#Check pairs plot}
+\hlkwd{pairs}\hlstd{(reg1.data[,}\hlkwd{colnames}\hlstd{(reg1.data)} \hlopt{%in%} \hlkwd{c}\hlstd{(}\hlstr{"Year"}\hlstd{,}\hlstr{"count"}\hlstd{,}\hlstr{"Pop"}\hlstd{,}\hlstr{"Unemp16to64"}\hlstd{)])}
+\end{alltt}
+\end{kframe}
+
+{\centering \includegraphics[width=0.6\linewidth]{figure/unnamed-chunk-3-1} 
+
+}
+
+
+
+\end{knitrout}
+
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.97, 0.97, 0.97}\color{fgcolor}\begin{kframe}
+\begin{alltt}
 \hlcom{#First regression done}
 \hlstd{reg1} \hlkwb{<-} \hlkwd{lm}\hlstd{(count} \hlopt{~} \hlstd{Year} \hlopt{+} \hlstd{Unemp16to64} \hlopt{+} \hlstd{Pop,} \hlkwc{data}\hlstd{=reg1.data)}
 \hlkwd{summary}\hlstd{(reg1)}
@@ -313,11 +336,11 @@
 \end{alltt}
 \end{kframe}
 
-\includegraphics[width=0.5\linewidth]{figure/unnamed-chunk-3-1} 
-\includegraphics[width=0.5\linewidth]{figure/unnamed-chunk-3-2} 
-\includegraphics[width=0.5\linewidth]{figure/unnamed-chunk-3-3} 
-\includegraphics[width=0.5\linewidth]{figure/unnamed-chunk-3-4} 
-\includegraphics[width=0.5\linewidth]{figure/unnamed-chunk-3-5} \hfill{}
+\includegraphics[width=0.5\linewidth]{figure/unnamed-chunk-5-1} 
+\includegraphics[width=0.5\linewidth]{figure/unnamed-chunk-5-2} 
+\includegraphics[width=0.5\linewidth]{figure/unnamed-chunk-5-3} 
+\includegraphics[width=0.5\linewidth]{figure/unnamed-chunk-5-4} 
+\includegraphics[width=0.5\linewidth]{figure/unnamed-chunk-5-5} \hfill{}
 
 
 
