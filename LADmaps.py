@@ -45,7 +45,7 @@ for year in years:
 #unemp2011 = unemp2011[pandas.notnull(unemp2011['Unemployment'])]
 
 ## pulling lat/longs from shapefile
-sf = shapefile.Reader("/Users/Ahn/Desktop/ukcrime/Shapefile/england_lad_2011_gen.shp") 
+sf = shapefile.Reader("lad/england_lad_2011_gen.shp") 
 
 #http://gis.stackexchange.com/questions/168310/how-to-convert-projected-coordinates-to-geographic-coordinates-without-arcgis
 #https://karlhennermann.wordpress.com/2015/02/16/how-to-make-lsoa-and-msoa-boundaries-from-uk-data-service-align-properly-in-arcgis/
@@ -111,7 +111,7 @@ for year in years:
     avg.append(np.mean([h for h in lad_unemployment[year] if str(h) != 'nan']))
 sd = np.mean(sd)
 avg = np.mean(avg)
-colors = ["#d5edff", "#6daaee", "#3858f9", "#002566"] #blues
+colors = ["#d5edff", "#6daaee", "#3858f9", "#043c9a"] #blues
 LAD_colors = dict()
 for year in years:
     LAD_colors_year = list()
@@ -180,12 +180,12 @@ source5 = ColumnDataSource(data=dict(
 TOOLS="pan,wheel_zoom,box_zoom,reset,hover,save"
 
 p1 = figure(title="2011",webgl=True, tools=TOOLS)
-p1.patches('x', 'y', source=source1, fill_alpha=0.7, fill_color='color',
+p1.patches('x', 'y', source=source1, fill_alpha=1, fill_color='color',
           line_color='black', line_width=0.5)
 p1.square(-6.3, 49.9, legend="<3.8%", fill_color="#d5edff", size=.1)
 p1.square(-6.3, 49.9, legend="3.8-6.7%", fill_color="#6daaee", size=.1)
 p1.square(-6.3, 49.9, legend="6.7-9.6%", fill_color="#3858f9", size=.1)
-p1.square(-6.3, 49.9, legend=">9.6%", fill_color="#002566", size=.1)
+p1.square(-6.3, 49.9, legend=">9.6%", fill_color="#043c9a", size=.1)
 p1.square(-6.3, 49.9, legend="No Information", fill_color="black", size=.1)
 p1.legend.glyph_width = 30
 p1.legend.glyph_height = 30
@@ -199,12 +199,12 @@ hover.tooltips = [
 ]
 
 p2 = figure(title="2012",webgl=True, tools=TOOLS)
-p2.patches('x', 'y', source=source2, fill_alpha=0.7, fill_color='color',
+p2.patches('x', 'y', source=source2, fill_alpha=1, fill_color='color',
           line_color='black', line_width=0.5)
 p2.square(-6.3, 49.9, legend="<3.8%", fill_color="#d5edff", size=.1)
 p2.square(-6.3, 49.9, legend="3.8-6.7%", fill_color="#6daaee", size=.1)
 p2.square(-6.3, 49.9, legend="6.7-9.6%", fill_color="#3858f9", size=.1)
-p2.square(-6.3, 49.9, legend=">9.6%", fill_color="#002566", size=.1)
+p2.square(-6.3, 49.9, legend=">9.6%", fill_color="#043c9a", size=.1)
 p2.square(-6.3, 49.9, legend="No Information", fill_color="black", size=.1)
 p2.legend.glyph_width = 30
 p2.legend.glyph_height = 30
@@ -218,12 +218,12 @@ hover.tooltips = [
 ]
 
 p3 = figure(title="2013",webgl=True, tools=TOOLS)
-p3.patches('x', 'y', source=source3, fill_alpha=0.7, fill_color='color',
+p3.patches('x', 'y', source=source3, fill_alpha=1, fill_color='color',
           line_color='black', line_width=0.5)
 p3.square(-6.3, 49.9, legend="<3.8%", fill_color="#d5edff", size=.1)
 p3.square(-6.3, 49.9, legend="3.8-6.7%", fill_color="#6daaee", size=.1)
 p3.square(-6.3, 49.9, legend="6.7-9.6%", fill_color="#3858f9", size=.1)
-p3.square(-6.3, 49.9, legend=">9.6%", fill_color="#002566", size=.1)
+p3.square(-6.3, 49.9, legend=">9.6%", fill_color="#043c9a", size=.1)
 p3.square(-6.3, 49.9, legend="No Information", fill_color="black", size=.1)
 p3.legend.glyph_width = 30
 p3.legend.glyph_height = 30
@@ -237,12 +237,12 @@ hover.tooltips = [
 ]
 
 p4 = figure(title="2014",webgl=True, tools=TOOLS)
-p4.patches('x', 'y', source=source4, fill_alpha=0.7, fill_color='color',
+p4.patches('x', 'y', source=source4, fill_alpha=1, fill_color='color',
           line_color='black', line_width=0.5)
 p4.square(-6.3, 49.9, legend="<3.8%", fill_color="#d5edff", size=.1)
 p4.square(-6.3, 49.9, legend="3.8-6.7%", fill_color="#6daaee", size=.1)
 p4.square(-6.3, 49.9, legend="6.7-9.6%", fill_color="#3858f9", size=.1)
-p4.square(-6.3, 49.9, legend=">9.6%", fill_color="#002566", size=.1)
+p4.square(-6.3, 49.9, legend=">9.6%", fill_color="#043c9a", size=.1)
 p4.square(-6.3, 49.9, legend="No Information", fill_color="black", size=.1)
 p4.legend.glyph_width = 30
 p4.legend.glyph_height = 30
@@ -256,12 +256,12 @@ hover.tooltips = [
 ]
 
 p5 = figure(title="2015",webgl=True, tools=TOOLS)
-p5.patches('x', 'y', source=source5, fill_alpha=0.7, fill_color='color',
+p5.patches('x', 'y', source=source5, fill_alpha=1, fill_color='color',
           line_color='black', line_width=0.5)
 p5.square(-6.3, 49.9, legend="<3.8%", fill_color="#d5edff", size=.1)
 p5.square(-6.3, 49.9, legend="3.8-6.7%", fill_color="#6daaee", size=.1)
 p5.square(-6.3, 49.9, legend="6.7-9.6%", fill_color="#3858f9", size=.1)
-p5.square(-6.3, 49.9, legend=">9.6%", fill_color="#002566", size=.1)
+p5.square(-6.3, 49.9, legend=">9.6%", fill_color="#043c9a", size=.1)
 p5.square(-6.3, 49.9, legend="No Information", fill_color="black", size=.1)
 p5.legend.glyph_width = 30
 p5.legend.glyph_height = 30
