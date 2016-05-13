@@ -10,11 +10,13 @@
 library(knitr)
 opts_knit$set(concordance=TRUE)
 opts_chunk$set(background=c(.97, .97, .97), highlight=TRUE, fig.keep="high", 
-               out.width="0.6\\linewidth", fig.align="center")
+               out.width="0.8\\linewidth", fig.align="center")
 @
 \begin{document}
 
 <<>>=
+options(scipen = 10)
+
 #Read in the total_crime dataset which contains the LAD values, year, and count
 totCrime <- read.csv("total_crime_LAD_year.csv")
 totCrime <- totCrime[,-1] #Drop first column, contains an index
@@ -160,13 +162,16 @@ mean.cv.errors <- mean(cv.errors)
 #CV Error
 plot(cv.errors, type="b",main="Cross-Validation MSE by Fold",
      xlab="Fold",
-     ylab="Mean-Squared Error")
+     ylab="Mean-Squared Error",yaxt="n")
 abline(h=mean.cv.errors,col="red",lty=2) #Plot average fold
 
 legend("topright",
        legend=c("Value","Cross-fold Mean"), 
        col=c("black","red"), 
        lwd=1, lty=c(1,2), cex=0.7)
+
+yax.avg <- seq(10000000,24000000,2000000)
+axis(2,at=yax.avg, labels=prettyNum(yax.avg, big.mark=",", scientific=FALSE))
 
 #R^2
 plot(r.squared, type="b",main=bquote(R^2*" by Fold"),
@@ -218,7 +223,7 @@ plot(coeffs[,colnames(coeffs)=="Year2012"], type="b",main="Year Coefficients by 
      xlab="Fold",
      ylab="Year Coefficient",
      ylim=ybounds,
-     col="red")
+     col="red",yaxt="n")
 abline(h=mean(coeffs[,colnames(coeffs)=="Year2012"]),col="red",lty=2) #Plot average fold
 lines(coeffs[,colnames(coeffs)=="Year2013"], type="b",col="blue")
 abline(h=mean(coeffs[,colnames(coeffs)=="Year2013"]),col="blue",lty=2) #Plot average fold
@@ -234,9 +239,11 @@ legend(x=7.5,y=3000,
                 "2015 Value","2015 Cross-fold Mean"), 
        col=c("red","red","blue","blue","green","green","purple","purple"), 
        lwd=1, lty=c(1,2,1,2,1,2,1,2), cex=0.7)
+
+yax.avg <- seq(1500,3500,500)
+axis(2,at=yax.avg, labels=prettyNum(yax.avg, big.mark=",", scientific=FALSE))
 @
 }
-
 
 \end{document}
 

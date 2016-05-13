@@ -63,6 +63,8 @@
 \begin{knitrout}
 \definecolor{shadecolor}{rgb}{0.97, 0.97, 0.97}\color{fgcolor}\begin{kframe}
 \begin{alltt}
+\hlkwd{options}\hlstd{(}\hlkwc{scipen} \hlstd{=} \hlnum{10}\hlstd{)}
+
 \hlcom{#Read in the total_crime dataset which contains the LAD values, year, and count}
 \hlstd{totCrime} \hlkwb{<-} \hlkwd{read.csv}\hlstd{(}\hlstr{"total_crime_LAD_year.csv"}\hlstd{)}
 \hlstd{totCrime} \hlkwb{<-} \hlstd{totCrime[,}\hlopt{-}\hlnum{1}\hlstd{]} \hlcom{#Drop first column, contains an index}
@@ -96,7 +98,7 @@
 \hlstd{reg1.data} \hlkwb{<-} \hlkwd{merge}\hlstd{(shape, reg1.data,} \hlkwc{by}\hlstd{=}\hlkwd{c}\hlstd{(}\hlstr{"LAD_name"}\hlstd{,}\hlstr{"Year"}\hlstd{),} \hlkwc{all.x}\hlstd{=}\hlnum{TRUE}\hlstd{)}
 \hlcom{#Remove observations with weird characters frm Unemp16to64}
 \hlstd{reg1.data} \hlkwb{<-} \hlstd{reg1.data[}\hlopt{!}\hlstd{(reg1.data}\hlopt{$}\hlstd{Unemp16to64} \hlopt{%in%} \hlkwd{c}\hlstd{(}\hlstr{"!"}\hlstd{,}\hlstr{"-"}\hlstd{)),]}
-\hlcom{#Remove column total rows}
+\hlcom{#Remove column total rows - shouldn't be there}
 \hlstd{reg1.data} \hlkwb{<-} \hlstd{reg1.data[reg1.data}\hlopt{$}\hlstd{LAD_name}\hlopt{!=}\hlstr{"Column Total"}\hlstd{,]}
 \hlcom{#Change variable formats as needed}
 \hlstd{reg1.data}\hlopt{$}\hlstd{Year} \hlkwb{<-} \hlkwd{as.factor}\hlstd{(reg1.data}\hlopt{$}\hlstd{Year)}
@@ -120,7 +122,7 @@
 \end{alltt}
 \end{kframe}
 
-{\centering \includegraphics[width=0.6\linewidth]{figure/unnamed-chunk-3-1} 
+{\centering \includegraphics[width=0.8\linewidth]{figure/unnamed-chunk-3-1} 
 
 }
 
@@ -145,14 +147,14 @@
 ## -15415  -1920   -228   1604  45249 
 ## 
 ## Coefficients:
-##               Estimate Std. Error t value Pr(>|t|)    
-## (Intercept) -6.935e+03  3.656e+02 -18.966  < 2e-16 ***
-## Year2012     2.313e+03  3.217e+02   7.190 1.02e-12 ***
-## Year2013     1.802e+03  3.213e+02   5.609 2.42e-08 ***
-## Year2014     2.103e+03  3.300e+02   6.374 2.44e-10 ***
-## Year2015     3.193e+03  3.453e+02   9.248  < 2e-16 ***
-## Unemp16to64  5.614e+02  3.965e+01  14.157  < 2e-16 ***
-## Pop          1.427e-01  1.466e-03  97.367  < 2e-16 ***
+##                 Estimate   Std. Error t value         Pr(>|t|)    
+## (Intercept) -6934.500879   365.635932 -18.966          < 2e-16 ***
+## Year2012     2312.861547   321.695886   7.190 0.00000000000102 ***
+## Year2013     1801.764169   321.251464   5.609 0.00000002424131 ***
+## Year2014     2103.244290   329.959534   6.374 0.00000000024399 ***
+## Year2015     3193.214193   345.295276   9.248          < 2e-16 ***
+## Unemp16to64   561.397982    39.654550  14.157          < 2e-16 ***
+## Pop             0.142713     0.001466  97.367          < 2e-16 ***
 ## ---
 ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 ## 
@@ -259,13 +261,16 @@
 \hlcom{#CV Error}
 \hlkwd{plot}\hlstd{(cv.errors,} \hlkwc{type}\hlstd{=}\hlstr{"b"}\hlstd{,}\hlkwc{main}\hlstd{=}\hlstr{"Cross-Validation MSE by Fold"}\hlstd{,}
      \hlkwc{xlab}\hlstd{=}\hlstr{"Fold"}\hlstd{,}
-     \hlkwc{ylab}\hlstd{=}\hlstr{"Mean-Squared Error"}\hlstd{)}
+     \hlkwc{ylab}\hlstd{=}\hlstr{"Mean-Squared Error"}\hlstd{,}\hlkwc{yaxt}\hlstd{=}\hlstr{"n"}\hlstd{)}
 \hlkwd{abline}\hlstd{(}\hlkwc{h}\hlstd{=mean.cv.errors,}\hlkwc{col}\hlstd{=}\hlstr{"red"}\hlstd{,}\hlkwc{lty}\hlstd{=}\hlnum{2}\hlstd{)} \hlcom{#Plot average fold}
 
 \hlkwd{legend}\hlstd{(}\hlstr{"topright"}\hlstd{,}
        \hlkwc{legend}\hlstd{=}\hlkwd{c}\hlstd{(}\hlstr{"Value"}\hlstd{,}\hlstr{"Cross-fold Mean"}\hlstd{),}
        \hlkwc{col}\hlstd{=}\hlkwd{c}\hlstd{(}\hlstr{"black"}\hlstd{,}\hlstr{"red"}\hlstd{),}
        \hlkwc{lwd}\hlstd{=}\hlnum{1}\hlstd{,} \hlkwc{lty}\hlstd{=}\hlkwd{c}\hlstd{(}\hlnum{1}\hlstd{,}\hlnum{2}\hlstd{),} \hlkwc{cex}\hlstd{=}\hlnum{0.7}\hlstd{)}
+
+\hlstd{yax.avg} \hlkwb{<-} \hlkwd{seq}\hlstd{(}\hlnum{10000000}\hlstd{,}\hlnum{24000000}\hlstd{,}\hlnum{2000000}\hlstd{)}
+\hlkwd{axis}\hlstd{(}\hlnum{2}\hlstd{,}\hlkwc{at}\hlstd{=yax.avg,} \hlkwc{labels}\hlstd{=}\hlkwd{prettyNum}\hlstd{(yax.avg,} \hlkwc{big.mark}\hlstd{=}\hlstr{","}\hlstd{,} \hlkwc{scientific}\hlstd{=}\hlnum{FALSE}\hlstd{))}
 
 \hlcom{#R^2}
 \hlkwd{plot}\hlstd{(r.squared,} \hlkwc{type}\hlstd{=}\hlstr{"b"}\hlstd{,}\hlkwc{main}\hlstd{=}\hlkwd{bquote}\hlstd{(R}\hlopt{^}\hlnum{2}\hlopt{*}\hlstr{" by Fold"}\hlstd{),}
@@ -317,7 +322,7 @@
      \hlkwc{xlab}\hlstd{=}\hlstr{"Fold"}\hlstd{,}
      \hlkwc{ylab}\hlstd{=}\hlstr{"Year Coefficient"}\hlstd{,}
      \hlkwc{ylim}\hlstd{=ybounds,}
-     \hlkwc{col}\hlstd{=}\hlstr{"red"}\hlstd{)}
+     \hlkwc{col}\hlstd{=}\hlstr{"red"}\hlstd{,}\hlkwc{yaxt}\hlstd{=}\hlstr{"n"}\hlstd{)}
 \hlkwd{abline}\hlstd{(}\hlkwc{h}\hlstd{=}\hlkwd{mean}\hlstd{(coeffs[,}\hlkwd{colnames}\hlstd{(coeffs)}\hlopt{==}\hlstr{"Year2012"}\hlstd{]),}\hlkwc{col}\hlstd{=}\hlstr{"red"}\hlstd{,}\hlkwc{lty}\hlstd{=}\hlnum{2}\hlstd{)} \hlcom{#Plot average fold}
 \hlkwd{lines}\hlstd{(coeffs[,}\hlkwd{colnames}\hlstd{(coeffs)}\hlopt{==}\hlstr{"Year2013"}\hlstd{],} \hlkwc{type}\hlstd{=}\hlstr{"b"}\hlstd{,}\hlkwc{col}\hlstd{=}\hlstr{"blue"}\hlstd{)}
 \hlkwd{abline}\hlstd{(}\hlkwc{h}\hlstd{=}\hlkwd{mean}\hlstd{(coeffs[,}\hlkwd{colnames}\hlstd{(coeffs)}\hlopt{==}\hlstr{"Year2013"}\hlstd{]),}\hlkwc{col}\hlstd{=}\hlstr{"blue"}\hlstd{,}\hlkwc{lty}\hlstd{=}\hlnum{2}\hlstd{)} \hlcom{#Plot average fold}
@@ -333,6 +338,9 @@
                 \hlstr{"2015 Value"}\hlstd{,}\hlstr{"2015 Cross-fold Mean"}\hlstd{),}
        \hlkwc{col}\hlstd{=}\hlkwd{c}\hlstd{(}\hlstr{"red"}\hlstd{,}\hlstr{"red"}\hlstd{,}\hlstr{"blue"}\hlstd{,}\hlstr{"blue"}\hlstd{,}\hlstr{"green"}\hlstd{,}\hlstr{"green"}\hlstd{,}\hlstr{"purple"}\hlstd{,}\hlstr{"purple"}\hlstd{),}
        \hlkwc{lwd}\hlstd{=}\hlnum{1}\hlstd{,} \hlkwc{lty}\hlstd{=}\hlkwd{c}\hlstd{(}\hlnum{1}\hlstd{,}\hlnum{2}\hlstd{,}\hlnum{1}\hlstd{,}\hlnum{2}\hlstd{,}\hlnum{1}\hlstd{,}\hlnum{2}\hlstd{,}\hlnum{1}\hlstd{,}\hlnum{2}\hlstd{),} \hlkwc{cex}\hlstd{=}\hlnum{0.7}\hlstd{)}
+
+\hlstd{yax.avg} \hlkwb{<-} \hlkwd{seq}\hlstd{(}\hlnum{1500}\hlstd{,}\hlnum{3500}\hlstd{,}\hlnum{500}\hlstd{)}
+\hlkwd{axis}\hlstd{(}\hlnum{2}\hlstd{,}\hlkwc{at}\hlstd{=yax.avg,} \hlkwc{labels}\hlstd{=}\hlkwd{prettyNum}\hlstd{(yax.avg,} \hlkwc{big.mark}\hlstd{=}\hlstr{","}\hlstd{,} \hlkwc{scientific}\hlstd{=}\hlnum{FALSE}\hlstd{))}
 \end{alltt}
 \end{kframe}
 
@@ -346,7 +354,6 @@
 
 \end{knitrout}
 }
-
 
 \end{document}
 
